@@ -10,7 +10,13 @@ function App() {
       })
       .begin();
   });
-  return <div className="App">Welcome to Avanoa</div>;
+  return (
+    <div className="App">
+      Welcome to Avanoa
+      <br></br>
+      Developed by SD09
+    </div>
+  );
 }
 
 export default App;
