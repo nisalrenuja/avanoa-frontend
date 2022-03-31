@@ -10,7 +10,7 @@ function App() {
       })
       .begin();
   });
-  return <div className="App">Hello World</div>;
+  return <div className="App">Welcome to Avanoa</div>;
 }
 
 export default App;
