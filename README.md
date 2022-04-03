@@ -1,1 +1,1 @@
-# avanoa frontend with ReactJs and Tailwind CSS
+# Avanoa Frontend with ReactJs and Tailwind CSS
