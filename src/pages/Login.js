@@ -18,6 +18,12 @@ function App() {
       }),
     });
     const data = await response.json();
+    if (data.user) {
+      alert("Login Successful");
+      window.location.href = "/dashboard";
+    } else {
+      alert("Login Failed");
+    }
     console.log(data);
   }
 
