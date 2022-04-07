@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -7,7 +8,7 @@ function App() {
   async function loginUser(event) {
     event.preventDefault();
 
-    const response = await fetch("http://localhost:8080/api/login", {
+    const response = await fetch("avanoa--backend.herokuapp.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
