@@ -60,8 +60,8 @@ const Home = () => {
   }
 
   return (
-    <div>
-        <h1>Home</h1>
+    <div class="bg-[#50d71e]">
+        <h1 className="text-3xl font-bold underline text-purple-600">Home</h1>
       <h1>Welcome to Avanoa</h1>
       <Link to = "/login">Login</Link><br/>
       <Link to = "/register">Register</Link>
