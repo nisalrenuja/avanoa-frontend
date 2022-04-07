@@ -13,7 +13,7 @@ function App() {
     event.preventDefault();
 
     const response = await fetch(
-      "http://avanoa--backend.herokuapp.com/api/register",
+      "https://avanoa--backend.herokuapp.com/api/register",
       {
         method: "POST",
         headers: {
