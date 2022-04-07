@@ -12,7 +12,7 @@ function App() {
   async function registerUser(event) {
     event.preventDefault();
 
-    const response = await axios.fetch(
+    const response = await axios.post(
       "avanoa--backend.herokuapp.com/api/register",
       {
         method: "POST",
