@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 function App() {
   const history = useHistory();
@@ -11,7 +12,7 @@ function App() {
   async function registerUser(event) {
     event.preventDefault();
 
-    const response = await fetch("http://localhost:8080/api/register", {
+    const response = await fetch("avanoa--backend.herokuapp.com/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

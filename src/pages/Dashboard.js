@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import jwt from "jsonwebtoken";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 const Dashboard = () => {
   const history = useHistory();
@@ -8,7 +9,7 @@ const Dashboard = () => {
   const [tempQuote, setTempQuote] = useState("");
 
   async function populateQuote() {
-    const req = await fetch("http://localhost:8080/api/quote", {
+    const req = await fetch("avanoa--backend.herokuapp.com/api/quote", {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
@@ -38,7 +39,7 @@ const Dashboard = () => {
   async function updateQuote(event) {
     event.preventDefault();
 
-    const req = await fetch("http://localhost:8080/api/quote", {
+    const req = await fetch("avanoa--backend.herokuapp.com/api/quote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
