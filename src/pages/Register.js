@@ -12,17 +12,20 @@ function App() {
   async function registerUser(event) {
     event.preventDefault();
 
-    const response = await fetch("avanoa--backend.herokuapp.com/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    });
+    const response = await axios.fetch(
+      "avanoa--backend.herokuapp.com/api/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      }
+    );
 
     const data = await response.json();
 
