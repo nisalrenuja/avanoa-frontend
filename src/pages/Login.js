@@ -8,16 +8,19 @@ function App() {
   async function loginUser(event) {
     event.preventDefault();
 
-    const response = await fetch("avanoa--backend.herokuapp.com/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    });
+    const response = await fetch(
+      "https://avanoa--backend.herokuapp.com/api/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      }
+    );
 
     const data = await response.json();
 
