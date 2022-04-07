@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import jwt from "jsonwebtoken";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
 
-const Dashboard = () => {
+const Home = () => {
   const history = useHistory();
   const [quote, setQuote] = useState("");
   const [tempQuote, setTempQuote] = useState("");
@@ -61,10 +61,12 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>Dashboard</h1>
+        <h1>Home</h1>
       <h1>Welcome to Avanoa</h1>
+      <Link to = "/login">Login</Link><br/>
+      <Link to = "/register">Register</Link>
     </div>
   );
 };
 
-export default Dashboard;
+export default Home;
