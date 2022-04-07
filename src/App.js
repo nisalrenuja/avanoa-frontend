@@ -5,6 +5,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 
+
 const App = () => {
 	return (
 		<div>
