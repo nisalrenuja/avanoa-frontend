@@ -1,3 +1,4 @@
+import Profile from "../../components/Profile/Profile";
 import Feed from "../../components/Feed/Feed";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
@@ -30,6 +31,9 @@ const ProfileLayout = () => {
           <Feed />
         </div>
         {/* profile */}
+        <div className="profilelayout_content-profile">
+          <Profile />
+        </div>
       </div>
     </div>
   );

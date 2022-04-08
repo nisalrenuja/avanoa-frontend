@@ -29,6 +29,11 @@ body {
 }
 .profilelayout_content-feed {
   width: 100%;
+  order: 2;
+}
+.profilelayout_content-profile {
+  width: 100%;
+  order: 1;
 }
 @include for-desktop {
   .profilelayout_sidebar {
@@ -40,5 +45,10 @@ body {
   }
   .profilelayout_content-feed {
     width: 50%;
+    order: 1;
+  }
+  .profilelayout_content-profile {
+    width: 45%;
+    order: 2;
   }
 }
