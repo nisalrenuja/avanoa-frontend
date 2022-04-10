@@ -29,7 +29,7 @@ const AuthLayout = () => {
     <div className="authlayout">
       {/* logo */}
       <div className="authlayout_logo">
-        <img src="./assets/img/shuttle.svg" alt="logo" />
+        <img src="./assets/img/logo.png" alt="logo" />
       </div>
       {/* form */}
       {login && <Login />}
