@@ -8,7 +8,7 @@ const Appbar = ({ handleSidebar }) => {
       <div className="appbar_wrapper">
         {/* logo */}
         <div className="appbar_logo">
-          <img src="./assets/img/shuttle.svg" alt="logo" />
+          {/* <img src="./assets/img/logo.png" alt="logo" /> */}
           <p>Avanoa</p>
         </div>
         {/* avatar */}

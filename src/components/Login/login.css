@@ -20,8 +20,8 @@
   color: #fff;
   cursor: pointer;
   outline: none;
-  background: -webkit-gradient(linear, left top, right top, from(#fbc02d), to(#f96a8b));
-  background: linear-gradient(to right, #fbc02d, #f96a8b);
+  background: -webkit-gradient(linear, left top, right top, from(#bdc3c7), to(#2c3e50));
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,13 +43,13 @@
   transition: all 0.3s ease;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: -webkit-gradient(linear, right top, left top, from(#fbc02d), to(#f96a8b));
-  background: linear-gradient(to left, #fbc02d, #f96a8b);
+  background: -webkit-gradient(linear, right top, left top, from(#2c3e50), to(#2c3e50));
+  background: linear-gradient(to left, #2c3e50, #2c3e50);
 }
 
 .login_btn .btn-alt {
-  background: -webkit-gradient(linear, right top, left top, from(#fbc02d), to(#f96a8b));
-  background: linear-gradient(to left, #fbc02d, #f96a8b);
+  background: -webkit-gradient(linear, left top, right top, from(#bdc3c7), to(#2c3e50));
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
 }
 
 .login_btn .btn-alt:hover {
@@ -57,8 +57,8 @@
   transition: all 0.3s ease;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: -webkit-gradient(linear, left top, right top, from(#fbc02d), to(#f96a8b));
-  background: linear-gradient(to right, #fbc02d, #f96a8b);
+          background: -webkit-gradient(linear, right top, left top, from(#2c3e50), to(#2c3e50));
+          background: linear-gradient(to left, #2c3e50, #2c3e50);
 }
 
 @media (min-width: 1200px) {
