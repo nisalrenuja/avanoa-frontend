@@ -10,7 +10,7 @@
 .input label input {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  background-color: #544f5f;
+  background-color: #ffffff;
   padding: 1em;
   border-radius: 5px;
   width: 300px;
@@ -25,7 +25,7 @@
   left: 12px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  color: #99979e;
+  color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: 300;
@@ -39,14 +39,14 @@
 }
 
 .input label input:focus {
-  border: 2px solid #f96a8b;
+  border: 2px solid #1589ff;
 }
 
 .input label input:focus + span {
   top: -15px;
   font-size: 10px;
-  background: -webkit-gradient(linear, left top, right top, from(#fbc02d), to(#f96a8b));
-  background: linear-gradient(to right, #fbc02d, #f96a8b);
+  background: -webkit-gradient(linear, left top, right top, from(#1589ff), to(#1589ff));
+  background: linear-gradient(to right, #1589ff, #1589ff);
   border-radius: 4px;
   padding: 0 5px;
   color: #fff;
