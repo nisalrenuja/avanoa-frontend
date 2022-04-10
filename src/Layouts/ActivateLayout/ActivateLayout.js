@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import "./activatelayout.css";
-import axios from "axios";
+import axios from "../../libs/axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";

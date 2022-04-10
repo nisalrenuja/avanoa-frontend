@@ -1,6 +1,6 @@
 import Input from "../Input/Input";
 import { isEmpty, isEmail } from "../helper/validate";
-import axios from "axios";
+import axios from "../../libs/axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
