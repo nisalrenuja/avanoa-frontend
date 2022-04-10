@@ -5,7 +5,7 @@ import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
 import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
-import axios from "axios";
+import axios from "./libs/axios";
 
 function App() {
   const { dispatch, token, isLoggedIn } = useContext(AuthContext);
