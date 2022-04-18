@@ -2,10 +2,11 @@ import Profile from "../../components/Profile/Profile";
 import Feed from "../../components/Feed/Feed";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
-import "./profilelayout.css";
+import PhraseBubble from "../../components/PhraseBubble/PhraseBubble";
+
 import { useState } from "react";
 
-const ProfileLayout = () => {
+const HomeLayout = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const handleSidebar = () => {
@@ -26,14 +27,16 @@ const ProfileLayout = () => {
       </div>
       {/* content */}
       <div className="profilelayout_content">
-        
-        {/* profile */}
-        <div className="profilelayout_content-profile">
-          <Profile />
+        {/* feed */}
+        <div className="profilelayout_content-feed">
+          <PhraseBubble />
+          
         </div>
+        {/* profile */}
+     
       </div>
     </div>
   );
 };
 
-export default ProfileLayout;
+export default HomeLayout;

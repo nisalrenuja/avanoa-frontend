@@ -5,6 +5,7 @@ import axios from "../../libs/axios";
 import "./sidebar.css";
 import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { dispatch } = useContext(AuthContext);
@@ -26,11 +27,11 @@ const Sidebar = () => {
         <ul>
           <li>
             <BiBookContent />
-            <p>feed</p>
+            <Link to = "/"><p>feed</p></Link>
           </li>
           <li>
             <BiUserCircle />
-            <p>profile</p>
+            <Link to = "/profile"><p>profile</p></Link>
           </li>
           <li onClick={handleClick}>
             <BiLogOut />
