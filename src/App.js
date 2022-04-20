@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ActivateLayout from "./Layouts/ActivateLayout/ActivateLayout";
 import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
+import HomeLayout from "./Layouts/HomeLayout/HomeLayout";
 import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
@@ -41,6 +42,11 @@ function App() {
       <Switch>
         <Route
           path="/"
+          exact
+          component={isLoggedIn ? HomeLayout : AuthLayout}
+        />
+        <Route
+          path="/profile"
           exact
           component={isLoggedIn ? ProfileLayout : AuthLayout}
         />
