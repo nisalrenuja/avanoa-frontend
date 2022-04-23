@@ -12,15 +12,7 @@ const HomeLayout = () => {
     setSidebar(!sidebar);
   };
 
-  const webgazer = window.webgazer;
-  webgazer.setRegression("ridge");
-  window.saveDataAcrossSessions = true;
-  webgazer
-    .setGazeListener((data, timestamp) => {
-      console.log(data, timestamp);
-    })
-    .begin();
-
+  
   return (
     <div className="profilelayout">
       {/* appbar */}
