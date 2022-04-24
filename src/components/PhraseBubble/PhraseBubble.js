@@ -6,6 +6,7 @@ class phraseBubble extends Component {
     super(props);
   }
   state = { 
+    cn : 0,
     count : 0,
     select1 : 'selected',
     select2 : 'notSelected',
@@ -16,6 +17,15 @@ class phraseBubble extends Component {
     select7 : 'notSelected',
     select8 : 'notSelected',
     select9 : 'notSelected',}
+
+
+  selectBubble(selNum){
+    
+    const sel = "select" + [selNum+1]
+    console.log(sel);
+    this.setState({[sel]: 'selection'})
+    
+  }
   
   
   componentDidUpdate(){
@@ -69,7 +79,7 @@ class phraseBubble extends Component {
     const LOOK_DELAY = 10 // 1 second
     const LEFT_CUTOFF = window.innerWidth / 6
     const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 6
-    const TOP_CUTOFF = window.innerHeight/100
+    const TOP_CUTOFF = window.innerHeight/10
 
 
       
@@ -108,13 +118,24 @@ class phraseBubble extends Component {
           startLookTime = timestamp
           lookDirection = "RIGHT"
         }
+
         
+
         if (
           data.y < TOP_CUTOFF  &&
           lookDirection !== "RESET") {
             console.log('looking top')
             startLookTime = timestamp
             lookDirection = "TOP"
+            
+            if (this.state.cn === this.state.count){
+              this.selectBubble(this.state.count);
+              this.setState({cn : this.state.cn+1});
+            }
+
+            
+            
+            
         }  
         else if (data.x >= LEFT_CUTOFF && data.x <= RIGHT_CUTOFF) {
           startLookTime = Number.POSITIVE_INFINITY
@@ -130,12 +151,14 @@ class phraseBubble extends Component {
           
             if(this.state.count > 0){
               this.setState({count : this.state.count-1});
+              this.setState({cn : this.state.count});
             }
             //console.log("looking left"+ this.state.count);
           } else {
             
             if(this.state.count < 8){
               this.setState({count : this.state.count + 1});
+              this.setState({cn : this.state.count});
             }
             //console.log("looking right" + this.state.count);
           }
