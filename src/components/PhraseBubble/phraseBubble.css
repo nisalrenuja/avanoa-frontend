@@ -11,3 +11,12 @@
     line-height: 200px;
     font-size: 30px;
   }
+  .selected{
+    color:red;
+  }
+  .notSelected{
+    color:black;
+  }
+  .selection{
+    color:green;
+  }
