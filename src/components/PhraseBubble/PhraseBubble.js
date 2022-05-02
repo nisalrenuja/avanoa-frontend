@@ -17,7 +17,9 @@ class phraseBubble extends Component {
     select6 : 'notSelected',
     select7 : 'notSelected',
     select8 : 'notSelected',
-    select9 : 'notSelected',}
+    select9 : 'notSelected',
+    phrases : ['ආයුබෝවන්', 'ඔව්', 'නැහැ', 'සුබ උදෑසනක්', 'සුබ රාත්‍රියක්', 'නිදිමතයි', 'තිබහයි', 'බඩිගිනි', 'කොහොමද?']
+  }
 
 
   selectBubble(selNum){
@@ -25,7 +27,12 @@ class phraseBubble extends Component {
     const sel = "select" + [selNum+1]
     console.log(sel);
     this.setState({[sel]: 'selection'})
+    this.selectionFunc(selNum, sel);
     
+  }
+
+  selectionFunc(phNum, stateName){
+    console.log(this.state.phrases[phNum])
   }
   
   pauseWebgazer(){
@@ -134,7 +141,7 @@ class phraseBubble extends Component {
         if (
           data.y < TOP_CUTOFF  &&
           lookDirection !== "RESET") {
-            console.log('looking top')
+            //console.log('looking top')
             startLookTime = timestamp
             lookDirection = "TOP"
             
@@ -195,15 +202,15 @@ class phraseBubble extends Component {
       <button onClick={this.pauseWebgazer}>Turn Off</button>
       <button onClick={this.resumeWebgazer}>Turn On</button>
       <div class="flex-container">
-        <div className={this.state.select1}>1</div>
-        <div className={this.state.select2}>2</div>
-        <div className={this.state.select3}>3</div>
-        <div className={this.state.select4}>4</div>
-        <div className={this.state.select5}>5</div>
-        <div className={this.state.select6}>6</div>  
-        <div className={this.state.select7}>7</div>
-        <div className={this.state.select8}>8</div>
-        <div className={this.state.select9}>9</div>  
+        <div className={this.state.select1}>ආයුබෝවන්</div>
+        <div className={this.state.select2}>ඔව්</div>
+        <div className={this.state.select3}>නැහැ</div>
+        <div className={this.state.select4}>සුබ උදෑසනක්</div>
+        <div className={this.state.select5}>සුබ රාත්‍රියක්</div>
+        <div className={this.state.select6}>නිදිමතයි</div>  
+        <div className={this.state.select7}>තිබහයි</div>
+        <div className={this.state.select8}>බඩිගිනි</div>
+        <div className={this.state.select9}>කොහොමද?</div>  
          
 </div>
 
