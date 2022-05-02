@@ -4,6 +4,7 @@ import "./phraseBubble.css";
 class phraseBubble extends Component {
   constructor(props) {
     super(props);
+
   }
   state = { 
     cn : 0,
@@ -25,6 +26,15 @@ class phraseBubble extends Component {
     console.log(sel);
     this.setState({[sel]: 'selection'})
     
+  }
+  
+  pauseWebgazer(){
+    const webgazer = window.webgazer;
+    webgazer.pause();
+  }
+  resumeWebgazer(){
+    const webgazer = window.webgazer;
+    webgazer.resume();
   }
   
   
@@ -182,6 +192,8 @@ class phraseBubble extends Component {
     return (   
     
     <div>
+      <button onClick={this.pauseWebgazer}>Turn Off</button>
+      <button onClick={this.resumeWebgazer}>Turn On</button>
       <div class="flex-container">
         <div className={this.state.select1}>1</div>
         <div className={this.state.select2}>2</div>
