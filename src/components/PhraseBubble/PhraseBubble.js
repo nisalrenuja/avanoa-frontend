@@ -77,6 +77,7 @@ class phraseBubble extends Component {
 
   selectionFunc(phNum, stateName) {
     console.log(this.state.phrases[phNum]);
+    this.soundPlay(audioClips[phNum].sound)
   }
 
   pauseWebgazer() {
