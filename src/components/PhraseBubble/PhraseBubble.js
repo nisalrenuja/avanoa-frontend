@@ -52,13 +52,13 @@ class phraseBubble extends Component {
     });
     sound.play();
   };
-  RenderButtonSound = () => {
-    return audioClips.map((audioClip) => (
-      <button onClick={() => this.soundPlay(audioClip.sound)}>
-        {audioClip.label}
-      </button>
-    ));
-  };
+  // RenderButtonSound = () => {
+  //   return audioClips.map((audioClip) => (
+  //     <button onClick={() => this.soundPlay(audioClip.sound)}>
+  //       {audioClip.label}
+  //     </button>
+  //   ));
+  // };
   state = {
     cn: 0,
     count: 0,
@@ -228,7 +228,7 @@ class phraseBubble extends Component {
       <div>
         <button onClick={this.pauseWebgazer}>Turn Off</button>
         <button onClick={this.resumeWebgazer}>Turn On</button>
-        {this.RenderButtonSound()}
+        {/* {this.RenderButtonSound()} */}
         <div class="flex-container">
           <div className={this.state.select1}>ආයුබෝවන්</div>
           <div className={this.state.select2}>ඔව්</div>
@@ -240,8 +240,6 @@ class phraseBubble extends Component {
           <div className={this.state.select8}>බඩිගිනි</div>
           <div className={this.state.select9}>කොහොමද?</div>
         </div>
-
-        <p>phrases</p>
       </div>
     );
   }
