@@ -28,7 +28,7 @@ const HomeLayout = () => {
 
       {/* content */}
       <div className="profilelayout_content">
-        <Speech />
+        {/* <Speech /> */}
         {/* feed */}
         <div className="profilelayout_content-feed">
           <PhraseBubble />
