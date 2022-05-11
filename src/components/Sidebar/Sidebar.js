@@ -1,6 +1,7 @@
 import { BiBookContent } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
 import { BiLogOut } from "react-icons/bi";
+import { FiPhoneCall } from "react-icons/fi";
 import axios from "../../libs/axios";
 import "./sidebar.css";
 import { AuthContext } from "../../context/AuthContext";
@@ -27,15 +28,25 @@ const Sidebar = () => {
         <ul>
           <li>
             <BiBookContent />
-            <Link to = "/"><p>feed</p></Link>
+            <Link to="/">
+              <p>feed</p>
+            </Link>
           </li>
           <li>
             <BiUserCircle />
-            <Link to = "/profile"><p>profile</p></Link>
+            <Link to="/profile">
+              <p>profile</p>
+            </Link>
           </li>
           <li onClick={handleClick}>
             <BiLogOut />
             <p>logout</p>
+          </li>
+          <li>
+            <FiPhoneCall />
+            <Link to="/">
+              <p>Emergency Contact</p>
+            </Link>
           </li>
         </ul>
       </div>
