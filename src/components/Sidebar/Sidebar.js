@@ -44,7 +44,7 @@ const Sidebar = () => {
           </li>
           <li>
             <FiPhoneCall />
-            <Link to="/">
+            <Link to="/emergency">
               <p>Emergency Contact</p>
             </Link>
           </li>
