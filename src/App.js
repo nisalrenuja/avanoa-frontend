@@ -7,6 +7,7 @@ import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
+import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 
 function App() {
   const { dispatch, token, isLoggedIn } = useContext(AuthContext);
@@ -59,6 +60,11 @@ function App() {
           path="/api/auth/activate/:activation_token"
           exact
           component={ActivateLayout}
+        />
+        <Route
+          path="/emergency"
+          exact
+          component={EmergencyLayout}
         />
       </Switch>
     </Router>
