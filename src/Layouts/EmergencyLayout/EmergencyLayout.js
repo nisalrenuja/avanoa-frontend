@@ -1,4 +1,5 @@
 import React from "react";
+import PhraseBubble from "../../components/PhraseBubble/PhraseBubble";
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
 
@@ -38,9 +39,15 @@ function EmergencyLayout() {
   };
 
   return (
+    
     <Row gutter={24} style={{ padding: "30px" }}>
+      <div className="profilelayout_content-feed">
+          <PhraseBubble />
+        </div>
       <Col xl={12}>
+      
         <Form layout="vertical" form={form} onFinish={onComplete}>
+        
           <Form.Item
             name="name"
             label="Name"
