@@ -41,9 +41,6 @@ function EmergencyLayout() {
   return (
     
     <Row gutter={24} style={{ padding: "30px" }}>
-      <div className="profilelayout_content-feed">
-          <PhraseBubble />
-        </div>
       <Col xl={12}>
       
         <Form layout="vertical" form={form} onFinish={onComplete}>
@@ -56,8 +53,12 @@ function EmergencyLayout() {
                 required: true,
               },
             ]}
-          >
-            <Input />
+          ><div class="flex-container">
+          <div >Care Taker</div>
+          <div >Hospital</div>
+          <div >Guardian</div>
+        </div>
+            {/* <Input /> */}
           </Form.Item>
           <Form.Item
             name="email"
@@ -67,8 +68,12 @@ function EmergencyLayout() {
                 required: true,
               },
             ]}
-          >
-            <Input />
+          ><div class="flex-container">
+          <div >nawaloka@gmail.com</div>
+          <div >zoysa@gmail.com</div>
+          <div >randimal@gmail.com</div>
+        </div>
+            {/* <Input /> */}
           </Form.Item>
           <Form.Item
             name="subject"
@@ -79,7 +84,12 @@ function EmergencyLayout() {
               },
             ]}
           >
-            <Input />
+            <div class="flex-container">
+          <div >I need Help!</div>
+          <div >Emergency</div>
+          <div >I'm not well</div>
+        </div>
+            {/* <Input /> */}
           </Form.Item>
           <Form.Item
             name="message"
@@ -90,7 +100,11 @@ function EmergencyLayout() {
               },
             ]}
           >
-            <TextArea />
+            <div class="flex-container">
+          <div >I need Help!I'm not well</div>
+          <div >Emergency!!! Please come</div>
+        </div>
+            {/* <TextArea /> */}
           </Form.Item>
           <Form.Item>
             <Space>

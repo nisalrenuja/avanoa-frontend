@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+  }
+  .selected{
+    color:red;
+  }
+  .notSelected{
+    color:black;
+  }
+  .selection{
+    color:green;
+  }
