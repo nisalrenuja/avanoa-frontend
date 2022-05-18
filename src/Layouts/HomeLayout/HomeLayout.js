@@ -1,10 +1,7 @@
-import Profile from "../../components/Profile/Profile";
-import Feed from "../../components/Feed/Feed";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import PhraseBubble from "../../components/PhraseBubble/PhraseBubble";
 import { useState } from "react";
-import Speech from "../../components/Speech/Speech";
 const HomeLayout = () => {
   const [sidebar, setSidebar] = useState(false);
 
