@@ -1,5 +1,4 @@
 import React from "react";
-import PhraseBubble from "../../components/PhraseBubble/PhraseBubble";
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
 

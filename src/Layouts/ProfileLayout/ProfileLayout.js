@@ -1,5 +1,4 @@
 import Profile from "../../components/Profile/Profile";
-import Feed from "../../components/Feed/Feed";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import "./profilelayout.css";
