@@ -33,11 +33,11 @@ class EmergencyLayout extends React.Component {
         const { name, email, phone, message } = this.state;
         const msg = {
           to: "nrenuja@gmail.com",
-      from: fields.email,
-      subject: fields.subject,
+      from: values.email,
+      subject: values.subject,
       html: `
-      <p><strong>Name:</strong> ${fields.name}</p>
-      <p>${fields.message}</p>`,
+      <p><strong>Name:</strong> ${values.name}</p>
+      <p>${values.message}</p>`,
     };  // Send email to SendGrid account
     sgMail.setApiKey(apiKey); // SendGrid API key
     sgMail.send(msg);
@@ -50,7 +50,7 @@ class EmergencyLayout extends React.Component {
     });
   };
 
-  };
+
 
   render () {
     const { getFieldDecorator } = this.props.form;
