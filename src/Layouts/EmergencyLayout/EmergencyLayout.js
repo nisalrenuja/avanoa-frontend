@@ -53,11 +53,11 @@ function EmergencyLayout() {
               },
             ]}
             >
-           {/* <div class="flex-container">
+           <div class="flex-container">
            <div >Care Taker</div>
            <div >Hospital</div>
            <div >Guardian</div>
-         </div> */}
+         </div> 
            <Input />
           </Form.Item>
           <Form.Item
@@ -69,11 +69,11 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >nawaloka@gmail.com</div>
           <div >zoysa@gmail.com</div>
           <div >randimal@gmail.com</div>
-        </div> */}
+        </div> 
              <Input /> 
           </Form.Item>
           <Form.Item
@@ -85,11 +85,11 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >I need Help!</div>
           <div >Emergency</div>
           <div >I'm not well</div>
-        </div> */}
+        </div> 
              <Input /> 
           </Form.Item>
           <Form.Item
@@ -101,10 +101,10 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >I need Help!I'm not well</div>
           <div >Emergency!!! Please come</div>
-        </div> */}
+        </div> 
              <TextArea /> 
           </Form.Item>
           <Form.Item>
