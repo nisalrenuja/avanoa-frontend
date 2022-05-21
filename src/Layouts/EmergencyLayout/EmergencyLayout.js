@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
+import { render } from "@testing-library/react";
 
 
 const { TextArea } = Input;
@@ -9,122 +10,109 @@ const sgMail = require("@sendgrid/mail");
 const apiKey = `${process.env.SENDGRID_API_KEY}`;
 console.log("SendGrid key ", apiKey);
 
-function EmergencyLayout() {
-  const [form] = Form.useForm();
+class EmergencyLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      isLoading: false,
+    };
+  }
 
-  const onComplete = (fields) => {
-    const message = {
-      to: "nrenuja@gmail.com",
+  handleInput(e) {
+    console.log(e.target.value);
+  }
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        this.setState({ isLoading: true });
+        const { name, email, phone, message } = this.state;
+        const msg = {
+          to: "nrenuja@gmail.com",
       from: fields.email,
       subject: fields.subject,
       html: `
       <p><strong>Name:</strong> ${fields.name}</p>
       <p>${fields.message}</p>`,
-    };
-
-    sgMail
-      .send(message)
-      .then(() => {
-        form.resetFields();
-        console.log("Email Sent!");
-        notification.open({
-          message: "Message successfu!",
-          description: "We have successfully received your email.",
-        });
-      })
-      .catch((error) => {
-        console.error("Error: ", error);
-      });
+    };  // Send email to SendGrid account
+    sgMail.setApiKey(apiKey); // SendGrid API key
+    sgMail.send(msg);
+    notification.success({
+      message: "Success",
+      description: "Your message has been sent successfully",
+    });
+    this.setState({ isLoading: false });
+      }
+    });
   };
 
-  return (
+  };
+
+  render () {
+    const { getFieldDecorator } = this.props.form;
+    return (
+      <div> 
+        <Row>
+          <Col span={24}>
+            <Form onSubmit={this.handleSubmit}>
+              <Form.Item label="Name">
+                {getFieldDecorator("name", {
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your name",
+                    },
+                  ],
+                })(<Input />)}
+              </Form.Item>
+              <Form.Item label="Email">
+                {getFieldDecorator("email", {
+
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your email",
+                    },
+                  ],
+                })(<Input />)}
+              </Form.Item>
     
-    <Row gutter={24} style={{ padding: "30px" }}>
-      <Col xl={12}>
-      
-        <Form layout="vertical" form={form} onFinish={onComplete}>
-        
-          <Form.Item
-            name="name"
-            label="Name"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-            >
-           <div class="flex-container">
-           <div >Care Taker</div>
-           <div >Hospital</div>
-           <div >Guardian</div>
-         </div> 
-           <Input />
-          </Form.Item>
-          <Form.Item
-            name="email"
-            label="Email"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-          >
-             <div class="flex-container">
-          <div >nawaloka@gmail.com</div>
-          <div >zoysa@gmail.com</div>
-          <div >randimal@gmail.com</div>
-        </div> 
-             <Input /> 
-          </Form.Item>
-          <Form.Item
-            name="subject"
-            label="Subject"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-          >
-             <div class="flex-container">
-          <div >I need Help!</div>
-          <div >Emergency</div>
-          <div >I'm not well</div>
-        </div> 
-             <Input /> 
-          </Form.Item>
-          <Form.Item
-            name="message"
-            label="Message"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-          >
-             <div class="flex-container">
-          <div >I need Help!I'm not well</div>
-          <div >Emergency!!! Please come</div>
-        </div> 
-             <TextArea /> 
-          </Form.Item>
-          <Form.Item>
-            <Space>
-              <Button type="primary" htmlType="submit">
-                Submit
-              </Button>
-              <Button
-                type="secondary"
-                htmlType="submit"
-                onClick={(e) => form.resetFields()}
-              >
-                Clear
-              </Button>
-            </Space>
-          </Form.Item>
-        </Form>
-      </Col>
-    </Row>
-  );
+              <Form.Item label="Phone">
+                {getFieldDecorator("phone", {
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your phone number",
+                    },
+                  ],
+                })(<Input />)}
+              </Form.Item>
+              <Form.Item label="Message">
+                {getFieldDecorator("message", {
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your message",
+                    },
+                  ],
+                })(<TextArea />)}
+              </Form.Item>
+              <Form.Item>
+                <Button type="primary" htmlType="submit">
+                  Submit
+                </Button>
+              </Form.Item>
+            </Form>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
 }
+
 
 export default EmergencyLayout;
