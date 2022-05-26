@@ -13,7 +13,8 @@ const HomeLayout = () => {
   return (
     <div className="profilelayout">
       {/* appbar */}
-      <Appbar handleSidebar={handleSidebar} />
+      {/* <Appbar handleSidebar={handleSidebar} /> */}
+      <Appbar/>
       {/* sidebar */}
       <div
         className={

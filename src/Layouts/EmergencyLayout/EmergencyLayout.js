@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
 
@@ -36,12 +36,15 @@ function EmergencyLayout() {
         console.error("Error: ", error);
       });
   };
-
+  this.handleClick = this.handleClick.bind(this);
+  // handleClick = value => () => {
+  //   console.log(value);
+  // };
+  
   return (
     
     <Row gutter={24} style={{ padding: "30px" }}>
       <Col xl={12}>
-      
         <Form layout="vertical" form={form} onFinish={onComplete}>
         
           <Form.Item
@@ -53,11 +56,11 @@ function EmergencyLayout() {
               },
             ]}
             >
-           {/* <div class="flex-container">
-           <div >Care Taker</div>
+           <div class="flex-container">
+           <div name="masjid" id="1" value="masjid" full block>Care Taker</div>
            <div >Hospital</div>
            <div >Guardian</div>
-         </div> */}
+         </div> 
            <Input />
           </Form.Item>
           <Form.Item
@@ -69,11 +72,11 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >nawaloka@gmail.com</div>
           <div >zoysa@gmail.com</div>
           <div >randimal@gmail.com</div>
-        </div> */}
+        </div> 
              <Input /> 
           </Form.Item>
           <Form.Item
@@ -85,11 +88,11 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >I need Help!</div>
           <div >Emergency</div>
           <div >I'm not well</div>
-        </div> */}
+        </div> 
              <Input /> 
           </Form.Item>
           <Form.Item
@@ -101,13 +104,14 @@ function EmergencyLayout() {
               },
             ]}
           >
-            {/* <div class="flex-container">
+             <div class="flex-container">
           <div >I need Help!I'm not well</div>
           <div >Emergency!!! Please come</div>
-        </div> */}
+        </div> 
              <TextArea /> 
           </Form.Item>
           <Form.Item>
+          <button onClick={this.handleClick('Bar')}>Speak</button>
             <Space>
               <Button type="primary" htmlType="submit">
                 Submit
@@ -119,12 +123,16 @@ function EmergencyLayout() {
               >
                 Clear
               </Button>
+              
             </Space>
+            
           </Form.Item>
         </Form>
+        
       </Col>
     </Row>
   );
+  
 }
 
 export default EmergencyLayout;
