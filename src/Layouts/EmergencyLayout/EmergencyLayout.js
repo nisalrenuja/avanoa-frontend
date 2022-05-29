@@ -1,20 +1,45 @@
 import React, { Component } from 'react';
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
-
+// require('dotenv').config();
 
 const { TextArea } = Input;
-require('dotenv').config();
+
 const sgMail = require("@sendgrid/mail");
-const apiKey = `${process.env.SENDGRID_API_KEY}`;
-console.log("SendGrid key ", apiKey);
+
+const initializeSendGrid =async()=> {
+  const apiKey = await process.env.REACT_APP_SENDGRID_API_KEY;
+  sgMail.setApiKey(apiKey);
+  console.log("SendGrid key ", apiKey);
+
+};
+
+export default EmergencyLayout;
+
+initializeSendGrid();
 
 function EmergencyLayout() {
+
+  const initialState = { 
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  }; 
+  const [input,SetInput] = React.useState(initialState);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    const {value,name} = e.target;
+    SetInput((values)=>({...values,[name]:value}));
+   
+  }
+
   const [form] = Form.useForm();
 
   const onComplete = (fields) => {
     const message = {
-      to: "nrenuja@gmail.com",
+      to: "nrenuja@gmail.com",  
       from: fields.email,
       subject: fields.subject,
       html: `
@@ -36,10 +61,10 @@ function EmergencyLayout() {
         console.error("Error: ", error);
       });
   };
-  this.handleClick = this.handleClick.bind(this);
-  handleClick = value => () => {
-    console.log(value);
-  };
+  // this.handleClick = this.handleClick.bind(this);
+  // handleClick = value => () => {
+  //   console.log(value);
+  // };
   
   return (
     
@@ -52,77 +77,73 @@ function EmergencyLayout() {
             label="Name"
             rules={[
               {
-                required: true,
+                required: false,
               },
             ]}
             >
-           <div class="flex-container">
-           <div name="masjid" id="1" value="masjid" full block>Care Taker</div>
-           <div >Hospital</div>
-           <div >Guardian</div>
-         </div> 
-           <Input />
+              <input type="button" name="name" value ="Care Taker" onClick={handleClick} />
+              <input type="button" name="name" value ="Hospital" onClick={handleClick} />
+              <input type="button" name="name" value ="Guardian" onClick={handleClick} />
+           
+          
+           <Input  value={input.name} required/>
           </Form.Item>
           <Form.Item
             name="email"
             label="Email"
             rules={[
               {
-                required: true,
+                required: false,
               },
             ]}
           >
-             <div class="flex-container">
-          <div >nawaloka@gmail.com</div>
-          <div >zoysa@gmail.com</div>
-          <div >randimal@gmail.com</div>
-        </div> 
-             <Input /> 
+            <input type="button" name="email" value ="nawaloka@gmail.com" onClick={handleClick} />
+            <input type="button" name="email" value ="zoysa@gmail.com" onClick={handleClick} />
+            <input type="button" name="email" value ="randimal@gmail.com" onClick={handleClick} /> 
+             <Input value={input.email} required/> 
           </Form.Item>
           <Form.Item
             name="subject"
             label="Subject"
             rules={[
               {
-                required: true,
+                required: false,
               },
             ]}
           >
-             <div class="flex-container">
-          <div >I need Help!</div>
-          <div >Emergency</div>
-          <div >I'm not well</div>
-        </div> 
-             <Input /> 
+            <input type="button" name="subject" value ="I need Help!" onClick={handleClick} />
+            <input type="button" name="subject" value ="Emergency" onClick={handleClick} />
+            <input type="button" name="subject" value ="I'm not well" onClick={handleClick} />
+              
+             <Input value={input.subject} required/> 
           </Form.Item>
           <Form.Item
             name="message"
             label="Message"
             rules={[
               {
-                required: true,
+                required: false,
               },
             ]}
           >
-             <div class="flex-container">
-          <div >I need Help!I'm not well</div>
-          <div >Emergency!!! Please come</div>
-        </div> 
-             <TextArea /> 
+            <input type="button" name="message" value ="I need Help!I'm not well" onClick={handleClick} />
+            <input type="button" name="message" value ="Emergency!!! Please come" onClick={handleClick} />
+            
+              
+             <TextArea value={input.message} required/> 
           </Form.Item>
-          <Form.Item>
-          <button onClick={this.handleClick('Bar')}>Speak</button>
+          <Form.Item>         
             <Space>
               <Button type="primary" htmlType="submit">
                 Submit
               </Button>
-              <Button
+              {/* <Button
                 type="secondary"
                 htmlType="submit"
                 onClick={(e) => form.resetFields()}
               >
                 Clear
-              </Button>
+              </Button> */} 
               
             </Space>
             
@@ -135,4 +156,4 @@ function EmergencyLayout() {
   
 }
 
-export default EmergencyLayout;
+// export default EmergencyLayout;
