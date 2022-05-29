@@ -61,7 +61,11 @@ function EmergencyLayout() {
         console.error("Error: ", error);
       });
   };
+<<<<<<< HEAD
   // this.handleClick = this.handleClick.bind(this);
+=======
+  this.handleClick = this.handleClick.bind(this);
+>>>>>>> 06635f424fc64c5cd9efff02a984b6a7435afc11
   // handleClick = value => () => {
   //   console.log(value);
   // };
