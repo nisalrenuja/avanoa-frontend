@@ -1,0 +1,51 @@
+.keyboardl1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .keyboardl1 > div {
+    background-color: #f1f1f1;
+    width: 75px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+  }
+  .textbox {
+    background-color: #f1f1f1;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+
+  }
+  .keyboardl2 > div {
+    background-color: #f1f1f1;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    padding: 1px 2px;
+    z-index: 1;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
