@@ -8,6 +8,7 @@ import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
 import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
+import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
 
 function App() {
   const { dispatch, token, isLoggedIn } = useContext(AuthContext);
@@ -17,7 +18,7 @@ function App() {
     const _appSignging = localStorage.getItem("_appSignging");
     if (_appSignging) {
       const getToken = async () => {
-        const res = await axios.post("/api/auth/access", null);
+        const res = await axios.post("http://localhost:8000/api/auth/access", null);
         dispatch({ type: "GET_TOKEN", payload: res.data.ac_token });
       };
       getToken();
@@ -29,7 +30,7 @@ function App() {
     if (token) {
       const getUser = async () => {
         dispatch({ type: "SIGNING" });
-        const res = await axios.get("/api/auth/user", {
+        const res = await axios.get("http://localhost:8000/api/auth/user", {
           headers: { Authorization: token },
         });
         dispatch({ type: "GET_USER", payload: res.data });
@@ -66,6 +67,14 @@ function App() {
           exact
           component={EmergencyLayout}
         />
+
+        <Route
+          path="/Keyboard"
+          exact
+          component={KeyboardLayout}
+        />
+
+        
       </Switch>
     </Router>
   );

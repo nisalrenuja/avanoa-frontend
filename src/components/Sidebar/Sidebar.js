@@ -48,6 +48,12 @@ const Sidebar = () => {
               <p>Emergency Contact</p>
             </Link>
           </li>
+          <li>
+            <FiPhoneCall />
+            <Link to="/Keyboard">
+              <p>Keyboard</p>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
