@@ -102,17 +102,14 @@ class WebGazer extends Component {
             }
     
             if (data.y < TOP_CUTOFF && lookDirection !== "RESET") {
-              //console.log('looking top')
               
-              
-              console.log("before if")
     
               if (this.state.cn === this.state.count && treeLayers[this.props.navList.index] !== null) {
 
                 let curLayer = treeLayers[this.props.navList.index];
                 console.log('curLayer ' + curLayer)
 
-                this.props.selection(this.props.counter.value)
+                //this.props.selection(this.props.counter.value)
                 this.props.updateIndex(this.props.counter.value + curLayer)
                 
                 //console.log('selected' + this.props.counter.value)
@@ -134,13 +131,22 @@ class WebGazer extends Component {
                   // localforage.setItem('selCount', this.state.count - 1);
                   // localforage.setItem('selCount', this.state.cn + 1);
                   this.props.decrement();
-                  console.log(this.props.counter.value);
+                  this.props.updateLayer(this.props.counter.value + 1)
+                  //console.log(this.props.counter.value);
                   this.setState({ count: this.state.count - 1 });
                   this.setState({ cn: this.state.count });
                   // localforage.setItem('selCount', this.state.count).then(() => {
                   //   console.log('storage set');
                   // });
                 
+                }
+                else if(this.props.navList.layer === 1){
+                  this.props.updateLayer(0)
+                }
+                if (this.props.navList.layer === 0 && this.props.navList.index > 0){
+                  const TL = this.props.navList.treeLayers;
+                  let index = TL.indexOf(this.props.navList.index);
+                  this.props.updateIndex(index);
                 }
                 //console.log("looking left"+ this.state.count);
               } else {
@@ -150,7 +156,8 @@ class WebGazer extends Component {
                   this.setState({ cn: this.state.count });
                   
                   this.props.increment();
-                  console.log(this.props.counter.value);
+                  this.props.updateLayer(this.props.counter.value + 1)
+                  //console.log(this.props.counter.value);
                 }
                 //console.log("looking right" + this.state.count);
               }
