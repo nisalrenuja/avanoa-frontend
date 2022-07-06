@@ -4,9 +4,13 @@ import Appbar from "../../components/Appbar/Appbar";
 import "./profilelayout.css";
 import { useState } from "react";
 import Speech from "../../components/Speech/Speech";
+import WebGazer from "../../components/WebGazer/WebGazer";
+import { useSelector, useDispatch } from 'react-redux'
 
 const ProfileLayout = () => {
   const [sidebar, setSidebar] = useState(false);
+
+  const counter = useSelector((state) => state.counter.value)
 
   const handleSidebar = () => {
     setSidebar(!sidebar);
@@ -14,6 +18,7 @@ const ProfileLayout = () => {
 
   return (
     <div className="profilelayout">
+       <WebGazer/>
       <Speech />
       {/* appbar */}
       <Appbar handleSidebar={handleSidebar} />
@@ -30,6 +35,7 @@ const ProfileLayout = () => {
         {/* profile */}
         <div className="profilelayout_content-profile">
           <Profile />
+          {counter}
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
+import WebGazer from '../../components/WebGazer/WebGazer';
 // require('dotenv').config();
 
 const { TextArea } = Input;
@@ -68,8 +69,10 @@ function EmergencyLayout() {
   // };
   
   return (
-    
+    <div>
+       <WebGazer/>
     <Row gutter={24} style={{ padding: "30px" }}>
+     
       <Col xl={12}>
         <Form layout="vertical" form={form} onFinish={onComplete}>
         
@@ -153,6 +156,8 @@ function EmergencyLayout() {
         
       </Col>
     </Row>
+
+    </div>
   );
   
 }
