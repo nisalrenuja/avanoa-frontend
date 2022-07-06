@@ -117,6 +117,12 @@ const Sidebar = () => {
               <p className={sec4}>Emergency Contact</p>
             </Link>
           </li>
+          <li>
+            <FiPhoneCall />
+            <Link to="/Keyboard">
+              <p>Keyboard</p>
+            </Link>
+          </li>
           c: {counter} i: {index}
         </ul>
       </div>
