@@ -112,11 +112,6 @@ class phraseBubble extends Component {
     if(index == 10){
       //this.selectBubble(0);
       //select1="selection"
-      if (this.state.cn === this.state.count) {
-        this.setState({select1:"selection"});
-        
-        this.setState({ cn: this.state.cn + 1 });
-      }
       this.selectBubble(0);
       this.props.setCount(0);
     }
@@ -151,41 +146,6 @@ class phraseBubble extends Component {
       //select9 = "selection"
       this.selectBubble(8);
     }
-    // if (this.state.count === 0 && this.state.select1 === "notSelected") {
-    //   this.setState({ select1: "selected" });
-    //   this.setState({ select2: "notSelected" });
-    // } else if (this.state.count === 1 && this.state.select2 === "notSelected") {
-    //   this.setState({ select2: "selected" });
-    //   this.setState({ select1: "notSelected" });
-    //   this.setState({ select3: "notSelected" });
-    // } else if (this.state.count === 2 && this.state.select3 === "notSelected") {
-    //   this.setState({ select3: "selected" });
-    //   this.setState({ select2: "notSelected" });
-    //   this.setState({ select4: "notSelected" });
-    // } else if (this.state.count === 3 && this.state.select4 === "notSelected") {
-    //   this.setState({ select4: "selected" });
-    //   this.setState({ select3: "notSelected" });
-    //   this.setState({ select5: "notSelected" });
-    // } else if (this.state.count === 4 && this.state.select5 === "notSelected") {
-    //   this.setState({ select5: "selected" });
-    //   this.setState({ select4: "notSelected" });
-    //   this.setState({ select6: "notSelected" });
-    // } else if (this.state.count === 5 && this.state.select6 === "notSelected") {
-    //   this.setState({ select6: "selected" });
-    //   this.setState({ select5: "notSelected" });
-    //   this.setState({ select7: "notSelected" });
-    // } else if (this.state.count === 6 && this.state.select7 === "notSelected") {
-    //   this.setState({ select7: "selected" });
-    //   this.setState({ select6: "notSelected" });
-    //   this.setState({ select8: "notSelected" });
-    // } else if (this.state.count === 7 && this.state.select8 === "notSelected") {
-    //   this.setState({ select8: "selected" });
-    //   this.setState({ select7: "notSelected" });
-    //   this.setState({ select9: "notSelected" });
-    // } else if (this.state.count === 8 && this.state.select9 === "notSelected") {
-    //   this.setState({ select9: "selected" });
-    //   this.setState({ select8: "notSelected" });
-    // }
     
   }
 

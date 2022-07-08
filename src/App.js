@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ActivateLayout from "./Layouts/ActivateLayout/ActivateLayout";
 import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
@@ -40,43 +40,42 @@ function App() {
   }, [dispatch, token]);
 
   return (
-    <Router>
-      <Switch>
+    <BrowserRouter>
+      <Routes>
         <Route
           path="/"
-          exact
-          component={isLoggedIn ? HomeLayout : AuthLayout}
+          element={isLoggedIn ? <HomeLayout/> : <AuthLayout/>}
         />
         <Route
           path="/profile"
-          exact
-          component={isLoggedIn ? ProfileLayout : AuthLayout}
+          
+          element={isLoggedIn ? <ProfileLayout/> : <AuthLayout/>}
         />
         <Route
           path="/auth/reset-password/:token"
-          exact
-          component={ResetLayout}
+          
+          element={<ResetLayout/>}
         />
         <Route
           path="/api/auth/activate/:activation_token"
-          exact
-          component={ActivateLayout}
+          
+          element={<ActivateLayout/>}
         />
         <Route
           path="/emergency"
-          exact
-          component={EmergencyLayout}
+          
+          element={<EmergencyLayout/>}
         />
 
         <Route
           path="/Keyboard"
-          exact
-          component={KeyboardLayout}
+          
+          element={<KeyboardLayout/>}
         />
 
         
-      </Switch>
-    </Router>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

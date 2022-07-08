@@ -5,8 +5,8 @@ import { FiPhoneCall } from "react-icons/fi";
 import axios from "../../libs/axios";
 import "./sidebar.css";
 import { AuthContext } from "../../context/AuthContext";
-import { useState, useContext } from "react";
-import { Link,useHistory } from "react-router-dom";
+import { useState, useContext, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 
 const Sidebar = () => {
@@ -26,7 +26,6 @@ const Sidebar = () => {
     }
   };
 
-  const history = useHistory()
   // const [selStyle, setSel] = useState('')
 
   // const [sec1, setSec1] = useState('')
@@ -39,7 +38,17 @@ const Sidebar = () => {
   let sec2 = 'def'
   let sec3 = 'def'
   let sec4 = 'def'
+
+  const [cn, setCn] = useState(0);
+  const [count, setCount] = useState(0);
+
+  //let cn = 0;
+  //let count = 0;
  
+  let navigate = useNavigate();
+
+
+
   if(index == 0 && counter == 0){
     //setSel("selectionBoarder");
     selS = "selectionBoarder";
@@ -72,24 +81,27 @@ const Sidebar = () => {
       sec3 = "def"
     }
   }
-  if(index == 3){
-    //green selection
-    //setSec1("selectd");
-    sec1 = "selectd"
-  }
-  if(index == 4){
-    //setSec2("selectd");
-    sec2 = "selectd"
-    //history.push("/profile");
-  }
-  if(index == 5){
-    //setSec3("selectd");
-    sec3 = "selectd"
-  }
-  if(index == 6){
-    //setSec4("selectd");
-    sec4 = "selectd"
-  }
+
+
+  useEffect(()=>{
+    if(index == 3){
+      sec1 = "selectd"
+      navigate("/");
+
+    }
+    if(index == 4){
+      sec2 = "selectd"
+      navigate("/profile");
+    }
+    if(index == 5){
+      sec3 = "selectd"
+    }
+    if(index == 6){
+      sec4 = "selectd"
+      navigate("/emergency");
+    }
+
+  });
 
   return (
     <div className = {`sidebar ${selS}`}>
