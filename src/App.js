@@ -18,7 +18,7 @@ function App() {
     const _appSignging = localStorage.getItem("_appSignging");
     if (_appSignging) {
       const getToken = async () => {
-        const res = await axios.post("http://localhost:8000/api/auth/access", null);
+        const res = await axios.post("/api/auth/access", null);
         dispatch({ type: "GET_TOKEN", payload: res.data.ac_token });
       };
       getToken();
@@ -30,7 +30,7 @@ function App() {
     if (token) {
       const getUser = async () => {
         dispatch({ type: "SIGNING" });
-        const res = await axios.get("http://localhost:8000/api/auth/user", {
+        const res = await axios.get("/api/auth/user", {
           headers: { Authorization: token },
         });
         dispatch({ type: "GET_USER", payload: res.data });
