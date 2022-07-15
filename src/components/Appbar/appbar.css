@@ -71,3 +71,17 @@
   }
 }
 /*# sourceMappingURL=appbar.css.map */
+
+.selectionBoarder{
+  border-style: solid;
+}
+
+.choosing{
+  color: red;
+}
+.selectd{
+  color: green;
+}
+.def{
+  color: #99979e;
+}
