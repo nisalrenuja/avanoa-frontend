@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import "antd/dist/antd.css";
 import WebGazer from "../../components/WebGazer/WebGazer";
-// require('dotenv').config();
 
 const { TextArea } = Input;
 
@@ -59,11 +58,6 @@ function EmergencyLayout() {
 				console.error("Error: ", error);
 			});
 	};
-	// this.handleClick = this.handleClick.bind(this);
-
-	// handleClick = value => () => {
-	//   console.log(value);
-	// };
 
 	return (
 		<div>
@@ -189,13 +183,6 @@ function EmergencyLayout() {
 								<Button type="primary" htmlType="submit">
 									Submit
 								</Button>
-								{/* <Button
-                type="secondary"
-                htmlType="submit"
-                onClick={(e) => form.resetFields()}
-              >
-                Clear
-              </Button> */}
 							</Space>
 						</Form.Item>
 					</Form>
@@ -204,5 +191,3 @@ function EmergencyLayout() {
 		</div>
 	);
 }
-
-// export default EmergencyLayout;
