@@ -1,13 +1,31 @@
 import React from "react";
 import "./KeyboardLayout.css";
+import { Row, Col, Form, Input, Button, Space, notification } from "antd";
+
 function KeyboardLayout(props) {
+	const initialState = {
+		name: "",
+	};
+
+	const [input, SetInput] = React.useState(initialState);
+
+	const handleClick = (e) => {
+		e.preventDefault();
+		const { value, name } = e.target;
+		SetInput((values) => ({ ...values, [name]: value }));
+	};
+	const [form] = Form.useForm();
+
 	return (
 		<div>
-			<input type="text" name="name" className="textbox" />
+			<Input value={input.name} />
+
 			<div className="keyboardl1">
 				<br />
+
 				<div className="dropdown keyboardl2">
-					අ
+					{" "}
+					<input type="button" name="name" value="අ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ආ</p>
 						<p>ඇ</p>
