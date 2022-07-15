@@ -5,7 +5,7 @@
   
   .keyboardl1 > div {
     background-color: #f1f1f1;
-    width: 75px;
+    width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 100px;
@@ -28,23 +28,34 @@
   }
   .keyboardl2 > div {
     background-color: #f1f1f1;
-    width: 50px;
+    width: 1200px;
     margin: 10px;
     text-align: center;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 25px;
+    float:left;
+    margin:left;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
+    left:15px;
     background-color: #f9f9f9;
     min-width: 5px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     padding: 1px 2px;
     z-index: 1;
+    float:left;
+    text-align:left;
     
   }
+  .dropdown-content p {
+   
+    float:left;
+    
+  }
+  
   
   .dropdown:hover .dropdown-content {
     display: block;
