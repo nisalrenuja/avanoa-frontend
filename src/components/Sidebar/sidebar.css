@@ -69,13 +69,27 @@
   cursor: pointer;
 }
 
-.sidebar_menu ul li p {
+.sidebar_menu ul li p{
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: #99979e;
+  
   letter-spacing: 2px;
   margin-left: 15px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 /*# sourceMappingURL=sidebar.css.map */
+
+.selectionBoarder{
+  border-style: solid;
+}
+
+.choosing{
+  color: red;
+}
+.selectd{
+  color: green;
+}
+.def{
+  color: #99979e;
+}

@@ -45,7 +45,7 @@ const Login = () => {
         bodyClassName: "toast-failed",
       });
     try {
-      await axios.post("http://localhost:8000/api/auth/signing", { email, password });
+      await axios.post("/api/auth/signing", { email, password });
       localStorage.setItem("_appSignging", true);
       dispatch({ type: "SIGNING" });
     } catch (err) {

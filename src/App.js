@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ActivateLayout from "./Layouts/ActivateLayout/ActivateLayout";
 import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
@@ -18,7 +18,7 @@ function App() {
     const _appSignging = localStorage.getItem("_appSignging");
     if (_appSignging) {
       const getToken = async () => {
-        const res = await axios.post("http://localhost:8000/api/auth/access", null);
+        const res = await axios.post("/api/auth/access", null);
         dispatch({ type: "GET_TOKEN", payload: res.data.ac_token });
       };
       getToken();
@@ -30,7 +30,7 @@ function App() {
     if (token) {
       const getUser = async () => {
         dispatch({ type: "SIGNING" });
-        const res = await axios.get("http://localhost:8000/api/auth/user", {
+        const res = await axios.get("/api/auth/user", {
           headers: { Authorization: token },
         });
         dispatch({ type: "GET_USER", payload: res.data });
@@ -40,43 +40,42 @@ function App() {
   }, [dispatch, token]);
 
   return (
-    <Router>
-      <Switch>
+    <BrowserRouter>
+      <Routes>
         <Route
           path="/"
-          exact
-          component={isLoggedIn ? HomeLayout : AuthLayout}
+          element={isLoggedIn ? <HomeLayout/> : <AuthLayout/>}
         />
         <Route
           path="/profile"
-          exact
-          component={isLoggedIn ? ProfileLayout : AuthLayout}
+          
+          element={isLoggedIn ? <ProfileLayout/> : <AuthLayout/>}
         />
         <Route
           path="/auth/reset-password/:token"
-          exact
-          component={ResetLayout}
+          
+          element={<ResetLayout/>}
         />
         <Route
           path="/api/auth/activate/:activation_token"
-          exact
-          component={ActivateLayout}
+          
+          element={<ActivateLayout/>}
         />
         <Route
           path="/emergency"
-          exact
-          component={EmergencyLayout}
+          
+          element={<EmergencyLayout/>}
         />
 
         <Route
           path="/Keyboard"
-          exact
-          component={KeyboardLayout}
+          
+          element={<KeyboardLayout/>}
         />
 
         
-      </Switch>
-    </Router>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

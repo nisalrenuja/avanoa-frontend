@@ -11,6 +11,15 @@ class Appbar extends Component {
   playAudio = () => {
     new Audio("https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3").play();
   }
+  pauseWebgazer() {
+    const webgazer = window.webgazer;
+    webgazer.pause();
+  }
+  resumeWebgazer() {
+    const webgazer = window.webgazer;
+    webgazer.resume();
+  }
+
   
 render() {
 return (
@@ -21,6 +30,9 @@ return (
             {/* <img src="./assets/img/logo.png" alt="logo" /> */}
             <p>Avanoa Hellow</p>
           </div>
+
+          <button onClick={this.pauseWebgazer}>Turn Off</button>
+          <button onClick={this.resumeWebgazer}>Turn On</button>
           <div className="siren">
             {/* <button className={this.state.select1}>Siren</button> */}
             <button onClick={this.playAudio}>Siren</button>
@@ -31,6 +43,7 @@ return (
             {/* <BiMenuAltLeft onClick={handleSidebar} /> */}
           </div>
         </div>
+      
       </div>
     );
 };

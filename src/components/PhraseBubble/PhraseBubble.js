@@ -1,6 +1,9 @@
 import { Component } from "react";
 import "./phraseBubble.css";
 import { Howl } from "howler";
+import { connect } from 'react-redux'
+import { updateIndex } from "../../reducers/navList/navListSlice";
+import { setCount } from "../../reducers/counter/counterSlice";
 
 const audioClips = [
   {
@@ -43,6 +46,7 @@ const audioClips = [
 class phraseBubble extends Component {
   constructor(props) {
     super(props);
+    this.selectBubble = this.selectBubble.bind(this);
   }
 
   soundPlay = (src) => {
@@ -62,7 +66,7 @@ class phraseBubble extends Component {
   state = {
     cn: 0,
     count: 0,
-    select1: "selected",
+    select1: "notSelected",
     select2: "notSelected",
     select3: "notSelected",
     select4: "notSelected",
@@ -71,6 +75,9 @@ class phraseBubble extends Component {
     select7: "notSelected",
     select8: "notSelected",
     select9: "notSelected",
+    slide1:"notSelected",
+    slide2:"notSelected",
+    slide3:"notSelected",
     phrases: [
       "ආයුබෝවන්",
       "ඔව්",
@@ -85,164 +92,186 @@ class phraseBubble extends Component {
   };
 
   selectBubble(selNum) {
-    const sel = "select" + [selNum + 1];
-    console.log(sel);
-    this.setState({ [sel]: "selection" });
-    this.selectionFunc(selNum, sel);
+    //const sel = "select" + [selNum + 1];
+    //this.setState({ [sel]: "selection" });
+    this.selectionFunc(selNum);
+    this.props.updateIndex(7);
+    //this.props.setCount(selNum);
   }
 
-  selectionFunc(phNum, stateName) {
+  selectionFunc(phNum) {
     console.log(this.state.phrases[phNum]);
     this.soundPlay(audioClips[phNum].sound)
   }
 
-  pauseWebgazer() {
-    const webgazer = window.webgazer;
-    webgazer.pause();
-  }
-  resumeWebgazer() {
-    const webgazer = window.webgazer;
-    webgazer.resume();
-  }
-
+  
   componentDidUpdate() {
-    if (this.state.count === 0 && this.state.select1 === "notSelected") {
-      this.setState({ select1: "selected" });
-      this.setState({ select2: "notSelected" });
-    } else if (this.state.count === 1 && this.state.select2 === "notSelected") {
-      this.setState({ select2: "selected" });
-      this.setState({ select1: "notSelected" });
-      this.setState({ select3: "notSelected" });
-    } else if (this.state.count === 2 && this.state.select3 === "notSelected") {
-      this.setState({ select3: "selected" });
-      this.setState({ select2: "notSelected" });
-      this.setState({ select4: "notSelected" });
-    } else if (this.state.count === 3 && this.state.select4 === "notSelected") {
-      this.setState({ select4: "selected" });
-      this.setState({ select3: "notSelected" });
-      this.setState({ select5: "notSelected" });
-    } else if (this.state.count === 4 && this.state.select5 === "notSelected") {
-      this.setState({ select5: "selected" });
-      this.setState({ select4: "notSelected" });
-      this.setState({ select6: "notSelected" });
-    } else if (this.state.count === 5 && this.state.select6 === "notSelected") {
-      this.setState({ select6: "selected" });
-      this.setState({ select5: "notSelected" });
-      this.setState({ select7: "notSelected" });
-    } else if (this.state.count === 6 && this.state.select7 === "notSelected") {
-      this.setState({ select7: "selected" });
-      this.setState({ select6: "notSelected" });
-      this.setState({ select8: "notSelected" });
-    } else if (this.state.count === 7 && this.state.select8 === "notSelected") {
-      this.setState({ select8: "selected" });
-      this.setState({ select7: "notSelected" });
-      this.setState({ select9: "notSelected" });
-    } else if (this.state.count === 8 && this.state.select9 === "notSelected") {
-      this.setState({ select9: "selected" });
-      this.setState({ select8: "notSelected" });
+    const index = this.props.navList.index;
+    const counter = this.props.counter.value;
+
+    if(index == 10){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(0);
+      this.props.setCount(0);
     }
-  }
+    if(index == 11){
+      this.selectBubble(1);
+    }
+    if(index == 12){
+      this.selectBubble(2);
 
-  componentDidMount() {
-    const LOOK_DELAY = 10; // 1 second
-    const LEFT_CUTOFF = window.innerWidth / 6;
-    const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 6;
-    const TOP_CUTOFF = window.innerHeight / 10;
+    }
+    if(index == 13){
+        this.selectBubble(3);
+    }
+    if(index == 14){
+      //select5 = "selection"
+      this.selectBubble(4);
+    }
+    if(index == 15){
+      //select6 = "selection"
+      this.selectBubble(5);
+    }
 
-    let startLookTime = Number.POSITIVE_INFINITY;
-    let lookDirection = null;
+    if(index == 16){
+      //select7 = "selection"
+      this.selectBubble(6);
 
-    const webgazer = window.webgazer;
-    webgazer.setRegression("ridge");
-    webgazer.showVideoPreview(false);
-    //const blink = new webgazer.BlinkDetector;
+    }if(index == 17){
+      //select8 = "selection"
+      this.selectBubble(7);
 
-    console.log(webgazer.getTracker());
-
-    window.saveDataAcrossSessions = true;
-    webgazer
-      .setGazeListener((data, timestamp) => {
-        //console.log(data, timestamp);
-        if (data == null || lookDirection === "STOP") return;
-
-        if (
-          data.x < LEFT_CUTOFF &&
-          lookDirection !== "LEFT" &&
-          lookDirection !== "RESET"
-        ) {
-          startLookTime = timestamp;
-          lookDirection = "LEFT";
-        } else if (
-          data.x > RIGHT_CUTOFF &&
-          lookDirection !== "RIGHT" &&
-          lookDirection !== "RESET"
-        ) {
-          startLookTime = timestamp;
-          lookDirection = "RIGHT";
-        }
-
-        if (data.y < TOP_CUTOFF && lookDirection !== "RESET") {
-          //console.log('looking top')
-          startLookTime = timestamp;
-          lookDirection = "TOP";
-
-          if (this.state.cn === this.state.count) {
-            this.selectBubble(this.state.count);
-            this.setState({ cn: this.state.cn + 1 });
-          }
-        } else if (data.x >= LEFT_CUTOFF && data.x <= RIGHT_CUTOFF) {
-          startLookTime = Number.POSITIVE_INFINITY;
-          lookDirection = null;
-        }
-
-        if (startLookTime + LOOK_DELAY < timestamp) {
-          if (lookDirection === "TOP") {
-            console.log("looking top" + this.state.count);
-          } else if (lookDirection === "LEFT") {
-            if (this.state.count > 0) {
-              this.setState({ count: this.state.count - 1 });
-              this.setState({ cn: this.state.count });
-            }
-            //console.log("looking left"+ this.state.count);
-          } else {
-            if (this.state.count < 8) {
-              this.setState({ count: this.state.count + 1 });
-              this.setState({ cn: this.state.count });
-            }
-            //console.log("looking right" + this.state.count);
-          }
-
-          startLookTime = Number.POSITIVE_INFINITY;
-          lookDirection = "STOP";
-          setTimeout(() => {
-            console.log("time reset");
-            lookDirection = "RESET";
-          }, 200);
-        }
-      })
-      .begin();
+    }if(index == 18){
+      //select9 = "selection"
+      this.selectBubble(8);
+    }
+    
   }
 
   render() {
+    const index = this.props.navList.index;
+    const counter = this.props.counter.value;
+
+    let slide1 = ""
+    let slide2 = ""
+    let slide3 = ""
+
+    let select1 = ""
+    let select2 = ""
+    let select3 = ""
+    let select4 = ""
+    let select5 = ""
+    let select6 = ""
+    let select7 = ""
+    let select8 = ""
+    let select9 = ""
+
+
+    if(index == 3 && counter == 0){
+      //setSel("selectionBoarder");
+      //this.setState({ slide1 : "selected"});
+      slide1 = "selected"
+
+    }
+    else if(index == 3 && counter == 1){
+      //setSel("selectionBoarder");
+      //this.setState({ slide2 : "selected"});
+      //this.setState({ slide1 : "notSelected"});
+      slide2 = "selected";
+      slide1 = "notSelected"
+    }
+    else if(index == 3 && counter == 2){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide3 = "selected";
+      slide2 = "notSelected"
+    }
+
+    if(index == 7){
+      slide1 = "selection"
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+
+    }
+
+    
+
+
+
+
+    if (index == 8){
+      slide2 = "selection"
+    }
+    if (index ==9){
+      slide3 = "selection"
+    }
     return (
       <div>
-        <button onClick={this.pauseWebgazer}>Turn Off</button>
-        <button onClick={this.resumeWebgazer}>Turn On</button>
+        
         {/* {this.RenderButtonSound()} */}
+        <button className={slide1} >Slide 1</button><button className={slide2}>Slide 2</button><button className={slide3}>Slide 3</button>
+
         <div class="flex-container">
-          <div className={this.state.select1}>ආයුබෝවන්</div>
-          <div className={this.state.select2}>ඔව්</div>
-          <div className={this.state.select3}>නැහැ</div>
-          <div className={this.state.select4}>සුබ උදෑසනක්</div>
-          <div className={this.state.select5}>සුබ රාත්‍රියක්</div>
-          <div className={this.state.select6}>නිදිමතයි</div>
-          <div className={this.state.select7}>තිබහයි</div>
-          <div className={this.state.select8}>බඩිගිනි</div>
-          <div className={this.state.select9}>කොහොමද?</div>
+          <div className={select1}>ආයුබෝවන්</div>
+          <div className={select2}>ඔව්</div>
+          <div className={select3}>නැහැ</div>
+          <div className={select4}>සුබ උදෑසනක්</div>
+          <div className={select5}>සුබ රාත්‍රියක්</div>
+          <div className={select6}>නිදිමතයි</div>
+          <div className={select7}>තිබහයි</div>
+          <div className={select8}>බඩිගිනි</div>
+          <div className={select9}>කොහොමද?</div>
+          
         </div>
+        {this.props.navList.index}
       </div>
     );
   }
 }
 
-export default phraseBubble;
+const mapStateToProps = state => ({
+  counter: state.counter,
+  navList: state.navList,
+});
+
+const mapDispatchToProps = () => ({ 
+  setCount,
+  updateIndex,
+});
+
+export default connect (mapStateToProps, mapDispatchToProps()) (phraseBubble);
