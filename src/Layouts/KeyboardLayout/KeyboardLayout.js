@@ -16,6 +16,56 @@ function KeyboardLayout(props) {
 		SetInput((values) => ({ ...values, [name]: value }));
 	};
 	
+	const handleSubmit = (e) => {
+		
+		console.log(input.texty);
+		console.log("Button clicked");
+		let sdk = require("microsoft-cognitiveservices-speech-sdk");
+		
+		let textyy = input.texty;
+		console.log(textyy);
+		
+		// var region = "https://eastus.customvoice.api.speech.microsoft.com/";
+		let audioFile = "YourAudioFile.wav";
+
+		const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
+		// const audioConfig = sdk.AudioConfig.fromAudioFileOutput(audioFile);
+		const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
+
+		// The language of the voice that speaks.
+		speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural"; 
+
+		// Create the speech synthesizer.
+		let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
+
+		// var rl = readline.createInterface({
+		//   input: process.stdin,
+		//   output: process.stdout
+		// });
+
+		if (textyy != null) {
+		
+		// Start the synthesizer and wait for a result.
+		synthesizer.speakTextAsync(textyy,
+			function (result) {
+			if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
+			console.log("synthesis finished.");
+			} else {
+			console.error("Speech synthesis canceled, " + result.errorDetails +
+				"\nDid you set the speech resource key and region values?");
+			}
+			synthesizer.close();
+			synthesizer = null;
+		},
+			function (err) {
+			console.trace("err - " + err);
+			synthesizer.close();
+			synthesizer = null;
+		});
+		console.log("Now synthesizing to: " + audioFile);
+		};
+	};
+
 	const [form] = Form.useForm();
 
 	return (
