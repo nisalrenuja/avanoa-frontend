@@ -89,13 +89,23 @@ class phraseBubble extends Component {
       "බඩිගිනි",
       "කොහොමද?",
     ],
+    ph1:"ආයුබෝවන්",
+    ph2:"ඔව්",
+    ph3:"නැහැ",
+    ph4:"සුබ උදෑසනක්",
+    ph5:"සුබ රාත්‍රියක්",
+    ph6:"නිදිමතයි",
+    ph7:"තිබහයි",
+    ph8:"බඩිගිනි",
+    ph9:"කොහොමද?",
+
   };
 
   selectBubble(selNum) {
     //const sel = "select" + [selNum + 1];
     //this.setState({ [sel]: "selection" });
     this.selectionFunc(selNum);
-    this.props.updateIndex(7);
+    //this.props.updateIndex(7);
     //this.props.setCount(selNum);
   }
 
@@ -109,40 +119,40 @@ class phraseBubble extends Component {
     const index = this.props.navList.index;
     const counter = this.props.counter.value;
 
-    if(index == 10){
+    if(index == 21){
       //this.selectBubble(0);
       //select1="selection"
       this.selectBubble(0);
       this.props.setCount(0);
     }
-    if(index == 11){
+    if(index == 22){
       this.selectBubble(1);
     }
-    if(index == 12){
+    if(index == 23){
       this.selectBubble(2);
 
     }
-    if(index == 13){
+    if(index == 24){
         this.selectBubble(3);
     }
-    if(index == 14){
+    if(index == 25){
       //select5 = "selection"
       this.selectBubble(4);
     }
-    if(index == 15){
+    if(index == 26){
       //select6 = "selection"
       this.selectBubble(5);
     }
 
-    if(index == 16){
+    if(index == 27){
       //select7 = "selection"
       this.selectBubble(6);
 
-    }if(index == 17){
+    }if(index == 28){
       //select8 = "selection"
       this.selectBubble(7);
 
-    }if(index == 18){
+    }if(index == 29){
       //select9 = "selection"
       this.selectBubble(8);
     }
@@ -156,6 +166,12 @@ class phraseBubble extends Component {
     let slide1 = ""
     let slide2 = ""
     let slide3 = ""
+    let slide4 = ""
+    let slide5 = ""
+    let slide6 = ""
+    let slide7 = ""
+    let slide8 = ""
+
 
     let select1 = ""
     let select2 = ""
@@ -188,8 +204,43 @@ class phraseBubble extends Component {
       slide3 = "selected";
       slide2 = "notSelected"
     }
+    else if(index == 3 && counter == 3){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide4 = "selected";
+      slide3 = "notSelected"
+    }
+    else if(index == 3 && counter == 4){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide5 = "selected";
+      slide4 = "notSelected"
+    }
+    else if(index == 3 && counter == 5){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide6 = "selected";
+      slide5 = "notSelected"
+    }
+    else if(index == 3 && counter == 6){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide7 = "selected";
+      slide6 = "notSelected"
+    }
+    else if(index == 3 && counter == 7){
+      //setSel("selectionBoarder");
+      // this.setState({ slide3 : "selected"});
+      // this.setState({ slide2 : "notSelected"});
+      slide8 = "selected";
+      slide7 = "notSelected"
+    }
 
-    if(index == 7){
+    if(index == 13){
       slide1 = "selection"
       if(counter == 0){
         select1 = "selected"
@@ -234,28 +285,57 @@ class phraseBubble extends Component {
 
 
 
-    if (index == 8){
+    if (index == 31){
       slide2 = "selection"
+      // this.setState({
+      //   ph1 : "new",
+      //   ph2 : "new",
+      //   ph3 : "new",
+      //   ph4 : "new",
+      //   ph5 : "new",
+      //   ph6 : "new",
+      //   ph7 : "new",
+      //   ph8 : "new",
+      //   ph9 : "new",
+      // })
+
     }
-    if (index ==9){
+    if (index ==41){
       slide3 = "selection"
     }
+    if (index ==50){
+      slide4 = "selection"
+    
+    }
+    if (index ==60){
+      slide5 = "selection"
+    }
+    if (index ==70){
+      slide6 = "selection"
+    }
+    if (index ==80){
+      slide7 = "selection"
+    }
+    if (index ==89){
+      slide8 = "selection"
+    }
+
     return (
       <div>
         
         {/* {this.RenderButtonSound()} */}
-        <button className={slide1} >Slide 1</button><button className={slide2}>Slide 2</button><button className={slide3}>Slide 3</button>
-
+        <button className={slide1} >Slide 1</button><button className={slide2}>Slide 2</button><button className={slide3}>Slide 3</button><button className={slide4} >Slide 4</button>
+        <button className={slide5} >Slide 5</button><button className={slide6} >Slide 6</button><button className={slide7} >Slide 7</button><button className={slide8} >Slide 8</button>
         <div class="flex-container">
-          <div className={select1}>ආයුබෝවන්</div>
-          <div className={select2}>ඔව්</div>
-          <div className={select3}>නැහැ</div>
-          <div className={select4}>සුබ උදෑසනක්</div>
-          <div className={select5}>සුබ රාත්‍රියක්</div>
-          <div className={select6}>නිදිමතයි</div>
-          <div className={select7}>තිබහයි</div>
-          <div className={select8}>බඩිගිනි</div>
-          <div className={select9}>කොහොමද?</div>
+          <div className={select1}>{this.state.ph1}</div>
+          <div className={select2}>{this.state.ph2}</div>
+          <div className={select3}>{this.state.ph3}</div>
+          <div className={select4}>{this.state.ph4}</div>
+          <div className={select5}>{this.state.ph5}</div>
+          <div className={select6}>{this.state.ph6}</div>
+          <div className={select7}>{this.state.ph7}</div>
+          <div className={select8}>{this.state.ph8}</div>
+          <div className={select9}>{this.state.ph9}</div>
           
         </div>
         {this.props.navList.index}
