@@ -1,15 +1,17 @@
-import React from 'react';
 import "./KeyboardLayout.css";
-function KeyboardLayout (props) {
+
+
     return (
+        
+
         <div>
+            <Input  value={input.name} />
                <input type ="text" name="name" className='textbox' />
         <div className="keyboardl1">
           
          
             <br/>
-        <div className='dropdown' >අ 
-            <div class="dropdown-content">
+        <div className ='dropdown keyboardl2'>  <input type="button" name="name" value ="අ" onClick={handleClick} />
                
 
 
@@ -28,7 +30,7 @@ function KeyboardLayout (props) {
         <div >ඔ</div>
         <div >ඕ</div>
         
-        <div className ='dropdown keyboardl2' >ක 
+        <div className ='dropdown keyboardl2' > <input type="button" name="name" value ="ක" onClick={handleClick} />
             <div class="dropdown-content">
                 <p>කා</p>
                 <p>කැ</p>
@@ -428,7 +430,8 @@ function KeyboardLayout (props) {
         <div >Delete</div>
         
       </div>
-      </div>
+
+      
     );
 }
 
