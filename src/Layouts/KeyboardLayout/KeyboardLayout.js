@@ -20,17 +20,21 @@ function KeyboardLayout(props) {
 		
 		console.log(input.texty);
 		console.log("Button clicked");
+
 		let sdk = require("microsoft-cognitiveservices-speech-sdk");
 		
 		let textyy = input.texty;
+
 		console.log(textyy);
+
 		let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
 		let region = "eastus";
-		// var region = "https://eastus.customvoice.api.speech.microsoft.com/";
-		let audioFile = "YourAudioFile.wav";
+		
+		// The Audio file name
+		let audioFile = "AvanoaVKTTS.wav";
 
 		const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
-		// const audioConfig = sdk.AudioConfig.fromAudioFileOutput(audioFile);
+		
 		const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
 		// The language of the voice that speaks.
@@ -38,12 +42,7 @@ function KeyboardLayout(props) {
 
 		// Create the speech synthesizer.
 		let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
-
-		// var rl = readline.createInterface({
-		//   input: process.stdin,
-		//   output: process.stdout
-		// });
-
+	
 		if (textyy != null) {
 		
 		// Start the synthesizer and wait for a result.
@@ -64,6 +63,7 @@ function KeyboardLayout(props) {
 			synthesizer = null;
 		});
 		console.log("Now synthesizing to: " + audioFile);
+		console.log("Audio Naratted Successfully");
 		};
 	};
 
