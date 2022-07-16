@@ -432,8 +432,321 @@ class phraseBubble extends Component {
     //31-40 slide 2
 
     
-  }
+    if(index == 31){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(10);
+      this.props.setCount(0);
+    }
+    if(index == 32){
+      this.selectBubble(11);
+    }
+    if(index == 33){
+      this.selectBubble(12);
 
+    }
+    if(index == 34){
+        this.selectBubble(13);
+    }
+    if(index == 35){
+      //select5 = "selection"
+      this.selectBubble(14);
+    }
+    if(index == 36){
+      //select6 = "selection"
+      this.selectBubble(15);
+    }
+
+    if(index == 37){
+      //select7 = "selection"
+      this.selectBubble(16);
+
+    }if(index == 38){
+      //select8 = "selection"
+      this.selectBubble(17);
+
+    }if(index == 39){
+      //select9 = "selection"
+      this.selectBubble(18);
+    }
+
+    //41-50 slide 3
+
+    if(index == 41){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(19);
+      this.props.setCount(0);
+    }
+    if(index == 42){
+      this.selectBubble(20);
+    }
+    if(index == 43){
+      this.selectBubble(21);
+
+    }
+    if(index == 44){
+        this.selectBubble(22);
+    }
+    if(index == 45){
+      //select5 = "selection"
+      this.selectBubble(23);
+    }
+    if(index == 46){
+      //select6 = "selection"
+      this.selectBubble(24);
+    }
+
+    if(index == 47){
+      //select7 = "selection"
+      this.selectBubble(25);
+
+    }if(index == 48){
+      //select8 = "selection"
+      this.selectBubble(26);
+
+    }if(index == 49){
+      //select9 = "selection"
+      this.selectBubble(27);
+    }
+
+    //51-60 slide 4
+
+    if(index == 51){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(28);
+      this.props.setCount(0);
+    }
+    if(index == 52){
+      this.selectBubble(29);
+    }
+    if(index == 53){
+      this.selectBubble(30);
+
+    }
+    if(index == 54){
+        this.selectBubble(31);
+    }
+    if(index == 55){
+      //select5 = "selection"
+      this.selectBubble(32);
+    }
+    if(index == 56){
+      //select6 = "selection"
+      this.selectBubble(33);
+    }
+
+    if(index == 57){
+      //select7 = "selection"
+      this.selectBubble(34);
+
+    }if(index == 58){
+      //select8 = "selection"
+      this.selectBubble(35);
+
+    }if(index == 59){
+      //select9 = "selection"
+      this.selectBubble(36);
+    }
+
+    //61-670 slide 5
+
+    if(index == 61){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(37);
+      this.props.setCount(0);
+    }
+    if(index == 62){
+      this.selectBubble(38);
+    }
+    if(index == 63){
+      this.selectBubble(39);
+
+    }
+    if(index == 64){
+        this.selectBubble(40);
+    }
+    if(index == 65){
+      //select5 = "selection"
+      this.selectBubble(41);
+    }
+    if(index == 66){
+      //select6 = "selection"
+      this.selectBubble(42);
+    }
+
+    if(index == 67){
+      //select7 = "selection"
+      this.selectBubble(43);
+
+    }if(index == 68){
+      //select8 = "selection"
+      this.selectBubble(44);
+
+    }if(index == 69){
+      //select9 = "selection"
+      this.selectBubble(45);
+    }
+
+    //61-670 slide 5
+
+    if(index == 61){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(46);
+      this.props.setCount(0);
+    }
+    if(index == 62){
+      this.selectBubble(47);
+    }
+    if(index == 63){
+      this.selectBubble(48);
+
+    }
+    if(index == 64){
+        this.selectBubble(49);
+    }
+    if(index == 65){
+      //select5 = "selection"
+      this.selectBubble(50);
+    }
+    if(index == 66){
+      //select6 = "selection"
+      this.selectBubble(51);
+    }
+
+    if(index == 67){
+      //select7 = "selection"
+      this.selectBubble(52);
+
+    }if(index == 68){
+      //select8 = "selection"
+      this.selectBubble(53);
+
+    }if(index == 69){
+      //select9 = "selection"
+      this.selectBubble(54);
+    }
+
+    //71-80 slide 6
+
+    if(index == 71){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(55);
+      this.props.setCount(0);
+    }
+    if(index == 72){
+      this.selectBubble(56);
+    }
+    if(index == 73){
+      this.selectBubble(57);
+
+    }
+    if(index == 74){
+        this.selectBubble(58);
+    }
+    if(index == 75){
+      //select5 = "selection"
+      this.selectBubble(59);
+    }
+    if(index == 76){
+      //select6 = "selection"
+      this.selectBubble(60);
+    }
+
+    if(index == 77){
+      //select7 = "selection"
+      this.selectBubble(61);
+
+    }if(index == 78){
+      //select8 = "selection"
+      this.selectBubble(62);
+
+    }if(index == 79){
+      //select9 = "selection"
+      this.selectBubble(63);
+    }
+    
+    //81-90 slide 7
+
+    if(index == 81){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(64);
+      this.props.setCount(0);
+    }
+    if(index == 82){
+      this.selectBubble(65);
+    }
+    if(index == 83){
+      this.selectBubble(66);
+    }
+    if(index == 84){
+        this.selectBubble(67);
+    }
+    if(index == 85){
+      //select5 = "selection"
+      this.selectBubble(68);
+    }
+    if(index == 86){
+      //select6 = "selection"
+      this.selectBubble(69);
+    }
+    if(index == 87){
+      //select7 = "selection"
+      this.selectBubble(70);
+
+    }if(index == 88){
+      //select8 = "selection"
+      this.selectBubble(71);
+
+    }if(index == 89){
+      //select9 = "selection"
+      this.selectBubble(72);
+    }
+
+    //91 - 100 slide 8
+    if(index == 91){
+      //this.selectBubble(0);
+      //select1="selection"
+      this.selectBubble(73);
+      this.props.setCount(0);
+    }
+    if(index == 92){
+      this.selectBubble(74);
+    }
+    if(index == 93){
+      this.selectBubble(75);
+    }
+    if(index == 94){
+        this.selectBubble(76);
+    }
+    if(index == 95){
+      //select5 = "selection"
+      this.selectBubble(77);
+    }
+    if(index == 86){
+      //select6 = "selection"
+      this.selectBubble(78);
+    }
+
+    if(index == 97){
+      //select7 = "selection"
+      this.selectBubble(79);
+
+    }if(index == 98){
+      //select8 = "selection"
+      this.selectBubble(80);
+
+    }
+    if(index == 99){
+      //select9 = "selection"
+      this.selectBubble(81);
+    }   
+  }
 
   render() {
     const index = this.props.navList.index;
