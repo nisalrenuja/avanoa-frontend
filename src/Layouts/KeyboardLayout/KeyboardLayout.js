@@ -24,7 +24,8 @@ function KeyboardLayout(props) {
 		
 		let textyy = input.texty;
 		console.log(textyy);
-		
+		let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
+		let region = "eastus";
 		// var region = "https://eastus.customvoice.api.speech.microsoft.com/";
 		let audioFile = "YourAudioFile.wav";
 
