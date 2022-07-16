@@ -5,6 +5,7 @@ import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 function KeyboardLayout(props) {
 	const initialState = {
 		name: "",
+		texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
 	};
 
 	const [input, SetInput] = React.useState(initialState);
@@ -14,11 +15,15 @@ function KeyboardLayout(props) {
 		const { value, name } = e.target;
 		SetInput((values) => ({ ...values, [name]: value }));
 	};
+	
 	const [form] = Form.useForm();
 
 	return (
 		<div>
 			<Input value={input.name} />
+			<button 
+            //   onClick= {handleSubmit}
+              >Get directly from Azure</button>
 
 			<div className="keyboardl1">
 				<br />
