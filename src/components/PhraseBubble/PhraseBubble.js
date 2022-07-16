@@ -11,6 +11,7 @@ const audioClips = [
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
     label: "ආයුබෝවන්",
   },
+
   // Slide 1 Audio
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
@@ -238,6 +239,7 @@ const audioClips = [
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
     label: "කොහොමද?",
   },
+
   // Slide 7 Audio
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
@@ -386,10 +388,10 @@ class phraseBubble extends Component {
     this.soundPlay(audioClips[phNum].sound)
   } 
 
-  
   componentDidUpdate() {
     const index = this.props.navList.index;
     const counter = this.props.counter.value;
+
     //21 - 30 slide 1 phrases
     if(index == 21){
       //this.selectBubble(0);
@@ -402,36 +404,27 @@ class phraseBubble extends Component {
     }
     if(index == 23){
       this.selectBubble(3);
-
     }
     if(index == 24){
         this.selectBubble(4);
     }
-    if(index == 25){
-      //select5 = "selection"
+    if(index == 25){      
       this.selectBubble(5);
     }
-    if(index == 26){
-      //select6 = "selection"
+    if(index == 26){      
       this.selectBubble(6);
     }
-
-    if(index == 27){
-      //select7 = "selection"
+    if(index == 27){      
       this.selectBubble(7);
-
-    }if(index == 28){
-      //select8 = "selection"
+    }
+    if(index == 28){      
       this.selectBubble(8);
-
-    }if(index == 29){
-      //select9 = "selection"
+    }
+    if(index == 29){
       this.selectBubble(9);
     }
 
-    //31-40 slide 2
-
-    
+    //31-40 slide 2    
     if(index == 31){
       //this.selectBubble(0);
       //select1="selection"
@@ -449,29 +442,22 @@ class phraseBubble extends Component {
         this.selectBubble(13);
     }
     if(index == 35){
-      //select5 = "selection"
       this.selectBubble(14);
     }
     if(index == 36){
-      //select6 = "selection"
       this.selectBubble(15);
     }
-
     if(index == 37){
-      //select7 = "selection"
       this.selectBubble(16);
-
-    }if(index == 38){
-      //select8 = "selection"
+    }
+    if(index == 38){
       this.selectBubble(17);
-
-    }if(index == 39){
-      //select9 = "selection"
+    }
+    if(index == 39){
       this.selectBubble(18);
     }
 
     //41-50 slide 3
-
     if(index == 41){
       //this.selectBubble(0);
       //select1="selection"
@@ -483,35 +469,27 @@ class phraseBubble extends Component {
     }
     if(index == 43){
       this.selectBubble(21);
-
     }
     if(index == 44){
         this.selectBubble(22);
     }
     if(index == 45){
-      //select5 = "selection"
       this.selectBubble(23);
     }
     if(index == 46){
-      //select6 = "selection"
       this.selectBubble(24);
     }
-
     if(index == 47){
-      //select7 = "selection"
       this.selectBubble(25);
-
-    }if(index == 48){
-      //select8 = "selection"
+    }
+    if(index == 48){
       this.selectBubble(26);
-
-    }if(index == 49){
-      //select9 = "selection"
+    }
+    if(index == 49){
       this.selectBubble(27);
     }
 
     //51-60 slide 4
-
     if(index == 51){
       //this.selectBubble(0);
       //select1="selection"
@@ -523,35 +501,27 @@ class phraseBubble extends Component {
     }
     if(index == 53){
       this.selectBubble(30);
-
     }
     if(index == 54){
         this.selectBubble(31);
     }
     if(index == 55){
-      //select5 = "selection"
       this.selectBubble(32);
     }
     if(index == 56){
-      //select6 = "selection"
       this.selectBubble(33);
     }
-
     if(index == 57){
-      //select7 = "selection"
       this.selectBubble(34);
-
-    }if(index == 58){
-      //select8 = "selection"
+    }
+    if(index == 58){
       this.selectBubble(35);
-
-    }if(index == 59){
-      //select9 = "selection"
+    }
+    if(index == 59){
       this.selectBubble(36);
     }
 
     //61-670 slide 5
-
     if(index == 61){
       //this.selectBubble(0);
       //select1="selection"
@@ -563,35 +533,27 @@ class phraseBubble extends Component {
     }
     if(index == 63){
       this.selectBubble(39);
-
     }
     if(index == 64){
         this.selectBubble(40);
     }
     if(index == 65){
-      //select5 = "selection"
       this.selectBubble(41);
     }
     if(index == 66){
-      //select6 = "selection"
       this.selectBubble(42);
     }
-
     if(index == 67){
-      //select7 = "selection"
       this.selectBubble(43);
-
-    }if(index == 68){
-      //select8 = "selection"
+    }
+    if(index == 68){
       this.selectBubble(44);
-
-    }if(index == 69){
-      //select9 = "selection"
+    }
+    if(index == 69){
       this.selectBubble(45);
     }
 
     //61-670 slide 5
-
     if(index == 61){
       //this.selectBubble(0);
       //select1="selection"
@@ -603,35 +565,27 @@ class phraseBubble extends Component {
     }
     if(index == 63){
       this.selectBubble(48);
-
     }
     if(index == 64){
         this.selectBubble(49);
     }
     if(index == 65){
-      //select5 = "selection"
       this.selectBubble(50);
     }
     if(index == 66){
-      //select6 = "selection"
       this.selectBubble(51);
     }
-
     if(index == 67){
-      //select7 = "selection"
       this.selectBubble(52);
-
-    }if(index == 68){
-      //select8 = "selection"
-      this.selectBubble(53);
-
-    }if(index == 69){
-      //select9 = "selection"
+    }
+    if(index == 68){
+      this.selectBubble(53);    
+    }
+    if(index == 69){
       this.selectBubble(54);
     }
 
     //71-80 slide 6
-
     if(index == 71){
       //this.selectBubble(0);
       //select1="selection"
@@ -643,35 +597,27 @@ class phraseBubble extends Component {
     }
     if(index == 73){
       this.selectBubble(57);
-
     }
     if(index == 74){
         this.selectBubble(58);
     }
     if(index == 75){
-      //select5 = "selection"
       this.selectBubble(59);
     }
     if(index == 76){
-      //select6 = "selection"
       this.selectBubble(60);
     }
-
     if(index == 77){
-      //select7 = "selection"
       this.selectBubble(61);
-
-    }if(index == 78){
-      //select8 = "selection"
+    }
+    if(index == 78){
       this.selectBubble(62);
-
-    }if(index == 79){
-      //select9 = "selection"
+    }
+    if(index == 79){
       this.selectBubble(63);
     }
     
     //81-90 slide 7
-
     if(index == 81){
       //this.selectBubble(0);
       //select1="selection"
@@ -688,23 +634,18 @@ class phraseBubble extends Component {
         this.selectBubble(67);
     }
     if(index == 85){
-      //select5 = "selection"
       this.selectBubble(68);
     }
     if(index == 86){
-      //select6 = "selection"
       this.selectBubble(69);
     }
     if(index == 87){
-      //select7 = "selection"
       this.selectBubble(70);
-
-    }if(index == 88){
-      //select8 = "selection"
+    }
+    if(index == 88){
       this.selectBubble(71);
-
-    }if(index == 89){
-      //select9 = "selection"
+    }
+    if(index == 89){
       this.selectBubble(72);
     }
 
@@ -725,25 +666,18 @@ class phraseBubble extends Component {
         this.selectBubble(76);
     }
     if(index == 95){
-      //select5 = "selection"
       this.selectBubble(77);
     }
     if(index == 86){
-      //select6 = "selection"
       this.selectBubble(78);
     }
-
     if(index == 97){
-      //select7 = "selection"
       this.selectBubble(79);
-
-    }if(index == 98){
-      //select8 = "selection"
+    }
+    if(index == 98){
       this.selectBubble(80);
-
     }
     if(index == 99){
-      //select9 = "selection"
       this.selectBubble(81);
     }   
   }
@@ -752,42 +686,39 @@ class phraseBubble extends Component {
     const index = this.props.navList.index;
     const counter = this.props.counter.value;
 
-    let slide1 = ""
-    let slide2 = ""
-    let slide3 = ""
-    let slide4 = ""
-    let slide5 = ""
-    let slide6 = ""
-    let slide7 = ""
-    let slide8 = ""
+    let slide1 = "";
+    let slide2 = "";
+    let slide3 = "";
+    let slide4 = "";
+    let slide5 = "";
+    let slide6 = "";
+    let slide7 = "";
+    let slide8 = "";
 
+    let select1 = "";
+    let select2 = "";
+    let select3 = "";
+    let select4 = "";
+    let select5 = "";
+    let select6 = "";
+    let select7 = "";
+    let select8 = "";
+    let select9 = "";
 
-    let select1 = ""
-    let select2 = ""
-    let select3 = ""
-    let select4 = ""
-    let select5 = ""
-    let select6 = ""
-    let select7 = ""
-    let select8 = ""
-    let select9 = ""
-
-    let ph1 = "ආයුබෝවන්"
-    let ph2 = "ඔව්"
-    let ph3 = "නැහැ"
-    let ph4 = "සුබ උදෑසනක්"
-    let ph5 = "සුබ උදෑසනක්"
-    let ph6 = "සුබ උදෑසනක්"
-    let ph7 = "සුබ උදෑසනක්"
-    let ph8 = "සුබ උදෑසනක්"
-    let ph9 = "සුබ උදෑසනක්"
-
+    let ph1 = "ආයුබෝවන්";
+    let ph2 = "ඔව්";
+    let ph3 = "නැහැ";
+    let ph4 = "සුබ උදෑසනක්";
+    let ph5 = "සුබ උදෑසනක්";
+    let ph6 = "සුබ උදෑසනක්";
+    let ph7 = "සුබ උදෑසනක්";
+    let ph8 = "සුබ උදෑසනක්";
+    let ph9 = "සුබ උදෑසනක්";
     
     if(index == 3 && counter == 0){
       //setSel("selectionBoarder");
       //this.setState({ slide1 : "selected"});
       slide1 = "selected"
-
     }
     else if(index == 3 && counter == 1){
       //setSel("selectionBoarder");
@@ -795,7 +726,6 @@ class phraseBubble extends Component {
       //this.setState({ slide1 : "notSelected"});
       slide2 = "selected";
       slide1 = "notSelected"
-
 
       ph1 = "new slide 2"
       ph2 = "new"
@@ -806,7 +736,6 @@ class phraseBubble extends Component {
       ph7 = "new"
       ph8 = "new"
       ph9 = "new"
-
     }
     else if(index == 3 && counter == 2){
       //setSel("selectionBoarder");
@@ -1098,8 +1027,8 @@ class phraseBubble extends Component {
         select9 = "selected"
         select8 = "notSelected"
       }
-
     }
+
     if (index ==18){
       slide6 = "selection"
 
@@ -1148,8 +1077,8 @@ class phraseBubble extends Component {
         select9 = "selected"
         select8 = "notSelected"
       }
-
     }
+
     if (index ==19){
       slide7 = "selection"
 
@@ -1198,8 +1127,8 @@ class phraseBubble extends Component {
         select9 = "selected"
         select8 = "notSelected"
       }
-
     }
+
     if (index ==20){
       slide8 = "selection"
 
@@ -1249,16 +1178,12 @@ class phraseBubble extends Component {
         select8 = "notSelected"
       }
 
-    }
-
-
-    
-    
+    }  
 
     return (
-      <div>
-        
+      <div>        
         {/* {this.RenderButtonSound()} */}
+
         <button className={slide1}>Slide 1</button>
         <button className={slide2}>Slide 2</button>
         <button className={slide3}>Slide 3</button>
@@ -1267,6 +1192,7 @@ class phraseBubble extends Component {
         <button className={slide6}>Slide 6</button>
         <button className={slide7}>Slide 7</button>
         <button className={slide8}>Slide 8</button>
+
         <div class="flex-container">
           <div className={select1}>{ph1}</div>
           <div className={select2}>{ph2}</div>
@@ -1278,6 +1204,7 @@ class phraseBubble extends Component {
           <div className={select8}>{ph8}</div>
           <div className={select9}>{ph9}</div>          
         </div>
+
         {this.props.navList.index}
       </div>
     );
