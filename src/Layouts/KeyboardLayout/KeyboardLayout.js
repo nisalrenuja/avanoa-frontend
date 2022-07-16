@@ -16,6 +16,7 @@ function KeyboardLayout(props) {
 		SetInput((values) => ({ ...values, [name]: value }));
 	};
 	
+	
 	const handleSubmit = (e) => {
 		
 		console.log(input.texty);
@@ -77,6 +78,7 @@ function KeyboardLayout(props) {
 			<button 
             //   onClick= {handleSubmit}
               >Get directly from Azure</button>
+			  
 
 			<div className="keyboardl1">
 				<br />
@@ -92,28 +94,29 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ඉ
+					<input type="button" name="name" value="ඉ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ඊ</p>
 					</div>
 				</div>
 
 				<div className="dropdown keyboardl2">
-					උ
+					<input type="button" name="name" value="උ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ඌ</p>
 					</div>
 				</div>
 
 				<div className="dropdown keyboardl2">
-					එ
+				<input type="button" name="name" value="එ" onClick={handleClick} />
+					
 					<div class="dropdown-content">
 						<p>ඒ</p>
 					</div>
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ඔ
+				<input type="button" name="name" value="ඔ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ඕ</p>
 					</div>
@@ -123,7 +126,7 @@ function KeyboardLayout(props) {
 
 			<div className="keyboardl1">
 				<div className="dropdown keyboardl2">
-					ක
+					<input type="button" name="name" value="ක" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>කා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>කැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -141,7 +144,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ග
+					<input type="button" name="name" value="ග" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ගැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ගා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -159,7 +162,7 @@ function KeyboardLayout(props) {
 					</div>
 				</div>
 				<div className="dropdown keyboardl2">
-					ච
+					<input type="button" name="name" value="ච" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>චා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>චැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -177,7 +180,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ජ
+					<input type="button" name="name" value="ජ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ජා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ජැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -194,7 +197,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ට
+					<input type="button" name="name" value="ට" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ටා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ටැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -213,7 +216,7 @@ function KeyboardLayout(props) {
 
 			<div className="keyboardl1">
 				<div className="dropdown keyboardl2">
-					ඩ
+					<input type="button" name="name" value="ඩ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ඩා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ඩැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -231,7 +234,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ණ
+					<input type="button" name="name" value="ණ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ණා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ණැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -248,7 +251,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ත
+					<input type="button" name="name" value="ත" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>තා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>තැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -265,7 +268,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ද
+					<input type="button" name="name" value="ද" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>දා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>දැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -282,7 +285,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ප
+					<input type="button" name="name" value="ප" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>පා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>පැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -301,7 +304,7 @@ function KeyboardLayout(props) {
 
 			<div className="keyboardl1">
 				<div className="dropdown keyboardl2">
-					බ
+					<input type="button" name="name" value="බ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>බා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>බැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -316,7 +319,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ම
+					<input type="button" name="name" value="ම" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>මා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>මැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -331,7 +334,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ය
+					<input type="button" name="name" value="ය" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>යා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>යැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -349,7 +352,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ර
+					<input type="button" name="name" value="ර" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>රා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>රැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -368,7 +371,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ල
+					<input type="button" name="name" value="ල" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ලා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ලැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -388,7 +391,7 @@ function KeyboardLayout(props) {
 			</div>
 			<div className="keyboardl1">
 				<div className="dropdown keyboardl2">
-					ව
+					<input type="button" name="name" value="ව" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>වා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>වැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -408,7 +411,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ශ
+					<input type="button" name="name" value="ශ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ශා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ශැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -426,7 +429,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ස
+					<input type="button" name="name" value="ස" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>සා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>සැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -445,7 +448,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					හ
+					<input type="button" name="name" value="හ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>හා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>හැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -464,7 +467,7 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-					ෆ
+					<input type="button" name="name" value="ෆ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ෆා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 						<p>ෆැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
@@ -481,6 +484,8 @@ function KeyboardLayout(props) {
 						<p>ෆෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 					</div>
 				</div>
+
+
 
 				<div>Space</div>
 				<div>Delete</div>
