@@ -901,6 +901,357 @@ class phraseBubble extends Component {
       }
     }
 
+    if(index == 14){
+      slide2 = "selection"
+      ph1 = "new slide 2"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+    }
+
+    if (index == 15){
+      slide3 = "selection"
+
+      ph1 = "new slide 3"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }     
+    } 
+
+    if (index ==16){
+      slide4 = "selection"
+
+      ph1 = "new slide 4"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+    }
+
+    if (index ==17){
+      slide5 = "selection"
+      
+      ph1 = "new slide 5"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+
+    }
+    if (index ==18){
+      slide6 = "selection"
+
+      ph1 = "new slide 6"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+
+    }
+    if (index ==19){
+      slide7 = "selection"
+
+      ph1 = "new slide 7"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+
+    }
+    if (index ==20){
+      slide8 = "selection"
+
+      ph1 = "new slide 8"
+      ph2 = "new"
+      ph3 = "new"
+      ph4 = "new"
+      ph5 = "new"
+      ph6 = "new"
+      ph7 = "new"
+      ph8 = "new"
+      ph9 = "new"
+
+      if(counter == 0){
+        select1 = "selected"
+      }
+      if(counter == 1){
+        select2 = "selected"
+        select1 = "notSelected"
+      }
+      if(counter == 2){
+        select3 = "selected"
+        select2 = "notSelected"
+      }
+      if(counter == 3){
+        select4 = "selected"
+        select3 = "notSelected"
+      }
+      if(counter == 4){
+        select5 = "selected"
+        select4 = "notSelected"
+      }
+      if(counter == 5){
+        select6 = "selected"
+        select5 = "notSelected"
+      }
+      if(counter == 6){
+        select7 = "selected"
+        select6 = "notSelected"
+      }
+      if(counter == 7){
+        select8 = "selected"
+        select7 = "notSelected"
+      }
+      if(counter == 8){
+        select9 = "selected"
+        select8 = "notSelected"
+      }
+
+    }
+
+
     
     
 
