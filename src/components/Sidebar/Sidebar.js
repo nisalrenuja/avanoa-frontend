@@ -15,16 +15,7 @@ const Sidebar = () => {
   const counter = useSelector((state) => state.counter.value)
   const index = useSelector((state) => state.navList.index)
 
-  const handleClick = async (e) => {
-    e.preventDefault();
-    try {
-      await axios.get("/api/auth/signout");
-      localStorage.removeItem("_appSignging");
-      dispatch({ type: "SIGNOUT" });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+ 
 
   // const [selStyle, setSel] = useState('')
 
@@ -38,6 +29,7 @@ const Sidebar = () => {
   let sec2 = 'def'
   let sec3 = 'def'
   let sec4 = 'def'
+  let sec5 = 'def'
 
   const [cn, setCn] = useState(0);
   const [count, setCount] = useState(0);
@@ -80,6 +72,12 @@ const Sidebar = () => {
       sec4 = "choosing"
       sec3 = "def"
     }
+    if(counter == 4){
+      // setSec4("choosing")
+      // setSec3("def")
+      sec5 = "choosing"
+      sec4 = "def"
+    }
   }
 
 
@@ -91,14 +89,19 @@ const Sidebar = () => {
     }
     if(index == 4){
       sec2 = "selectd"
-      navigate("/profile");
+      navigate("/Keyboard");
     }
     if(index == 5){
       sec3 = "selectd"
+      navigate("/emergency");
     }
     if(index == 6){
       sec4 = "selectd"
-      navigate("/emergency");
+      navigate("/reminder");
+    }
+    if(index == 7){
+      sec5 = "selectd"
+      navigate("/settings");
     }
 
   });
@@ -110,31 +113,34 @@ const Sidebar = () => {
           <li>
             <BiBookContent />
             <Link to="/">
-              <p className={sec1}>feed</p>
-            </Link>
-          </li>
-          <li>
-            <BiUserCircle />
-            <Link to="/profile">
-              <p className={sec2}>profile</p>
-            </Link>
-          </li>
-          <li onClick={handleClick}>
-            <BiLogOut />
-            <p className= {sec3} >logout</p>
-          </li>
-          <li>
-            <FiPhoneCall />
-            <Link to="/emergency">
-              <p className={sec4}>Emergency Contact</p>
+              <p className={sec1}>Phrase Bubbles</p>
             </Link>
           </li>
           <li>
             <FiPhoneCall />
             <Link to="/Keyboard">
-              <p>Keyboard</p>
+              <p className={sec2}>Keyboard</p>
             </Link>
           </li>
+          <li>
+            <BiUserCircle />
+            <Link to="/emergency">
+              <p className={sec3}>Emergency Contacts</p>
+            </Link>
+          </li>
+          <li>
+            <BiLogOut />
+            <Link to="/reminder">
+            <p className= {sec4} >Reminder</p>
+            </Link>
+          </li>
+          <li>
+            <FiPhoneCall />
+            <Link to="/settings">
+              <p className={sec5}>Settings</p>
+            </Link>
+          </li>
+          
           c: {counter} i: {index}
         </ul>
       </div>

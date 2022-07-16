@@ -1,8 +1,8 @@
 import { Component } from "react";
 import { connect } from 'react-redux'
-import { decrement, increment, setCount } from '../../reducers/counter/counterSlice'
+import { decrement, increment, setCount, setPreCount } from '../../reducers/counter/counterSlice'
 import { selection } from "../../reducers/selectedIndexSlice/selectedIndexSlice";
-import { updateTree, updateTreeLayers, updateIndex, updateLayer, incrementLayer, decrementLayer } from "../../reducers/navList/navListSlice";
+import { updateTree, updateTreeLayers, updateIndex, updatePreIndex, updateLayer, incrementLayer, decrementLayer } from "../../reducers/navList/navListSlice";
 import store from "../../store/store";
 
 
@@ -110,9 +110,14 @@ class WebGazer extends Component {
                 console.log('curLayer ' + curLayer)
 
                 //this.props.selection(this.props.counter.value)
-                this.props.updateIndex(this.props.counter.value + curLayer)
+                if(typeof curLayer !== 'undefined'){
+                  this.props.updateIndex(this.props.counter.value + curLayer)
+                }
                 
                 //console.log('selected' + this.props.counter.value)
+                if(this.props.counter.value !== 0){
+                  this.props.setPreCount(this.props.counter.value);
+                }
                 this.props.setCount(0);
                 //this.selectBubble(this.state.count);
                 this.setState({ cn: this.state.cn + 1 });
@@ -140,13 +145,38 @@ class WebGazer extends Component {
                   // });
                 
                 }
-                else if(this.props.navList.layer === 1){
+                else if(this.props.counter.value === 0){
                   this.props.updateLayer(0)
                 }
+                
+                //console.log(this.props.navList.layer)
+
                 if (this.props.navList.layer === 0 && this.props.navList.index > 0){
+                  console.log("inside execu")
                   const TL = this.props.navList.treeLayers;
                   let index = TL.indexOf(this.props.navList.index);
-                  this.props.updateIndex(index);
+
+                  if(index === -1){
+                    console.log("indexOF" + this.props.navList.index)
+                    //this.props.updatePreIndex(this.props.navList.index);
+                    index = TL.indexOf(this.props.navList.index - this.props.counter.preValue);
+                    if((this.props.navList.index - this.props.counter.preValue) <= 0){
+                      index = 0
+                    }
+                    if(index === -1){
+                      let val = this.props.navList.indexCount[this.props.navList.index]
+                      console.log("pre index val " + val)
+                      index = TL.indexOf(this.props.navList.index - val);
+                      
+                      //index = TL.indexOf(this.props);
+
+                    }
+
+                  }
+                  console.log("after backward" + index)
+                  if(index !== -1){
+                    this.props.updateIndex(index);
+                  }
                 }
                 //console.log("looking left"+ this.state.count);
               } else {
@@ -199,9 +229,11 @@ const mapDispatchToProps = () => ({
   updateTree,
   updateTreeLayers,
   updateIndex,
+  updatePreIndex,
   updateLayer,
   incrementLayer,
-  decrementLayer
+  decrementLayer,
+  setPreCount,
 });
 
 export default connect (mapStateToProps,mapDispatchToProps())(WebGazer);
