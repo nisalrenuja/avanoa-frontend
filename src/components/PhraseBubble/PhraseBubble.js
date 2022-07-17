@@ -363,15 +363,15 @@ class phraseBubble extends Component {
       "බඩිගිනි",
       "කොහොමද?",
     ],
-    ph1:"ආයුබෝවන්",
-    ph2:"ඔව්",
-    ph3:"නැහැ",
-    ph4:"සුබ උදෑසනක්",
-    ph5:"සුබ රාත්‍රියක්",
-    ph6:"නිදිමතයි",
-    ph7:"තිබහයි",
-    ph8:"බඩිගිනි",
-    ph9:"කොහොමද?",
+    ph1:"ඔයාට කොහොමද ?",
+    ph2:"මට උදවු කරනවද ?",
+    ph3:"ආයෙත් කියන්න",
+    ph4:"මට තේරුනේ නෑ",
+    ph5:"ඒක හරි නෑ",
+    ph6:"මට එපා",
+    ph7:"මට ඕනෙ",
+    ph8:"මට අද මහන්සියි",
+    ph9:"නියමයි/ කැමතියි",
 
   };
 
@@ -705,16 +705,16 @@ class phraseBubble extends Component {
     let select8 = "";
     let select9 = "";
 
-    let ph1 = "ආයුබෝවන්";
-    let ph2 = "ඔව්";
-    let ph3 = "නැහැ";
-    let ph4 = "සුබ උදෑසනක්";
-    let ph5 = "සුබ උදෑසනක්";
-    let ph6 = "සුබ උදෑසනක්";
-    let ph7 = "සුබ උදෑසනක්";
-    let ph8 = "සුබ උදෑසනක්";
-    let ph9 = "සුබ උදෑසනක්";
-    
+    let ph1 = "ඔයාට කොහොමද ?";
+    let ph2 = "මට උදවු කරනවද ?";
+    let ph3 = "ආයෙත් කියන්න";
+    let ph4 = "මට තේරුනේ නෑ";
+    let ph5 = "ඒක හරි නෑ";
+    let ph6 = "මට එපා";
+    let ph7 = "මට ඕනෙ";
+    let ph8 = "මට අද මහන්සියි";
+    let ph9 = "නියමයි/ කැමතියි";
+       
     if(index == 3 && counter == 0){
       //setSel("selectionBoarder");
       //this.setState({ slide1 : "selected"});
@@ -727,15 +727,15 @@ class phraseBubble extends Component {
       slide2 = "selected";
       slide1 = "notSelected"
 
-      ph1 = "new slide 2"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "බත්"
+      ph2 = "පාන් "
+      ph3 = "රොටී"
+      ph4 = "ආප්ප"
+      ph5 = "එලවලු"
+      ph6 = "පලතුරු"
+      ph7 = "තේ"
+      ph8 = "බිස්කට්"
+      ph9 = "සුප්"
     }
     else if(index == 3 && counter == 2){
       //setSel("selectionBoarder");
@@ -744,15 +744,15 @@ class phraseBubble extends Component {
       slide3 = "selected";
       slide2 = "notSelected"
 
-      ph1 = "new slide 3"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "Hello"
+      ph2 = "Good morning"
+      ph3 = "Thank you"
+      ph4 = "Your Welcome"
+      ph5 = "Sorry"
+      ph6 = "Bye"
+      ph7 = "Excuse me"
+      ph8 = "Good luck"
+      ph9 = "Get well soon"
     }
     else if(index == 3 && counter == 3){
       //setSel("selectionBoarder");
@@ -832,15 +832,15 @@ class phraseBubble extends Component {
 
     if(index == 14){
       slide2 = "selection"
-      ph1 = "new slide 2"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "බත්"
+      ph2 = "පාන් "
+      ph3 = "රොටී"
+      ph4 = "ආප්ප"
+      ph5 = "එලවලු"
+      ph6 = "පලතුරු"
+      ph7 = "තේ"
+      ph8 = "බිස්කට්"
+      ph9 = "සුප්"
 
       if(counter == 0){
         select1 = "selected"
@@ -882,15 +882,15 @@ class phraseBubble extends Component {
     if (index == 15){
       slide3 = "selection"
 
-      ph1 = "new slide 3"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "Hello"
+      ph2 = "Good morning"
+      ph3 = "Thank you"
+      ph4 = "Your Welcome"
+      ph5 = "Sorry"
+      ph6 = "Bye"
+      ph7 = "Excuse me"
+      ph8 = "Good luck"
+      ph9 = "Get well soon"
 
       if(counter == 0){
         select1 = "selected"
@@ -932,15 +932,15 @@ class phraseBubble extends Component {
     if (index ==16){
       slide4 = "selection"
 
-      ph1 = "new slide 4"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "Hungry"
+      ph2 = "Thirsty"
+      ph3 = "Tired"
+      ph4 = "Toileting"
+      ph5 = "Bathing"
+      ph6 = "Sleepy"
+      ph7 = "Dressing "
+      ph8 = "Watching/Listening "
+      ph9 = "Need a help"
 
       if(counter == 0){
         select1 = "selected"
@@ -982,15 +982,15 @@ class phraseBubble extends Component {
     if (index ==17){
       slide5 = "selection"
       
-      ph1 = "new slide 5"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "මට සනීප නෑ"
+      ph2 = "බෙහෙත් ඉවරයි"
+      ph3 = "බෙහෙත් ඕනේ "
+      ph4 = "කෝ මගේ රිපෝට්ස්"
+      ph5 = "මට කලන්තේ වගේ "
+      ph6 = "මට රිදෙනවා "
+      ph7 = "දැන් සනීපයි "
+      ph8 = "බෙහෙත් ගන්න යමු"
+      ph9 = "මට කණ්නාඩිය / hearing aid එක දෙන්න"
 
       if(counter == 0){
         select1 = "selected"
@@ -1032,15 +1032,15 @@ class phraseBubble extends Component {
     if (index ==18){
       slide6 = "selection"
 
-      ph1 = "new slide 6"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "Reading Newspapers"
+      ph2 = "Watching television "
+      ph3 = "Listening to music"
+      ph4 = "Bathing "
+      ph5 = "Sleeping"
+      ph6 = "Exercise"
+      ph7 = "Using social media"
+      ph8 = "Go for walk"
+      ph9 = "Call someone/talk to someone"
 
       if(counter == 0){
         select1 = "selected"
@@ -1082,15 +1082,15 @@ class phraseBubble extends Component {
     if (index ==19){
       slide7 = "selection"
 
-      ph1 = "new slide 7"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "ඔව් "
+      ph2 = "නෑ "
+      ph3 = "කොහොමද "
+      ph4 = "කවුද "
+      ph5 = "මොකක්ද "
+      ph6 = "කොහෙද "
+      ph7 = "බැහැ "
+      ph8 = "කීයටද "
+      ph9 = "පුළුවන්"
 
       if(counter == 0){
         select1 = "selected"
@@ -1132,15 +1132,15 @@ class phraseBubble extends Component {
     if (index ==20){
       slide8 = "selection"
 
-      ph1 = "new slide 8"
-      ph2 = "new"
-      ph3 = "new"
-      ph4 = "new"
-      ph5 = "new"
-      ph6 = "new"
-      ph7 = "new"
-      ph8 = "new"
-      ph9 = "new"
+      ph1 = "Washroom "
+      ph2 = "Living room"
+      ph3 = "Kitchen "
+      ph4 = "Garden "
+      ph5 = "Bedroom "
+      ph6 = "Temple/church /Kovil/ mosque"
+      ph7 = "Park"
+      ph8 = "Neighborhoods"
+      ph9 = "Relations"
 
       if(counter == 0){
         select1 = "selected"
@@ -1184,14 +1184,14 @@ class phraseBubble extends Component {
       <div>        
         {/* {this.RenderButtonSound()} */}
 
-        <button className={slide1}>Slide 1</button>
-        <button className={slide2}>Slide 2</button>
-        <button className={slide3}>Slide 3</button>
-        <button className={slide4}>Slide 4</button>
-        <button className={slide5}>Slide 5</button>
-        <button className={slide6}>Slide 6</button>
-        <button className={slide7}>Slide 7</button>
-        <button className={slide8}>Slide 8</button>
+        <button className={slide1}>Most frequently used Phrases</button>
+        <button className={slide2}>Food</button>
+        <button className={slide3}>Greetings</button>
+        <button className={slide4}>General Needs</button>
+        <button className={slide5}>Medical Needs</button>
+        <button className={slide6}>Activities</button>
+        <button className={slide7}>Conversations</button>
+        <button className={slide8}>Places to visit</button>
 
         <div class="flex-container">
           <div className={select1}>{ph1}</div>
