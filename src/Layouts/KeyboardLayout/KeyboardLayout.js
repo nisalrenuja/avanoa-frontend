@@ -4,48 +4,47 @@ import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 
 function KeyboardLayout(props) {
 	const initialState = {
-		name: "",
+		name: [],
 		texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
 	};
 
 	const [input, SetInput] = React.useState(initialState);
 
 	const handleClick = (e) => {
+		console.log(e.target.value);
 		e.preventDefault();
 		const { value, name } = e.target;
 		SetInput((values) => ({ ...values, [name]: value }));
 	};
-	
-	
+
 	const handleSubmit = (e) => {
-		
 		console.log(input.texty);
 		console.log("Button clicked");
 
 		// let sdk = require("microsoft-cognitiveservices-speech-sdk");
-		
+
 		let textyy = input.texty;
 
 		console.log(textyy);
 
 		// let key = "";
 		// let region = "";
-		
+
 		// // The Audio file name
 		// let audioFile = "AvanoaVKTTS.wav";
 
 		// const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
-		
+
 		// const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
 		// // The language of the voice that speaks.
-		// speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural"; 
+		// speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
 
 		// // Create the speech synthesizer.
 		// let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
-	
+
 		// if (textyy != null) {
-		
+
 		// // Start the synthesizer and wait for a result.
 		// synthesizer.speakTextAsync(textyy,
 		// 	function (result) {
@@ -75,10 +74,12 @@ function KeyboardLayout(props) {
 	return (
 		<div>
 			<Input value={input.name} />
-			<button 
-            //   onClick= {handleSubmit}
-              >Get directly from Azure</button>
-			  
+			<br></br>
+			<button
+			//   onClick= {handleSubmit}
+			>
+				Get directly from Azure
+			</button>
 
 			<div className="keyboardl1">
 				<br />
@@ -108,15 +109,15 @@ function KeyboardLayout(props) {
 				</div>
 
 				<div className="dropdown keyboardl2">
-				<input type="button" name="name" value="එ" onClick={handleClick} />
-					
+					<input type="button" name="name" value="එ" onClick={handleClick} />
+
 					<div class="dropdown-content">
 						<p>ඒ</p>
 					</div>
 				</div>
 
 				<div className="dropdown keyboardl2">
-				<input type="button" name="name" value="ඔ" onClick={handleClick} />
+					<input type="button" name="name" value="ඔ" onClick={handleClick} />
 					<div class="dropdown-content">
 						<p>ඕ</p>
 					</div>
@@ -484,8 +485,6 @@ function KeyboardLayout(props) {
 						<p>ෆෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 					</div>
 				</div>
-
-
 
 				<div>Space</div>
 				<div>Delete</div>
