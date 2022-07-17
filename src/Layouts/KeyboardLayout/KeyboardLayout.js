@@ -5,7 +5,7 @@ import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 
 function KeyboardLayout(props) {
 	const initialState = {
-		name: "",
+		name: [],
 		texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
 	};
 	
@@ -17,41 +17,40 @@ function KeyboardLayout(props) {
 	
 
 	const handleClick = (e) => {
+		console.log(e.target.value);
 		e.preventDefault();
 		const { value, name } = e.target;
 		SetInput((values) => ({ ...values, [name]: value }));
 	};
-	
 
 	const handleSubmit = (e) => {
-		
 		console.log(input.texty);
 		console.log("Button clicked");
 
 		// let sdk = require("microsoft-cognitiveservices-speech-sdk");
-		
+
 		let textyy = input.texty;
 
 		console.log(textyy);
 
 		// let key = "";
 		// let region = "";
-		
+
 		// // The Audio file name
 		// let audioFile = "AvanoaVKTTS.wav";
 
 		// const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
-		
+
 		// const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
 		// // The language of the voice that speaks.
-		// speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural"; 
+		// speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
 
 		// // Create the speech synthesizer.
 		// let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
-	
+
 		// if (textyy != null) {
-		
+
 		// // Start the synthesizer and wait for a result.
 		// synthesizer.speakTextAsync(textyy,
 		// 	function (result) {
@@ -79,8 +78,202 @@ function KeyboardLayout(props) {
 	const [form] = Form.useForm();
 	
 
-	// const buttons = document.querySelector('.btn')
-	// const textarea = document.querySelector('textarea')
+	return (
+		<div>
+			<Input value={input.name} />
+			<br></br>
+			<button
+			//   onClick= {handleSubmit}
+			>
+				Get directly from Azure
+			</button>
+
+			<div className="keyboardl1">
+				<br />
+
+				<div className="dropdown keyboardl2">
+					{" "}
+					<input type="button" name="name" value="අ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ආ</p>
+						<p>ඇ</p>
+						<p>ඈ</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ඉ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ඊ</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="උ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ඌ</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="එ" onClick={handleClick} />
+
+					<div class="dropdown-content">
+						<p>ඒ</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ඔ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ඕ</p>
+					</div>
+				</div>
+			</div>
+			<br />
+
+			<div className="keyboardl1">
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ක" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>කා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ක් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෞ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ග" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ගැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ග් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ගෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ච" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>චා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ච් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>චෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ජ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ජා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජ් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ජෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ට" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ටා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ට් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ටෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+			</div>
+
+			<div className="keyboardl1">
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ඩ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ඩා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩ් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ඩෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>කෞ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ණ" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>ණා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණ් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණි &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ණෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
+
+				<div className="dropdown keyboardl2">
+					<input type="button" name="name" value="ත" onClick={handleClick} />
+					<div class="dropdown-content">
+						<p>තා &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තැ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තෑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ත් &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>ති &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තී &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තු &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තෙ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තේ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තො &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<p>තෝ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</div>
+				</div>
 
 	// const delete_btn = document.queryselector('.delete')
 	// const shift_btn = document.querySelector('.shift')
