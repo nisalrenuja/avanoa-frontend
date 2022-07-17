@@ -760,6 +760,16 @@ class phraseBubble extends Component {
       // this.setState({ slide2 : "notSelected"});
       slide4 = "selected";
       slide3 = "notSelected"
+
+      ph1 = "Hungry"
+      ph2 = "Thirsty"
+      ph3 = "Tired"
+      ph4 = "Toileting"
+      ph5 = "Bathing"
+      ph6 = "Sleepy"
+      ph7 = "Dressing "
+      ph8 = "Watching/Listening "
+      ph9 = "Need a help"
     }
     else if(index == 3 && counter == 4){
       //setSel("selectionBoarder");
@@ -767,6 +777,16 @@ class phraseBubble extends Component {
       // this.setState({ slide2 : "notSelected"});
       slide5 = "selected";
       slide4 = "notSelected"
+
+      ph1 = "මට සනීප නෑ"
+      ph2 = "බෙහෙත් ඉවරයි"
+      ph3 = "බෙහෙත් ඕනේ "
+      ph4 = "කෝ මගේ රිපෝට්ස්"
+      ph5 = "මට කලන්තේ වගේ "
+      ph6 = "මට රිදෙනවා "
+      ph7 = "දැන් සනීපයි "
+      ph8 = "බෙහෙත් ගන්න යමු"
+      ph9 = "මට කණ්නාඩිය / hearing aid එක දෙන්න"
     }
     else if(index == 3 && counter == 5){
       //setSel("selectionBoarder");
@@ -774,6 +794,16 @@ class phraseBubble extends Component {
       // this.setState({ slide2 : "notSelected"});
       slide6 = "selected";
       slide5 = "notSelected"
+
+      ph1 = "Reading Newspapers"
+      ph2 = "Watching television "
+      ph3 = "Listening to music"
+      ph4 = "Bathing "
+      ph5 = "Sleeping"
+      ph6 = "Exercise"
+      ph7 = "Using social media"
+      ph8 = "Go for walk"
+      ph9 = "Call someone/talk to someone"
     }
     else if(index == 3 && counter == 6){
       //setSel("selectionBoarder");
@@ -781,6 +811,16 @@ class phraseBubble extends Component {
       // this.setState({ slide2 : "notSelected"});
       slide7 = "selected";
       slide6 = "notSelected"
+
+      ph1 = "ඔව් "
+      ph2 = "නෑ "
+      ph3 = "කොහොමද "
+      ph4 = "කවුද "
+      ph5 = "මොකක්ද "
+      ph6 = "කොහෙද "
+      ph7 = "බැහැ "
+      ph8 = "කීයටද "
+      ph9 = "පුළුවන්"
     }
     else if(index == 3 && counter == 7){
       //setSel("selectionBoarder");
@@ -788,6 +828,16 @@ class phraseBubble extends Component {
       // this.setState({ slide2 : "notSelected"});
       slide8 = "selected";
       slide7 = "notSelected"
+
+      ph1 = "Washroom "
+      ph2 = "Living room"
+      ph3 = "Kitchen "
+      ph4 = "Garden "
+      ph5 = "Bedroom "
+      ph6 = "Temple/church /Kovil/ mosque"
+      ph7 = "Park"
+      ph8 = "Neighborhoods"
+      ph9 = "Relations"
     }
 
     if(index == 13){
