@@ -6,13 +6,14 @@ import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 function KeyboardLayout(props) {
     const initialState = {
         name: [],
-        texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
+        // texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
     };
     
 
     const [input, SetInput] = React.useState(initialState);
 
     const [text, setText] = useState("");
+	const [texty, setTexty] = useState("helloS");
     
 
     const handleClick = (e) => {
@@ -24,53 +25,55 @@ function KeyboardLayout(props) {
     
 
     const handleSubmit = (e) => {
-        console.log(input.texty);
+        // console.log(input.texty);
+		console.log(texty);
         console.log("Button clicked");
 
-        // let sdk = require("microsoft-cognitiveservices-speech-sdk");
+        let sdk = require("microsoft-cognitiveservices-speech-sdk");
 
-        let textyy = input.texty;
+        // let textyy = input.texty;
+		let textyy = texty;
 
         console.log(textyy);
 
-        // let key = "";
-        // let region = "";
+        let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
+        let region = "eastus";
 
-        // // The Audio file name
-        // let audioFile = "AvanoaVKTTS.wav";
+        // The Audio file name
+        let audioFile = "AvanoaVKTTS.wav";
 
-        // const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
+        const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
 
-        // const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
+        const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
-        // // The language of the voice that speaks.
-        // speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
+        // The language of the voice that speaks.
+        speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
 
-        // // Create the speech synthesizer.
-        // let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
+        // Create the speech synthesizer.
+        let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
 
-        // if (textyy != null) {
+        if (textyy != null) {
 
-        // // Start the synthesizer and wait for a result.
-        // synthesizer.speakTextAsync(textyy,
-        //  function (result) {
-        //  if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
-        //  console.log("synthesis finished.");
-        //  } else {
-        //  console.error("Speech synthesis canceled, " + result.errorDetails +
-        //      "\nDid you set the speech resource key and region values?");
-        //  }
-        //  synthesizer.close();
-        //  synthesizer = null;
-        // },
-        //  function (err) {
-        //  console.trace("err - " + err);
-        //  synthesizer.close();
-        //  synthesizer = null;
-        // });
-        // console.log("Now synthesizing to: " + audioFile);
-        // console.log("Audio Narrated Successfully");
-        // };
+        // Start the synthesizer and wait for a result.
+        synthesizer.speakTextAsync(textyy,
+         function (result) {
+         if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
+         console.log("synthesis finished.");
+         } else {
+         console.error("Speech synthesis canceled, " + result.errorDetails +
+             "\nDid you set the speech resource key and region values?");
+         }
+         synthesizer.close();
+         synthesizer = null;
+        },
+         function (err) {
+         console.trace("err - " + err);
+         synthesizer.close();
+         synthesizer = null;
+        });
+        console.log("Now synthesizing to: " + audioFile);
+        console.log("Audio Narrated Successfully");
+        };
 
         console.log("END of TTS Narration");
     };
@@ -91,10 +94,16 @@ function KeyboardLayout(props) {
     function handleKbutton(e){
             setText(text + e.target.value);
             //console.log(e.target.value)
-            chars = text.split('')
+            chars = text.split('');
+			// this.setState({texty: chars});			
             console.log(chars)
+			// console.log(this.state.texty);
+			setTexty(text);
+			console.log(texty);
 
-        }
+    }
+
+
     
 
     function handleDelete(e){
