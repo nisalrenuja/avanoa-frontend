@@ -72,7 +72,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
-button {
+/* button {
+    background-color: rgb(104, 104, 255);
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+} */
+.Kbutton {
     background-color: rgb(104, 104, 255);
     border: none;
     display: inline-block;
