@@ -255,7 +255,7 @@ function KeyboardLayout(props) {
                     </div>
                   </div>
 
-                  <button class="delete" onClick={handleDelete}>Delete</button>
+                  <button class="Dbutton" onClick={handleDelete}>Delete</button>
                 </div>
 
                 <div class="row">
@@ -558,7 +558,7 @@ function KeyboardLayout(props) {
                   
 
                   <div class="row">
-                <button class="space" onClick={handleSpace}>Space</button>
+                <button class="Sbutton"  onClick={handleSpace}>Space</button>
             </div>
 
                  </div>
