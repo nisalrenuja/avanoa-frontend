@@ -10,11 +10,14 @@
     "antd": "^4.20.4",
     "axios": "^0.21.1",
     "howler": "^2.2.3",
+    "install": "^0.13.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.22.0",
+    "npm": "^8.14.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.3",
     "react-speech-kit": "^3.0.1",
     "react-toastify": "^7.0.4",
@@ -43,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
   }
 }

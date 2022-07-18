@@ -4,36 +4,42 @@ import Appbar from "../../components/Appbar/Appbar";
 import "./profilelayout.css";
 import { useState } from "react";
 import Speech from "../../components/Speech/Speech";
+import WebGazer from "../../components/WebGazer/WebGazer";
+import { useSelector, useDispatch } from "react-redux";
 
 const ProfileLayout = () => {
-  const [sidebar, setSidebar] = useState(false);
+	const [sidebar, setSidebar] = useState(false);
 
-  const handleSidebar = () => {
-    setSidebar(!sidebar);
-  };
+	const counter = useSelector((state) => state.counter.value);
 
-  return (
-    <div className="profilelayout">
-      <Speech />
-      {/* appbar */}
-      <Appbar handleSidebar={handleSidebar} />
-      {/* sidebar */}
-      <div
-        className={
-          sidebar ? "profilelayout_sidebar open" : "profilelayout_sidebar"
-        }
-      >
-        <Sidebar />
-      </div>
-      {/* content */}
-      <div className="profilelayout_content">
-        {/* profile */}
-        <div className="profilelayout_content-profile">
-          <Profile />
-        </div>
-      </div>
-    </div>
-  );
+	const handleSidebar = () => {
+		setSidebar(!sidebar);
+	};
+
+	return (
+		<div className="profilelayout">
+			<WebGazer />
+			<Speech />
+			{/* appbar */}
+			<Appbar handleSidebar={handleSidebar} />
+			{/* sidebar */}
+			<div
+				className={
+					sidebar ? "profilelayout_sidebar open" : "profilelayout_sidebar"
+				}
+			>
+				<Sidebar />
+			</div>
+			{/* content */}
+			<div className="profilelayout_content">
+				{/* profile */}
+				<div className="profilelayout_content-profile">
+					<Profile />
+					{counter}
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default ProfileLayout;

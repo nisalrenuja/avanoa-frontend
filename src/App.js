@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ActivateLayout from "./Layouts/ActivateLayout/ActivateLayout";
 import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
@@ -11,73 +11,56 @@ import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
 
 function App() {
-  const { dispatch, token, isLoggedIn } = useContext(AuthContext);
+	const { dispatch, token, isLoggedIn } = useContext(AuthContext);
 
-  // get ac token
-  useEffect(() => {
-    const _appSignging = localStorage.getItem("_appSignging");
-    if (_appSignging) {
-      const getToken = async () => {
-        const res = await axios.post("http://localhost:8000/api/auth/access", null);
-        dispatch({ type: "GET_TOKEN", payload: res.data.ac_token });
-      };
-      getToken();
-    }
-  }, [dispatch, isLoggedIn]);
+	// get ac token
+	useEffect(() => {
+		const _appSignging = localStorage.getItem("_appSignging");
+		if (_appSignging) {
+			const getToken = async () => {
+				const res = await axios.post("/api/auth/access", null);
+				dispatch({ type: "GET_TOKEN", payload: res.data.ac_token });
+			};
+			getToken();
+		}
+	}, [dispatch, isLoggedIn]);
 
-  // get user data
-  useEffect(() => {
-    if (token) {
-      const getUser = async () => {
-        dispatch({ type: "SIGNING" });
-        const res = await axios.get("http://localhost:8000/api/auth/user", {
-          headers: { Authorization: token },
-        });
-        dispatch({ type: "GET_USER", payload: res.data });
-      };
-      getUser();
-    }
-  }, [dispatch, token]);
+	// get user data
+	useEffect(() => {
+		if (token) {
+			const getUser = async () => {
+				dispatch({ type: "SIGNING" });
+				const res = await axios.get("/api/auth/user", {
+					headers: { Authorization: token },
+				});
+				dispatch({ type: "GET_USER", payload: res.data });
+			};
+			getUser();
+		}
+	}, [dispatch, token]);
 
-  return (
-    <Router>
-      <Switch>
-        <Route
-          path="/"
-          exact
-          component={isLoggedIn ? HomeLayout : AuthLayout}
-        />
-        <Route
-          path="/profile"
-          exact
-          component={isLoggedIn ? ProfileLayout : AuthLayout}
-        />
-        <Route
-          path="/auth/reset-password/:token"
-          exact
-          component={ResetLayout}
-        />
-        <Route
-          path="/api/auth/activate/:activation_token"
-          exact
-          component={ActivateLayout}
-        />
-        <Route
-          path="/emergency"
-          exact
-          component={EmergencyLayout}
-        />
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path="/"
+					element={isLoggedIn ? <HomeLayout /> : <AuthLayout />}
+				/>
+				<Route
+					path="/profile"
+					element={isLoggedIn ? <ProfileLayout /> : <AuthLayout />}
+				/>
+				<Route path="/auth/reset-password/:token" element={<ResetLayout />} />
+				<Route
+					path="/api/auth/activate/:activation_token"
+					element={<ActivateLayout />}
+				/>
+				<Route path="/emergency" element={<EmergencyLayout />} />
 
-        <Route
-          path="/Keyboard"
-          exact
-          component={KeyboardLayout}
-        />
-
-        
-      </Switch>
-    </Router>
-  );
+				<Route path="/Keyboard" element={<KeyboardLayout />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
