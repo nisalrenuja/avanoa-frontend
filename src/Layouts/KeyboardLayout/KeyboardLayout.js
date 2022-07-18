@@ -26,54 +26,54 @@ function KeyboardLayout(props) {
 
     const handleSubmit = (e) => {
         // console.log(input.texty);
-		console.log(texty);
+		    console.log(texty);
         console.log("Button clicked");
 
-        let sdk = require("microsoft-cognitiveservices-speech-sdk");
+        // let sdk = require("microsoft-cognitiveservices-speech-sdk");
 
         // let textyy = input.texty;
-		let textyy = texty;
+		    // let textyy = texty;
 
-        console.log(textyy);
+        // console.log(textyy);
 
-        let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
-        let region = "eastus";
+        // let key = "";
+        // let region = "eastus";
 
-        // The Audio file name
-        let audioFile = "AvanoaVKTTS.wav";
+        // // The Audio file name
+        // let audioFile = "AvanoaVKTTS.wav";
 
-        const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
+        // const speechConfig = sdk.SpeechConfig.fromSubscription(key, region);
 
-        const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
+        // const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
-        // The language of the voice that speaks.
-        speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
+        // // The language of the voice that speaks.
+        // speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
 
-        // Create the speech synthesizer.
-        let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
+        // // Create the speech synthesizer.
+        // let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
 
-        if (textyy != null) {
+        // if (textyy != null) {
 
-        // Start the synthesizer and wait for a result.
-        synthesizer.speakTextAsync(textyy,
-         function (result) {
-         if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
-         console.log("synthesis finished.");
-         } else {
-         console.error("Speech synthesis canceled, " + result.errorDetails +
-             "\nDid you set the speech resource key and region values?");
-         }
-         synthesizer.close();
-         synthesizer = null;
-        },
-         function (err) {
-         console.trace("err - " + err);
-         synthesizer.close();
-         synthesizer = null;
-        });
-        console.log("Now synthesizing to: " + audioFile);
-        console.log("Audio Narrated Successfully");
-        };
+        // // Start the synthesizer and wait for a result.
+        // synthesizer.speakTextAsync(textyy,
+        //  function (result) {
+        //  if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
+        //  console.log("synthesis finished.");
+        //  } else {
+        //  console.error("Speech synthesis canceled, " + result.errorDetails +
+        //      "\nDid you set the speech resource key and region values?");
+        //  }
+        //  synthesizer.close();
+        //  synthesizer = null;
+        // },
+        //  function (err) {
+        //  console.trace("err - " + err);
+        //  synthesizer.close();
+        //  synthesizer = null;
+        // });
+        // console.log("Now synthesizing to: " + audioFile);
+        // console.log("Audio Narrated Successfully");
+        // };
 
         console.log("END of TTS Narration");
     };
