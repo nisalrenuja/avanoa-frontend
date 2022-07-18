@@ -552,133 +552,101 @@ class phraseBubble extends Component {
     if(index == 69){
       this.selectBubble(45);
     }
-
-    //61-670 slide 5
-    if(index == 61){
+    
+    //71-80 slide 6
+    if(index == 71){
       //this.selectBubble(0);
       //select1="selection"
       this.selectBubble(46);
       this.props.setCount(0);
     }
-    if(index == 62){
+    if(index == 72){
       this.selectBubble(47);
     }
-    if(index == 63){
+    if(index == 73){
       this.selectBubble(48);
     }
-    if(index == 64){
+    if(index == 74){
         this.selectBubble(49);
     }
-    if(index == 65){
+    if(index == 75){
       this.selectBubble(50);
     }
-    if(index == 66){
+    if(index == 76){
       this.selectBubble(51);
     }
-    if(index == 67){
+    if(index == 77){
       this.selectBubble(52);
     }
-    if(index == 68){
-      this.selectBubble(53);    
-    }
-    if(index == 69){
-      this.selectBubble(54);
-    }
-
-    //71-80 slide 6
-    if(index == 71){
-      //this.selectBubble(0);
-      //select1="selection"
-      this.selectBubble(55);
-      this.props.setCount(0);
-    }
-    if(index == 72){
-      this.selectBubble(56);
-    }
-    if(index == 73){
-      this.selectBubble(57);
-    }
-    if(index == 74){
-        this.selectBubble(58);
-    }
-    if(index == 75){
-      this.selectBubble(59);
-    }
-    if(index == 76){
-      this.selectBubble(60);
-    }
-    if(index == 77){
-      this.selectBubble(61);
-    }
     if(index == 78){
-      this.selectBubble(62);
+      this.selectBubble(53);
     }
     if(index == 79){
-      this.selectBubble(63);
+      this.selectBubble(54);
     }
     
     //81-90 slide 7
     if(index == 81){
       //this.selectBubble(0);
       //select1="selection"
-      this.selectBubble(64);
+      this.selectBubble(55);
       this.props.setCount(0);
     }
     if(index == 82){
-      this.selectBubble(65);
+      this.selectBubble(56);
     }
     if(index == 83){
-      this.selectBubble(66);
+      this.selectBubble(57);
     }
     if(index == 84){
-        this.selectBubble(67);
+        this.selectBubble(58);
     }
     if(index == 85){
-      this.selectBubble(68);
+      this.selectBubble(59);
     }
     if(index == 86){
-      this.selectBubble(69);
+      this.selectBubble(60);
     }
     if(index == 87){
-      this.selectBubble(70);
+      this.selectBubble(61);
     }
     if(index == 88){
-      this.selectBubble(71);
+      this.selectBubble(62);
     }
     if(index == 89){
-      this.selectBubble(72);
+      this.selectBubble(63);
     }
 
     //91 - 100 slide 8
     if(index == 91){
       //this.selectBubble(0);
       //select1="selection"
-      this.selectBubble(73);
+      this.selectBubble(64);
       this.props.setCount(0);
     }
     if(index == 92){
-      this.selectBubble(74);
+      this.selectBubble(65);
     }
     if(index == 93){
-      this.selectBubble(75);
+      this.selectBubble(66);
     }
     if(index == 94){
-        this.selectBubble(76);
+        this.selectBubble(67);
     }
     if(index == 95){
-      this.selectBubble(77);
+      this.selectBubble(68);
     }
     if(index == 86){
-      this.selectBubble(78);
+      this.selectBubble(69);
     }
     if(index == 97){
-      this.selectBubble(79);
+      this.selectBubble(70);
     }
     if(index == 98){
-      this.selectBubble(80);
+      this.selectBubble(71);
     }
     if(index == 99){
-      this.selectBubble(81);
+      this.selectBubble(72);
     }   
   }
 
