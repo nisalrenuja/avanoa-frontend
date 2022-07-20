@@ -672,8 +672,8 @@ class phraseBubble extends Component {
     let select7 = "";
     let select8 = "";
     let select9 = "";
-
-    let ph1 = "ඔයාට කොහොමද ?";
+    
+    let ph1 = "ඔයාට කොහොමද? ";
     let ph2 = "මට උදවු කරනවද ?";
     let ph3 = "ආයෙත් කියන්න";
     let ph4 = "මට තේරුනේ නෑ";
@@ -712,15 +712,15 @@ class phraseBubble extends Component {
       slide3 = "selected";
       slide2 = "notSelected"
 
-      ph1 = "Hello"
-      ph2 = "Good morning"
-      ph3 = "Thank you"
-      ph4 = "Your Welcome"
-      ph5 = "Sorry"
-      ph6 = "Bye"
-      ph7 = "Excuse me"
-      ph8 = "Good luck"
-      ph9 = "Get well soon"
+      ph1 = "ආයුබෝවන්"
+      ph2 = "සුභ උදෑසනක්"
+      ph3 = "ඔබට ස්තුතියි"
+      ph4 = "ඔබව පිළිගන්නවා"
+      ph5 = "සමාවන්න"
+      ph6 = "සමුගන්නවා"
+      ph7 = "මට සමාවෙන්න"
+      ph8 = "ඔබට සුබපැතුම්"
+      ph9 = "ඉක්මනට සනිප වෙන්න"
     }
     else if(index == 3 && counter == 3){
       //setSel("selectionBoarder");
@@ -729,15 +729,15 @@ class phraseBubble extends Component {
       slide4 = "selected";
       slide3 = "notSelected"
 
-      ph1 = "Hungry"
-      ph2 = "Thirsty"
-      ph3 = "Tired"
-      ph4 = "Toileting"
-      ph5 = "Bathing"
-      ph6 = "Sleepy"
-      ph7 = "Dressing "
-      ph8 = "Watching/Listening "
-      ph9 = "Need a help"
+      ph1 = "බඩගිනියි"
+      ph2 = "පිපාසය"
+      ph3 = "මහන්සියි"
+      ph4 = "වැසිකිළියට යනවා"
+      ph5 = "නානවා"
+      ph6 = "නිදිමත"
+      ph7 = "මම අඳිනවා "
+      ph8 = "නැරඹීම / සවන් දීම "
+      ph9 = "උදව්වක් ඕන"
     }
     else if(index == 3 && counter == 4){
       //setSel("selectionBoarder");
@@ -763,15 +763,15 @@ class phraseBubble extends Component {
       slide6 = "selected";
       slide5 = "notSelected"
 
-      ph1 = "Reading Newspapers"
-      ph2 = "Watching television "
-      ph3 = "Listening to music"
-      ph4 = "Bathing "
-      ph5 = "Sleeping"
-      ph6 = "Exercise"
-      ph7 = "Using social media"
-      ph8 = "Go for walk"
-      ph9 = "Call someone/talk to someone"
+      ph1 = "පුවත්පත් කියවනවා"
+      ph2 = "රුපවාහිනිය නරබමින් "
+      ph3 = "සංගීතයට සවන් දීම"
+      ph4 = "නානවා"
+      ph5 = "නිදාගන්නවා"
+      ph6 = "ව්‍යායාම කරනවා"
+      ph7 = "සමාජ මාධ්‍ය භාවිතා කරනවා"
+      ph8 = "ඇවිදින්න යන්න"
+      ph9 = "කෙනෙකුට කතා කරන්න"
     }
     else if(index == 3 && counter == 6){
       //setSel("selectionBoarder");
@@ -797,15 +797,15 @@ class phraseBubble extends Component {
       slide8 = "selected";
       slide7 = "notSelected"
 
-      ph1 = "Washroom "
-      ph2 = "Living room"
-      ph3 = "Kitchen "
-      ph4 = "Garden "
-      ph5 = "Bedroom "
-      ph6 = "Temple/church /Kovil/ mosque"
-      ph7 = "Park"
-      ph8 = "Neighborhoods"
-      ph9 = "Relations"
+      ph1 = "වැසිකිළිය "
+      ph2 = "විසිත්ත කාමරය"
+      ph3 = "කුස්සිය "
+      ph4 = "වත්ත "
+      ph5 = "නිදන කාමරය "
+      ph6 = "ආගමික ස්ථානය"
+      ph7 = "උද්යානය"
+      ph8 = "අසල්වැසි"
+      ph9 = "සබඳතා"
     }
 
     if(index == 13){
@@ -900,15 +900,15 @@ class phraseBubble extends Component {
     if (index == 15){
       slide3 = "selection"
 
-      ph1 = "Hello"
-      ph2 = "Good morning"
-      ph3 = "Thank you"
-      ph4 = "Your Welcome"
-      ph5 = "Sorry"
-      ph6 = "Bye"
-      ph7 = "Excuse me"
-      ph8 = "Good luck"
-      ph9 = "Get well soon"
+      ph1 = "ආයුබෝවන්"
+      ph2 = "සුභ උදෑසනක්"
+      ph3 = "ඔබට ස්තුතියි"
+      ph4 = "ඔබව පිළිගන්නවා"
+      ph5 = "සමාවන්න"
+      ph6 = "සමුගන්නවා"
+      ph7 = "මට සමාවෙන්න"
+      ph8 = "වාසනාව"
+      ph9 = "ඉක්මනට සනිප වෙන්න"
 
       if(counter == 0){
         select1 = "selected"
@@ -950,15 +950,15 @@ class phraseBubble extends Component {
     if (index ==16){
       slide4 = "selection"
 
-      ph1 = "Hungry"
-      ph2 = "Thirsty"
-      ph3 = "Tired"
-      ph4 = "Toileting"
-      ph5 = "Bathing"
-      ph6 = "Sleepy"
-      ph7 = "Dressing "
-      ph8 = "Watching/Listening "
-      ph9 = "Need a help"
+      ph1 = "බඩගිනියි"
+      ph2 = "පිපාසය"
+      ph3 = "මහන්සියි"
+      ph4 = "වැසිකිළියට යනවා"
+      ph5 = "නානවා"
+      ph6 = "නිදිමත"
+      ph7 = "මම අඳිනවා  "
+      ph8 = "නැරඹීම / සවන් දීම "
+      ph9 = "උදව්වක් ඕන"
 
       if(counter == 0){
         select1 = "selected"
@@ -1050,15 +1050,15 @@ class phraseBubble extends Component {
     if (index ==18){
       slide6 = "selection"
 
-      ph1 = "Reading Newspapers"
-      ph2 = "Watching television "
-      ph3 = "Listening to music"
-      ph4 = "Bathing "
-      ph5 = "Sleeping"
-      ph6 = "Exercise"
-      ph7 = "Using social media"
-      ph8 = "Go for walk"
-      ph9 = "Call someone/talk to someone"
+      ph1 = "පුවත්පත් කියවනවා"
+      ph2 = "රුපවාහිනිය නරබමින්  "
+      ph3 = "සංගීතයට සවන් දීම"
+      ph4 = "නානවා "
+      ph5 = "නිදාගන්නවා"
+      ph6 = "ව්‍යායාම කරනවා"
+      ph7 = "සමාජ මාධ්‍ය භාවිතා කරනවා"
+      ph8 = "ඇවිදින්න යන්න"
+      ph9 = "කෙනෙකුට කතා කරන්න"
 
       if(counter == 0){
         select1 = "selected"
@@ -1150,15 +1150,15 @@ class phraseBubble extends Component {
     if (index ==20){
       slide8 = "selection"
 
-      ph1 = "Washroom "
-      ph2 = "Living room"
-      ph3 = "Kitchen "
-      ph4 = "Garden "
-      ph5 = "Bedroom "
-      ph6 = "Temple/church /Kovil/ mosque"
-      ph7 = "Park"
-      ph8 = "Neighborhoods"
-      ph9 = "Relations"
+      ph1 = "වැසිකිළිය "
+      ph2 = "විසිත්ත කාමරය"
+      ph3 = "කුස්සිය "
+      ph4 = "වත්ත "
+      ph5 = "නිදන කාමරය "
+      ph6 = "ආගමික ස්ථානය"
+      ph7 = "උද්යානය"
+      ph8 = "අසල්වැසි"
+      ph9 = "සබඳතා"
 
       if(counter == 0){
         select1 = "selected"
@@ -1199,17 +1199,17 @@ class phraseBubble extends Component {
     }  
 
     return (
-      <div>        
+      <div> <center>      
         {/* {this.RenderButtonSound()} */}
 
-        <button className={slide1}>Most frequently used Phrases</button>
-        <button className={slide2}>Food</button>
-        <button className={slide3}>Greetings</button>
-        <button className={slide4}>General Needs</button>
-        <button className={slide5}>Medical Needs</button>
-        <button className={slide6}>Activities</button>
-        <button className={slide7}>Conversations</button>
-        <button className={slide8}>Places to visit</button>
+        <button className={slide1} class id= 'headerbutton1'>Most frequently used Phrases</button>
+        <button className={slide2} class id= 'headerbutton2'>කෑම</button>
+        <button className={slide3} class id= 'headerbutton3'>සුභ පැතුම්</button>
+        <button className={slide4} class id= 'headerbutton4'>සාමාන්ය අවශ්යතා</button>
+        <button className={slide5} class id= 'headerbutton5'>වෛද්ය අවශ්යතා</button>
+        <button className={slide6} class id= 'headerbutton6'>කටයුතු</button>
+        <button className={slide7} class id= 'headerbutton7'>සංවාද</button>
+        <button className={slide8} class id= 'headerbutton8'>සංචාරය කිරීමට ස්ථාන</button>
 
         <div class="flex-container">
           <div className={select1}>{ph1}</div>
@@ -1224,6 +1224,7 @@ class phraseBubble extends Component {
         </div>
 
         {this.props.navList.index}
+        </center> 
       </div>
     );
   }
