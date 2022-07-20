@@ -19,18 +19,70 @@ class EmergencyLayout extends React.Component {
      
   }
 
+  handleClick(event) {
+    event.preventDefault();
+    console.log("event" + event.target.value);
+    // this.setState({[event.target.name]: event.target.value});
+    
+    this.setState({[event.target.name]: event.target.value});
+
+    if (event.target.name == "recepient"){
+      this.setState({Brecepient: true});
+
+      if (event.target.value == "Care Taker"){
+        this.setState({email: "pokirisa@gmail.com"});
+      }
+
+      else if (event.target.value == "Gurdian"){
+        this.setState({email: "pokirisa@gmail.com"});
+      }
+
+      else if (event.target.value == "Doctor"){
+        this.setState({email: "pokirisa@gmail.com"});
+      }
+
+      this.setState({page: 2});      
+    }
+
+    if (event.target.name == "message"){
+      this.setState({Bmessage: true});
+      this.setState({page: 3});
+      this.setState({subject: event.target.value});
+    }
+
+    console.log("Brecepient" + this.state.Brecepient);
+    console.log("recepient" + this.state.recepient);
+    // console.log("Bmessage" + this.state.Bmessage);
+    // console.log("message" + this.state.message);   
+    // console.log("subject" + this.state.subject);    
+  }
+
       
 
   render() {
+
+	let comp;
+
+	if(this.state.page === 1){
+		comp = <Recepient handleClick={this.handleClick}/>;
+	  }
+	  if (this.state.page === 2) {
+		comp = <Message recepient={this.state.recepient} handleClick={this.handleClick}/>;
+	  }
+	  if (this.state.page === 3){
+		comp = <FinalMessage  recepient={this.state.recepient} email={this.state.email} subject={this.state.subject} message={this.state.message} />;
+	  }
+    
+  
   
 
     function Recepient(props) {
       return (
       <div>
         <h1>Select Recepient</h1>
-        <button name="recepient" value="Care Taker">Care Taker</button>
-        <button name="recepient" value="Gurdian">Gurdian</button>
-        <button name="recepient" value="Doctor">Doctor</button>
+        <button onClick={props.handleClick} name="recepient" value="Care Taker">Care Taker</button>
+        <button onClick={props.handleClick} name="recepient" value="Gurdian">Gurdian</button>
+        <button onClick={props.handleClick} name="recepient" value="Doctor">Doctor</button>
       </div>);
     }
 
@@ -43,9 +95,9 @@ class EmergencyLayout extends React.Component {
         return (
           <div>
             <h1>Select Message</h1>
-            <button name="message" value="I need Medicine">I need Medicine</button>
-            <button name="message" value="I need to Eat">I need to Eat</button>
-            <button name="message" value="I am Thirsty">I am Thirsty</button>
+            <button onClick={props.handleClick} name="message" value="I need Medicine">I need Medicine</button>
+            <button onClick={props.handleClick} name="message" value="I need to Eat">I need to Eat</button>
+            <button onClick={props.handleClick} name="message" value="I am Thirsty">I am Thirsty</button>
 
             <button name="messageBack">Back</button>
           </div>);
@@ -58,10 +110,10 @@ class EmergencyLayout extends React.Component {
       return (
       <div>
         <h1>Final Message</h1>
-        <p >Recepient </p>
-        <p >Email</p>
-        <p >Subject</p>
-        <p >Message </p>
+        <p >Recepient - {props.recepient}</p>
+        <p >Email - {props.email}</p>
+        <p >Subject - {props.subject}</p>
+        <p >Message - {props.message}</p>
         <button  name="finalMessageBack">Back</button>
         <button name="finalMessageSend">Send</button>
       </div>);
@@ -70,9 +122,7 @@ class EmergencyLayout extends React.Component {
     
     return (
       <div>
-         <Recepient />
-		 <Message />
-		 <FinalMessage />
+         {comp}
         
       </div>
     );
