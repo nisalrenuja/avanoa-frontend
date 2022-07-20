@@ -15,8 +15,23 @@ class EmergencyLayout extends React.Component {
       BFinalMessage: false,
       page: 1
     };
-    
+
+	this.handleClick = this.handleClick.bind(this);
+	this.handleBack = this.handleBack.bind(this);    
      
+  }
+
+  handleBack(event) {
+    event.preventDefault();
+    if (event.target.name == "messageBack"){
+      // this.setState({Brecepient: false});  
+      this.setState({page: 1});    
+    }
+    if (event.target.name == "finalMessageBack"){
+      // this.setState({Brecepient: false});  
+      this.setState({page: 2});    
+    }
+    console.log(this.state);
   }
 
   handleClick(event) {
@@ -67,10 +82,10 @@ class EmergencyLayout extends React.Component {
 		comp = <Recepient handleClick={this.handleClick}/>;
 	  }
 	  if (this.state.page === 2) {
-		comp = <Message recepient={this.state.recepient} handleClick={this.handleClick}/>;
+		comp = <Message recepient={this.state.recepient} handleClick={this.handleClick} handleBack={this.handleBack} />;
 	  }
 	  if (this.state.page === 3){
-		comp = <FinalMessage  recepient={this.state.recepient} email={this.state.email} subject={this.state.subject} message={this.state.message} />;
+		comp = <FinalMessage  recepient={this.state.recepient} email={this.state.email} subject={this.state.subject} message={this.state.message} handleBack={this.handleBack} />;
 	  }
     
   
@@ -99,7 +114,7 @@ class EmergencyLayout extends React.Component {
             <button onClick={props.handleClick} name="message" value="I need to Eat">I need to Eat</button>
             <button onClick={props.handleClick} name="message" value="I am Thirsty">I am Thirsty</button>
 
-            <button name="messageBack">Back</button>
+            <button onClick={props.handleBack} name="messageBack">Back</button>
           </div>);
         
       
@@ -114,7 +129,7 @@ class EmergencyLayout extends React.Component {
         <p >Email - {props.email}</p>
         <p >Subject - {props.subject}</p>
         <p >Message - {props.message}</p>
-        <button  name="finalMessageBack">Back</button>
+        <button onClick={props.handleBack} name="finalMessageBack">Back</button>
         <button name="finalMessageSend">Send</button>
       </div>);
     }
