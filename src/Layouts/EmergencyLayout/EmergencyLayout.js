@@ -1,5 +1,5 @@
 import React from "react";
-
+import emailjs from '@emailjs/browser';
 
 class EmergencyLayout extends React.Component {
   constructor(props) {
@@ -18,6 +18,7 @@ class EmergencyLayout extends React.Component {
 
 	this.handleClick = this.handleClick.bind(this);
 	this.handleBack = this.handleBack.bind(this);    
+	this.sendEmail = this.sendEmail.bind(this);
      
   }
 
@@ -72,7 +73,16 @@ class EmergencyLayout extends React.Component {
     // console.log("subject" + this.state.subject);    
   }
 
-      
+  sendEmail = (e) => {
+	e.preventDefault();
+
+	emailjs.send('service_s63wkq9', 'template_t7hy137', this.state, 'zXAlVVivBD7BlgIVm')
+	  .then((result) => {
+		  console.log(result.text);
+	  }, (error) => {
+		  console.log(error.text);
+	  });
+  };
 
   render() {
 
@@ -85,7 +95,7 @@ class EmergencyLayout extends React.Component {
 		comp = <Message recepient={this.state.recepient} handleClick={this.handleClick} handleBack={this.handleBack} />;
 	  }
 	  if (this.state.page === 3){
-		comp = <FinalMessage  recepient={this.state.recepient} email={this.state.email} subject={this.state.subject} message={this.state.message} handleBack={this.handleBack} />;
+		comp = <FinalMessage  recepient={this.state.recepient} email={this.state.email} subject={this.state.subject} message={this.state.message} handleBack={this.handleBack} sendEmail={this.sendEmail} />;
 	  }
     
   
@@ -130,7 +140,7 @@ class EmergencyLayout extends React.Component {
         <p >Subject - {props.subject}</p>
         <p >Message - {props.message}</p>
         <button onClick={props.handleBack} name="finalMessageBack">Back</button>
-        <button name="finalMessageSend">Send</button>
+        <button name="finalMessageSend" onClick={props.sendEmail}>Send</button>
       </div>);
     }
 
