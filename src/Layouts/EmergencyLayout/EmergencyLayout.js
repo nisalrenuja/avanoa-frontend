@@ -46,7 +46,7 @@ class EmergencyLayout extends React.Component {
       this.setState({Brecepient: true});
 
       if (event.target.value == "Care Taker"){
-        this.setState({email: "pokirisa@gmail.com"});
+        this.setState({email: "nipunchamodya@gmail.com"});
       }
 
       else if (event.target.value == "Gurdian"){
@@ -117,6 +117,7 @@ class EmergencyLayout extends React.Component {
 
     function Message (props) {
       console.log("Message");      
+	  if (props.recepient == "Care Taker"){
         return (
           <div>
             <h1>Select Message</h1>
@@ -126,7 +127,27 @@ class EmergencyLayout extends React.Component {
 
             <button onClick={props.handleBack} name="messageBack">Back</button>
           </div>);
-        
+      }
+      else if (props.recepient == "Gurdian"){
+        return (
+          <div>
+            <h1>Select Message</h1>
+            <button onClick={props.handleClick} name="message" value="I need to See you">I need to See you</button>
+            <button onClick={props.handleClick} name="message" value="The Care Taker is not here">The Care Taker is not here</button>
+            
+            <button onClick={props.handleBack} name="messageBack">Back</button>
+          </div>);
+      }
+      else if (props.recepient == "Doctor"){
+        return (
+          <div>
+            <h1>Select Message</h1>
+            <button onClick={props.handleClick} name="message" value="I am not feeling well">I am not feeling well</button>
+            <button onClick={props.handleClick} name="message" value="My appointment is coming up">My appointment is coming up</button>
+            
+            <button onClick={props.handleBack} name="messageBack">Back</button>
+          </div>);
+      }        
       
 
     }
