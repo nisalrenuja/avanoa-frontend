@@ -113,11 +113,11 @@ return (
             <p>Avanoa Hellow</p>
           </div>
 
-          <button className={sec1} onClick={pauseWebgazer}>Turn Off</button>
-          <button className={sec2} onClick={resumeWebgazer}>Turn On</button>
+          <button className=  {sec1} id= 'turnoffbtn' onClick={pauseWebgazer}>Turn Off</button>
+          <button className= {sec2} id= 'turnonbtn' onClick={resumeWebgazer}>Turn On</button>
           <div className="siren">
             {/* <button className={this.state.select1}>Siren</button> */}
-            <button className={sec3} onClick={playAudio}>Siren</button>
+            <button className={sec3} id= 'sirenbtn' onClick={playAudio}>Siren</button>
           </div>
           {/* avatar */}
           <div className="appbar_avatar">
@@ -129,7 +129,7 @@ return (
           
             {/* <BiMenuAltLeft onClick={handleSidebar} /> */}
           </div>
-          <button className={sec5} onClick={handleClick}>logout</button> 
+          <button className=  {sec5}  id= 'logoutbtn' onClick={handleClick}>Logout</button> 
         </div>
       
       </div>

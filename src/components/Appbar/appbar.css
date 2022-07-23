@@ -9,7 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(84, 79, 95, 0.8);
+  background-color: rgba(106, 102, 113, 0.8);
   -webkit-backdrop-filter: saturate(80%) blur(20px);
           backdrop-filter: saturate(80%) blur(20px);
   z-index: 2;
@@ -84,4 +84,52 @@
 }
 .def{
   color: #99979e;
+}
+
+#turnoffbtn {
+  background-color: rgb(43, 43, 44);
+  border: none;
+  display: inline-block;
+  padding: .5rem 1rem;
+  margin: .3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  border-radius: .5rem;
+}
+
+#turnonbtn {
+  background-color: rgb(43, 43, 44);
+  border: none;
+  display: inline-block;
+  padding: .5rem 1rem;
+  margin: .3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  border-radius: .5rem;
+}
+
+#logoutbtn {
+  background-color: rgb(43, 43, 44);
+  border: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  border-radius: .5rem;
+}
+
+#sirenbtn {
+  background-color: rgb(43, 43, 44);
+  border: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  border-radius: .5rem;
 }
