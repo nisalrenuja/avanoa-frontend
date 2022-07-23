@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(208, 208, 208);
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.col {
+    height: 90vh;
+    background-color: #fff;
+    width: inherit;
+}
+
+.title {
+    height: 200px;
+    background-color: rgb(55, 102, 255);
+    color: #fff;
+    padding: 0 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.title h1 {
+    position: relative;
+    top: 140px;
+    font-size: 30pt;
+}
+
+.title button {
+    position: relative;
+    top: 70px;
+    left: 400px;
+    color:rgb(55, 102, 255);
+    background-color: #fff;
+    font-size: 20pt;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.list {
+    width: 450px;
+    height: 580px;
+    overflow-y: scroll;
+    margin: 20px auto;
+}
+
+.reminder {
+    width: 420px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #000;
+    background-color: #fff;
+    list-style: none;
+    line-height: 50px;
+    margin: 5px auto;
+    position: relative;
+    right: 20px;
+    padding: 10px;
+    display: -webkit-inline-box;
+    box-shadow: rgba(0,0,0,0.15) 1.50px 1.50px 2px;
+}
+
+.text {
+    width: 280px;
+}
+
+.btn-check {
+    color: #fff;
+    background-color: rgb(55, 102, 255);
+    border: none;
+    width: 70px;
+    height: 35px;
+}
+
+.btn-delete {
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 60px;
+    height: 35px;
+    margin: 0 5px;
+}
