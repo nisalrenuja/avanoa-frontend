@@ -4,6 +4,7 @@ import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
 import HomeLayout from "./Layouts/HomeLayout/HomeLayout";
 import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
+import ReminderLayout from "./Layouts/ReminderLayout/ReminderLayout";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
@@ -58,6 +59,8 @@ function App() {
 				<Route path="/emergency" element={<EmergencyLayout />} />
 
 				<Route path="/Keyboard" element={<KeyboardLayout />} />
+
+				<Route path="/Reminder" element={<ReminderLayout />} />
 			</Routes>
 		</BrowserRouter>
 	);
