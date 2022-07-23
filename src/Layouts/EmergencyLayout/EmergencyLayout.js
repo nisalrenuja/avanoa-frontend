@@ -1,5 +1,5 @@
 import React from "react";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -57,25 +57,25 @@ class EmergencyLayout extends React.Component {
 		}
 	}
 
-	// sendEmail = (e) => {
-	// 	e.preventDefault();
+	sendEmail = (e) => {
+	e.preventDefault();
 
-	// 	emailjs
-	// 		.send(
-	// 			"service_s63wkq9",
-	// 			"template_t7hy137",
-	// 			this.state,
-	// 			"zXAlVVivBD7BlgIVm"
-	// 		)
-	// 		.then(
-	// 			(result) => {
-	// 				console.log(result.text);
-	// 			},
-	// 			(error) => {
-	// 				console.log(error.text);
-	// 			}
-	// 		);
-	// };
+	emailjs
+		.send(
+	 			"service_s63wkq9",
+	 			"template_t7hy137",
+	 			this.state,
+	 			"zXAlVVivBD7BlgIVm"
+	 		)
+	 		.then(
+	 			(result) => {
+	 				console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
 
 	render() {
 		let comp;
