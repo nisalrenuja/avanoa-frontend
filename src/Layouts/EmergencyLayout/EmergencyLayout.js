@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
+import "./EmergencyLayout.css";
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -111,16 +112,17 @@ class EmergencyLayout extends React.Component {
 					<h1>Select Recepient</h1>
 
 					<button
+						class = 'emergencybuttons'
 						onClick={props.handleClick}
 						name="recepient"
 						value="Care Taker"
 					>
 						Care Taker
 					</button>
-					<button onClick={props.handleClick} name="recepient" value="Gurdian">
+					<button class = 'emergencybuttons' onClick={props.handleClick} name="recepient" value="Gurdian">
 						Gurdian
 					</button>
-					<button onClick={props.handleClick} name="recepient" value="Doctor">
+					<button class = 'emergencybuttons'onClick={props.handleClick} name="recepient" value="Doctor">
 						Doctor
 					</button>
 				</div>
@@ -135,6 +137,7 @@ class EmergencyLayout extends React.Component {
 						<h1>Select Message</h1>
 
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="I need Medicine"
@@ -142,6 +145,7 @@ class EmergencyLayout extends React.Component {
 							I need Medicine
 						</button>
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="I need to Eat"
@@ -149,6 +153,7 @@ class EmergencyLayout extends React.Component {
 							I need to Eat
 						</button>
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="I am Thirsty"
@@ -167,6 +172,7 @@ class EmergencyLayout extends React.Component {
 						<h1>Select Message</h1>
 
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="I need to See you"
@@ -174,6 +180,7 @@ class EmergencyLayout extends React.Component {
 							I need to See you
 						</button>
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="The Care Taker is not here"
@@ -181,7 +188,7 @@ class EmergencyLayout extends React.Component {
 							The Care Taker is not here
 						</button>
 
-						<button onClick={props.handleBack} name="messageBack">
+						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
 					</div>
@@ -192,6 +199,7 @@ class EmergencyLayout extends React.Component {
 						<h1>Select Message</h1>
 
 						<button
+							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="I am not feeling well"
@@ -199,6 +207,7 @@ class EmergencyLayout extends React.Component {
 							I am not feeling well
 						</button>
 						<button
+						class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
 							value="My appointment is coming up"
@@ -206,7 +215,7 @@ class EmergencyLayout extends React.Component {
 							My appointment is coming up
 						</button>
 
-						<button onClick={props.handleBack} name="messageBack">
+						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
 					</div>
@@ -224,10 +233,10 @@ class EmergencyLayout extends React.Component {
 					<p>Subject - {props.subject}</p>
 					<p>Message - {props.message}</p>
 
-					<button onClick={props.handleBack} name="finalMessageBack">
+					<button class = 'emergencybuttons' onClick={props.handleBack} name="finalMessageBack">
 						Back
 					</button>
-					<button name="finalMessageSend" onClick={props.sendEmail}>
+					<button class = 'emergencybuttons' name="finalMessageSend" onClick={props.sendEmail}>
 						Send
 					</button>
 				</div>
