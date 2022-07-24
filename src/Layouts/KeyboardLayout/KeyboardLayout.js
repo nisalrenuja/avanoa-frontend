@@ -602,7 +602,7 @@ function KeyboardLayout(props) {
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂේ" onClick={handleKbutton}> ෂේ </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂො" onClick={handleKbutton}> ෂො </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂෝ" onClick={handleKbutton}> ෂෝ </button></a>
-                 
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂෞ" onClick={handleKbutton}> ෂෞ </button></a>
                     </div>
                   </div>
 
