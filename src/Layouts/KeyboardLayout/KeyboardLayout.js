@@ -173,6 +173,7 @@ function KeyboardLayout(props) {
                   <div class="dropdown">
                   <button id = "Kbutton" class="Kbutton" value="ක" onClick={handleKbutton}>ක</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ක" onClick={handleKbutton}> ක </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="කා" onClick={handleKbutton}> කා </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="කැ" onClick={handleKbutton}> කැ </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="කෑ" onClick={handleKbutton}> කෑ </button></a>
@@ -190,6 +191,7 @@ function KeyboardLayout(props) {
                   <div class="dropdown">
                   <button id = "Kbutton" class="Kbutton" value="ග" onClick={handleKbutton}>ග</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ග" onClick={handleKbutton}> ග </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ගැ" onClick={handleKbutton}> ගැ </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ගා" onClick={handleKbutton}> ගා </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ගැ" onClick={handleKbutton}> ගැ </button></a>
