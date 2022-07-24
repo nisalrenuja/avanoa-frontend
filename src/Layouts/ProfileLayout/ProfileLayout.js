@@ -3,7 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import "./profilelayout.css";
 import { useState } from "react";
-import Speech from "../../components/Speech/Speech";
+// import Speech from "../../components/Speech/Speech";
 import WebGazer from "../../components/WebGazer/WebGazer";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -19,7 +19,7 @@ const ProfileLayout = () => {
 	return (
 		<div className="profilelayout">
 			<WebGazer />
-			<Speech />
+			{/* <Speech /> */}
 			{/* appbar */}
 			<Appbar handleSidebar={handleSidebar} />
 			{/* sidebar */}
