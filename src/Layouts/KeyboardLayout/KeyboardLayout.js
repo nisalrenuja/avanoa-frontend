@@ -532,18 +532,18 @@ function KeyboardLayout(props) {
                   <div class="dropdown">
                 <button id = "Kbutton" class="Kbutton" value="ළ" onClick={handleKbutton}>ළ</button>
                     <div class="dropdown-content">
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළා" onClick={handleKbutton}> ෆා </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළැ" onClick={handleKbutton}> ෆැ </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෑ" onClick={handleKbutton}> ෆෑ </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළ්" onClick={handleKbutton}> ෆ් </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළි" onClick={handleKbutton}> ෆි </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළී" onClick={handleKbutton}> ෆී </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළු" onClick={handleKbutton}> ෆු </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළූ" onClick={handleKbutton}> ෆූ </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෙ" onClick={handleKbutton}> ෆෙ </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළේ" onClick={handleKbutton}> ෆේ </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළො" onClick={handleKbutton}> ෆො </button></a>
-                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෝ" onClick={handleKbutton}> ෆෝ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළා" onClick={handleKbutton}> ළා </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළැ" onClick={handleKbutton}> ළැ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෑ" onClick={handleKbutton}> ළෑ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළ්" onClick={handleKbutton}> ළ් </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළි" onClick={handleKbutton}> ළි </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළී" onClick={handleKbutton}> ළී </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළු" onClick={handleKbutton}> ළු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළූ" onClick={handleKbutton}> ළූ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෙ" onClick={handleKbutton}> ළෙ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළේ" onClick={handleKbutton}> ළේ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළො" onClick={handleKbutton}> ළො </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෝ" onClick={handleKbutton}> ළෝ </button></a>
                     <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෆෞ" onClick={handleKbutton}> ෆෞ </button></a>
                     </div>
                   </div>
@@ -551,18 +551,58 @@ function KeyboardLayout(props) {
                   <div class="dropdown">
                 <button id = "Kbutton" class="Kbutton" value="ථ" onClick={handleKbutton}>ථ</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථා" onClick={handleKbutton}> ථා </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථැ" onClick={handleKbutton}> ථැ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථෑ" onClick={handleKbutton}> ථෑ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථ්" onClick={handleKbutton}> ථ් </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථි" onClick={handleKbutton}> ථි </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථී" onClick={handleKbutton}> ථී </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථු" onClick={handleKbutton}> ථු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථූ" onClick={handleKbutton}> ථූ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථෙ" onClick={handleKbutton}> ථෙ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථේ" onClick={handleKbutton}> ථේ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථො" onClick={handleKbutton}> ථො </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථෝ" onClick={handleKbutton}> ථෝ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ථෞ" onClick={handleKbutton}> ථෞ </button></a>
                     </div>
                   </div>
 
                   <div class="dropdown">
                 <button id = "Kbutton" class="Kbutton" value="භ" onClick={handleKbutton}>භ</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භා" onClick={handleKbutton}> භා </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භැ" onClick={handleKbutton}> භැ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භෑ" onClick={handleKbutton}> භෑ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භ්" onClick={handleKbutton}> භ් </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භි" onClick={handleKbutton}> භි </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භී" onClick={handleKbutton}> භී </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භු" onClick={handleKbutton}> භු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භූ" onClick={handleKbutton}> භූ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භෙ" onClick={handleKbutton}> භෙ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භේ" onClick={handleKbutton}> භේ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භො" onClick={handleKbutton}> භො </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භෝ" onClick={handleKbutton}> භෝ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="භෞ" onClick={handleKbutton}> භෞ </button></a>
                     </div>
                   </div>
 
                   <div class="dropdown">
                 <button id = "Kbutton" class="Kbutton" value="ෂ" onClick={handleKbutton}>ෂ</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂා" onClick={handleKbutton}> ෂා </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂැ" onClick={handleKbutton}> ෂැ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂෑ" onClick={handleKbutton}> ෂෑ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂ්" onClick={handleKbutton}> ෂ් </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂි" onClick={handleKbutton}> ෂි </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂී" onClick={handleKbutton}> ෂී </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂු" onClick={handleKbutton}> ෂු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂු" onClick={handleKbutton}> ෂු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂූ" onClick={handleKbutton}> ෂූ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂෙ" onClick={handleKbutton}> ෂෙ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂේ" onClick={handleKbutton}> ෂේ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂො" onClick={handleKbutton}> ෂො </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෂෝ" onClick={handleKbutton}> ෂෝ </button></a>
+                 
                     </div>
                   </div>
 
