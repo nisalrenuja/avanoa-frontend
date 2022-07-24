@@ -532,6 +532,19 @@ function KeyboardLayout(props) {
                   <div class="dropdown">
                 <button id = "Kbutton" class="Kbutton" value="ළ" onClick={handleKbutton}>ළ</button>
                     <div class="dropdown-content">
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළා" onClick={handleKbutton}> ෆා </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළැ" onClick={handleKbutton}> ෆැ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෑ" onClick={handleKbutton}> ෆෑ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළ්" onClick={handleKbutton}> ෆ් </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළි" onClick={handleKbutton}> ෆි </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළී" onClick={handleKbutton}> ෆී </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළු" onClick={handleKbutton}> ෆු </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළූ" onClick={handleKbutton}> ෆූ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෙ" onClick={handleKbutton}> ෆෙ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළේ" onClick={handleKbutton}> ෆේ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළො" onClick={handleKbutton}> ෆො </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ළෝ" onClick={handleKbutton}> ෆෝ </button></a>
+                    <a href="#"> <button id = "Kbutton" class="Kbutton" value="ෆෞ" onClick={handleKbutton}> ෆෞ </button></a>
                     </div>
                   </div>
 
