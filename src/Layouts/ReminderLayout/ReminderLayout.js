@@ -72,7 +72,7 @@ const ReminderLayout = () => {
             onChange={onChange}
           />
         ))}
-        <button>Submit</button>
+        <subbutton>Submit</subbutton>
       </form>
     </div>
   );
