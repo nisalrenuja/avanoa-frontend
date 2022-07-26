@@ -11,6 +11,7 @@ import axios from "./libs/axios";
 import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
 
+
 function App() {
 	const { dispatch, token, isLoggedIn } = useContext(AuthContext);
 
@@ -61,9 +62,16 @@ function App() {
 				<Route path="/Keyboard" element={<KeyboardLayout />} />
 
 				<Route path="/Reminder" element={<ReminderLayout />} />
+
+
+
+
 			</Routes>
 		</BrowserRouter>
 	);
 }
+
+	
+
 
 export default App;
