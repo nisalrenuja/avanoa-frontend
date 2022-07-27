@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
 import "./EmergencyLayout.css";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -109,6 +110,7 @@ class EmergencyLayout extends React.Component {
 		function Recepient(props) {
 			return (
 				<div>
+					<Sidebar />
 					<h1>Select Recepient</h1>
 
 					<button
