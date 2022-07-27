@@ -14,16 +14,16 @@ const audioClips = [
 
   // Slide 1 Audio
   {
-    sound: "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-    label: "ආයුබෝවන්",
+    sound: "https://res.cloudinary.com/avanoa/video/upload/v1658513448/oyata_kohomda_itqlve.m4a",
+    label: "ඔයාට කොහොමද ?",
   },
   {
-    sound: "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-    label: "ඔව්",
+    sound: "https://res.cloudinary.com/avanoa/video/upload/v1658513448/Watson_Peiris_Mavatha_2_nq9hor.m4a",
+    label: "මට උදවු කරනවද ?",
   },
   {
-    sound: "https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-    label: "නැහැ",
+    sound: "https://res.cloudinary.com/avanoa/video/upload/v1658513448/aaith_kiyanna_daexip.m4a",
+    label: "ආයෙත් කියන්න",
   },
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
