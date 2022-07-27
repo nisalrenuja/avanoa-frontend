@@ -73,7 +73,7 @@ const audioClips = [
   },
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-    label: "නිදිමතයි",
+    label: " නිදිමතයි",
   },
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
@@ -85,7 +85,7 @@ const audioClips = [
   },
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-    label: "කොහොමද?",
+    label: " ඔයාට කොහොමද?",
   },
 
   // Slide 3 Audio
@@ -123,7 +123,7 @@ const audioClips = [
   },
   {
     sound: "https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-    label: "කොහොමද?",
+    label: "ඔයාට කොහොමද?",
   },
 
   // Slide 4 Audio
@@ -729,15 +729,15 @@ class phraseBubble extends Component {
       slide4 = "selected";
       slide3 = "notSelected"
 
-      ph1 = "බඩගිනියි"
-      ph2 = "පිපාසය"
-      ph3 = "මහන්සියි"
-      ph4 = "වැසිකිළියට යනවා"
-      ph5 = "නානවා"
-      ph6 = "නිදිමත"
+      ph1 = "මට බඩගිනියි"
+      ph2 = "මට පිපාසය"
+      ph3 = "මට මහන්සියි"
+      ph4 = "මට වැසිකිළියට යනවා"
+      ph5 = "මට නානවා"
+      ph6 = "මට නිදිමත"
       ph7 = "මම අඳිනවා "
       ph8 = "නැරඹීම / සවන් දීම "
-      ph9 = "උදව්වක් ඕන"
+      ph9 = "මට උදව්වක් ඕන"
     }
     else if(index == 3 && counter == 4){
       //setSel("selectionBoarder");
@@ -748,11 +748,11 @@ class phraseBubble extends Component {
 
       ph1 = "මට සනීප නෑ"
       ph2 = "බෙහෙත් ඉවරයි"
-      ph3 = "බෙහෙත් ඕනේ "
+      ph3 = "මට බෙහෙත් ඕනේ "
       ph4 = "කෝ මගේ රිපෝට්ස්"
       ph5 = "මට කලන්තේ වගේ "
       ph6 = "මට රිදෙනවා "
-      ph7 = "දැන් සනීපයි "
+      ph7 = "මට දැන් සනීපයි "
       ph8 = "බෙහෙත් ගන්න යමු"
       ph9 = "මට කණ්නාඩිය / hearing aid එක දෙන්න"
     }
@@ -763,15 +763,15 @@ class phraseBubble extends Component {
       slide6 = "selected";
       slide5 = "notSelected"
 
-      ph1 = "පුවත්පත් කියවනවා"
-      ph2 = "රුපවාහිනිය නරබමින් "
-      ph3 = "සංගීතයට සවන් දීම"
-      ph4 = "නානවා"
-      ph5 = "නිදාගන්නවා"
-      ph6 = "ව්‍යායාම කරනවා"
-      ph7 = "සමාජ මාධ්‍ය භාවිතා කරනවා"
-      ph8 = "ඇවිදින්න යන්න"
-      ph9 = "කෙනෙකුට කතා කරන්න"
+      ph1 = "මම පුවත්පත් කියවනවා"
+      ph2 = "මම රුපවාහිනිය නරබමින් "
+      ph3 = "මම සංගීතයට සවන් දීම"
+      ph4 = "මම නානවා"
+      ph5 = "මම නිදාගන්නවා"
+      ph6 = "මම ව්‍යායාම කරනවා"
+      ph7 = "මම සමාජ මාධ්‍ය භාවිතා කරනවා"
+      ph8 = "මම ඇවිදින්න යන්න "
+      ph9 = "මම කෙනෙකුට කතා කරන්න"
     }
     else if(index == 3 && counter == 6){
       //setSel("selectionBoarder");
@@ -782,13 +782,13 @@ class phraseBubble extends Component {
 
       ph1 = "ඔව් "
       ph2 = "නෑ "
-      ph3 = "කොහොමද "
-      ph4 = "කවුද "
+      ph3 = "ඔයාට කොහොමද "
+      ph4 = "ඔයා කවුද "
       ph5 = "මොකක්ද "
-      ph6 = "කොහෙද "
-      ph7 = "බැහැ "
+      ph6 = "ඔයා කොහෙද "
+      ph7 = "මට බැහැ "
       ph8 = "කීයටද "
-      ph9 = "පුළුවන්"
+      ph9 = "මට පුළුවන්"
     }
     else if(index == 3 && counter == 7){
       //setSel("selectionBoarder");
@@ -950,15 +950,15 @@ class phraseBubble extends Component {
     if (index ==16){
       slide4 = "selection"
 
-      ph1 = "බඩගිනියි"
-      ph2 = "පිපාසය"
-      ph3 = "මහන්සියි"
+      ph1 = "මට බඩගිනියි"
+      ph2 = "මට පිපාසයයි"
+      ph3 = "මට මහන්සියි"
       ph4 = "වැසිකිළියට යනවා"
-      ph5 = "නානවා"
-      ph6 = "නිදිමත"
+      ph5 = "මම නානවා"
+      ph6 = "මම නිදිමතයි"
       ph7 = "මම අඳිනවා  "
       ph8 = "නැරඹීම / සවන් දීම "
-      ph9 = "උදව්වක් ඕන"
+      ph9 = "මට උදව්වක් ඕන"
 
       if(counter == 0){
         select1 = "selected"
@@ -1050,15 +1050,17 @@ class phraseBubble extends Component {
     if (index ==18){
       slide6 = "selection"
 
-      ph1 = "පුවත්පත් කියවනවා"
-      ph2 = "රුපවාහිනිය නරබමින්  "
-      ph3 = "සංගීතයට සවන් දීම"
-      ph4 = "නානවා "
-      ph5 = "නිදාගන්නවා"
-      ph6 = "ව්‍යායාම කරනවා"
-      ph7 = "සමාජ මාධ්‍ය භාවිතා කරනවා"
-      ph8 = "ඇවිදින්න යන්න"
-      ph9 = "කෙනෙකුට කතා කරන්න"
+    
+
+      ph1 = "මම පුවත්පත් කියවනවා"
+      ph2 = "මම රුපවාහිනිය නරබමින් "
+      ph3 = "මම සංගීතයට සවන් දීම"
+      ph4 = "මම නානවා"
+      ph5 = "මම නිදාගන්නවා"
+      ph6 = "මම ව්‍යායාම කරනවා"
+      ph7 = "මම සමාජ මාධ්‍ය භාවිතා කරනවා"
+      ph8 = "මම ඇවිදින්න යන්න "
+      ph9 = "මම කෙනෙකුට කතා කරන්න"
 
       if(counter == 0){
         select1 = "selected"
@@ -1100,15 +1102,17 @@ class phraseBubble extends Component {
     if (index ==19){
       slide7 = "selection"
 
+    
+
       ph1 = "ඔව් "
       ph2 = "නෑ "
-      ph3 = "කොහොමද "
-      ph4 = "කවුද "
+      ph3 = "ඔයාට කොහොමද "
+      ph4 = "ඔයා කවුද "
       ph5 = "මොකක්ද "
-      ph6 = "කොහෙද "
-      ph7 = "බැහැ "
+      ph6 = "ඔයා කොහෙද "
+      ph7 = "මට බැහැ "
       ph8 = "කීයටද "
-      ph9 = "පුළුවන්"
+      ph9 = "මට පුළුවන්"
 
       if(counter == 0){
         select1 = "selected"

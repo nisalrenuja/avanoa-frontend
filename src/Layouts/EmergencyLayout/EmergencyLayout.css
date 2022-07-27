@@ -1,0 +1,39 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	width: 300px;
+	margin: 10px;
+	text-align: center;
+	line-height: 200px;
+	font-size: 30px;
+	align-items: center;
+}
+
+.emergencybuttons {
+    background-color: rgb(86, 86, 87);
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 150px;
+    height: 80px;
+    border-radius: .5rem;
+	align-items: center;
+}
+
+.selected {
+	color: red;
+}
+.notSelected {
+	color: black;
+}
+.selection {
+	color: green;
+}
