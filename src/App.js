@@ -4,11 +4,13 @@ import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
 import HomeLayout from "./Layouts/HomeLayout/HomeLayout";
 import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
+import ReminderLayout from "./Layouts/ReminderLayout/ReminderLayout";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
 import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
+
 
 function App() {
 	const { dispatch, token, isLoggedIn } = useContext(AuthContext);
@@ -58,9 +60,18 @@ function App() {
 				<Route path="/emergency" element={<EmergencyLayout />} />
 
 				<Route path="/Keyboard" element={<KeyboardLayout />} />
+
+				<Route path="/Reminder" element={<ReminderLayout />} />
+
+
+
+
 			</Routes>
 		</BrowserRouter>
 	);
 }
+
+	
+
 
 export default App;

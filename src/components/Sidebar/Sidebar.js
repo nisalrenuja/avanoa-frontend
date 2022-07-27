@@ -2,6 +2,8 @@ import { BiBookContent } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
 import { BiLogOut } from "react-icons/bi";
 import { FiPhoneCall } from "react-icons/fi";
+import { FiSettings } from "react-icons/fi";
+import { BiMessageAltCheck } from "react-icons/bi";
 import axios from "../../libs/axios";
 import "./sidebar.css";
 import { AuthContext } from "../../context/AuthContext";
@@ -102,37 +104,46 @@ const Sidebar = () => {
 		<div className={`sidebar ${selS}`}>
 			<div className="sidebar_menu">
 				<ul>
-					<li>
+					<li> <button class = 'sidebarbtn'>
 						<BiBookContent />
 						<Link to="/">
 							<p className={sec1}>Phrase Bubbles</p>
 						</Link>
+						</button>
 					</li>
 					<li>
+					<button class = 'sidebarbtn'>
 						<FiPhoneCall />
 						<Link to="/Keyboard">
 							<p className={sec2}>Keyboard</p>
 						</Link>
+						</button>
 					</li>
 					<li>
+					<button class = 'sidebarbtn1'>
 						<BiUserCircle />
 						<Link to="/emergency">
 							<p className={sec3}>Emergency Contacts</p>
 						</Link>
+						</button>
 					</li>
 					<li>
-						<BiLogOut />
+					<button class = 'sidebarbtn'>
+						<BiMessageAltCheck />
 						<Link to="/reminder">
 							<p className={sec4}>Reminder</p>
 						</Link>
+						</button>
 					</li>
 					<li>
-						<FiPhoneCall />
+					<button class = 'sidebarbtn'>
+						<FiSettings />
 						<Link to="/settings">
 							<p className={sec5}>Settings</p>
 						</Link>
+						</button>
 					</li>
-					c: {counter} i: {index}
+					(c: {counter} i: {index}
 				</ul>
 			</div>
 		</div>

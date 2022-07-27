@@ -1,9 +1,9 @@
 .sidebar {
 	position: fixed;
 	top: 0;
-	height: 100vh;
+	height: 1000vh;
 	min-width: 280px;
-	background-color: rgba(29, 25, 39, 0.8);
+	/*background-color: rgba(29, 25, 39, 0.8);*/
 	-webkit-backdrop-filter: saturate(80%) blur(20px);
 	backdrop-filter: saturate(80%) blur(20px);
 	z-index: 1;
@@ -20,11 +20,12 @@
 
 .sidebar_menu ul {
 	background-color: rgba(84, 79, 95, 0.8);
-	padding: 1em 3em;
+	padding: 2em 3em;
 	border-radius: 5px;
 	min-width: 200px;
 	width: 100%;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .sidebar_menu ul li:nth-child(1) svg {
@@ -53,6 +54,26 @@
 
 .sidebar_menu ul li:hover:nth-child(3) p {
 	color: #f96a8b;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.sidebar_menu ul li:nth-child(4) svg {
+	color: #5ff774;
+}
+
+.sidebar_menu ul li:hover:nth-child(4) p {
+	color: #5ff774;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.sidebar_menu ul li:nth-child(5) svg {
+	color: #fb2d2d;
+}
+
+.sidebar_menu ul li:hover:nth-child(5) p {
+	color: #fb2d2d;
 	-webkit-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
 }
@@ -92,4 +113,33 @@
 }
 .def {
 	color: #99979e;
+}
+
+.sidebarbtn {
+    background-color: rgb(248, 248, 251);
+    border: none;
+    display: inline-block;
+    padding: .8rem 1rem;
+    margin: .2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    border-radius: .5rem;
+	border-radius: 40px;
+	text-align: center;
+}
+
+.sidebarbtn1 {
+    background-color: rgb(248, 248, 251);
+    border: none;
+    display: inline-block;
+    padding: .4rem 1rem;
+    margin: .2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    border-radius: .5rem;
+	border-radius: 40px;
 }

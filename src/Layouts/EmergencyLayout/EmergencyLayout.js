@@ -1,193 +1,252 @@
-import React, { Component } from "react";
-import { Row, Col, Form, Input, Button, Space, notification } from "antd";
-import "antd/dist/antd.css";
-import WebGazer from "../../components/WebGazer/WebGazer";
+import React from "react";
+import emailjs from '@emailjs/browser';
+import "./EmergencyLayout.css";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
-const { TextArea } = Input;
+class EmergencyLayout extends React.Component {
+	constructor(props) {
+		super(props);
 
-const sgMail = require("@sendgrid/mail");
-
-const initializeSendGrid = async () => {
-	const apiKey = await process.env.REACT_APP_SENDGRID_API_KEY;
-	sgMail.setApiKey(apiKey);
-	console.log("SendGrid key ", apiKey);
-};
-
-export default EmergencyLayout;
-
-initializeSendGrid();
-
-function EmergencyLayout() {
-	const initialState = {
-		name: "",
-		email: "",
-		subject: "",
-		message: "",
-	};
-	const [input, SetInput] = React.useState(initialState);
-
-	const handleClick = (e) => {
-		e.preventDefault();
-		const { value, name } = e.target;
-		SetInput((values) => ({ ...values, [name]: value }));
-	};
-
-	const [form] = Form.useForm();
-
-	const onComplete = (fields) => {
-		const message = {
-			to: "nrenuja@gmail.com",
-			from: fields.email,
-			subject: fields.subject,
-			html: `
-      <p><strong>Name:</strong> ${fields.name}</p>
-      <p>${fields.message}</p>`,
+		this.state = {
+			recepient: "Recepient",
+			email: "test@gmail.com",
+			subject: "Subject",
+			message: "Message",
+			Brecepient: false,
+			Bmessage: false,
+			BFinalMessage: false,
+			page: 1,
 		};
 
-		sgMail
-			.send(message)
-			.then(() => {
-				form.resetFields();
-				console.log("Email Sent!");
-				notification.open({
-					message: "Message successfu!",
-					description: "We have successfully received your email.",
-				});
-			})
-			.catch((error) => {
-				console.error("Error: ", error);
-			});
+		this.handleClick = this.handleClick.bind(this);
+		this.handleBack = this.handleBack.bind(this);
+		this.sendEmail = this.sendEmail.bind(this);
+	}
+
+	handleBack(event) {
+		event.preventDefault();
+		if (event.target.name == "messageBack") {
+			this.setState({ page: 1 });
+		}
+		if (event.target.name == "finalMessageBack") {
+			this.setState({ page: 2 });
+		}
+	}
+
+	handleClick(event) {
+		event.preventDefault();
+
+		this.setState({ [event.target.name]: event.target.value });
+
+		if (event.target.name == "recepient") {
+			this.setState({ Brecepient: true });
+
+			if (event.target.value == "Care Taker") {
+				this.setState({ email: "nipunchamodya@gmail.com" });
+			} else if (event.target.value == "Gurdian") {
+				this.setState({ email: "pokirisa@gmail.com" });
+			} else if (event.target.value == "Doctor") {
+				this.setState({ email: "pokirisa@gmail.com" });
+			}
+
+			this.setState({ page: 2 });
+		}
+
+		if (event.target.name == "message") {
+			this.setState({ Bmessage: true });
+			this.setState({ page: 3 });
+			this.setState({ subject: event.target.value });
+		}
+	}
+
+	sendEmail = (e) => {
+	e.preventDefault();
+
+	emailjs
+		.send(
+	 			"service_s63wkq9",
+	 			"template_t7hy137",
+	 			this.state,
+	 			"zXAlVVivBD7BlgIVm"
+	 		)
+	 		.then(
+	 			(result) => {
+	 				console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 	};
 
-	return (
-		<div>
-			<WebGazer />
-			<Row gutter={24} style={{ padding: "30px" }}>
-				<Col xl={12}>
-					<Form layout="vertical" form={form} onFinish={onComplete}>
-						<Form.Item
-							name="name"
-							label="Name"
-							rules={[
-								{
-									required: false,
-								},
-							]}
-						>
-							<input
-								type="button"
-								name="name"
-								value="Care Taker"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="name"
-								value="Hospital"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="name"
-								value="Guardian"
-								onClick={handleClick}
-							/>
+	render() {
+		let comp;
 
-							<Input value={input.name} required />
-						</Form.Item>
-						<Form.Item
-							name="email"
-							label="Email"
-							rules={[
-								{
-									required: false,
-								},
-							]}
-						>
-							<input
-								type="button"
-								name="email"
-								value="nawaloka@gmail.com"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="email"
-								value="zoysa@gmail.com"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="email"
-								value="randimal@gmail.com"
-								onClick={handleClick}
-							/>
-							<Input value={input.email} required />
-						</Form.Item>
-						<Form.Item
-							name="subject"
-							label="Subject"
-							rules={[
-								{
-									required: false,
-								},
-							]}
-						>
-							<input
-								type="button"
-								name="subject"
-								value="I need Help!"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="subject"
-								value="Emergency"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="subject"
-								value="I'm not well"
-								onClick={handleClick}
-							/>
+		if (this.state.page === 1) {
+			comp = <Recepient handleClick={this.handleClick} />;
+		}
+		if (this.state.page === 2) {
+			comp = (
+				<Message
+					recepient={this.state.recepient}
+					handleClick={this.handleClick}
+					handleBack={this.handleBack}
+				/>
+			);
+		}
+		if (this.state.page === 3) {
+			comp = (
+				<FinalMessage
+					recepient={this.state.recepient}
+					email={this.state.email}
+					subject={this.state.subject}
+					message={this.state.message}
+					handleBack={this.handleBack}
+					sendEmail={this.sendEmail}
+				/>
+			);
+		}
 
-							<Input value={input.subject} required />
-						</Form.Item>
-						<Form.Item
+		function Recepient(props) {
+			return (
+				<div>
+					<Sidebar />
+					<h1>Select Recepient</h1>
+
+					<button
+						class = 'emergencybuttons'
+						onClick={props.handleClick}
+						name="recepient"
+						value="Care Taker"
+					>
+						Care Taker
+					</button>
+					<button class = 'emergencybuttons' onClick={props.handleClick} name="recepient" value="Gurdian">
+						Gurdian
+					</button>
+					<button class = 'emergencybuttons'onClick={props.handleClick} name="recepient" value="Doctor">
+						Doctor
+					</button>
+				</div>
+			);
+		}
+
+		function Message(props) {
+			console.log("Message");
+			if (props.recepient == "Care Taker") {
+				return (
+					<div>
+						<h1>Select Message</h1>
+
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
 							name="message"
-							label="Message"
-							rules={[
-								{
-									required: false,
-								},
-							]}
+							value="I need Medicine"
 						>
-							<input
-								type="button"
-								name="message"
-								value="I need Help!I'm not well"
-								onClick={handleClick}
-							/>
-							<input
-								type="button"
-								name="message"
-								value="Emergency!!! Please come"
-								onClick={handleClick}
-							/>
+							I need Medicine
+						</button>
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="I need to Eat"
+						>
+							I need to Eat
+						</button>
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="I am Thirsty"
+						>
+							I am Thirsty
+						</button>
 
-							<TextArea value={input.message} required />
-						</Form.Item>
-						<Form.Item>
-							<Space>
-								<Button type="primary" htmlType="submit">
-									Submit
-								</Button>
-							</Space>
-						</Form.Item>
-					</Form>
-				</Col>
-			</Row>
-		</div>
-	);
+						<button onClick={props.handleBack} name="messageBack">
+							Back
+						</button>
+					</div>
+				);
+			} else if (props.recepient == "Gurdian") {
+				return (
+					<div>
+						<h1>Select Message</h1>
+
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="I need to See you"
+						>
+							I need to See you
+						</button>
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="The Care Taker is not here"
+						>
+							The Care Taker is not here
+						</button>
+
+						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
+							Back
+						</button>
+					</div>
+				);
+			} else if (props.recepient == "Doctor") {
+				return (
+					<div>
+						<h1>Select Message</h1>
+
+						<button
+							class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="I am not feeling well"
+						>
+							I am not feeling well
+						</button>
+						<button
+						class = 'emergencybuttons'
+							onClick={props.handleClick}
+							name="message"
+							value="My appointment is coming up"
+						>
+							My appointment is coming up
+						</button>
+
+						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
+							Back
+						</button>
+					</div>
+				);
+			}
+		}
+
+		function FinalMessage(props) {
+			return (
+				<div>
+					<h1>Final Message</h1>
+
+					<p>Recepient - {props.recepient}</p>
+					<p>Email - {props.email}</p>
+					<p>Subject - {props.subject}</p>
+					<p>Message - {props.message}</p>
+
+					<button class = 'emergencybuttons' onClick={props.handleBack} name="finalMessageBack">
+						Back
+					</button>
+					<button class = 'emergencybuttons' name="finalMessageSend" onClick={props.sendEmail}>
+						Send
+					</button>
+				</div>
+			);
+		}
+
+		return <div>{comp}</div>;
+	}
 }
+
+export default EmergencyLayout;
