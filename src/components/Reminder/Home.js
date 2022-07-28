@@ -112,10 +112,10 @@ const Home = () => {
                         <thead>
                             <tr className="table-dark">
                                 <th scope="col">id</th>
-                                <th scope="col">Username</th>
-                                <th scope="col">email</th>
-                                <th scope="col">Job</th>
-                                <th scope="col">Number</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Time</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
@@ -127,10 +127,10 @@ const Home = () => {
                                         <>
                                             <tr>
                                                 <th scope="row">{id + 1}</th>
-                                                <td>{element.name}</td>
-                                                <td>{element.email}</td>
-                                                <td>{element.work}</td>
-                                                <td>{element.mobile}</td>
+                                                <td>{element.title}</td>
+                                                <td>{element.description}</td>
+                                                <td>{element.date}</td>
+                                                <td>{element.time}</td>
                                                 <td className="d-flex justify-content-between">
                                                     <NavLink to={`/Reminder/view/${element._id}`}> <button className="btn btn-success"><RemoveRedEyeIcon /></button></NavLink>
                                                     <NavLink to={`/Reminder/edit/${element._id}`}>  <button className="btn btn-primary"><CreateIcon /></button></NavLink>
