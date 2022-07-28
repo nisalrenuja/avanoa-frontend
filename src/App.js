@@ -4,13 +4,15 @@ import AuthLayout from "./Layouts/AuthLayout/AuthLayout";
 import ProfileLayout from "./Layouts/ProfileLayout/ProfileLayout";
 import HomeLayout from "./Layouts/HomeLayout/HomeLayout";
 import ResetLayout from "./Layouts/ResetLayout/ResetLayout";
-import ReminderLayout from "./Layouts/ReminderLayout/ReminderLayout";
+import Home from "./components/Reminder/Home";
 import { AuthContext } from "./context/AuthContext";
 import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
 import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
-
+import Register from "./components/Register/Register";
+import Edit from "./components/Reminder/Edit";
+import Details from "./components/Reminder/Details";
 
 function App() {
 	const { dispatch, token, isLoggedIn } = useContext(AuthContext);
@@ -61,7 +63,12 @@ function App() {
 
 				<Route path="/Keyboard" element={<KeyboardLayout />} />
 
-				<Route path="/Reminder" element={<ReminderLayout />} />
+				<Route path="/Reminder" element={<Home/>} />
+				<Route path="/Reminder/register" element={<Register/>} />
+				<Route path="/Reminder/edit/:id" element={<Edit/>} />
+				<Route path="/Reminder/view/:id" element={<Details/>} />
+
+
 
 
 
