@@ -73,6 +73,7 @@ const ReminderLayout = () => {
           />
         ))}
         <button>Submit</button>
+        <button>Reminders list</button>
       </form>
     </div>
   );
