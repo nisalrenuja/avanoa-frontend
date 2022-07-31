@@ -28,6 +28,7 @@ class WebGazer extends Component {
 	};
 
 	componentDidUpdate() {
+		
 		//     if (this.state.count === 0 && this.state.select1 === "notSelected") {
 		//       this.setState({ select1: "selected" });
 		//       this.setState({ select2: "notSelected" });
@@ -66,8 +67,15 @@ class WebGazer extends Component {
 	}
 
 	componentDidMount() {
+		// const script = document.createElement("script");
+		// script.src = "https://webgazer.cs.brown.edu/webgazer.js?";
+		// script.async = true;
+		// document.body.appendChild(script);
+		
 		const tree = this.props.navList.tree;
 		const treeLayers = this.props.navList.treeLayers;
+		const treeLayersExc = this.props.navList.treeLayersExc;
+		const treeExc = this.props.navList.treeExc;
 
 		console.log(treeLayers);
 
@@ -85,6 +93,7 @@ class WebGazer extends Component {
 		//const blink = new webgazer.BlinkDetector;
 
 		console.log(webgazer.getTracker());
+		webgazer.applyKalmanFilter(true);
 
 		window.saveDataAcrossSessions = true;
 		webgazer
@@ -92,8 +101,7 @@ class WebGazer extends Component {
 				//console.log(data, timestamp);
 				if (data == null || lookDirection === "STOP") return;
 
-				if (
-					data.x < LEFT_CUTOFF &&
+				if (data.x < LEFT_CUTOFF &&
 					lookDirection !== "LEFT" &&
 					lookDirection !== "RESET"
 				) {
@@ -109,16 +117,19 @@ class WebGazer extends Component {
 				}
 
 				if (data.y < TOP_CUTOFF && lookDirection !== "RESET") {
-					if (
-						this.state.cn === this.state.count &&
-						treeLayers[this.props.navList.index] !== null
-					) {
+					if (this.state.cn === this.state.count && treeLayers[this.props.navList.index] !== null) {
 						let curLayer = treeLayers[this.props.navList.index];
 						console.log("curLayer " + curLayer);
 
 						//this.props.selection(this.props.counter.value)
 						if (typeof curLayer !== "undefined") {
 							this.props.updateIndex(this.props.counter.value + curLayer);
+						}
+
+						if (typeof curLayer == "undefined") {
+							console.log("undefined stated")
+							let TLVal = treeLayersExc[this.props.navList.index]
+							this.props.updateIndex(this.props.counter.value + TLVal);
 						}
 
 						//console.log('selected' + this.props.counter.value)
@@ -140,45 +151,32 @@ class WebGazer extends Component {
 						console.log("looking top" + this.state.count);
 					} else if (lookDirection === "LEFT") {
 						if (this.props.counter.value > 0) {
-							// localforage.setItem('selCount', this.state.count - 1);
-							// localforage.setItem('selCount', this.state.cn + 1);
 							this.props.decrement();
 							this.props.updateLayer(this.props.counter.value + 1);
 							//console.log(this.props.counter.value);
 							this.setState({ count: this.state.count - 1 });
 							this.setState({ cn: this.state.count });
-							// localforage.setItem('selCount', this.state.count).then(() => {
-							//   console.log('storage set');
-							// });
+							
 						} else if (this.props.counter.value === 0) {
 							this.props.updateLayer(0);
 						}
 
 						//console.log(this.props.navList.layer)
 
-						if (
-							this.props.navList.layer === 0 &&
-							this.props.navList.index > 0
-						) {
-							console.log("inside execu");
+						if (this.props.navList.layer === 0 && this.props.navList.index > 0) {
+							//console.log("inside execu");
 							const TL = this.props.navList.treeLayers;
 							let index = TL.indexOf(this.props.navList.index);
 
 							if (index === -1) {
 								console.log("indexOF" + this.props.navList.index);
 								//this.props.updatePreIndex(this.props.navList.index);
-								index = TL.indexOf(
-									this.props.navList.index - this.props.counter.preValue
-								);
-								if (
-									this.props.navList.index - this.props.counter.preValue <=
-									0
-								) {
+								index = TL.indexOf(this.props.navList.index - this.props.counter.preValue);
+								if (this.props.navList.index - this.props.counter.preValue <= 0) {
 									index = 0;
 								}
 								if (index === -1) {
-									let val =
-										this.props.navList.indexCount[this.props.navList.index];
+									let val = this.props.navList.indexCount[this.props.navList.index];
 									console.log("pre index val " + val);
 									index = TL.indexOf(this.props.navList.index - val);
 
@@ -192,7 +190,13 @@ class WebGazer extends Component {
 						}
 						//console.log("looking left"+ this.state.count);
 					} else {
-						if (this.props.counter.value < tree[this.props.navList.index] - 1) {
+						let TVal =  tree[this.props.navList.index];
+						if(typeof TVal === 'undefined'){
+							TVal = treeExc[this.props.navList.index];
+							//console.log("unde ststdgdslkg")
+						}
+						console.log("TVAL : " + TVal);
+						if (this.props.counter.value < TVal - 1) {
 							this.setState({ count: this.state.count + 1 });
 							this.setState({ cn: this.state.count });
 
