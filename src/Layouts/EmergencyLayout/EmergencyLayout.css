@@ -28,6 +28,22 @@
 	align-items: center;
 }
 
+.app{
+		padding: 100px 450px;
+		text-align: center;
+	}
+
+.box{
+background-color: white;
+padding-left: 500px;
+	padding: 0px 60px;
+	border-radius: 10px;
+	height: 420px;
+	align-content: center;
+	width: 700px;
+
+}
+
 .selected {
 	color: red;
 }
