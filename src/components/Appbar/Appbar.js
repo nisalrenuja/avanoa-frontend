@@ -109,8 +109,7 @@ return (
         <div className = {`appbar_wrapper ${selS}`}>
           {/* logo */}
           <div className="appbar_logo">
-            {/* <img src="./assets/img/logo.png" alt="logo" /> */}
-            <p>Avanoa Hellow</p>
+             <img src="./assets/img/logo.png" alt="logo" /> 
           </div>
 
           <button className=  {sec1} id= 'turnoffbtn' onClick={pauseWebgazer}>Turn Off</button>
