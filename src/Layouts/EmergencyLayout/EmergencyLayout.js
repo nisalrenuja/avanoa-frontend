@@ -135,6 +135,8 @@ class EmergencyLayout extends React.Component {
 					<Sidebar />
 					<Appbar />
 					<WebGazer/>
+					<div className="app">
+					<div className="box">
 					<h1>Select Recepient</h1>
 
 					<button
@@ -151,6 +153,8 @@ class EmergencyLayout extends React.Component {
 					<button class = 'emergencybuttons'onClick={props.handleClick} name="recepient" value="Doctor">
 						Doctor
 					</button>
+					</div>
+					</div>
 				</div>
 			);
 		}
