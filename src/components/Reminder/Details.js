@@ -8,6 +8,8 @@ import WorkIcon from '@mui/icons-material/Work';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { NavLink, useParams, useNavigate  } from 'react-router-dom';
+import "./Edit.css";
+
 
 
 const Details = () => {
@@ -79,15 +81,15 @@ const Details = () => {
                         <button className="btn btn-danger" onClick={() => deleteuser(getuserdata._id)}><DeleteOutlineIcon /></button>
                     </div>
                     <div className="row">
-                        <div className="left_view col-lg-6 col-md-6 col-12">
-                            <img src="/profile.png" style={{ width: 50 }} alt="profile" />
+                        <div className="left_viewcol-lg-6col-md-6col-12">
+                           
                             <h3 className="mt-3">Title: <span >{getuserdata.title}</span></h3>
                             <h3 className="mt-3">Description: <span >{getuserdata.description}</span></h3>
                             
                         </div>
-                        <div className="right_view  col-lg-6 col-md-6 col-12">
-                            <p className="mt-3">Date: <span>{getuserdata.date}</span></p>
-                            <p className="mt-3">Time: <span>{getuserdata.time}</span></p>
+                        <div className="right_viewcol-lg-6col-md-6col-12">
+                            <h3 className="mt-3">Date: <span>{getuserdata.date}</span></h3>
+                            <h3 className="mt-3">Time: <span>{getuserdata.time}</span></h3>
                         </div>
                     </div>
 

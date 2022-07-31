@@ -18,9 +18,8 @@
     width: 100%;
     padding: 20px ;
     box-sizing: border-box;
-   
-    
 }
+
 .btnbtn-primary{
   background-color: #4CAF50; /* Green */
   border: none;
@@ -31,15 +30,30 @@
   display: inline-block;
   font-size: 16px;
 }
+
 .left_viewcol-lg-6col-md-6col-12{
     background-color: rgb(208, 208, 208);
     width: 100%;
     padding: 20px ;
     box-sizing: border-box;
   }
+
   .right_viewcol-lg-6col-md-6col-12{
     background-color: rgb(208, 208, 208);
     width: 100%;
     padding: 20px ;
     box-sizing: border-box;
+  }
+  .table, th, td {
+    border: 1px solid;
+    
+  }
+  .table {
+    width: 100%;
+    background-color: #0499aa;
+    color: white;
+  }
+  
+  th {
+    height: 70px;
   }
