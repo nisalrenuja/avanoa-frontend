@@ -10,7 +10,7 @@ import { useContext, useEffect } from "react";
 import axios from "./libs/axios";
 import EmergencyLayout from "./Layouts/EmergencyLayout/EmergencyLayout";
 import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
-import Register from "./components/Register/Register";
+import Register from "./components/Reminder/Register";
 import Edit from "./components/Reminder/Edit";
 import Details from "./components/Reminder/Details";
 

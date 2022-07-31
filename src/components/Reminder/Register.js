@@ -1,12 +1,14 @@
 import React, { useContext, useState } from 'react'
-import { NavLink, useHistory } from 'react-router-dom'
+import { NavLink, useNavigate  } from 'react-router-dom'
 import { adddata } from './context/ContextProvider';
+import "./Edit.css";
 
 const Register = () => {
 
     const { udata, setUdata } = useContext(adddata);
 
-    const history = useHistory();
+    const navigate = useNavigate();
+    
 
     const [inpval, setINP] = useState({
         title: "",
@@ -50,7 +52,7 @@ const Register = () => {
             alert("error");
 
         } else {
-            history.push("/")
+            navigate('/Reminder');
             setUdata(data)
             console.log("data added");
 
@@ -62,27 +64,27 @@ const Register = () => {
             <NavLink to="/">home</NavLink>
             <form className="mt-4">
                 <div className="row">
-                    <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <div class="mb-3col-lg-6col-md-6col-12">
                         <label for="exampleInputEmail1" class="form-label">Title</label>
                         <input type="text" value={inpval.title} onChange={setdata} name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
-                    <div class="mb-3 col-lg-12 col-md-12 col-12">
+                    <div class="mb-3col-lg-12col-md-12col-12">
                         <label for="exampleInputPassword1" class="form-label">Description</label>
-                        <textarea name="desc" value={inpval.desc} onChange={setdata} className="form-control" id="" cols="30" rows="5"></textarea>
+                        <input type="text" value={inpval.description} onChange={setdata} name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
-                    <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <div class="mb-3col-lg-6col-md-6col-12">
                         <label for="exampleInputPassword1" class="form-label">Date</label>
-                        <input type="text" value={inpval.date} onChange={setdata} name="date" class="form-control" id="exampleInputPassword1" />
+                        <input type="Date" value={inpval.date} onChange={setdata} name="date" class="form-control" id="exampleInputPassword1" />
                     </div>
 
 
-                    <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <div class="mb-3col-lg-6col-md-6col-12">
                         <label for="exampleInputPassword1" class="form-label">Time</label>
-                        <input type="number" value={inpval.time} onChange={setdata} name="time" class="form-control" id="exampleInputPassword1" />
+                        <input type="Time" value={inpval.time} onChange={setdata} name="time" class="form-control" id="exampleInputPassword1" />
                     </div>
                     
 
-                    <button type="submit" onClick={addinpdata} class="btn btn-primary">Submit</button>
+                    <button type="submit" onClick={addinpdata} class="btnbtn-primary">Done</button>
                 </div>
             </form>
         </div>

@@ -2,6 +2,11 @@ import React from "react";
 import emailjs from '@emailjs/browser';
 import "./EmergencyLayout.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import { connect } from "react-redux";
+import { updateIndex } from "../../reducers/navList/navListSlice";
+import { setCount } from "../../reducers/counter/counterSlice";
+import Appbar from "../../components/Appbar/Appbar";
+import WebGazer from "../../components/WebGazer/WebGazer";
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -21,6 +26,20 @@ class EmergencyLayout extends React.Component {
 		this.handleClick = this.handleClick.bind(this);
 		this.handleBack = this.handleBack.bind(this);
 		this.sendEmail = this.sendEmail.bind(this);
+	}
+
+	componentDidUpdate(){
+		const index = this.props.navList.index;
+
+		if (index == 150) {
+			//150 - first receipient
+
+			//this.selectBubble(0);
+			//select1="selection"
+			//this.selectBubble(1);
+			//this.props.setCount(0);
+		}
+
 	}
 
 	handleBack(event) {
@@ -80,6 +99,9 @@ class EmergencyLayout extends React.Component {
 	};
 
 	render() {
+
+
+
 		let comp;
 
 		if (this.state.page === 1) {
@@ -111,6 +133,8 @@ class EmergencyLayout extends React.Component {
 			return (
 				<div>
 					<Sidebar />
+					<Appbar />
+					<WebGazer/>
 					<div className="app">
 					<div className="box">
 					<h1>Select Recepient</h1>
@@ -270,4 +294,14 @@ class EmergencyLayout extends React.Component {
 	}
 }
 
-export default EmergencyLayout;
+const mapStateToProps = (state) => ({
+	counter: state.counter,
+	navList: state.navList,
+});
+
+const mapDispatchToProps = () => ({
+	setCount,
+	updateIndex,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps())(EmergencyLayout);
