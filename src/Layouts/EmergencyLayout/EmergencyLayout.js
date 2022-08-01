@@ -30,6 +30,10 @@ class EmergencyLayout extends React.Component {
 
 	componentDidUpdate(){
 		const index = this.props.navList.index;
+		// start form index 5 to count 3
+		// 1 - 150 ---> chooosing 150 ---> have 4 options (i-150 and 4counts) ---> 1 - 153 2- 154 3-155 4-156 ---> starts from 170 2 options (2counts) 
+		//2 - 151
+		//3 - 152
 
 		if (index == 150) {
 			//150 - first receipient
@@ -132,9 +136,7 @@ class EmergencyLayout extends React.Component {
 		function Recepient(props) {
 			return (
 				<div>
-					<Sidebar />
-					<Appbar />
-					<WebGazer/>
+					
 					<div className="app">
 					<div className="box">
 					<h1>Select Recepient</h1>
@@ -273,7 +275,13 @@ class EmergencyLayout extends React.Component {
 			);
 		}
 
-		return <div>{comp}</div>;
+		return (
+		<div>
+			<Sidebar />
+			<Appbar />
+			<WebGazer/>
+			{comp}
+		</div>);
 	}
 }
 
