@@ -195,7 +195,7 @@ class EmergencyLayout extends React.Component {
 							I am Thirsty
 						</button>
 
-						<button onClick={props.handleBack} name="messageBack">
+						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
 						</div>

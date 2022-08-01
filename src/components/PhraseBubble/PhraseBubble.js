@@ -31,33 +31,33 @@ const audioClips = [
 	},
 	{
 		sound:
-			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+			"https://res.cloudinary.com/avanoa/video/upload/v1659285507/%E0%B6%B8%E0%B6%A7_%E0%B6%AD%E0%B7%9A%E0%B6%BB%E0%B7%94%E0%B6%B1%E0%B7%9A_%E0%B6%B1%E0%B7%91_jq5yyj.m4a",
+		label: "මට තේරුනේ නෑ",
 	},
 	{
 		sound:
-			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+			"https://res.cloudinary.com/avanoa/video/upload/v1659286162/%E0%B6%92%E0%B6%9A_%E0%B7%84%E0%B6%BB%E0%B7%92_%E0%B6%B1%E0%B7%91_jhq2bz.m4a",
+		label: "ඒක හරි නෑ",
 	},
 	{
 		sound:
-			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+			"https://res.cloudinary.com/avanoa/video/upload/v1659285508/%E0%B6%B8%E0%B6%A7_%E0%B6%91%E0%B6%B4%E0%B7%8F_olxrf3.m4a",
+		label: "මට එපා",
 	},
 	{
 		sound:
-			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+			"https://res.cloudinary.com/avanoa/video/upload/v1659285508/%E0%B6%B8%E0%B6%A7_%E0%B6%95%E0%B6%B1%E0%B7%99_hoq8qe.m4a",
+		label: "මට ඕනෙ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "මට අද මහන්සියි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "නියමයි/ කැමතියි",
 	},
 
 	// Slide 2 Audio
@@ -433,7 +433,7 @@ class phraseBubble extends Component {
 			"සුබ රාත්‍රියක්",
 			"නිදිමතයි",
 			"තිබහයි",
-			"බඩිගිනි",
+			"මට බඩිගිනි",
 			"කොහොමද?",
 		],
 		ph1: "ඔයාට කොහොමද ?",
@@ -785,8 +785,8 @@ class phraseBubble extends Component {
 			ph2 = "සුභ උදෑසනක්";
 			ph3 = "ඔබට ස්තුතියි";
 			ph4 = "ඔබව පිළිගන්නවා";
-			ph5 = "සමාවන්න";
-			ph6 = "සමුගන්නවා";
+			ph5 = "මට සමාවන්න";
+			ph6 = "මම සමුගන්නවා";
 			ph7 = "මට සමාවෙන්න";
 			ph8 = "ඔබට සුබපැතුම්";
 			ph9 = "ඉක්මනට සනිප වෙන්න";

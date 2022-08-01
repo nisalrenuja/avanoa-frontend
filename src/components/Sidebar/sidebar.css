@@ -1,7 +1,7 @@
 .sidebar {
 	position: fixed;
 	top: 0;
-	height: 1000vh;
+	height: 1200vh;
 	min-width: 280px;
 	/*background-color: rgba(29, 25, 39, 0.8);*/
 	-webkit-backdrop-filter: saturate(80%) blur(20px);
