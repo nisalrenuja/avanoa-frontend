@@ -166,6 +166,8 @@ class EmergencyLayout extends React.Component {
 			if (props.recepient == "Care Taker") {
 				return (
 					<div>
+						<div className="app">
+						<div className="box">
 						<h1>Select Message</h1>
 
 						<button
@@ -196,11 +198,15 @@ class EmergencyLayout extends React.Component {
 						<button onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
+						</div>
+						</div>
 					</div>
 				);
 			} else if (props.recepient == "Gurdian") {
 				return (
 					<div>
+						<div className="app">
+						<div className="box">
 						<h1>Select Message</h1>
 
 						<button
@@ -223,11 +229,15 @@ class EmergencyLayout extends React.Component {
 						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
+						</div>
+						</div>
 					</div>
 				);
 			} else if (props.recepient == "Doctor") {
 				return (
 					<div>
+						<div className="app">
+						<div className="box">
 						<h1>Select Message</h1>
 
 						<button
@@ -250,6 +260,8 @@ class EmergencyLayout extends React.Component {
 						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
 							Back
 						</button>
+						</div>
+						</div>
 					</div>
 				);
 			}
@@ -258,6 +270,8 @@ class EmergencyLayout extends React.Component {
 		function FinalMessage(props) {
 			return (
 				<div>
+					<div className="app">
+					<div className="box">
 					<h1>Final Message</h1>
 
 					<p>Recepient - {props.recepient}</p>
@@ -271,6 +285,8 @@ class EmergencyLayout extends React.Component {
 					<button class = 'emergencybuttons' name="finalMessageSend" onClick={props.sendEmail}>
 						Send
 					</button>
+					</div>
+					</div>
 				</div>
 			);
 		}
