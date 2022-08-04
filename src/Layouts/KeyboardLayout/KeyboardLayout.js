@@ -112,12 +112,14 @@ function KeyboardLayout(props) {
 	}
 
 	return (
+		
 		<div>
-			<Sidebar />
+
+		<Sidebar />
+			
 			<button class="non" onClick={handleSubmit}>
 				Get directly from Azure
 			</button>
-
 			<div class="container">
 				<div id="textarea" class="textarea">
 					<textarea value={text}></textarea>

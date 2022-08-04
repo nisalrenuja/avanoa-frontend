@@ -1,7 +1,7 @@
 .appbar {
   position: fixed;
   top: 0;
-  min-height: 75px;
+  min-height: 125px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,16 +30,16 @@
 }
 
 .appbar_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width:  200px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .appbar_logo img {
-  width: 35px;
+  width: 150px;
 }
 
 .appbar_logo p {
@@ -133,3 +133,4 @@
   height: 50px;
   border-radius: .5rem;
 }
+

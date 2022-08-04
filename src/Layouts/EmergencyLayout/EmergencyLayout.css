@@ -22,10 +22,30 @@
     margin: .3rem;
     font-size: 1.3rem;
     color: #fff;
-    width: 150px;
+    width: 200px;
     height: 80px;
     border-radius: .5rem;
 	align-items: center;
+}
+
+.h1tag{
+	color: white;
+}
+
+.app{
+		padding: 200px 450px;
+		text-align: center;
+	}
+
+.box{
+background-color: white;
+padding-left: 500px;
+	padding: 0px 60px;
+	border-radius: 10px;
+	height: 420px;
+	align-content: center;
+	width: 700px;
+
 }
 
 .selected {
