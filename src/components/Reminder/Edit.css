@@ -33,16 +33,21 @@
 
 .left_viewcol-lg-6col-md-6col-12{
     background-color: rgb(208, 208, 208);
-    width: 100%;
+    width: 500%;
     padding: 20px ;
     box-sizing: border-box;
+    padding-left: 50%;
+    padding-top: 10%;
+    
   }
 
   .right_viewcol-lg-6col-md-6col-12{
     background-color: rgb(208, 208, 208);
-    width: 100%;
+    width: 500%;
     padding: 20px ;
     box-sizing: border-box;
+    padding-left: 50%;
+    padding-top: 10%;
   }
   .table, th, td {
     border: 1px solid;
@@ -68,4 +73,13 @@
   padding-left: 25%;
   padding-top: 10%;
 
+}
+
+.row{
+  background-color: rgb(208, 208, 208);
+  width: 100%;
+  padding: 20px ;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-top: 10%;
 }
