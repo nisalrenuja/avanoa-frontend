@@ -117,10 +117,10 @@ const Home = () => {
                             <tr className="table-dark">
                                 <th scope="col">id</th>
                                 <th scope="col">Title</th>
-                                <th scope="col">Description</th>
+                             
                                 <th scope="col">Date</th>
-                                <th scope="col">Time</th>
-                                <th scope="col"></th>
+                               
+                                
                             </tr>
                         </thead>
                         <tbody>

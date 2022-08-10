@@ -32,6 +32,7 @@ const Register = () => {
 
 
     const addinpdata = async (e) => {
+        
         e.preventDefault();
 
         const { title, description, date, time} = inpval;
@@ -60,7 +61,10 @@ const Register = () => {
 
         }
     }
-
+    
+    const titleKeyboard = async (e) => {
+        console.log("jfjf")
+    }
     return (
 
         <div>
@@ -72,6 +76,8 @@ const Register = () => {
             <form className="mt-4">
                 <div className="row">
                     <div class="mb-3col-lg-6col-md-6col-12">
+                         
+                   
                         <label for="exampleInputEmail1" class="form-label">Title</label>
                         <input type="text" value={inpval.title} onChange={setdata} name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
@@ -92,10 +98,12 @@ const Register = () => {
                     
 
                     <button type="submit" onClick={addinpdata} class="btnbtn-primary">Done</button>
+
                 </div>
             </form>
         </div>
         </div>
     )
 }
+
 export default Register;
