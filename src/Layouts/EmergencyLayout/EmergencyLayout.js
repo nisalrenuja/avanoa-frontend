@@ -139,7 +139,7 @@ class EmergencyLayout extends React.Component {
 					
 					<div className="app">
 					<div className="box">
-					<h1>Select Recepient</h1>
+					<h1>පණිවිඩය තෝරන්න</h1>
 
 					<button
 						class = 'emergencybuttons'
@@ -147,13 +147,13 @@ class EmergencyLayout extends React.Component {
 						name="recepient"
 						value="Care Taker"
 					>
-						Care Taker
+						රැකවරණ භාරකරු
 					</button>
 					<button class = 'emergencybuttons' onClick={props.handleClick} name="recepient" value="Gurdian">
-						Gurdian
+					භාරකරු
 					</button>
 					<button class = 'emergencybuttons'onClick={props.handleClick} name="recepient" value="Doctor">
-						Doctor
+					ඩොක්ටර්
 					</button>
 					</div>
 					</div>
@@ -168,35 +168,34 @@ class EmergencyLayout extends React.Component {
 					<div>
 						<div className="app">
 						<div className="box">
-						<h1>Select Message</h1>
-
+						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 						<button
 							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
-							value="I need Medicine"
+							value="මට බෙහෙත් අවශ්‍යයි"
 						>
-							I need Medicine
+							මට බෙහෙත් අවශ්‍යයි
 						</button>
 						<button
 							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
-							value="I need to Eat"
+							value="මට කන්න ඕන"
 						>
-							I need to Eat
+							මට කන්න ඕන
 						</button>
 						<button
 							class = 'emergencybuttons'
 							onClick={props.handleClick}
 							name="message"
-							value="I am Thirsty"
+							value="මට තිබහයි"
 						>
-							I am Thirsty
+							මට තිබහයි
 						</button>
 
 						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
-							Back
+						පෙර පිටුව
 						</button>
 						</div>
 						</div>
@@ -207,7 +206,7 @@ class EmergencyLayout extends React.Component {
 					<div>
 						<div className="app">
 						<div className="box">
-						<h1>Select Message</h1>
+						<h1>පණිවිඩය තෝරන්න</h1>
 
 						<button
 							class = 'emergencybuttons'
@@ -215,7 +214,7 @@ class EmergencyLayout extends React.Component {
 							name="message"
 							value="I need to See you"
 						>
-							I need to See you
+							මට ඔයාව හමුවෙන්න අවශ්යයි
 						</button>
 						<button
 							class = 'emergencybuttons'
@@ -223,11 +222,11 @@ class EmergencyLayout extends React.Component {
 							name="message"
 							value="The Care Taker is not here"
 						>
-							The Care Taker is not here
+							රැකවරණ නිලධාරියා මෙහි නොමැත
 						</button>
 
 						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
-							Back
+						පෙර පිටුව
 						</button>
 						</div>
 						</div>
@@ -238,7 +237,7 @@ class EmergencyLayout extends React.Component {
 					<div>
 						<div className="app">
 						<div className="box">
-						<h1>Select Message</h1>
+						<h1>පණිවිඩය තෝරන්න</h1>
 
 						<button
 							class = 'emergencybuttons'
@@ -246,7 +245,7 @@ class EmergencyLayout extends React.Component {
 							name="message"
 							value="I am not feeling well"
 						>
-							I am not feeling well
+							මට සනීප නෑ
 						</button>
 						<button
 						class = 'emergencybuttons'
@@ -254,11 +253,11 @@ class EmergencyLayout extends React.Component {
 							name="message"
 							value="My appointment is coming up"
 						>
-							My appointment is coming up
+							මගේ පත්වීම ළඟයි
 						</button>
 
 						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
-							Back
+						පෙර පිටුව
 						</button>
 						</div>
 						</div>
@@ -272,18 +271,18 @@ class EmergencyLayout extends React.Component {
 				<div>
 					<div className="app">
 					<div className="box">
-					<h1>Final Message</h1>
+					<h1>අවසාන පණිවිඩය</h1>
 
-					<p>Recepient - {props.recepient}</p>
-					<p>Email - {props.email}</p>
-					<p>Subject - {props.subject}</p>
-					<p>Message - {props.message}</p>
+					<h2><p>ලබන්නා - {props.recepient}</p>
+					<p>විද්යුත් තැපෑල - {props.email}</p>
+					<p>විෂය - {props.subject}</p>
+					<p>පණිවුඩය - {props.message}</p></h2>
 
 					<button class = 'emergencybuttons' onClick={props.handleBack} name="finalMessageBack">
-						Back
+					පෙර පිටුව
 					</button>
 					<button class = 'emergencybuttons' name="finalMessageSend" onClick={props.sendEmail}>
-						Send
+					යවන්න
 					</button>
 					</div>
 					</div>

@@ -22,10 +22,14 @@
     margin: .3rem;
     font-size: 1.3rem;
     color: #fff;
-    width: 150px;
+    width: 200px;
     height: 80px;
     border-radius: .5rem;
 	align-items: center;
+}
+
+.h1tag{
+	color: white;
 }
 
 .app{
