@@ -9,6 +9,9 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { NavLink, useParams, useNavigate  } from 'react-router-dom';
 import "./Edit.css";
+import Appbar from '../Appbar/Appbar';
+import Sidebar from '../Sidebar/Sidebar';
+
 
 
 
@@ -71,11 +74,17 @@ const Details = () => {
     }
 
     return (
+
+        
+        <div>
+            <Appbar/>
+            <Sidebar/>
+
         <div className="container mt-3">
             <h1 style={{ fontWeight: 400 }}>Reminder</h1>
 
             <Card sx={{ maxWidth: 600 }}>
-                <CardContent>
+               
                     <div className="add_btn">
                         <NavLink to={`/edit/${getuserdata._id}`}>  <button className="btn btn-primary mx-2"><CreateIcon /></button></NavLink>
                         <button className="btn btn-danger" onClick={() => deleteuser(getuserdata._id)}><DeleteOutlineIcon /></button>
@@ -93,8 +102,8 @@ const Details = () => {
                         </div>
                     </div>
 
-                </CardContent>
             </Card>
+        </div>
         </div>
     )
 }
