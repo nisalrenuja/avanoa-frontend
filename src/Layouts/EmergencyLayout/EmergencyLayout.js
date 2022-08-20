@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
-import WebGazer from "../../components/WebGazer/WebGazer";
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -294,7 +293,6 @@ class EmergencyLayout extends React.Component {
 		<div>
 			<Sidebar />
 			<Appbar />
-			<WebGazer/>
 			{comp}
 		</div>);
 	}
