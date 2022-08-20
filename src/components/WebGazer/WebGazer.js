@@ -18,6 +18,7 @@ import {
 } from "../../reducers/navList/navListSlice";
 import store from "../../store/store";
 
+
 class WebGazer extends Component {
 	constructor(props) {
 		super(props);
@@ -71,7 +72,9 @@ class WebGazer extends Component {
 		// script.src = "https://webgazer.cs.brown.edu/webgazer.js?";
 		// script.async = true;
 		// document.body.appendChild(script);
-		
+
+		//appendScript("https://webgazer.cs.brown.edu/webgazer.js?");
+
 		const tree = this.props.navList.tree;
 		const treeLayers = this.props.navList.treeLayers;
 		const treeLayersExc = this.props.navList.treeLayersExc;
@@ -129,7 +132,9 @@ class WebGazer extends Component {
 						if (typeof curLayer == "undefined") {
 							console.log("undefined stated")
 							let TLVal = treeLayersExc[this.props.navList.index]
-							this.props.updateIndex(this.props.counter.value + TLVal);
+							if(typeof TLVal !== "undefined"){
+								this.props.updateIndex(this.props.counter.value + TLVal);
+							}
 						}
 
 						//console.log('selected' + this.props.counter.value)
@@ -224,7 +229,8 @@ class WebGazer extends Component {
 
 		// console.log(ls[ind])
 		//this.props.updateIndex(1);
-		return <></>;
+		return <>
+		</>;
 	}
 }
 
