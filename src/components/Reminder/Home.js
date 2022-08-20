@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 import { adddata, deldata } from './context/ContextProvider';
 import { updatedata } from './context/ContextProvider'
 import "./Edit.css";
+import Appbar from '../Appbar/Appbar';
+import Sidebar from '../Sidebar/Sidebar';
 
 
 
@@ -72,6 +74,8 @@ const Home = () => {
     return (
 
         <>
+            <Appbar/>
+            <Sidebar/>
             {
                 udata ?
                     <>
@@ -113,10 +117,10 @@ const Home = () => {
                             <tr className="table-dark">
                                 <th scope="col">id</th>
                                 <th scope="col">Title</th>
-                                <th scope="col">Description</th>
+                             
                                 <th scope="col">Date</th>
-                                <th scope="col">Time</th>
-                                <th scope="col"></th>
+                               
+                                
                             </tr>
                         </thead>
                         <tbody>

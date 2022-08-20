@@ -444,7 +444,7 @@ class phraseBubble extends Component {
 		ph6: "මට එපා",
 		ph7: "මට ඕනෙ",
 		ph8: "මට අද මහන්සියි",
-		ph9: "නියමයි/ කැමතියි",
+		ph9: "නියමයි/කැමතියි",
 	};
 
 	selectBubble(selNum) {
@@ -1268,7 +1268,7 @@ class phraseBubble extends Component {
 					{/* {this.RenderButtonSound()} */}
 
 					<button className={slide1} class id="headerbutton1">
-						Most frequently used Phrases
+						පොදු වාක්යය
 					</button>
 					<button className={slide2} class id="headerbutton2">
 						කෑම

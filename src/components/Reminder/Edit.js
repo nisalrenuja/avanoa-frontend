@@ -2,6 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import { NavLink, useParams,useNavigate  } from 'react-router-dom'
 import { updatedata } from './context/ContextProvider'
 import "./Edit.css";
+import Appbar from '../Appbar/Appbar';
+import Sidebar from '../Sidebar/Sidebar';
+
 
 
 const Edit = () => {
@@ -92,9 +95,17 @@ const Edit = () => {
         }
 
     }
+    
 
     return (
+        <div>
+            <Appbar/>
+            <Sidebar/>
+      
+        
+
         <div className="container" ><h2>Edit</h2>
+
             <NavLink to="/">home2</NavLink>
             <form className="mt-4">
                 <div className="row">
@@ -119,7 +130,9 @@ const Edit = () => {
                 </div>
             </form>
         </div>
+        </div>
     )
+    
 }
 
 export default Edit;
