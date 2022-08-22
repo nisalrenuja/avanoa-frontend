@@ -148,7 +148,20 @@ class EmergencyLayout extends React.Component {
 			}
 		}
 		
+		if( index == 153 || index == 154 || index == 155 || index == 156 || index == 157){
+			if(counter == 0){
+				select4 = "selected"
+			}
+			if(counter == 1){
+				select5 = "selected"
+			}
 		
+		}
+
+		if(index == 162){
+			//send 1111
+			this.props.updateIndex(5);
+		}
 
 		let comp;
 
