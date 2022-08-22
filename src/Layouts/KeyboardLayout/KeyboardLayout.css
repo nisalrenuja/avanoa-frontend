@@ -88,6 +88,8 @@
     margin-bottom: 2rem;
     align-content: center;
     padding-left: 300px;
+    margin-top: 50px;
+    
 }
 
 .app{
@@ -106,6 +108,18 @@ textarea {
     padding-left: 100px;
 }
 
+.non {
+    background-color: rgb(104, 104, 255);
+    border: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 500px;
+    height: 80px;
+    border-radius: .5rem;
+    margin-left: 740px;
+    margin-top: 200px;
+}
 
 .upper { text-transform: uppercase; }
 
