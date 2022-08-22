@@ -16,7 +16,6 @@ import {
 	incrementLayer,
 	decrementLayer,
 } from "../../reducers/navList/navListSlice";
-import store from "../../store/store";
 
 
 class WebGazer extends Component {
@@ -38,6 +37,7 @@ class WebGazer extends Component {
 		const tree = this.props.navList.tree;
 		const treeLayers = this.props.navList.treeLayers;
 		const treeLayersExc = this.props.navList.treeLayersExc;
+		const treeLayersExcInvert = this.props.navList.treeLayersExcInvert;
 		const treeExc = this.props.navList.treeExc;
 
 		console.log(treeLayers);
@@ -147,8 +147,13 @@ class WebGazer extends Component {
 
 									//index = TL.indexOf(this.props);
 								}
+								if (index === -1) {
+									let val = this.props.navList.indexCount[this.props.navList.index];
+									console.log("after backward" +treeLayersExcInvert[this.props.navList.index - val]);
+									index = treeLayersExcInvert[this.props.navList.index - val];
+								}
 							}
-							console.log("after backward" + index);
+							
 							if (index !== -1) {
 								this.props.updateIndex(index);
 							}
@@ -213,6 +218,7 @@ const mapDispatchToProps = () => ({
 	incrementLayer,
 	decrementLayer,
 	setPreCount,
+	
 });
 
 export default connect(mapStateToProps, mapDispatchToProps())(WebGazer);
