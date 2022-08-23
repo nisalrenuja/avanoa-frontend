@@ -416,7 +416,22 @@ function KeyboardLayout(props) {
 										{" "}
 										කි{" "}
 									</button>
+
 								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="කී"
+										onClick={handleKbutton}
+									>
+										{" "}
+										කී{" "}
+									</button>
+
+								</a>
+
 								<a href="#">
 									{" "}
 									<button
@@ -427,6 +442,19 @@ function KeyboardLayout(props) {
 									>
 										{" "}
 										කු{" "}
+									</button>
+								</a>
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="කූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										කූ{" "}
 									</button>
 								</a>
 								<a href="#">
@@ -591,6 +619,20 @@ function KeyboardLayout(props) {
 									<button
 										id="Kbutton"
 										class="Kbutton"
+										value="ගී"
+										onClick={handleKbutton}
+									>
+										{" "}
+										ගී{" "}
+									</button>
+								</a>
+
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
 										value="ගු"
 										onClick={handleKbutton}
 									>
@@ -598,6 +640,19 @@ function KeyboardLayout(props) {
 										ගු{" "}
 									</button>
 								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="ගූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										ගූ{" "}
+									</button>
+								</a>
+
 								<a href="#">
 									{" "}
 									<button
@@ -1551,6 +1606,19 @@ function KeyboardLayout(props) {
 									<button
 										id="Kbutton"
 										class="Kbutton"
+										value="තූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										තූ{" "}
+									</button>
+								</a>
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
 										value="තෙ"
 										onClick={handleKbutton}
 									>
@@ -1703,6 +1771,21 @@ function KeyboardLayout(props) {
 										දු{" "}
 									</button>
 								</a>
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="දූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										දූ{" "}
+									</button>
+								</a>
+
+
 								<a href="#">
 									{" "}
 									<button
@@ -1793,11 +1876,11 @@ function KeyboardLayout(props) {
 									<button
 										id="Kbutton"
 										class="Kbutton"
-										value="පැ"
+										value="නැ"
 										onClick={handleKbutton}
 									>
 										{" "}
-										පැ{" "}
+										නැ{" "}
 									</button>
 								</a>
 								<a href="#">
@@ -1860,6 +1943,20 @@ function KeyboardLayout(props) {
 										නු{" "}
 									</button>
 								</a>
+								
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="නූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										නූ{" "}
+									</button>
+								</a>
+
 								<a href="#">
 									{" "}
 									<button
@@ -2022,6 +2119,19 @@ function KeyboardLayout(props) {
 									<button
 										id="Kbutton"
 										class="Kbutton"
+										value="පූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										පූ{" "}
+									</button>
+								</a>
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
 										value="පෙ"
 										onClick={handleKbutton}
 									>
@@ -2179,6 +2289,31 @@ function KeyboardLayout(props) {
 									<button
 										id="Kbutton"
 										class="Kbutton"
+										value="බූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										බූ{" "}
+									</button>
+								</a>
+									<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="බෙ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										බෙ{" "}
+									</button>
+								</a>
+
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
 										value="බෙ"
 										onClick={handleKbutton}
 									>
@@ -2198,6 +2333,31 @@ function KeyboardLayout(props) {
 										බේ{" "}
 									</button>
 								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="බො"
+										onClick={handleKbutton}
+									>
+										{" "}
+										බො{" "}
+									</button>
+								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="බෝ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										බෝ{" "}
+									</button>
+								</a>
+
 							</div>
 						</div>
 
@@ -2307,6 +2467,19 @@ function KeyboardLayout(props) {
 										මු{" "}
 									</button>
 								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="මූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										මූ{" "}
+									</button>
+								</a>
+
 								<a href="#">
 									{" "}
 									<button
@@ -2426,6 +2599,18 @@ function KeyboardLayout(props) {
 									>
 										{" "}
 										යු{" "}
+									</button>
+								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="යූ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										යූ{" "}
 									</button>
 								</a>
 								<a href="#">
@@ -3212,6 +3397,18 @@ function KeyboardLayout(props) {
 									>
 										{" "}
 										ශො{" "}
+									</button>
+								</a>
+								<a href="#">
+									{" "}
+									<button
+										id="Kbutton"
+										class="Kbutton"
+										value="ශෝ"
+										onClick={handleKbutton}
+									>
+										{" "}
+										ශෝ{" "}
 									</button>
 								</a>
 								<a href="#">
