@@ -117,7 +117,7 @@ function KeyboardLayout(props) {
 
 		<Sidebar />
 			
-			<button class="non" onClick={handleSubmit}>
+			<button class="azure" onClick={handleSubmit}>
 				Get directly from Azure
 			</button>
 			<div class="container1">

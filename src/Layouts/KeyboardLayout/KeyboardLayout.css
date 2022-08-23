@@ -108,7 +108,7 @@ textarea {
     padding-left: 100px;
 }
 
-.non {
+.azure {
     background-color: rgb(104, 104, 255);
     border: none;
     display: inline-block;
@@ -117,7 +117,7 @@ textarea {
     width: 500px;
     height: 80px;
     border-radius: .5rem;
-    margin-left: 740px;
+    margin-left: 650px;
     margin-top: 200px;
 }
 
