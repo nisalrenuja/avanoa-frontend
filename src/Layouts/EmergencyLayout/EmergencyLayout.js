@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
-import WebGazer from "../../components/WebGazer/WebGazer";
 
 class EmergencyLayout extends React.Component {
 	constructor(props) {
@@ -37,11 +36,8 @@ class EmergencyLayout extends React.Component {
 
 		if (index == 150) {
 			//150 - first receipient
-
-			//this.selectBubble(0);
-			//select1="selection"
-			//this.selectBubble(1);
-			//this.props.setCount(0);
+			//this.handleClick(name, value);
+			
 		}
 
 	}
@@ -104,7 +100,68 @@ class EmergencyLayout extends React.Component {
 
 	render() {
 
+		const index = this.props.navList.index;
+		const counter = this.props.counter.value;
 
+		let select1 = "";
+		let select2 = "";
+		let select3 = "";
+		let select4 = "";
+		let select5 = "";
+
+
+		if(index == 5){
+			if(counter == 0){
+				select1 = "selected"
+			}
+			if(counter == 1){
+				select2 = "selected"
+			}
+			if(counter == 2){
+				select3 = "selected"
+			}
+		}
+
+		if(index == 150){
+			if(counter == 0){
+				select1 = "selected"
+			}
+			if(counter == 1){
+				select2 = "selected"
+			}
+			if(counter == 2){
+				select3 = "selected"
+			}
+			if(counter == 3){
+				select4 = "selected"
+			}
+		}
+		if( index == 151 || index == 152){
+			if(counter == 0){
+				select1 = "selected"
+			}
+			if(counter == 1){
+				select2 = "selected"
+			}
+			if(counter == 2){
+				select4 = "selected"
+			}
+		}
+		
+		if( index == 153 || index == 154 || index == 155 || index == 156 || index == 157){
+			if(counter == 0){
+				select4 = "selected"
+			}
+			if(counter == 1){
+				select5 = "selected"
+			}
+		
+		}
+
+		if(index == 162){
+			//send 1111
+			this.props.updateIndex(5);
+		}
 
 		let comp;
 
@@ -142,17 +199,13 @@ class EmergencyLayout extends React.Component {
 					<h1>පණිවිඩය තෝරන්න</h1>
 
 					<button
-						class = 'emergencybuttons'
-						onClick={props.handleClick}
-						name="recepient"
-						value="Care Taker"
-					>
+						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="recepient" value="Care Taker">
 						රැකවරණ භාරකරු
 					</button>
-					<button class = 'emergencybuttons' onClick={props.handleClick} name="recepient" value="Gurdian">
+					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="recepient" value="Gurdian">
 					භාරකරු
 					</button>
-					<button class = 'emergencybuttons'onClick={props.handleClick} name="recepient" value="Doctor">
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="recepient" value="Doctor">
 					ඩොක්ටර්
 					</button>
 					</div>
@@ -170,7 +223,7 @@ class EmergencyLayout extends React.Component {
 						<div className="box">
 						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
 							value="මට බෙහෙත් අවශ්‍යයි"
@@ -178,7 +231,7 @@ class EmergencyLayout extends React.Component {
 							මට බෙහෙත් අවශ්‍යයි
 						</button>
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="message"
 							value="මට කන්න ඕන"
@@ -186,7 +239,7 @@ class EmergencyLayout extends React.Component {
 							මට කන්න ඕන
 						</button>
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select3}`}
 							onClick={props.handleClick}
 							name="message"
 							value="මට තිබහයි"
@@ -194,7 +247,7 @@ class EmergencyLayout extends React.Component {
 							මට තිබහයි
 						</button>
 
-						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -209,7 +262,7 @@ class EmergencyLayout extends React.Component {
 						<h1>පණිවිඩය තෝරන්න</h1>
 
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
 							value="I need to See you"
@@ -217,7 +270,7 @@ class EmergencyLayout extends React.Component {
 							මට ඔයාව හමුවෙන්න අවශ්යයි
 						</button>
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="message"
 							value="The Care Taker is not here"
@@ -225,7 +278,7 @@ class EmergencyLayout extends React.Component {
 							රැකවරණ නිලධාරියා මෙහි නොමැත
 						</button>
 
-						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -240,7 +293,7 @@ class EmergencyLayout extends React.Component {
 						<h1>පණිවිඩය තෝරන්න</h1>
 
 						<button
-							class = 'emergencybuttons'
+							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
 							value="I am not feeling well"
@@ -248,7 +301,7 @@ class EmergencyLayout extends React.Component {
 							මට සනීප නෑ
 						</button>
 						<button
-						class = 'emergencybuttons'
+							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="message"
 							value="My appointment is coming up"
@@ -256,7 +309,7 @@ class EmergencyLayout extends React.Component {
 							මගේ පත්වීම ළඟයි
 						</button>
 
-						<button class = 'emergencybuttons' onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -278,10 +331,10 @@ class EmergencyLayout extends React.Component {
 					<p>විෂය - {props.subject}</p>
 					<p>පණිවුඩය - {props.message}</p></h2>
 
-					<button class = 'emergencybuttons' onClick={props.handleBack} name="finalMessageBack">
+					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
 					පෙර පිටුව
 					</button>
-					<button class = 'emergencybuttons' name="finalMessageSend" onClick={props.sendEmail}>
+					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.sendEmail}>
 					යවන්න
 					</button>
 					</div>
@@ -289,12 +342,11 @@ class EmergencyLayout extends React.Component {
 				</div>
 			);
 		}
-
+	
 		return (
 		<div>
 			<Sidebar />
 			<Appbar />
-			<WebGazer/>
 			{comp}
 		</div>);
 	}

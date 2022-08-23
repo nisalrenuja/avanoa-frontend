@@ -2,7 +2,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import PhraseBubble from "../../components/PhraseBubble/PhraseBubble";
 import { useState } from "react";
-import WebGazer from "../../components/WebGazer/WebGazer";
+
 const HomeLayout = () => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -15,7 +15,6 @@ const HomeLayout = () => {
     <div className="profilelayout">
       {/* appbar */}
       {/* <Appbar handleSidebar={handleSidebar} /> */}
-      <WebGazer/>
       <Appbar/>
       {/* sidebar */}
       <div

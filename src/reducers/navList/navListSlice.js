@@ -3,14 +3,15 @@ import { createSlice } from '@reduxjs/toolkit'
 export const navListSlice = createSlice({
   name: 'navList',
   initialState: {
-    tree: [2, 5,5, 8,3,3,5,5, 0,0,0,2,3, 9,9,9,9,9,9,9,9, 4, 2],
-    treeExc : {150 : 4, 153 : 2},
-    treeLayers : [1, 3,8, 13,200,150,null,null, null,null,null,121,123, 21,31,41,51,61,71,81,91, 153, 170],
-    treeLayersExc : {150 : 153, 153 : 170},
-    indexCount : {9: 1, 10 : 2, 11 : 3, 12 : 4, 14 : 1, 15 : 2, 16 : 3, 17:4, 18:5, 19:6, 20:7},
+    tree: [2, 5,5, 8,3,3,5,5, 0,0,0,2,3, 9,9,9,9,9,9,9,9, 4],
+    treeExc : {150 : 4, 151:3, 152:3, 153 : 2 , 157 : 2, 160 : 2},
+    treeLayers : [1, 3,8, 13,200,150,null,null, null,null,null,121,123, 21,31,41,51,61,71,81,91],
+    treeLayersExc : {150 : 153, 151 : 157, 152 : 160, 153 : 163, 157 : 165, 160 : 167},
+    treeLayersExcInvert : {153:150, 157:151, 160:152, 163:153, 165:157, 167:160},
+    indexCount : {9: 1, 10 : 2, 11 : 3, 12 : 4, 14 : 1, 15 : 2, 16 : 3, 17:4, 18:5, 19:6, 20:7, 151 : 1, 152 : 2, 154 : 1, 155 : 2, 156:3, 158:1, 159:2, 161:1, 162:2, 164:1, 166:1, 168:1},
     index : 0,
     preIndex : 0,
-    layer : 0
+    layer : 0,
 },
   reducers: {
     updateTree: (state, action) => {
@@ -33,7 +34,8 @@ export const navListSlice = createSlice({
     },
     decrementLayer:(state) => {
       state.layer -= 1
-    }
+    },
+    
   }
 })
 

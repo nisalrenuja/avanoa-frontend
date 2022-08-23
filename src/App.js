@@ -13,6 +13,8 @@ import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
 import Register from "./components/Reminder/Register";
 import Edit from "./components/Reminder/Edit";
 import Details from "./components/Reminder/Details";
+import { Settings } from "@mui/icons-material";
+import SettingsLayout from "./Layouts/SettingsLayout/SettingsLayout";
 
 function App() {
 	const { dispatch, token, isLoggedIn } = useContext(AuthContext);
@@ -62,7 +64,7 @@ function App() {
 				<Route path="/emergency" element={<EmergencyLayout />} />
 
 				<Route path="/Keyboard" element={<KeyboardLayout />} />
-
+				<Route path="/settings" element={<SettingsLayout />} />
 				<Route path="/Reminder" element={<Home/>} />
 				<Route path="/Reminder/register" element={<Register/>} />
 				<Route path="/Reminder/edit/:id" element={<Edit/>} />
