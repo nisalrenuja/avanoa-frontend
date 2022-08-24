@@ -196,7 +196,7 @@ class EmergencyLayout extends React.Component {
 					
 					<div className="app">
 					<div className="box">
-					<h1>පණිවිඩය තෝරන්න</h1>
+					<h1>පනිවිදකරු තෝරන්න</h1>
 
 					<button
 						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="recepient" value="Care Taker">
@@ -206,7 +206,7 @@ class EmergencyLayout extends React.Component {
 					භාරකරු
 					</button>
 					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="recepient" value="Doctor">
-					ඩොක්ටර්
+					වෛද්යවරයා
 					</button>
 					</div>
 					</div>
@@ -265,7 +265,7 @@ class EmergencyLayout extends React.Component {
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
-							value="I need to See you"
+							value=" yමට ඔයාව හමුවෙන්න අවශ්යයි"
 						>
 							මට ඔයාව හමුවෙන්න අවශ්යයි
 						</button>
@@ -328,7 +328,6 @@ class EmergencyLayout extends React.Component {
 
 					<h2><p>ලබන්නා - {props.recepient}</p>
 					<p>විද්යුත් තැපෑල - {props.email}</p>
-					<p>විෂය - {props.subject}</p>
 					<p>පණිවුඩය - {props.message}</p></h2>
 
 					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
