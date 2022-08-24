@@ -117,16 +117,16 @@ function KeyboardLayout(props) {
 
 		<Sidebar />
 			
-			<button class="non" onClick={handleSubmit}>
+			<button class="azure" onClick={handleSubmit}>
 				Get directly from Azure
 			</button>
-			<div class="container">
-				<div id="textarea" class="textarea">
+			<div class="container1">
+				<div id="textarea1" class="textarea1">
 					<textarea value={text}></textarea>
 				</div>
-				<div class="keyboard">
-					<div class="row">
-						<div class="dropdown">
+				<div class="keyboard1">
+					<div class="row1">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -135,7 +135,7 @@ function KeyboardLayout(props) {
 							>
 								අ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -187,7 +187,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -196,7 +196,7 @@ function KeyboardLayout(props) {
 							>
 								ඉ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -224,7 +224,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -233,7 +233,7 @@ function KeyboardLayout(props) {
 							>
 								උ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -261,7 +261,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -270,7 +270,7 @@ function KeyboardLayout(props) {
 							>
 								එ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -298,7 +298,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -307,7 +307,7 @@ function KeyboardLayout(props) {
 							>
 								ඔ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -335,7 +335,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -344,7 +344,7 @@ function KeyboardLayout(props) {
 							>
 								ක
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -520,7 +520,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -529,7 +529,7 @@ function KeyboardLayout(props) {
 							>
 								ග
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -716,7 +716,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -725,7 +725,7 @@ function KeyboardLayout(props) {
 							>
 								ච
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -873,7 +873,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -882,7 +882,7 @@ function KeyboardLayout(props) {
 							>
 								ජ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1018,7 +1018,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1027,7 +1027,7 @@ function KeyboardLayout(props) {
 							>
 								ට
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1180,8 +1180,8 @@ function KeyboardLayout(props) {
 						</button>
 					</div>
 
-					<div class="row">
-						<div class="dropdown">
+					<div class="row1">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1190,7 +1190,7 @@ function KeyboardLayout(props) {
 							>
 								ඩ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1338,7 +1338,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1347,7 +1347,7 @@ function KeyboardLayout(props) {
 							>
 								ණ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1495,7 +1495,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1504,7 +1504,7 @@ function KeyboardLayout(props) {
 							>
 								ත
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1665,7 +1665,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1674,7 +1674,7 @@ function KeyboardLayout(props) {
 							>
 								ද
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -1837,7 +1837,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -1846,7 +1846,7 @@ function KeyboardLayout(props) {
 							>
 								න
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2008,7 +2008,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2017,7 +2017,7 @@ function KeyboardLayout(props) {
 							>
 								ප
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2178,7 +2178,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2187,7 +2187,7 @@ function KeyboardLayout(props) {
 							>
 								බ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2361,7 +2361,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2370,7 +2370,7 @@ function KeyboardLayout(props) {
 							>
 								ම
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2507,7 +2507,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2516,7 +2516,7 @@ function KeyboardLayout(props) {
 							>
 								ය
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2688,7 +2688,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2697,7 +2697,7 @@ function KeyboardLayout(props) {
 							>
 								ර
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -2869,7 +2869,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -2878,7 +2878,7 @@ function KeyboardLayout(props) {
 							>
 								ල
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3051,8 +3051,8 @@ function KeyboardLayout(props) {
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="dropdown">
+					<div class="row1">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3061,7 +3061,7 @@ function KeyboardLayout(props) {
 							>
 								ව
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3245,7 +3245,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3254,7 +3254,7 @@ function KeyboardLayout(props) {
 							>
 								ශ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3426,7 +3426,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3435,7 +3435,7 @@ function KeyboardLayout(props) {
 							>
 								ස
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3607,7 +3607,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3616,7 +3616,7 @@ function KeyboardLayout(props) {
 							>
 								හ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3788,7 +3788,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3797,7 +3797,7 @@ function KeyboardLayout(props) {
 							>
 								ෆ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -3969,7 +3969,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -3978,7 +3978,7 @@ function KeyboardLayout(props) {
 							>
 								ළ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -4150,7 +4150,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -4159,7 +4159,7 @@ function KeyboardLayout(props) {
 							>
 								ථ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -4331,7 +4331,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -4340,7 +4340,7 @@ function KeyboardLayout(props) {
 							>
 								භ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -4512,7 +4512,7 @@ function KeyboardLayout(props) {
 							</div>
 						</div>
 
-						<div class="dropdown">
+						<div class="dropdown1">
 							<button
 								id="Kbutton"
 								class="Kbutton"
@@ -4521,7 +4521,7 @@ function KeyboardLayout(props) {
 							>
 								ෂ
 							</button>
-							<div class="dropdown-content">
+							<div class="dropdown-content1">
 								<a href="#">
 									{" "}
 									<button
@@ -4706,7 +4706,7 @@ function KeyboardLayout(props) {
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row1">
 						<button class="Sbutton" onClick={handleSpace}>
 							Space
 						</button>

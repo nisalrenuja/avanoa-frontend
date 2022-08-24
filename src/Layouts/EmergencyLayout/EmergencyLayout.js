@@ -196,17 +196,26 @@ class EmergencyLayout extends React.Component {
 					
 					<div className="app">
 					<div className="box">
+<<<<<<< HEAD
 					<h1>පනිවිදකරු තෝරන්න</h1>
+=======
+					<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
+>>>>>>> 5b5dc28ebc61dba4e6d16edee382ecb231712e47
 
 					<button
-						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="recepient" value="Care Taker">
+						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="recepient" value="රැකවරණ භාරකරු">
 						රැකවරණ භාරකරු
 					</button>
-					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="recepient" value="Gurdian">
+					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="recepient" value="භාරකරු">
 					භාරකරු
 					</button>
+<<<<<<< HEAD
 					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="recepient" value="Doctor">
 					වෛද්යවරයා
+=======
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="recepient" value="ඩොක්ටර්">
+					ඩොක්ටර්
+>>>>>>> 5b5dc28ebc61dba4e6d16edee382ecb231712e47
 					</button>
 					</div>
 					</div>
@@ -216,7 +225,7 @@ class EmergencyLayout extends React.Component {
 
 		function Message(props) {
 			console.log("Message");
-			if (props.recepient == "Care Taker") {
+			if (props.recepient == "රැකවරණ භාරකරු") {
 				return (
 					<div>
 						<div className="app">
@@ -254,18 +263,22 @@ class EmergencyLayout extends React.Component {
 						</div>
 					</div>
 				);
-			} else if (props.recepient == "Gurdian") {
+			} else if (props.recepient == "භාරකරු") {
 				return (
 					<div>
 						<div className="app">
 						<div className="box">
-						<h1>පණිවිඩය තෝරන්න</h1>
+						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 
 						<button
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
+<<<<<<< HEAD
 							value=" yමට ඔයාව හමුවෙන්න අවශ්යයි"
+=======
+							value="මට ඔයාව හමුවෙන්න අවශ්යයි"
+>>>>>>> 5b5dc28ebc61dba4e6d16edee382ecb231712e47
 						>
 							මට ඔයාව හමුවෙන්න අවශ්යයි
 						</button>
@@ -273,7 +286,7 @@ class EmergencyLayout extends React.Component {
 							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="message"
-							value="The Care Taker is not here"
+							value="රැකවරණ නිලධාරියා මෙහි නොමැත"
 						>
 							රැකවරණ නිලධාරියා මෙහි නොමැත
 						</button>
@@ -290,13 +303,13 @@ class EmergencyLayout extends React.Component {
 					<div>
 						<div className="app">
 						<div className="box">
-						<h1>පණිවිඩය තෝරන්න</h1>
+						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 
 						<button
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="message"
-							value="I am not feeling well"
+							value="මට සනීප නෑ"
 						>
 							මට සනීප නෑ
 						</button>
@@ -304,7 +317,7 @@ class EmergencyLayout extends React.Component {
 							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="message"
-							value="My appointment is coming up"
+							value="මගේ පත්වීම ළඟයි"
 						>
 							මගේ පත්වීම ළඟයි
 						</button>
@@ -324,7 +337,7 @@ class EmergencyLayout extends React.Component {
 				<div>
 					<div className="app">
 					<div className="box">
-					<h1>අවසාන පණිවිඩය</h1>
+					<h1 classname='h1tag'>අවසාන පණිවිඩය</h1>
 
 					<h2><p>ලබන්නා - {props.recepient}</p>
 					<p>විද්යුත් තැපෑල - {props.email}</p>
