@@ -130,11 +130,11 @@ class EmergencyLayout extends React.Component {
 		// if (this.state.recepient == "recepient") {
 			this.setState({ Brecepient: true });
 
-			if (Tvar == "Care Taker") {
+			if (Tvar == "රැකවරණ භාරකරු") {
 				this.setState({ email: "nipunchamodya@gmail.com" });
-			} else if (Tvar == "Gurdian") {
+			} else if (Tvar == "භාරකරු") {
 				this.setState({ email: "pokirisa@gmail.com" });
-			} else if (Tvar == "Doctor") {
+			} else if (Tvar == "රැකවරණ භාරකරු") {
 				this.setState({ email: "pokirisa@gmail.com" });
 			}
 
@@ -153,8 +153,8 @@ class EmergencyLayout extends React.Component {
 	}
 
 
-	sendEmail = (e) => {
-	e.preventDefault();
+	sendEmail = () => {
+	// e.preventDefault();
 
 	emailjs
 		.send(
