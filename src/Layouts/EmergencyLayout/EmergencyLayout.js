@@ -20,6 +20,7 @@ class EmergencyLayout extends React.Component {
 			Bmessage: false,
 			BFinalMessage: false,
 			page: 1,
+			count: 0,
 		};
 
 		this.handleClick = this.handleClick.bind(this);
@@ -37,12 +38,32 @@ class EmergencyLayout extends React.Component {
 		// 1 - 150 ---> chooosing 150 ---> have 4 options (i-150 and 4counts) ---> 1 - 153 2- 154 3-155 4-156 ---> starts from 170 2 options (2counts) 
 		//2 - 151
 		//3 - 152
-
-		if (index == 150) {
-			//150 - first receipient
-			//this.handleClick(name, value);
-			
+		if (index == 5 && this.state.count == 0) {
+			this.setState({ page: 1 });
+			this.setState({count:this.state.count+1});
 		}
+		
+		if (index == 150 && this.state.count == 1) {
+			
+			this.RhandleClick("රැකවරණ භාරකරු");
+			this.setState({count:0});
+		}
+		if (index == 153 && this.state.count == 0) {
+			
+			this.MhandleClick("මට බෙහෙත් අවශ්‍යයි");
+			this.setState({count:this.state.count+1});
+		}
+		if(index == 163){
+			//back button
+			this.props.updateIndex(150);
+		}
+		if (index == 164 && this.state.count == 1) {
+			
+			this.sendEmail();
+			this.setState({count:0});
+			this.props.updateIndex(5);
+		}
+		
 
 	}
 
@@ -212,10 +233,8 @@ class EmergencyLayout extends React.Component {
 		
 		}
 
-		if(index == 162){
-			//send 1111
-			this.props.updateIndex(5);
-		}
+		
+		
 
 		let comp;
 
