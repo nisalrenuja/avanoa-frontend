@@ -3,6 +3,8 @@ import { useRef, useState } from "react";
 import "./KeyboardLayout.css";
 import { Row, Col, Form, Input, Button, Space, notification } from "antd";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Appbar from "../../components/Appbar/Appbar";
+
 
 function KeyboardLayout(props) {
 	const initialState = {
@@ -116,6 +118,7 @@ function KeyboardLayout(props) {
 		<div>
 
 		<Sidebar />
+		<Appbar />
 			
 			<button class="azure" onClick={handleSubmit}>
 				Get directly from Azure
