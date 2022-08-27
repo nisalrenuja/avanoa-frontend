@@ -23,7 +23,11 @@ class EmergencyLayout extends React.Component {
 		};
 
 		this.handleClick = this.handleClick.bind(this);
+		this.RhandleClick = this.RhandleClick.bind(this);
+		this.MhandleClick = this.MhandleClick.bind(this);
 		this.handleBack = this.handleBack.bind(this);
+		this.MhandleBack = this.MhandleBack.bind(this);
+		this.FhandleBack = this.FhandleBack.bind(this);
 		this.sendEmail = this.sendEmail.bind(this);
 	}
 
@@ -52,6 +56,18 @@ class EmergencyLayout extends React.Component {
 		}
 	}
 
+	MhandleBack() {
+		
+		this.setState({ page: 1 });
+			
+	}
+
+	FhandleBack() {
+		
+		this.setState({ page: 2 });
+			
+	}
+
 	handleClick(event) {
 		event.preventDefault();
 
@@ -77,6 +93,44 @@ class EmergencyLayout extends React.Component {
 			this.setState({ subject: event.target.value });
 		}
 	}
+
+
+
+
+	RhandleClick(Tvar) {
+		// event.preventDefault();
+
+		 this.setState({ recepient : Tvar });
+
+		 console.log("hello");
+		 console.log(Tvar);
+		 console.log(this.state.recepient);
+
+		// if (this.state.recepient == "recepient") {
+			this.setState({ Brecepient: true });
+
+			if (Tvar == "Care Taker") {
+				this.setState({ email: "nipunchamodya@gmail.com" });
+			} else if (Tvar == "Gurdian") {
+				this.setState({ email: "pokirisa@gmail.com" });
+			} else if (Tvar == "Doctor") {
+				this.setState({ email: "pokirisa@gmail.com" });
+			}
+
+			this.setState({ page: 2 });
+		// }
+
+		
+	}
+	MhandleClick(Tvar) {
+		this.setState({ message: Tvar });
+		this.setState({ Bmessage: true });
+		this.setState({ page: 3 });
+		this.setState({ subject: Tvar });
+		console.log(Tvar);
+		 console.log(this.state.message);
+	}
+
 
 	sendEmail = (e) => {
 	e.preventDefault();
@@ -166,14 +220,14 @@ class EmergencyLayout extends React.Component {
 		let comp;
 
 		if (this.state.page === 1) {
-			comp = <Recepient handleClick={this.handleClick} />;
+			comp = <Recepient RhandleClick={this.RhandleClick} />;
 		}
 		if (this.state.page === 2) {
 			comp = (
 				<Message
 					recepient={this.state.recepient}
-					handleClick={this.handleClick}
-					handleBack={this.handleBack}
+					MhandleClick={this.MhandleClick}
+					MhandleBack={this.MhandleBack}
 				/>
 			);
 		}
@@ -184,7 +238,7 @@ class EmergencyLayout extends React.Component {
 					email={this.state.email}
 					subject={this.state.subject}
 					message={this.state.message}
-					handleBack={this.handleBack}
+					FhandleBack={this.FhandleBack}
 					sendEmail={this.sendEmail}
 				/>
 			);
@@ -199,13 +253,13 @@ class EmergencyLayout extends React.Component {
 					<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 
 					<button
-						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="recepient" value="රැකවරණ භාරකරු">
+						className= {`emergencybuttons ${select1}`} onClick={()=>props.RhandleClick("රැකවරණ භාරකරු")} name="recepient" value="රැකවරණ භාරකරු">
 						රැකවරණ භාරකරු
 					</button>
-					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="recepient" value="භාරකරු">
+					<button className= {`emergencybuttons ${select2}`} onClick={()=>props.RhandleClick("භාරකරු")} name="recepient" value="භාරකරු">
 					භාරකරු
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="recepient" value="ඩොක්ටර්">
+					<button className= {`emergencybuttons ${select3}`} onClick={()=>props.RhandleClick("රැකවරණ භාරකරු")} name="recepient" value="ඩොක්ටර්">
 					ඩොක්ටර්
 					</button>
 					</div>
@@ -224,7 +278,7 @@ class EmergencyLayout extends React.Component {
 						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මට බෙහෙත් අවශ්‍යයි")}
 							name="message"
 							value="මට බෙහෙත් අවශ්‍යයි"
 						>
@@ -232,7 +286,7 @@ class EmergencyLayout extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මට කන්න ඕන")}
 							name="message"
 							value="මට කන්න ඕන"
 						>
@@ -240,14 +294,14 @@ class EmergencyLayout extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select3}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මට තිබහයි")}
 							name="message"
 							value="මට තිබහයි"
 						>
 							මට තිබහයි
 						</button>
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.MhandleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -263,7 +317,7 @@ class EmergencyLayout extends React.Component {
 
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මට ඔයාව හමුවෙන්න අවශ්යයි")}
 							name="message"
 							value="මට ඔයාව හමුවෙන්න අවශ්යයි"
 						>
@@ -271,14 +325,14 @@ class EmergencyLayout extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("රැකවරණ නිලධාරියා මෙහි නොමැත")}
 							name="message"
 							value="රැකවරණ නිලධාරියා මෙහි නොමැත"
 						>
 							රැකවරණ නිලධාරියා මෙහි නොමැත
 						</button>
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.MhandleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -294,7 +348,7 @@ class EmergencyLayout extends React.Component {
 
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මට සනීප නෑ")}
 							name="message"
 							value="මට සනීප නෑ"
 						>
@@ -302,14 +356,14 @@ class EmergencyLayout extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
-							onClick={props.handleClick}
+							onClick={()=>props.MhandleClick("මගේ පත්වීම ළඟයි")}
 							name="message"
 							value="මගේ පත්වීම ළඟයි"
 						>
 							මගේ පත්වීම ළඟයි
 						</button>
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={props.MhandleBack} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -331,7 +385,7 @@ class EmergencyLayout extends React.Component {
 					<p>විෂය - {props.subject}</p>
 					<p>පණිවුඩය - {props.message}</p></h2>
 
-					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
+					<button className= {`emergencybuttons ${select4}`} onClick={props.FhandleBack} name="finalMessageBack">
 					පෙර පිටුව
 					</button>
 					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.sendEmail}>
