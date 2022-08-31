@@ -10,12 +10,11 @@ const HomeLayout = () => {
     setSidebar(!sidebar);
   };
 
-  
   return (
     <div className="profilelayout">
       {/* appbar */}
       {/* <Appbar handleSidebar={handleSidebar} /> */}
-      <Appbar/>
+      <Appbar />
       {/* sidebar */}
       <div
         className={
