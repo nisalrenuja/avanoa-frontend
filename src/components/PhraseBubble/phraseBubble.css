@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    margin-left: 7rem;
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: rgb(179, 179, 253);
     width: 300px;
     margin: 10px;
     text-align: center;
@@ -32,7 +33,7 @@
       margin: .3rem;
       font-size: 10px;
       color: #fff;
-      width: 170px;
+      width: 100px;
       height: 40px;
       border-radius: .5rem;
 
