@@ -18,6 +18,7 @@ class KeyboardLayout extends Component {
 			input : "",
 			text : "",
 			texty : "helloS",
+			drpdown : "",
 		}
 
 		this.handleClick = this.handleClick.bind(this);
@@ -25,6 +26,7 @@ class KeyboardLayout extends Component {
 		this.handleKbutton = this.handleKbutton.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
 		this.handleSpace = this.handleSpace.bind(this);
+		this.handleDropdownClick = this.handleDropdownClick.bind(this);
 
 	}
 
@@ -104,10 +106,10 @@ class KeyboardLayout extends Component {
 	// const space_Kbutton = document.querySelector('.space')
 
 
-	handleKbutton(e) {
+	handleKbutton(val) {
 		let chars = [];
 
-		this.setState({text : this.state.text + e.target.value});
+		this.setState({text : this.state.text + val});
 		//console.log(e.target.value)
 		chars = this.state.text.split("");
 		// this.setState({texty: chars});
@@ -129,6 +131,17 @@ class KeyboardLayout extends Component {
 
 		//setText(chars.join(' '))
 	}
+
+	handleDropdownClick(val){
+		console.log("drpoinsgdagosagldlgner");
+		if(this.state.drpdown === `dropdownEnable${val}`){
+			this.setState({drpdown: ""});
+		}
+		else{
+			this.setState({drpdown: `dropdownEnable${val}`});
+		}
+	}
+
 	render(){
 		return (
 		
@@ -144,25 +157,25 @@ class KeyboardLayout extends Component {
 					<div id="textarea1" class="textarea1">
 						<textarea value={this.state.text}></textarea>
 					</div>
-					<div class="keyboard1">
+					<div class={`keyboard1 ${this.state.drpdown}`}>
 						<div class="row1">
 							<div class="dropdown1">
 								<button
 									id="Kbutton"
 									class="Kbutton"
 									value="අ"
-									onClick={this.handleKbutton}
+									onClick = {() => this.handleDropdownClick("1")}
 								>
 									අ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown}`} >
 									<a href="#">
 										{" "}
 										<button
 											id="Kbutton"
 											class="Kbutton"
 											value="අ"
-											onClick={this.handleKbutton}
+											onClick={() => this.handleKbutton("අ")}
 										>
 											{" "}
 											අ{" "}
@@ -174,7 +187,7 @@ class KeyboardLayout extends Component {
 											id="Kbutton"
 											class="Kbutton"
 											value="ආ"
-											onClick={this.handleKbutton}
+											onClick={() => this.handleKbutton("ආ")}
 										>
 											{" "}
 											ආ{" "}
@@ -212,7 +225,7 @@ class KeyboardLayout extends Component {
 									id="Kbutton"
 									class="Kbutton"
 									value="ඉ"
-									onClick={this.handleKbutton}
+									onClick={this.handleDropdownClick}
 								>
 									ඉ
 								</button>
