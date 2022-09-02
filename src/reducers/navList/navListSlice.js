@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const navListSlice = createSlice({
   name: 'navList',
   initialState: {
-    tree: [2, 5,5, 8,3,3,5,5, 0,0,0,2,3, 9,9,9,9,9,9,9,9, 4],
+    tree: [2, 5,5, 8,33,3,5,5, 0,0,0,2,3, 9,9,9,9,9,9,9,9, 4],
     treeExc : {150 : 4, 151:3, 152:3, 153 : 2 , 157 : 2, 160 : 2},
     treeLayers : [1, 3,8, 13,200,150,null,null, null,null,null,121,123, 21,31,41,51,61,71,81,91],
     treeLayersExc : {150 : 153, 151 : 157, 152 : 160, 153 : 163, 157 : 165, 160 : 167},
