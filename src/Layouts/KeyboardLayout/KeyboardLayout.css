@@ -157,7 +157,20 @@ textarea {
   /* Show the dropdown menu on hover */
   //.dropdown1:active .dropdown-content1 {display: block;}
 
-  .dropdownEnable1 {display: block;}
+  .dropdownEnable {display: block;}
+
 
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown1:hover .dropbtn {background-color: #3e8e41;}
+
+
+  .selected {
+    color: red;
+  }
+  .notSelected {
+    color: black;
+  }
+  .selection {
+    color: green;
+  }
+  
