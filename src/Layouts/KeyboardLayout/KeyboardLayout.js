@@ -48,7 +48,7 @@ class KeyboardLayout extends Component {
 		//this.setState({inpunt : ((values) => ({ ...values, [name]: value })});
 	};
 
-	handleSubmit(e){
+	handleSubmit(){
 		// console.log(input.texty);
 		console.log(this.state.texty);
 		console.log("Button clicked");
@@ -100,6 +100,9 @@ class KeyboardLayout extends Component {
 		// };
 
 		console.log("END of TTS Narration");
+
+		this.props.updateIndex(4);
+
 	};
 
 	//[form] = Form.useForm();
@@ -121,16 +124,23 @@ class KeyboardLayout extends Component {
 			this.setState({ count:  0 });
 			this.setState({ count3:  1 });
 		}
+		//Get Azure
+		if(index == 200 && this.state.count == 0){
+			this.handleSubmit();
+			//this.setState({ count:  1 });
+			
+		}
+
 
 		//main keys
 
-		if (index == 200 && this.state.count == 0) {
+		if (index == 201 && this.state.count == 0) {
 			this.handleDropdownClick("1");
 			this.setState({ count3: 0 });
 			this.setState({drpdownNum: 1});
 			this.setState({ count:  1 });
 		}
-		if (index == 201 && this.state.count == 0) {
+		if (index == 202 && this.state.count == 0) {
 			this.handleDropdownClick("2");
 			this.setState({ count3: 0 });
 			this.setState({drpdownNum: 2});
@@ -230,11 +240,11 @@ class KeyboardLayout extends Component {
 		const index = this.props.navList.index;
 		const counter = this.props.counter.value;
 
-		let select1,select2 = ""
+		let select1,select2, select3 = ""
 		
 		let subSelect1, subSelect2, subSelect3, subSelect4 = ""
 		
-
+		//main keys
 		if (index == 4) {
 			if (counter == 0) {
 				select1 = "selected"
@@ -242,10 +252,19 @@ class KeyboardLayout extends Component {
 			if (counter == 1) {
 				select2 = "selected"
 			}
+			if (counter == 2) {
+				select3 = "selected"
+			}
 		}
 
+		if(index == 200){
+			select1 = "selection";
+		}
 
-		if (index == 200) {
+		//sub keys
+		//අ section
+
+		if (index == 201) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -260,7 +279,8 @@ class KeyboardLayout extends Component {
 			}
 		}
 
-		if (index == 201) {
+		//ඉ section
+		if (index == 202) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -277,7 +297,7 @@ class KeyboardLayout extends Component {
 			<Sidebar />
 			<Appbar />
 				
-				<button class="azure" onClick={this.handleSubmit}>
+				<button class={`azure ${select1}`} onClick={this.handleSubmit}>
 					Get directly from Azure
 				</button>
 				<div class="container1">
@@ -289,7 +309,7 @@ class KeyboardLayout extends Component {
 							<div class="dropdown1">
 								<button
 									id="Kbutton"
-									class={`Kbutton ${select1}`}
+									class={`Kbutton ${select2}`}
 									value="අ"
 									onClick = {() => this.handleDropdownClick("1")}
 								>
@@ -350,7 +370,7 @@ class KeyboardLayout extends Component {
 							<div class="dropdown1">
 								<button
 									id="Kbutton"
-									class={`Kbutton ${select2}`}
+									class={`Kbutton ${select3}`}
 									value="ඉ"
 									onClick = {() => this.handleDropdownClick("2")}
 								>
