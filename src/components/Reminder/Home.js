@@ -7,7 +7,7 @@ import { adddata, deldata } from './context/ContextProvider';
 import { updatedata } from './context/ContextProvider'
 import "./Edit.css";
 import Appbar from '../Appbar/Appbar';
-
+import Sidebar from '../Sidebar/Sidebar';
 import axios from "../../libs/axios";
 import {Link} from 'react-router-dom';
 
@@ -53,7 +53,7 @@ class Home extends React.Component {
       return (
         <div>
         <Appbar />
-        
+        <Sidebar />
           
             <div className = "bodybackgrnd">
               <div className = "all-hero">
