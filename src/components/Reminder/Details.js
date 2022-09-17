@@ -113,7 +113,17 @@ function Details() {
                    </div>
 
                    <br/>
-              
+                   <div className="form-group"  style={{marginBottom:'15px'} }>
+                   <label for="cName" style={{marginBottom:'5px'}} id="label-form">Description</label>
+                       <input type="text" 
+                       className="form-control" 
+                       id="cName" name="CustomerName" 
+                       placeholder="Enter your Description" 
+                        defaultValue= {RTitle}
+                        // onChange={this.handleChange}
+                       />
+                       
+                   </div>
                    <br/>
                 
                    <br/>
