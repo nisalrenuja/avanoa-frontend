@@ -85,7 +85,64 @@ function Details() {
 
 
 
-   
+    return (
+        <div>
+      
+        <div className = 'bckgrnd'>
+        <div className="row">
+        <div>
+           <div className="col-md-8 mt-4 mx-auto" id="edit-booking-body">
+           <div className="form-group"  style={{marginBottom:'25px'}}>
+             <h1 id="edit-header">   Edit Reminder Details  </h1>
+             </div>
+            <br/>
+                    <br/>
+                    <div class="card">
+                        
+                <div className="edit-form">
+                    <form className="needs-validation" noValidate>
+                   <div className="form-group" style={{marginBottom:'15px'}}>
+                        <label for="emailC" style={{marginBottom:'5px'}} id="label-form">Title</label>
+                        <input type="text" 
+                       className="form-control" 
+                        name="CustomerEmail" 
+                     placeholder="Enter your Title " 
+                     defaultValue={RTitle}
+                    //  onChange={this.handleChange} 
+                    />
+                   </div>
+
+                   <br/>
+              
+                   <br/>
+                
+                   <br/>
+                   
+                   {/* <button className="btn btn-success" type="submit" style={{marginBottom:'15px'}} onClick={this.onsubmit}>
+                       <i className="far fa-check-square"></i>
+                       &nbsp; Update Reminder
+                   </button> <br/>
+                   <button className ="btn btn-success"><a href="/TourGuideDashboard" style={{textDecoration:'none' ,color:'white' }}> Dashboard </a></button>
+                   */}
+                   
+                   </form>
+                   
+                   </div>
+                   </div>
+                   <br/>
+                   &nbsp;
+                
+                  
+                    
+                                                
+
+                   </div>
+
+           </div>
+           </div>
+                </div>
+        </div>
+    );
 }
 
 // class Details extends React.Component {
