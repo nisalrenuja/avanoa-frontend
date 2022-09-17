@@ -78,7 +78,31 @@ class Home extends React.Component {
                   
                 </tr>
                 </thead>
-             
+                <tbody>
+                  {this.state.reminders.map((reminders, index) => (
+                    <tr key = {index}>
+                      <th scope="row">{index + 1}</th>
+                      <td>
+                          <Link to = {`/Reminder/view/${reminders._id}`} style = {{textDecoration:"none"}}>
+                          {reminders.Title}
+                          </Link>
+                      </td>
+                      <td>{reminders.Description}</td>
+                      <td>{reminders.Time}</td>
+                      <td>
+                        <a className = "btn btn-warning" href = {`reminder/update/${reminders._id}`}>
+                          <i className= "fas fa-edit"></i>&nbsp;Edit
+                        </a>
+                        &nbsp;
+                        <a className = "deletebtn" href = "#" onClick = {() => this.onDelete(reminders._id)}>
+                          <i className= " far fa-trash-alt"></i>&nbsp;Remove
+                        </a>
+  
+                      </td>
+                    </tr>
+                    ))}
+  
+                </tbody>
                 
               </table>
               
