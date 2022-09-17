@@ -106,6 +106,7 @@ class Home extends React.Component {
                 
               </table>
               
+              <button className = "btn-btn-success"><Link to = "/Reminder/register" style = {{textDecoration:"none", color:"black"}}>Create</Link></button>
               <div className = "bottomspace"></div>
               </div>
             </div>
