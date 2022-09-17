@@ -5,7 +5,7 @@ import axios from "../../libs/axios";
 import { useParams } from 'react-router-dom';
 // import { useState } from "react/cjs/react.development";
 import Appbar from "../Appbar/Appbar";
-
+import Sidebar from "../Sidebar/Sidebar";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
@@ -89,7 +89,7 @@ function Details() {
     return (
         <div>
         <Appbar />
-       
+        <Sidebar />
         <div className = 'bckgrnd'>
         <div className="row">
         <div>
