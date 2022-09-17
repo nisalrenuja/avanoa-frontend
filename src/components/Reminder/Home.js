@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { adddata, deldata } from './context/ContextProvider';
 import { updatedata } from './context/ContextProvider'
 import "./Edit.css";
+import Appbar from '../Appbar/Appbar';
 
 import axios from "../../libs/axios";
 import {Link} from 'react-router-dom';
@@ -51,6 +52,7 @@ class Home extends React.Component {
     render() {
       return (
         <div>
+        <Appbar />
         
           
             <div className = "bodybackgrnd">
