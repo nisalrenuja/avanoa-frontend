@@ -48,7 +48,37 @@ class Home extends React.Component {
         })
     }  
   
- 
+    render() {
+      return (
+        <div>
+        
+          
+            <div className = "bodybackgrnd">
+              <div className = "all-hero">
+                <div class="bg_image bgimage"></div>
+                <div className = "content">
+                  Reminder Details
+                </div>
+              </div>
+              <div className = "the_content">
+              <br/>
+              
+              <div className ="searchbar">
+                <input className="form-control-mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange = {this.handleSearchArea}></input>
+              </div>
+              <br/>
+              
+              
+              
+              <div className = "bottomspace"></div>
+              </div>
+            </div>
+            </div>
+          
+          
+        
+      );
+    }
   }
 
 export default Home
