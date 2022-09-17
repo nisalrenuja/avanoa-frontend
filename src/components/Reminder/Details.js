@@ -125,7 +125,17 @@ function Details() {
                        
                    </div>
                    <br/>
-                
+                   <div className="form-group">
+                   <label for="MobileNo" style={{marginBottom:'5px'}} id="label-form">Time</label>
+                       <input type="time" 
+                       className="form-control" 
+                       id="MobileNo"name="MobileNumber" 
+                       placeholder="Enter your Time"
+                        defaultValue={RTitle}
+                        // onChange={this.handleChange} 
+                       />
+                       
+                   </div>
                    <br/>
                    
                    {/* <button className="btn btn-success" type="submit" style={{marginBottom:'15px'}} onClick={this.onsubmit}>
