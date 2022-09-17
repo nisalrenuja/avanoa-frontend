@@ -68,7 +68,19 @@ class Home extends React.Component {
               </div>
               <br/>
               
-              
+              <table className="table table-light table-bordered table-hover container ">
+                <thead>
+                <tr>
+                  <th scope= "col">#</th>
+                  <th scope= "col">Title</th>
+                  <th scope= "col">Description</th>
+                  <th scope= "col">Time</th>
+                  
+                </tr>
+                </thead>
+             
+                
+              </table>
               
               <div className = "bottomspace"></div>
               </div>
