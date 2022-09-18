@@ -78,25 +78,30 @@ const Sidebar = () => {
 	}
 
 	useEffect(() => {
-		if (index == 3) {
+		if (index == 3 && cn == 0) {
 			sec1 = "selectd";
 			navigate("/");
+			setCn(1);
 		}
-		if (index == 4) {
+		if (index == 4 && cn == 0) {
 			sec2 = "selectd";
 			navigate("/Keyboard");
+			setCn(1);
 		}
-		if (index == 5) {
+		if (index == 5 && cn == 0) {
 			sec3 = "selectd";
 			navigate("/emergency");
+			setCn(1);
 		}
-		if (index == 6) {
+		if (index == 6 && cn == 0) {
 			sec4 = "selectd";
 			navigate("/reminder");
+			setCn(1);
 		}
-		if (index == 7) {
+		if (index == 7 && cn == 0) {
 			sec5 = "selectd";
 			navigate("/settings");
+			setCn(1);
 		}
 	});
 

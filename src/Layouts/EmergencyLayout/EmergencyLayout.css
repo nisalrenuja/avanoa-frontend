@@ -1,60 +1,58 @@
 .flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .flex-container > div {
-	background-color: #f1f1f1;
-	width: 300px;
-	margin: 10px;
-	text-align: center;
-	line-height: 200px;
-	font-size: 30px;
-	align-items: center;
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  align-items: center;
 }
 
 .emergencybuttons {
-    background-color: rgb(104, 104, 255);
-    border: none;
-    display: inline-block;
-    padding: .5rem 1rem;
-    margin: .3rem;
-    font-size: 1.3rem;
-    color: #fff;
-    width: 300px;
-    height: 80px;
-    border-radius: .5rem;
-	align-items: center;
+  background-color: rgb(104, 104, 255);
+  border: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 300px;
+  height: 80px;
+  border-radius: 0.5rem;
+  align-items: center;
 }
 
-
-.h1tag{
-	color: white;
+.h1tag {
+  color: white;
 }
 
-.app{
-		padding: 200px 450px;
-		text-align: center;
-	}
+.app {
+  padding: 200px 450px;
+  text-align: center;
+}
 
-.box{
-background-color: rgb(160, 160, 230);
-padding-left: 500px;
-	padding: 0px 60px;
-	border-radius: 10px;
-	height: 420px;
-	align-content: center;
-	width: 700px;
-
+.box {
+  background-color: rgb(160, 160, 230);
+  padding-left: 500px;
+  padding: 0px 60px;
+  border-radius: 10px;
+  height: 420px;
+  align-content: center;
+  width: 700px;
 }
 
 .selected {
-	color: red;
+  color: red;
 }
 .notSelected {
-	color: black;
+  color: black;
 }
 .selection {
-	color: green;
+  color: green;
 }
