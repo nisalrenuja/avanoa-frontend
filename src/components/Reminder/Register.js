@@ -363,7 +363,29 @@ class Register extends React.Component {
 			);
 		}
 
-		
+		function FinalMessage(props) {
+			return (
+				<div>
+					<div className="app">
+					<div className="box">
+					<h1>අවසාන පණිවිඩය</h1>
+
+					<h2><p>ලබන්නා - {props.Title}</p>
+					
+					<p>පණිවුඩය - {props.Description}</p></h2>
+
+					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
+					පෙර පිටුව
+					</button>
+					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.sendEmail}>
+					යවන්න
+					</button>
+					</div>
+					</div>
+				</div>
+			);
+		}
+	
 		return (
 		<div>
 			
