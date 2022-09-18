@@ -5,7 +5,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
-
+import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
 
 
@@ -389,7 +389,7 @@ class Register extends React.Component {
 		return (
 		<div>
 			<Sidebar />
-			
+			<Appbar />
 			{comp}
 		</div>);
 	}
