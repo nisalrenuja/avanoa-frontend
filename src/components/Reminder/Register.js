@@ -336,8 +336,34 @@ class Register extends React.Component {
 		}
 
 		
+		function Time(props) {
+			return (
+				<div>
+					
+					<div className="app">
+					<div className="box">
+					<h1>කාලය තෝරන්න</h1>
 
-	
+					<button
+					className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Time" value="8.00 AM in the morning">
+					8.00 AM in the morning
+					</button>
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="1.00PM in the afternoon">
+					1.00PM in the afternoon
+					</button>
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="8.00PM in the night">
+					8.00PM in the night
+					</button>
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="10.00PM in the night">
+					10.00PM in the night
+					</button>
+					</div>
+					</div>
+				</div>
+			);
+		}
+
+		
 		return (
 		<div>
 			
