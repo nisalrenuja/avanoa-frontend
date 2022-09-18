@@ -230,7 +230,110 @@ class Register extends React.Component {
 			);
 		}
 
-		
+		function Description(props) {
+			console.log("Description");
+			if (props.Title == "Meals") {
+				return (
+					<div>
+						<div className="app">
+						<div className="box">
+						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
+						<button
+							className= {`emergencybuttons ${select1}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="breakfast"
+						>
+							i need breakfast
+						</button>
+						<button
+							className= {`emergencybuttons ${select2}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="lunch"
+						>
+							i need lunch
+						</button>
+						<button
+							className= {`emergencybuttons ${select3}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="dinner"
+						>
+							i need dinner
+						</button>
+
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						පෙර පිටුව
+						</button>
+						</div>
+						</div>
+					</div>
+				);
+			} else if (props.Title == "Medication") {
+				return (
+					<div>
+						<div className="app">
+						<div className="box">
+						<h1>පණිවිඩය තෝරන්න</h1>
+
+						<button
+							className= {`emergencybuttons ${select1}`}
+							onClick={props.handleClick}
+							name="Description"
+							value=" morning medication"
+						>
+							 i need morning medication
+						</button>
+						<button
+							className= {`emergencybuttons ${select2}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="night medication"
+						>
+							 i need night medication
+						</button>
+
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						පෙර පිටුව
+						</button>
+						</div>
+						</div>
+					</div>
+				);
+			} else if (props.Title == "Washroom") {
+				return (
+					<div>
+						<div className="app">
+						<div className="box">
+						<h1>පණිවිඩය තෝරන්න</h1>
+
+						<button
+							className= {`emergencybuttons ${select1}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="poop"
+						>
+							i want to poop
+						</button>
+						<button
+							className= {`emergencybuttons ${select2}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="pee"
+						>
+						i want to pee
+						</button>
+
+						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						පෙර පිටුව
+						</button>
+						</div>
+						</div>
+					</div>
+				);
+			}
+		}
 
 		
 
