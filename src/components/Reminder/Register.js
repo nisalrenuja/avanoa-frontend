@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from '@emailjs/browser';
 import "./EmergencyLayout.css";
-
+import Sidebar from "../../components/Sidebar/Sidebar";
 import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
@@ -388,6 +388,7 @@ class Register extends React.Component {
 	
 		return (
 		<div>
+			<Sidebar />
 			
 			{comp}
 		</div>);
