@@ -7,6 +7,7 @@ import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
+import axios from "../../libs/axios";
 
 
 class Register extends React.Component {
@@ -25,7 +26,7 @@ class Register extends React.Component {
 
 		this.handleClick = this.handleClick.bind(this);
 		this.handleBack = this.handleBack.bind(this);
-		this.handleBack = this.handleBack.bind(this);
+		this.saveReminder = this.saveReminder.bind(this);
 	
 	}
 
@@ -86,25 +87,46 @@ class Register extends React.Component {
 		}
 	}
 
-	sendEmail = (e) => {
-	e.preventDefault();
+	saveReminder(e){
+       
+        
+        // console.log('Reminder data', this.state);
+        
+        // const reminder = {
+        //     Title : this.state.Title,
+        //     Description: this.state.Description,
+        //     Time: this.state.Time
+        // }
+        const{
+            Title,
+            Description,
+            Time
+        } = this.state;
 
-	emailjs
-		.send(
-	 			"service_s63wkq9",
-	 			"template_t7hy137",
-	 			this.state,
-	 			"zXAlVVivBD7BlgIVm"
-	 		)
-	 		.then(
-	 			(result) => {
-	 				console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
-	};
+        const reminderss={
+            Title:Title,
+            Description:Description,
+            Time:Time
+        };
+
+        console.log(reminderss);
+        // const reminder = {
+        //     setState({ Title : this.state.Title });  
+        // setState({ Description: this.state.Description });   
+        // setState({ Time: this.state.Time }); 
+        // }
+
+        // this.setState({ Title : this.state.Title });  
+        // this.setState({ Description: this.state.Description });   
+        // this.setState({ Time: this.state.Time });  
+
+        axios.post("/reminder/save", reminderss).then(() => {
+            alert('Reminder added');
+        })
+        .catch(error => {
+            alert (error.message);
+        });
+    }
 
 	render() {
 
@@ -201,6 +223,7 @@ class Register extends React.Component {
 					Time={this.state.Time}
 					Description={this.state.Description}
 					handleBack={this.handleBack}
+					saveReminder={this.saveReminder} 
 					
 				/>
 			);
@@ -388,7 +411,7 @@ class Register extends React.Component {
 					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
 					පෙර පිටුව
 					</button>
-					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.sendEmail}>
+					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.saveReminder}>
 					යවන්න
 					</button>
 					</div>
