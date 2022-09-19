@@ -10,6 +10,11 @@ import Appbar from '../Appbar/Appbar';
 import Sidebar from '../Sidebar/Sidebar';
 import axios from "../../libs/axios";
 import {Link} from 'react-router-dom';
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import CardActions from "@material-ui/core/CardActions";
 
 
 
@@ -51,6 +56,9 @@ class Home extends React.Component {
   
     render() {
       return (
+
+          
+
         <div>
         <Appbar />
         <Sidebar />
@@ -59,56 +67,51 @@ class Home extends React.Component {
               <div className = "all-hero">
                 <div class="bg_image bgimage"></div>
                 <div className = "content">
-                  Reminder Details
+                  Reminder 
                 </div>
               </div>
               <div className = "the_content">
               <br/>
               
-              <div className ="searchbar">
-                <input className="form-control-mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange = {this.handleSearchArea}></input>
-              </div>
+              <h1 >Reminder List</h1>
+              
+              <br/>
+              <button className = "btn-btn-success"><Link to = "/Reminder/register" style = {{textDecoration:"none", color:"white"}}>Create</Link></button>
+              <br/>
+              <br/>
               <br/>
               
-              <table className="table table-light table-bordered table-hover container ">
-                <thead>
-                <tr>
-                  <th scope= "col">#</th>
-                  <th scope= "col">Title</th>
-                  <th scope= "col">Description</th>
-                  <th scope= "col">Time</th>
-                  
-                </tr>
-                </thead>
-                <tbody>
                   {this.state.reminders.map((reminders, index) => (
-                    <tr key = {index}>
-                      <th scope="row">{index + 1}</th>
-                      <td>
-                          <Link to = {`/Reminder/view/${reminders._id}`} style = {{textDecoration:"none"}}>
-                          {reminders.Title}
-                          </Link>
-                      </td>
-                      <td>{reminders.Description}</td>
-                      <td>{reminders.Time}</td>
-                      <td>
-                        <a className = "btn btn-warning" href = {`reminder/update/${reminders._id}`}>
-                          <i className= "fas fa-edit"></i>&nbsp;Edit
-                        </a>
-                        &nbsp;
-                        <a className = "deletebtn" href = "#" onClick = {() => this.onDelete(reminders._id)}>
-                          <i className= " far fa-trash-alt"></i>&nbsp;Remove
-                        </a>
-  
-                      </td>
-                    </tr>
+                   <li className = "mem-gridder-list circles">
+            
+                   <div className = "section">
+                       <div >
+                       {/* <img className = "image_area circlesType lazyloaded"  alt ="Adoption" src = 'https://s28164.pcdn.co/files/Asian-Small-clawed-Otter-0072-2545-300x300.jpg'></img> */}
+                       <h5 className = "mem-adpt-contentarea ">{reminders.Title}</h5><br/>
+                      
+                        
+                             &nbsp;
+
+                             {reminders.Description}
+
+                             {reminders.Time}
+
+                             <br/>
+                             <a className = "btn" href = "#" onClick = {() => this.onDelete(reminders._id)}>
+                               <i className= ""></i>&nbsp;Delete
+                               </a>
+                       
+                       </div>
+                       <div >
+                               
+                       </div>
+                   </div>
+                   
+               </li>
                     ))}
   
-                </tbody>
-                
-              </table>
               
-              <button className = "btn-btn-success"><Link to = "/Reminder/register" style = {{textDecoration:"none", color:"black"}}>Create</Link></button>
+              
               <div className = "bottomspace"></div>
               </div>
             </div>
