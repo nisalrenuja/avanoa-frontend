@@ -95,7 +95,7 @@ function Details() {
         <div>
            <div className="col-md-8 mt-4 mx-auto" id="edit-booking-body">
            <div className="form-group"  style={{marginBottom:'25px'}}>
-             <h1 id="edit-header">   Edit Reminder Details  </h1>
+             <h1 id="edit-header">   View Reminder Details  </h1>
              </div>
             <br/>
                     <br/>
@@ -104,10 +104,10 @@ function Details() {
                 <div className="edit-form">
                     <form className="needs-validation" noValidate>
                    <div className="form-group" style={{marginBottom:'15px'}}>
-                        <label for="emailC" style={{marginBottom:'5px'}} id="label-form">Title</label>
+                        <label for="Title" style={{marginBottom:'5px'}} id="label-form">Title</label>
                         <input type="text" 
                        className="form-control" 
-                        name="CustomerEmail" 
+                        name="Title" 
                      placeholder="Enter your Title " 
                      defaultValue={RTitle}
                     //  onChange={this.handleChange} 
@@ -116,10 +116,10 @@ function Details() {
 
                    <br/>
                    <div className="form-group"  style={{marginBottom:'15px'} }>
-                   <label for="cName" style={{marginBottom:'5px'}} id="label-form">Description</label>
+                   <label for="Description" style={{marginBottom:'5px'}} id="label-form">Description</label>
                        <input type="text" 
                        className="form-control" 
-                       id="cName" name="CustomerName" 
+                       id="Description" name="Description" 
                        placeholder="Enter your Description" 
                         defaultValue= {RTitle}
                         // onChange={this.handleChange}
@@ -128,10 +128,10 @@ function Details() {
                    </div>
                    <br/>
                    <div className="form-group">
-                   <label for="MobileNo" style={{marginBottom:'5px'}} id="label-form">Time</label>
+                   <label for="Time" style={{marginBottom:'5px'}} id="label-form">Time</label>
                        <input type="time" 
                        className="form-control" 
-                       id="MobileNo"name="MobileNumber" 
+                       id="Time"name="Time" 
                        placeholder="Enter your Time"
                         defaultValue={RTitle}
                         // onChange={this.handleChange} 
