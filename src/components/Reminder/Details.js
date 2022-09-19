@@ -1,119 +1,321 @@
-import React, { useEffect, useState } from "react";
-import CreateIcon from "@mui/icons-material/Create";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import WorkIcon from "@mui/icons-material/Work";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { NavLink, useParams, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+
 import "./Edit.css";
+import axios from "../../libs/axios";
+import { useParams } from 'react-router-dom';
+// import { useState } from "react/cjs/react.development";
 import Appbar from "../Appbar/Appbar";
 import Sidebar from "../Sidebar/Sidebar";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
-const Details = () => {
-  const [getuserdata, setUserdata] = useState([]);
-  console.log(getuserdata);
 
-  const { id } = useParams("");
-  console.log(id);
+function Details() {
+    const { id } = useParams();
+    console.log("id is here");
+    console.log(id);
 
-  const navigate = useNavigate();
+    // const [formInputData, setformInputData] = useState(
+    //     {
+    //     Title:'',
+    //     Description:'',
+    //     Time:''
+    //    }
+    // );   
 
-  const getdata = async () => {
-    const res = await fetch(
-      `https://crudappreactjs.herokuapp.com/getuser/${id}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const [RTitle, setTitle] = useState('');
+  const [RDescription, setDescription] = useState('');
+  const [RTime, setTime] = useState('');
 
-    const data = await res.json();
-    console.log(data);
 
-    if (res.status === 422 || !data) {
-      console.log("error ");
-    } else {
-      setUserdata(data);
-      console.log("get data");
+    const handleChange=(evnt)=>{  
+    //     const newInput = (data)=>({...data, [evnt.target.name]:evnt.target.value})
+    //    setformInputData(newInput)
     }
-  };
+    
 
-  useEffect(() => {
-    getdata();
-  }, []);
+            console.log("hellowwwwww");
+       
+        
 
-  const deleteuser = async (id) => {
-    const res2 = await fetch(
-      `https://crudappreactjs.herokuapp.com/deleteuser/${id}`,
-      {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
+        axios.get(`/reminder/${id}`).then((res)=>{
+            console.log("hellow");
+            console.log(res.data.reminder);     
+        if(res.data.success){
+            console.log("helloww");
+            // console.log(res.data.reminder);   
+            // console.log(res.data.reminder.Title);
+                // console.log(res.data);
+                // this.setState({
+                //     Title:res.reminderss.Title,
+                //     Description:res.reminderss.Description,
+                //     Time:res.reminderss.Time
+
+
+                // });
+
+                // console.log(this.state.booking);
+
+                // setformInputData(res.data.reminder.Title, res.data.reminder.Description, res.data.reminder.Time);
+                // console.log("forminput");
+                // console.log(formInputData);
+
+                // var {Title} = res.data.reminder.Title;
+                // const {Description} = res.data.reminder.Description;
+                // const {Time} = res.data.reminder.Time;
+                // console.log({Title});
+
+
+                setTitle(res.data.reminder.Title);
+                setDescription(res.data.reminder.Description);
+                setTime(res.data.reminder.Time);
+
+
+            }
+           
+        });
+        const {Title} = "Hello"
+
+
+
+
+
+
+
+
+
+
+
+    return (
+        <div>
+        <Appbar />
+        <Sidebar />
+        <div className = 'bckgrnd'>
+        <div className="row">
+        <div>
+           <div className="col-md-8 mt-4 mx-auto" id="edit-booking-body">
+           <div className="form-group"  style={{marginBottom:'25px'}}>
+             <h1 id="edit-header">   Edit Reminder Details  </h1>
+             </div>
+            <br/>
+                    <br/>
+                    <div class="card">
+                        
+                <div className="edit-form">
+                    <form className="needs-validation" noValidate>
+                   <div className="form-group" style={{marginBottom:'15px'}}>
+                        <label for="emailC" style={{marginBottom:'5px'}} id="label-form">Title</label>
+                        <input type="text" 
+                       className="form-control" 
+                        name="CustomerEmail" 
+                     placeholder="Enter your Title " 
+                     defaultValue={RTitle}
+                    //  onChange={this.handleChange} 
+                    />
+                   </div>
+
+                   <br/>
+                   <div className="form-group"  style={{marginBottom:'15px'} }>
+                   <label for="cName" style={{marginBottom:'5px'}} id="label-form">Description</label>
+                       <input type="text" 
+                       className="form-control" 
+                       id="cName" name="CustomerName" 
+                       placeholder="Enter your Description" 
+                        defaultValue= {RTitle}
+                        // onChange={this.handleChange}
+                       />
+                       
+                   </div>
+                   <br/>
+                   <div className="form-group">
+                   <label for="MobileNo" style={{marginBottom:'5px'}} id="label-form">Time</label>
+                       <input type="time" 
+                       className="form-control" 
+                       id="MobileNo"name="MobileNumber" 
+                       placeholder="Enter your Time"
+                        defaultValue={RTitle}
+                        // onChange={this.handleChange} 
+                       />
+                       
+                   </div>
+                   <br/>
+                   
+                   {/* <button className="btn btn-success" type="submit" style={{marginBottom:'15px'}} onClick={this.onsubmit}>
+                       <i className="far fa-check-square"></i>
+                       &nbsp; Update Reminder
+                   </button> <br/>
+                   <button className ="btn btn-success"><a href="/TourGuideDashboard" style={{textDecoration:'none' ,color:'white' }}> Dashboard </a></button>
+                   */}
+                   
+                   </form>
+                   
+                   </div>
+                   </div>
+                   <br/>
+                   &nbsp;
+                
+                  
+                    
+                                                
+
+                   </div>
+
+           </div>
+           </div>
+                </div>
+        </div>
     );
+}
 
-    const deletedata = await res2.json();
-    console.log(deletedata);
+// class Details extends React.Component {
+//     constructor(props) {
+//         super(props);
 
-    if (res2.status === 422 || !deletedata) {
-      console.log("error");
-    } else {
-      console.log("user deleted");
-      navigate("/Reminder");
-    }
-  };
+//         this.onsubmit = this.onsubmit.bind(this);
+//         this.state = {
+//             Title: "",
+//             Description: "",
+//             Time: "",  
+//             // id : this.props.match.params.id      
 
-  return (
-    <div>
-      <Appbar />
-      <Sidebar />
+//         }
 
-      <div className="container mt-3">
-        <h1 style={{ fontWeight: 400 }}>Reminder</h1>
+//     }
+//     handleInputChange = (e) =>{
+//         const {name,value} =e.target;
 
-        <Card sx={{ maxWidth: 600 }}>
-          <div className="add_btn">
-            <NavLink to={`/edit/${getuserdata._id}`}>
-              {" "}
-              <button className="btn btn-primary mx-2">
-                <CreateIcon />
-              </button>
-            </NavLink>
-            <button
-              className="btn btn-danger"
-              onClick={() => deleteuser(getuserdata._id)}
-            >
-              <DeleteOutlineIcon />
-            </button>
-          </div>
-          <div className="row">
-            <div className="left_viewcol-lg-6col-md-6col-12">
-              <h3 className="mt-3">
-                Title: <span>{getuserdata.title}</span>
-              </h3>
-              <h3 className="mt-3">
-                Description: <span>{getuserdata.description}</span>
-              </h3>
-            </div>
-            <div className="right_viewcol-lg-6col-md-6col-12">
-              <h3 className="mt-3">
-                Date: <span>{getuserdata.date}</span>
-              </h3>
-              <h3 className="mt-3">
-                Time: <span>{getuserdata.time}</span>
-              </h3>
-            </div>
-          </div>
-        </Card>
-      </div>
-    </div>
-  );
-};
+//         this.setState({
+//             ...this.state,
+//             [name]:value
+//         })
+//     }
 
-export default Details;
+//     // onsubmit =(e)=>{
+//     //     // var id = this.state.id
+//     //     // console.log(id);
+//     //     e.preventDefault();
+//     //     const{
+//     //         Title,
+//     //         Description,
+//     //         Time
+//     //     } = this.state;
+
+//     //     const reminderss={
+//     //         Title:Title,
+//     //         Description:Description,
+//     //         Time:Time
+//     //     };
+//     //     console.log("reminderss");
+//     //     console.log(reminderss);
+
+//     //     axios.put(`/reminder/update/${id}`,reminderss).then((res)=>{
+//     //         if(res.reminderss.success){
+//     //                 alert("Reminder updated successfully")
+//     //             this.setState(
+//     //             {
+//     //                 Title:Title,
+//     //         Description:Description,
+//     //         Time:Time
+
+//     //             });
+//     //         }
+//     //     });
+//     // }
+    
+//     componentDidMount(){
+//         console.log("hellowwwwww");
+//         // const id = this.props.match.params.id;
+//         // console.log(id);
+//         // var id = this.state.id
+//         // console.log(id);
+        
+
+//         axios.get(`/reminder/${id}`).then((res)=>{
+//             console.log("hellow");
+//             console.log(res.data.reminder);     
+//         if(res.data.success){
+//             console.log("helloww");
+//                 console.log(res.data);
+//                 this.setState({
+//                     Title:res.reminderss.Title,
+//                     Description:res.reminderss.Description,
+//                     Time:res.reminderss.Time
+
+
+//                 });
+
+//                 // console.log(this.state.booking);
+//             }
+           
+//         });
+     
+                
+//     }
+
+//     render() {
+//         return (
+//             <div className="col-md-8 mt-4 mx-auto" id="edit-booking-body">
+
+//             <h1 id="edit-header">   Edit Reminder Details  </h1>
+//             <br/>
+//                    <br/>
+//                 <div className="edit-form">
+//                    <form className="needs-validation" noValidate>
+//                    <div className="form-group" style={{marginBottom:'15px'}}>
+//                        <label for="emailC" style={{marginBottom:'5px'}} id="label-form">Title</label>
+//                        <input type="email" 
+//                        className="form-control" 
+//                         name="CustomerEmail" 
+//                      placeholder="Enter your email " 
+//                      defaultValue={this.state.Title}
+//                     onChange={this.handleInputChange} />
+//                    </div>
+
+//                    <br/>
+//                    <div className="form-group">
+//                    <label for="cName" style={{marginBottom:'5px'}} id="label-form">Description</label>
+//                        <input type="text" 
+//                        className="form-control" 
+//                        id="cName" name="CustomerName" 
+//                        placeholder="Enter your Name" 
+//                        defaultValue= {this.state.Description}  
+//                        onChange={this.handleInputChange}/>
+                       
+//                    </div>
+//                    <br/>
+//                    <div className="form-group">
+//                    <label for="MobileNo" style={{marginBottom:'5px'}} id="label-form">Time</label>
+//                        <input type="tel" 
+//                        className="form-control" 
+//                        id="MobileNo"name="MobileNumber" 
+//                        placeholder="Enter your mobile number"
+//                        defaultValue={this.state.Time}  
+//                        onChange={this.handleInputChange} />
+                       
+//                    </div>
+//                    <br/>
+                   
+//                    {/* <button className="btn btn-success" type="submit" style={{marginBottom:'15px'}} onClick={this.onsubmit}>
+//                        <i className="far fa-check-square"></i>
+//                        &nbsp; Update Reminder
+//                    </button> <br/>
+//                    <button className ="btn btn-success"><a href="/TourGuideDashboard" style={{textDecoration:'none' ,color:'white' }}> Dashboard </a></button>
+//                    */}
+//                    </form>
+//                    </div>
+//                    <br/>
+//                    &nbsp;
+                
+                  
+                    
+                                                
+
+
+
+//            </div>
+           
+//         )
+//     }
+// }
+
+export default Details

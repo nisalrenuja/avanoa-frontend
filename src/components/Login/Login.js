@@ -49,10 +49,10 @@ const Login = () => {
       localStorage.setItem("_appSignging", true);
       dispatch({ type: "SIGNING" });
     } catch (err) {
-      toast(err.response.data.msg, {
-        className: "toast-failed",
-        bodyClassName: "toast-failed",
-      });
+      // toast(err.response.data.msg, {
+      //   className: "toast-failed",
+      //   bodyClassName: "toast-failed",
+      // });
     }
   };
 
