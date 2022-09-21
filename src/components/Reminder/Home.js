@@ -93,7 +93,7 @@ class Home extends React.Component {
                              &nbsp;
 
                              {reminders.Description}
-
+                            
                              {reminders.Time}
 
                              <br/>

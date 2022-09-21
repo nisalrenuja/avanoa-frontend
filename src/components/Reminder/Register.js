@@ -28,6 +28,8 @@ class Register extends React.Component {
 		this.handleBack = this.handleBack.bind(this);
 		this.saveReminder = this.saveReminder.bind(this);
 	
+	
+	
 	}
 
 	componentDidUpdate(){
