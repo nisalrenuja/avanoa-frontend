@@ -13,6 +13,7 @@ import KeyboardLayout from "./Layouts/KeyboardLayout/KeyboardLayout";
 import Register from "./components/Reminder/Register";
 import Edit from "./components/Reminder/Edit";
 import Details from "./components/Reminder/Details";
+import AudioSetting from "./components/AudioSetting/AudioSetting";
 import { Settings } from "@mui/icons-material";
 import SettingsLayout from "./Layouts/SettingsLayout/SettingsLayout";
 import { useMediaQuery } from 'react-responsive';
@@ -93,7 +94,7 @@ function App() {
 				<Route path="/Reminder/register" element={<Register/>} />
 				<Route path="/Reminder/edit/:id" element={<Edit/>} />
 				<Route path="/Reminder/view/:id" element={<Details/>} />
-
+				<Route path="/AudioSetting" element={<AudioSetting/>} />
 
 
 
