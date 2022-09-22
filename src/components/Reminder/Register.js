@@ -8,7 +8,8 @@ import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
 import axios from "../../libs/axios";
-
+import { addReminder } from "../../reducers/reminders/reminderSlice";
+import { mapTimeStr2Num } from "./utils";
 
 class Register extends React.Component {
 	constructor(props) {
@@ -122,12 +123,19 @@ class Register extends React.Component {
         // this.setState({ Description: this.state.Description });   
         // this.setState({ Time: this.state.Time });  
 
-        axios.post("/reminder/save", reminderss).then(() => {
+        axios.post("/reminder/save", reminderss).then((res) => {
             alert('Reminder added');
+			this.props.addReminder({
+				id: res._id,
+				title: Title,
+				description: Description,
+				time: mapTimeStr2Num(Time),
+			});
         })
         .catch(error => {
             alert (error.message);
         });
+
     }
 
 	render() {
@@ -434,11 +442,13 @@ class Register extends React.Component {
 const mapStateToProps = (state) => ({
 	counter: state.counter,
 	navList: state.navList,
+	reminder: state.reminder,
 });
 
 const mapDispatchToProps = () => ({
 	setCount,
 	updateIndex,
+	addReminder,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps())(Register);
