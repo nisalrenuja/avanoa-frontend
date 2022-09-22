@@ -6,7 +6,8 @@ import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 class EmergencyLayout extends React.Component {
   constructor(props) {
     super(props);
@@ -91,9 +92,9 @@ class EmergencyLayout extends React.Component {
       if (event.target.value == "Care Taker") {
         this.setState({ email: "nipunchamodya@gmail.com" });
       } else if (event.target.value == "Gurdian") {
-        this.setState({ email: "pokirisa@gmail.com" });
+        this.setState({ email: "nrenuja@gmail.com" });
       } else if (event.target.value == "Doctor") {
-        this.setState({ email: "pokirisa@gmail.com" });
+        this.setState({ email: "nrenuja@gmail.com" });
       }
 
       this.setState({ page: 2 });
@@ -121,9 +122,9 @@ class EmergencyLayout extends React.Component {
     if (Tvar == "රැකවරණ භාරකරු") {
       this.setState({ email: "nipunchamodya@gmail.com" });
     } else if (Tvar == "භාරකරු") {
-      this.setState({ email: "pokirisa@gmail.com" });
+      this.setState({ email: "nrenuja@gmail.com" });
     } else if (Tvar == "රැකවරණ භාරකරු") {
-      this.setState({ email: "pokirisa@gmail.com" });
+      this.setState({ email: "nrenuja@gmail.com" });
     }
 
     this.setState({ page: 2 });
@@ -151,9 +152,17 @@ class EmergencyLayout extends React.Component {
       .then(
         (result) => {
           console.log(result.text);
+          return toast("Email Sent Successfully 🤗", {
+            className: "toast-success",
+            bodyClassName: "toast-success",
+          });
         },
         (error) => {
           console.log(error.text);
+          return toast("Please check network connectivity", {
+            className: "toast-success",
+            bodyClassName: "toast-success",
+          });
         }
       );
   };
@@ -251,6 +260,7 @@ class EmergencyLayout extends React.Component {
     function Recepient(props) {
       return (
         <div>
+          <ToastContainer />
           <div className="app">
             <div className="box">
               <h1 classname="h1tag">පණිවිඩය තෝරන්න</h1>
