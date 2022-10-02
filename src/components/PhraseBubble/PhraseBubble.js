@@ -1267,6 +1267,8 @@ class phraseBubble extends Component {
 				<center>
 					{/* {this.RenderButtonSound()} */}
 
+					<div>
+
 					<button className={slide1} class id="headerbutton1">
 						පොදු වාක්යය
 					</button>
@@ -1279,6 +1281,9 @@ class phraseBubble extends Component {
 					<button className={slide4} class id="headerbutton4">
 						සාමාන්ය අවශ්යතා
 					</button>
+					</div>
+
+				<div>
 					<button className={slide5} class id="headerbutton5">
 						වෛද්ය අවශ්යතා
 					</button>
@@ -1291,6 +1296,7 @@ class phraseBubble extends Component {
 					<button className={slide8} class id="headerbutton8">
 						සංචාරය කිරීමට ස්ථාන
 					</button>
+					</div>
 
 					<div class="flex-container">
 						<div className={select1}>{ph1}</div>
@@ -1307,6 +1313,9 @@ class phraseBubble extends Component {
 					{this.props.navList.index}
 				</center>
 			</div>
+			
+
+			
 		);
 	}
 }

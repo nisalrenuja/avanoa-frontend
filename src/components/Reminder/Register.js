@@ -9,7 +9,7 @@ import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
 import axios from "../../libs/axios";
 import { addReminder } from "../../reducers/reminders/reminderSlice";
-import { mapTimeStr2Num } from "./utils";
+import { mapTimeStr2Timestamp } from "./utils";
 
 class Register extends React.Component {
 	constructor(props) {
@@ -109,7 +109,8 @@ class Register extends React.Component {
         const reminderss={
             Title:Title,
             Description:Description,
-            Time:Time
+            Time:Time,
+			Timestamp: mapTimeStr2Timestamp(Time)
         };
 
         console.log(reminderss);
@@ -129,11 +130,12 @@ class Register extends React.Component {
 				id: res._id,
 				title: Title,
 				description: Description,
-				time: mapTimeStr2Num(Time),
+				time: reminderss.Timestamp,
 			});
         })
         .catch(error => {
             alert (error.message);
+			console.log(reminderss.Timestamp);
         });
 
     }
