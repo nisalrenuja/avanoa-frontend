@@ -243,3 +243,14 @@ li.mem-gridder-list img {
   height: auto;
   
 }
+
+
+.selected {
+  color: red;
+}
+.notSelected {
+  color: white;
+}
+.selection {
+  color: green;
+}

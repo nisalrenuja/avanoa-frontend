@@ -2,11 +2,10 @@ import React, { useState, useEffect, useContext } from 'react'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import CreateIcon from '@mui/icons-material/Create';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { adddata, deldata } from './context/ContextProvider';
 import { updatedata } from './context/ContextProvider';
 import { onDelete, setReminders } from '../../reducers/reminders/reminderSlice';
-import { useDispatch } from "react-redux";
 import { mapTimeStr2Num } from './utils';
 import "./Edit.css";
 import Appbar from '../Appbar/Appbar';
@@ -18,17 +17,28 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'
+import { updateReminders } from '../../reducers/navList/navListSlice';
 
 function Home() {
+	let navigate = useNavigate();
+
 	const dispatch = useDispatch();
 	const [__reminders, _setReminders] = useState([]);
+	
+	const counter = useSelector((state) => state.counter.value);
+  	const index = useSelector((state) => state.navList.index);
+	const [cn, setCn] = useState(0);
+
+	let select1 = "notSelected";
 
 	useEffect(() => {
 		retrieveReminders();
 		setInterval(() => {
 			retrieveReminders();
-		}, 2000);
+		}, 5000);
+
+		
 	}, []);
 
 	const retrieveReminders = () => {
@@ -36,6 +46,7 @@ function Home() {
 			console.log("Hello1");
 			if (res.data.success) {
 				_setReminders(res.data.existingReminders);
+				dispatch(updateReminders(res.data.existingReminders.length + 1));
 			}
 		})
 		console.log("Hello");
@@ -49,9 +60,23 @@ function Home() {
 		retrieveReminders();
 	}
 
+	if (index == 6) {
+		if (counter == 0) {
+		  //setSec1("choosing")
+		  select1 = "selected";
+		}
+	}
+	
+	if (index == 500 && cn == 0) {
+		select1 = "selection";
+		navigate("/Reminder/register");
+		//setCount(2)
+		setCn(1);
+	}
+
 	return (
 
-
+		
 
 		<div>
 			<Appbar />
@@ -70,7 +95,7 @@ function Home() {
 					<h1 >Reminder List</h1>
 
 					<br />
-					<button className="btn-btn-success"><Link to="/Reminder/register" style={{ textDecoration: "none", color: "white" }}>Create</Link></button>
+					<button className={`btn-btn-success`}><Link to="/Reminder/register" className={`${select1}`} style={{ textDecoration: "none" }}>Create</Link></button>
 					<br />
 					<br />
 					<br />
