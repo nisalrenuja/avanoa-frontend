@@ -30,6 +30,15 @@ function Home() {
 	const [cn, setCn] = useState(0);
 
 	let select1 = "notSelected";
+	let select2 = "notSelected";
+	let select3 = "notSelected";
+	let select4 = "notSelected";
+	let select5 = "notSelected";
+	let select6 = "notSelected";
+	let select7 = "notSelected";
+	let select8 = "notSelected";
+	let select9 = "notSelected";
+	let select10 = "notSelected";
 
 	useEffect(() => {
 		retrieveReminders();
@@ -61,9 +70,54 @@ function Home() {
 
 	if (index == 6) {
 		if (counter == 0) {
-		  //setSec1("choosing")
-		  select1 = "selected";
+		  	select1 = "selected";
+			select2 = "notSelected";
 		}
+		if (counter == 1) {
+			select1 = "notSelected";
+			select2 = "selected";
+			select3 = "notSelected";
+		}
+		if (counter == 2) {
+			select2 = "notSelected";
+			select3 = "selected";
+			select4 = "notSelected";
+		}
+		if (counter == 3) {
+			select3 = "notSelected";
+			select4 = "selected";
+			select5 = "notSelected";
+		}
+		if (counter == 4) {
+			select4 = "notSelected";
+			select5 = "selected";
+			select6 = "notSelected";
+		}
+		if (counter == 5) {
+			select5 = "notSelected";
+			select6 = "selected";
+			select7 = "notSelected";
+		}
+		if (counter == 6) {
+			select6 = "notSelected";
+			select7 = "selected";
+			select8 = "notSelected";
+		}
+		if (counter == 7) {
+			select7 = "notSelected";
+			select8 = "selected";
+			select9 = "notSelected";
+		}
+		if (counter == 8) {
+			select8 = "notSelected";
+			select9 = "selected";
+			select10 = "notSelected";
+		}
+		if (counter == 9) {
+			select9 = "notSelected";
+			select10 = "selected";
+		}
+		
 	}
 	
 	if (index == 500 && cn == 0) {
@@ -72,6 +126,34 @@ function Home() {
 		//setCount(2)
 		setCn(1);
 	}
+	if (index == 501) {
+		select2 = "selection";
+	}
+	if (index == 502) {
+		select3 = "selection";
+	}
+	if(index == 503) {
+		select4 = "selection";
+	}
+	if(index == 504) {
+		select5 = "selection";
+	}
+	if(index == 505) {
+		select6 = "selection";
+	}
+	if(index == 506) {
+		select7 = "selection";
+	}
+	if(index == 507) {
+		select8 = "selection";
+	}
+	if(index == 508) {
+		select9 = "selection";
+	}
+	if(index == 509) {
+		select10 = "selection";
+	}
+
 
 	return (
 
@@ -100,13 +182,12 @@ function Home() {
 					<br />
 
 					{__reminders.map((_reminders, index) => (
+						
 						<li className="mem-gridder-list circles">
-
 							<div className="section">
 								<div >
 									{/* <img className = "image_area circlesType lazyloaded"  alt ="Adoption" src = 'https://s28164.pcdn.co/files/Asian-Small-clawed-Otter-0072-2545-300x300.jpg'></img> */}
-									<h5 className="mem-adpt-contentarea ">{_reminders.Title}</h5><br />
-
+									<h5 className={`mem-adpt-contentarea ${eval("select"+(index+2))}`}>{_reminders.Title}</h5><br />
 
 									&nbsp;
 
