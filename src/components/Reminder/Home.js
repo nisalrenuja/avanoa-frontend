@@ -7,7 +7,6 @@ import { adddata, deldata } from './context/ContextProvider';
 import { updatedata } from './context/ContextProvider';
 import { onDelete, setReminders } from '../../reducers/reminders/reminderSlice';
 import { useDispatch } from "react-redux";
-import { mapTimeStr2Num } from './utils';
 import "./Edit.css";
 import Appbar from '../Appbar/Appbar';
 import Sidebar from '../Sidebar/Sidebar';
