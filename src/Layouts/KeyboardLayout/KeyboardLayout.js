@@ -305,6 +305,18 @@ class KeyboardLayout extends Component {
 						<textarea value={this.state.text}></textarea>
 					</div>
 					<div class="keyboard1">
+
+					<div class="row1">
+							<button class="Sbutton" onClick={this.handleSpace}>
+								Space
+							</button>
+
+							<button class="Dbutton" onClick={this.handleDelete}>
+								Delete
+							</button>
+							
+						</div>
+
 						<div class="row1">
 							<div class="dropdown1">
 								<button id="Kbutton" class={`Kbutton ${select2}`} value="අ" onClick = {() => this.handleDropdownClick("1")} >
@@ -345,19 +357,12 @@ class KeyboardLayout extends Component {
 								<div class={`dropdown-content1 ${this.state.drpdown2}`}>
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඉ" onClick={this.handleKbutton} >
-											{" "}
-											ඉ{" "} </button>
-									</a>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඉ" onClick={this.handleKbutton} >
+											{" "} ඉ{" "} </button> </a>
 									<a href="#">
 										{" "}
 										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect2}`}
-											value="ඊ"
-											onClick={this.handleKbutton}
-										>
+											id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඊ" onClick={this.handleKbutton} >
 											{" "}
 											ඊ{" "}
 										</button>
@@ -367,11 +372,7 @@ class KeyboardLayout extends Component {
 	
 							<div class="dropdown1">
 								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="උ"
-									onClick={this.handleKbutton}
-								>
+									id="Kbutton" class="Kbutton" value="උ" onClick={this.handleKbutton} >
 									උ
 								</button>
 								<div class="dropdown-content1">
@@ -1261,9 +1262,7 @@ class KeyboardLayout extends Component {
 								</div>
 							</div>
 	
-							<button class="Dbutton" onClick={this.handleDelete}>
-								Delete
-							</button>
+							c
 						</div>
 	
 						<div class="row1">
@@ -4650,11 +4649,7 @@ class KeyboardLayout extends Component {
 							</div>
 						</div>
 	
-						<div class="row1">
-							<button class="Sbutton" onClick={this.handleSpace}>
-								Space
-							</button>
-						</div>
+						
 					</div>
 				</div>
 			</div>
