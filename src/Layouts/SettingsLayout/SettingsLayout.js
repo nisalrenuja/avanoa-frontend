@@ -35,7 +35,7 @@ const ProfileLayout = () => {
         <div className="profilelayout_content-profile">
           <Link to="/profile"> My Personal Profile Settings</Link>
           <br></br>
-          <Link to="/profile"> Audio</Link>
+          <Link to="/AudioSetting"> Audio</Link>
           <br></br>
           <Link to="/profile"> Sensitivity</Link>
           <br></br>

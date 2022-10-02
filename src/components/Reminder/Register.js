@@ -7,7 +7,9 @@ import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
-
+import axios from "../../libs/axios";
+import { addReminder } from "../../reducers/reminders/reminderSlice";
+import { mapTimeStr2Num } from "./utils";
 
 class Register extends React.Component {
 	constructor(props) {
@@ -25,7 +27,9 @@ class Register extends React.Component {
 
 		this.handleClick = this.handleClick.bind(this);
 		this.handleBack = this.handleBack.bind(this);
-		this.handleBack = this.handleBack.bind(this);
+		this.saveReminder = this.saveReminder.bind(this);
+	
+	
 	
 	}
 
@@ -86,25 +90,53 @@ class Register extends React.Component {
 		}
 	}
 
-	sendEmail = (e) => {
-	e.preventDefault();
+	saveReminder(e){
+       
+        
+        // console.log('Reminder data', this.state);
+        
+        // const reminder = {
+        //     Title : this.state.Title,
+        //     Description: this.state.Description,
+        //     Time: this.state.Time
+        // }
+        const{
+            Title,
+            Description,
+            Time
+        } = this.state;
 
-	emailjs
-		.send(
-	 			"service_s63wkq9",
-	 			"template_t7hy137",
-	 			this.state,
-	 			"zXAlVVivBD7BlgIVm"
-	 		)
-	 		.then(
-	 			(result) => {
-	 				console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
-	};
+        const reminderss={
+            Title:Title,
+            Description:Description,
+            Time:Time
+        };
+
+        console.log(reminderss);
+        // const reminder = {
+        //     setState({ Title : this.state.Title });  
+        // setState({ Description: this.state.Description });   
+        // setState({ Time: this.state.Time }); 
+        // }
+
+        // this.setState({ Title : this.state.Title });  
+        // this.setState({ Description: this.state.Description });   
+        // this.setState({ Time: this.state.Time });  
+
+        axios.post("/reminder/save", reminderss).then((res) => {
+            alert('Reminder added');
+			this.props.addReminder({
+				id: res._id,
+				title: Title,
+				description: Description,
+				time: mapTimeStr2Num(Time),
+			});
+        })
+        .catch(error => {
+            alert (error.message);
+        });
+
+    }
 
 	render() {
 
@@ -201,6 +233,7 @@ class Register extends React.Component {
 					Time={this.state.Time}
 					Description={this.state.Description}
 					handleBack={this.handleBack}
+					saveReminder={this.saveReminder} 
 					
 				/>
 			);
@@ -212,17 +245,17 @@ class Register extends React.Component {
 					
 					<div className="app">
 					<div className="box">
-					<h1>පනිවිදකරු තෝරන්න</h1>
+					<h1>අවශ්‍යතාවය තෝරන්න</h1>
 
 					<button
-						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Title" value="Meals">
-						Meals
+						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Title" value="ආහාර">
+						ආහාර
 					</button>
-					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="Title" value="Medication">
-					Medication
+					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="Title" value="ඖෂධ">
+					ඖෂධ
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Title" value="washroom">
-					Washroom
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Title" value="සනීපාරක්ෂක කටයුතු">
+					සනීපාරක්ෂක කටයුතු
 					</button>
 					</div>
 					</div>
@@ -232,7 +265,7 @@ class Register extends React.Component {
 
 		function Description(props) {
 			console.log("Description");
-			if (props.Title == "Meals") {
+			if (props.Title == "ආහාර") {
 				return (
 					<div>
 						<div className="app">
@@ -242,25 +275,25 @@ class Register extends React.Component {
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="breakfast"
+							value="මට  උදෑසන ආහාර ඕනෙ "
 						>
-							i need breakfast
+							මට  උදෑසන ආහාර ඕනෙ
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="lunch"
+							value="දහවල් ආහාර"
 						>
-							i need lunch
+							මට  දහවල් ආහාර ඕනෙ
 						</button>
 						<button
 							className= {`emergencybuttons ${select3}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="dinner"
+							value="මට  රාත්‍රී ආහාර ඕනෙ"
 						>
-							i need dinner
+							මට  රාත්‍රී ආහාර ඕනෙ
 						</button>
 
 						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
@@ -270,7 +303,7 @@ class Register extends React.Component {
 						</div>
 					</div>
 				);
-			} else if (props.Title == "Medication") {
+			} else if (props.Title == "ඖෂධ") {
 				return (
 					<div>
 						<div className="app">
@@ -281,17 +314,26 @@ class Register extends React.Component {
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="Description"
-							value=" morning medication"
+							value=" මට  උදෑසන ඖෂධ ඕනෙ"
 						>
-							 i need morning medication
+							මට  උදෑසන ඖෂධ ඕනෙ
+						</button>
+
+						<button
+							className= {`emergencybuttons ${select1}`}
+							onClick={props.handleClick}
+							name="Description"
+							value="  මට  දහවල් ඖෂධ ඕනෙ"
+						>
+							 මට  දහවල් ඖෂධ ඕනෙ
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="night medication"
+							value=" මට රාත්‍රී ඖෂධ ඕනෙ"
 						>
-							 i need night medication
+							 මට රාත්‍රී ඖෂධ ඕනෙ
 						</button>
 
 						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
@@ -301,7 +343,7 @@ class Register extends React.Component {
 						</div>
 					</div>
 				);
-			} else if (props.Title == "Washroom") {
+			} else if (props.Title == "සනීපාරක්ෂක කටයුතු") {
 				return (
 					<div>
 						<div className="app">
@@ -312,18 +354,20 @@ class Register extends React.Component {
 							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="poop"
+							value=" මට  මුත්‍රා  කරන්න ඕනෙ"
 						>
-							i want to poop
+							මට  මුත්‍රා  කරන්න ඕනෙ
 						</button>
+
 						<button
-							className= {`emergencybuttons ${select2}`}
+							className= {`emergencybuttons ${select1}`}
 							onClick={props.handleClick}
 							name="Description"
-							value="pee"
+							value="  මට  මලපහ  කරන්න ඕනෙ"
 						>
-						i want to pee
+							මට  මලපහ  කරන්න ඕනෙ
 						</button>
+						
 
 						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
 						පෙර පිටුව
@@ -345,17 +389,17 @@ class Register extends React.Component {
 					<h1>කාලය තෝරන්න</h1>
 
 					<button
-					className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Time" value="8.00 AM in the morning">
-					8.00 AM in the morning
+					className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Time" value=" උදෑසන 8.00 ">
+					උදෑසන 8.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="1.00PM in the afternoon">
-					1.00PM in the afternoon
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" දහවල් 1.00 ">
+					දහවල් 1.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="8.00PM in the night">
-					8.00PM in the night
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" රාත්‍රී 8.00">
+					රාත්‍රී 8.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value="10.00PM in the night">
-					10.00PM in the night
+					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" රාත්‍රී 10.00">
+					රාත්‍රී 10.00
 					</button>
 					</div>
 					</div>
@@ -377,7 +421,7 @@ class Register extends React.Component {
 					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
 					පෙර පිටුව
 					</button>
-					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.sendEmail}>
+					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.saveReminder}>
 					යවන්න
 					</button>
 					</div>
@@ -398,11 +442,13 @@ class Register extends React.Component {
 const mapStateToProps = (state) => ({
 	counter: state.counter,
 	navList: state.navList,
+	reminder: state.reminder,
 });
 
 const mapDispatchToProps = () => ({
 	setCount,
 	updateIndex,
+	addReminder,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps())(Register);
