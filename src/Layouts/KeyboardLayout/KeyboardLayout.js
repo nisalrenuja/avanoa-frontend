@@ -307,87 +307,48 @@ class KeyboardLayout extends Component {
 					<div class="keyboard1">
 						<div class="row1">
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class={`Kbutton ${select2}`}
-									value="අ"
-									onClick = {() => this.handleDropdownClick("1")}
-								>
+								<button id="Kbutton" class={`Kbutton ${select2}`} value="අ" onClick = {() => this.handleDropdownClick("1")} >
 									අ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown1}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect1}`}
-											value="අ"
-											onClick={() => this.handleKbutton("අ")}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="අ" onClick={() => this.handleKbutton("අ")} >
 											{" "}
-											අ{" "}
-										</button>
+											අ{" "} </button>
 									</a>
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect2}`}
-											value="ආ"
-											onClick={() => this.handleKbutton("ආ")}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ආ" onClick={() => this.handleKbutton("ආ")} >
 											{" "}
-											ආ{" "}
-										</button>
+											ආ{" "} </button>
 									</a>
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect3}`}
-											value="ඇ"
-											onClick={() => this.handleKbutton("ඇ")}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඇ" onClick={() => this.handleKbutton("ඇ")} >
 											{" "}
-											ඇ{" "}
-										</button>
+											ඇ{" "} </button>
 									</a>
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect4}`}
-											value="ඈ"
-											onClick={() => this.handleKbutton("ඈ")}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ඈ" onClick={() => this.handleKbutton("ඈ")} >
 											{" "}
-											ඈ{" "}
-										</button>
+											ඈ{" "} </button>
 									</a>
 								</div>
 							</div>
 	
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class={`Kbutton ${select3}`}
-									value="ඉ"
-									onClick = {() => this.handleDropdownClick("2")}
-								>
+								<button id="Kbutton" class={`Kbutton ${select3}`} value="ඉ" onClick = {() => this.handleDropdownClick("2")} >
 									ඉ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown2}`}>
 									<a href="#">
 										{" "}
 										<button
-											id="Kbutton"
-											class={`Kbutton ${subSelect1}`}
-											value="ඉ"
-											onClick={this.handleKbutton}
-										>
+											id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඉ" onClick={this.handleKbutton} >
 											{" "}
-											ඉ{" "}
-										</button>
+											ඉ{" "} </button>
 									</a>
 									<a href="#">
 										{" "}
