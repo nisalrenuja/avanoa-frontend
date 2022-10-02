@@ -155,7 +155,7 @@ textarea {
   .dropdown-content1 a:hover {background-color:rgb(104, 104, 255) ;}
   
   /* Show the dropdown menu on hover */
-  //.dropdown1:active .dropdown-content1 {display: block;}
+  .dropdown1:active .dropdown-content1 {display: block;}
 
   .dropdownEnable {display: block;}
 
