@@ -18,6 +18,7 @@ const AudioSetting = () => {
           value="Male"
           name="gender"
           style={{ color: "white" }}
+          checked="checked"
         />{" "}
         Male<br></br>
         <input
