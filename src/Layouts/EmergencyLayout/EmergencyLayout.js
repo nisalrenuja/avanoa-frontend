@@ -48,10 +48,44 @@ class EmergencyLayout extends React.Component {
       this.RhandleClick("රැකවරණ භාරකරු");
       this.setState({ count: 0 });
     }
+    if (index == 151 && this.state.count == 1) {
+      this.RhandleClick("භාරකරු");
+      this.setState({ count: 0 });
+    }
+    if (index == 152 && this.state.count == 1) {
+      this.RhandleClick("ඩොක්ටර්");
+      this.setState({ count: 0 });
+    }
+
     if (index == 153 && this.state.count == 0) {
       this.MhandleClick("මට බෙහෙත් අවශ්‍යයි");
       this.setState({ count: this.state.count + 1 });
     }
+    if (index == 154 && this.state.count == 0) {
+      this.MhandleClick("මට තිබහයි");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 155 && this.state.count == 0) {
+      this.MhandleClick("මට කන්න ඕන");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 153 && this.state.count == 0) {
+      this.MhandleClick("මට ඔයාව හමුවෙන්න අවශ්යයි");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 153 && this.state.count == 0) {
+      this.MhandleClick("රැකවරණ නිලධාරියා මෙහි නොමැත");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 153 && this.state.count == 0) {
+      this.MhandleClick("මට සනීප නෑ");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 153 && this.state.count == 0) {
+      this.MhandleClick("මගේ පත්වීම ළඟයි");
+      this.setState({ count: this.state.count + 1 });
+    }    
+
     if (index == 163) {
       //back button
       this.props.updateIndex(150);
@@ -94,7 +128,7 @@ class EmergencyLayout extends React.Component {
       } else if (event.target.value == "Gurdian") {
         this.setState({ email: "nrenuja@gmail.com" });
       } else if (event.target.value == "Doctor") {
-        this.setState({ email: "nrenuja@gmail.com" });
+        this.setState({ email: "pokirisa@gmail.com" });
       }
 
       this.setState({ page: 2 });
@@ -124,7 +158,7 @@ class EmergencyLayout extends React.Component {
     } else if (Tvar == "භාරකරු") {
       this.setState({ email: "nrenuja@gmail.com" });
     } else if (Tvar == "රැකවරණ භාරකරු") {
-      this.setState({ email: "nrenuja@gmail.com" });
+      this.setState({ email: "pokirisa@gmail.com" });
     }
 
     this.setState({ page: 2 });
@@ -283,7 +317,7 @@ class EmergencyLayout extends React.Component {
               </button>
               <button
                 className={`emergencybuttons ${select3}`}
-                onClick={() => props.RhandleClick("රැකවරණ භාරකරු")}
+                onClick={() => props.RhandleClick("ඩොක්ටර්")}
                 name="recepient"
                 value="ඩොක්ටර්"
               >
@@ -376,7 +410,7 @@ class EmergencyLayout extends React.Component {
             </div>
           </div>
         );
-      } else if (props.recepient == "Doctor") {
+      } else if (props.recepient == "ඩොක්ටර්") {
         return (
           <div>
             <div className="app">
