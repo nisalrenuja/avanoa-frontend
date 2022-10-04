@@ -418,7 +418,13 @@ class KeyboardLayout extends Component {
 										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඒ" onClick={() => this.handleKbutton("ඒ")} >
 											{" "}
 											ඒ{" "} </button> </a>
-
+											
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඵෙ" onClick={() => this.handleKbutton("ඒ")} >
+											{" "}
+											ඵෙ{" "} </button> </a>
+										
 
 								</div>
 							</div>
@@ -440,6 +446,11 @@ class KeyboardLayout extends Component {
 										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඕ" onClick={() => this.handleKbutton("ඕ")} >
 											{" "}
 											ඕ{" "} </button> </a>
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඖ" onClick={() => this.handleKbutton("ඕ")} >
+											{" "}
+											ඖ{" "} </button> </a>		
 	
 							
 									
