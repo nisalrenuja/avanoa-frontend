@@ -50,12 +50,59 @@ class Register extends React.Component {
 			this.handleClick("Title", "ආහාර");
 			this.setState({ count: 0 });
 		}
+		if (index == 551 && this.state.count == 1) {
+			this.handleClick("Title", "ඖෂධ");
+			this.setState({ count: 0 });
+		}
+		if (index == 552 && this.state.count == 1) {
+			this.handleClick("Title", "සනීපාරක්ෂක කටයුතු");
+			this.setState({ count: 0 });
+		}
 		if (index == 555 && this.state.count == 0) {
 			this.handleClick("Description", "මට  උදෑසන ආහාර ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}if (index == 556 && this.state.count == 0) {
+			this.handleClick("Description", "මට  දහවල් ආහාර ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 557 && this.state.count == 0) {
+			this.handleClick("Description", "මට  රාත්‍රී ආහාර ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 558 && this.state.count == 0) {
+			this.handleClick("Description", "මට  උදෑසන ඖෂධ ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 559 && this.state.count == 0) {
+			this.handleClick("Description", "මට  දහවල් ඖෂධ ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 560 && this.state.count == 0) {
+			this.handleClick("Description", "මට රාත්‍රී ඖෂධ ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 561 && this.state.count == 0) {
+			this.handleClick("Description", "මට  මුත්‍රා  කරන්න ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 562 && this.state.count == 0) {
+			this.handleClick("Description", "මට  මලපහ  කරන්න ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
 		if (index == 570 && this.state.count == 1) {
 			this.handleClick("Time", "උදෑසන 8.00");
+			this.setState({ count: 0 });
+		}
+		if (index == 571 && this.state.count == 1) {
+			this.handleClick("Time", "දහවල් 1.00");
+			this.setState({ count: 0 });
+		}
+		if (index == 572 && this.state.count == 1) {
+			this.handleClick("Time", "රාත්‍රී 8.00");
+			this.setState({ count: 0 });
+		}
+		if (index == 573 && this.state.count == 1) {
+			this.handleClick("Time", "රාත්‍රී 10.00");
 			this.setState({ count: 0 });
 		}
 		if (index == 572) {
