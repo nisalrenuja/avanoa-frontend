@@ -17,7 +17,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
 import { useSelector, useDispatch } from 'react-redux'
-import { updateReminders } from '../../reducers/navList/navListSlice';
+import { updateReminders, updateIndex } from '../../reducers/navList/navListSlice';
 
 function Home() {
 	let navigate = useNavigate();
@@ -39,15 +39,20 @@ function Home() {
 	let select8 = "notSelected";
 	let select9 = "notSelected";
 	let select10 = "notSelected";
+	let subSelect1,subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9 = "notSelected";
 
+	let id1, id2, id3, id4, id5, id6, id7, id8, id9, id10 = 0;
 	useEffect(() => {
 		retrieveReminders();
 		setInterval(() => {
 			retrieveReminders();
 		}, 5000);
-
 		
 	}, []);
+
+	__reminders.map((item, index) => {
+		eval("id" + (index + 1) + " = item._id");
+	});
 
 	const retrieveReminders = () => {
 		axios.get("/reminders").then(res => {
@@ -128,30 +133,55 @@ function Home() {
 	}
 	if (index == 501) {
 		select2 = "selection";
+		subSelect1 = "selected";
+	}
+	if(index == 585){
+		select2 = "selection";
+		subSelect1 = "selection";
+		//delete1
+		_onDelete(id1)
+		dispatch(updateIndex(6));
+		console.log("inside 585" +id2);
 	}
 	if (index == 502) {
 		select3 = "selection";
+		subSelect2 = "selected";
 	}
+	if(index == 586){
+		select3 = "selection";
+		subSelect2 = "selection";
+		//delete2
+		_onDelete(id2)
+		dispatch(updateIndex(6));
+	}
+
 	if(index == 503) {
 		select4 = "selection";
+		subSelect3 = "selected";
 	}
 	if(index == 504) {
 		select5 = "selection";
+		subSelect4 = "selected";
 	}
 	if(index == 505) {
 		select6 = "selection";
+		subSelect5 = "selected";
 	}
 	if(index == 506) {
 		select7 = "selection";
+		subSelect6 = "selected";
 	}
 	if(index == 507) {
 		select8 = "selection";
+		subSelect7 = "selected";
 	}
 	if(index == 508) {
 		select9 = "selection";
+		subSelect8 = "selected";
 	}
 	if(index == 509) {
 		select10 = "selection";
+		subSelect9 = "selected";
 	}
 
 
@@ -196,7 +226,7 @@ function Home() {
 									{_reminders.Time}
 
 									<br />
-									<a className="btn" href="#" onClick={() => _onDelete(_reminders._id)}>
+									<a className={`btn ${eval("subSelect"+(index+1))}`} href="#" onClick={() => _onDelete(_reminders._id)}>
 										<i className=""></i>&nbsp;Delete
 									</a>
 
