@@ -130,17 +130,27 @@ class KeyboardLayout extends Component {
 			//this.setState({ count:  1 });
 			
 		}
+		if(index == 201 && this.state.count == 0){
+			this.handleSpace();
+			//this.setState({ count:  1 });
+			
+		}
+		if(index == 202 && this.state.count == 0){
+			this.handleDelete();
+			//this.setState({ count:  1 });
+			
+		}
 
 
 		//main keys
 
-		if (index == 201 && this.state.count == 0) {
+		if (index == 203 && this.state.count == 0) {
 			this.handleDropdownClick("1");
 			this.setState({ count3: 0 });
 			this.setState({drpdownNum: 1});
 			this.setState({ count:  1 });
 		}
-		if (index == 202 && this.state.count == 0) {
+		if (index == 204 && this.state.count == 0) {
 			this.handleDropdownClick("2");
 			this.setState({ count3: 0 });
 			this.setState({drpdownNum: 2});
@@ -209,12 +219,12 @@ class KeyboardLayout extends Component {
 		this.props.updateIndex(4)
 	}
 
-	handleDelete(e) {
+	handleDelete() {
 		let str = this.state.text;
 		this.setState({text : str.slice(0, -1)});
 	}
 
-	handleSpace(e) {
+	handleSpace() {
 		//chars.push(' ')
 		this.setState({text : this.state.text + " "});
 		//console.log(chars)
@@ -240,7 +250,7 @@ class KeyboardLayout extends Component {
 		const index = this.props.navList.index;
 		const counter = this.props.counter.value;
 
-		let select1,select2, select3 = ""
+		let select1,select2, select3, select4, select5, select6, select7, select8, select9 = ""
 		
 		let subSelect1, subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12 = ""
 		
@@ -307,13 +317,13 @@ class KeyboardLayout extends Component {
 					<div class="keyboard1">
 
 					<div class="row1">
-							<button class="Sbutton" onClick={this.handleSpace}>
+							<button class={`Sbutton ${select2}`} onClick={this.handleSpace}>
 								Space
 							</button>
 
 							
 
-							<button class="Dbutton" onClick={this.handleDelete}>
+							<button class={`Dbutton ${select3}`} onClick={this.handleDelete}>
 								Delete
 							</button>
 							
@@ -321,7 +331,7 @@ class KeyboardLayout extends Component {
 
 						<div class="row1">
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select1}`} value="අ" onClick = {() => this.handleDropdownClick("1")} >
+								<button id="Kbutton" class={`Kbutton ${select4}`} value="අ" onClick = {() => this.handleDropdownClick("1")} >
 									අ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown1}`} >
@@ -351,7 +361,7 @@ class KeyboardLayout extends Component {
 							</div>
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select2}`} value="ඉ" onClick = {() => this.handleDropdownClick("2")} >
+								<button id="Kbutton" class={`Kbutton ${select5}`} value="ඉ" onClick = {() => this.handleDropdownClick("2")} >
 								ඉ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown2}`} >
@@ -370,7 +380,7 @@ class KeyboardLayout extends Component {
 							</div>
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select3}`} value="උ" onClick = {() => this.handleDropdownClick("3")} >
+								<button id="Kbutton" class={`Kbutton ${select6}`} value="උ" onClick = {() => this.handleDropdownClick("3")} >
 								උ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown3}`} >
@@ -393,7 +403,7 @@ class KeyboardLayout extends Component {
 
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select3}`} value="එ" onClick = {() => this.handleDropdownClick("4")} >
+								<button id="Kbutton" class={`Kbutton ${select7}`} value="එ" onClick = {() => this.handleDropdownClick("4")} >
 								එ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown4}`} >
@@ -414,7 +424,7 @@ class KeyboardLayout extends Component {
 							</div>
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select3}`} value="ඔ" onClick = {() => this.handleDropdownClick("5")} >
+								<button id="Kbutton" class={`Kbutton ${select8}`} value="ඔ" onClick = {() => this.handleDropdownClick("5")} >
 								ඔ
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown5}`} >
@@ -437,7 +447,7 @@ class KeyboardLayout extends Component {
 							</div>
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select3}`} value="ක" onClick = {() => this.handleDropdownClick("5")} >
+								<button id="Kbutton" class={`Kbutton ${select9}`} value="ක" onClick = {() => this.handleDropdownClick("5")} >
 								ක
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown6}`} >
