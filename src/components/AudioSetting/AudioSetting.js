@@ -32,7 +32,9 @@ const AudioSetting = () => {
       <br></br>
       <br></br>
       <h2 style={{ color: "white" }}>Azure Volume</h2>
-      <div className="count">{time}</div>
+      <div className="count" style={{ color: "white" }}>
+        {time}
+      </div>
       <button
         onClick={() => {
           setTime(time + 1);
