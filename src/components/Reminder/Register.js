@@ -9,7 +9,7 @@ import Appbar from "../../components/Appbar/Appbar";
 import { Title } from "@material-ui/icons";
 import axios from "../../libs/axios";
 import { addReminder } from "../../reducers/reminders/reminderSlice";
-import { mapTimeStr2Num } from "./utils";
+import { mapTimeStr2Timestamp } from "./utils";
 
 class Register extends React.Component {
 	constructor(props) {
@@ -23,6 +23,7 @@ class Register extends React.Component {
 			BTime: false,
 			BDescription: false,
 			page: 1,
+			count: 0,
 		};
 
 		this.handleClick = this.handleClick.bind(this);
@@ -40,57 +41,79 @@ class Register extends React.Component {
 		//2 - 151
 		//3 - 152
 
-		if (index == 150) {
-			//150 - first receipient
-			//this.handleClick(name, value);
+		if (index == 500 && this.state.count == 0) {
+			this.setState({ page: 1 });
+			this.setState({ count: this.state.count + 1 });
+		}
+	  
+		if (index == 550 && this.state.count == 1) {
+			this.handleClick("Title", "ආහාර");
+			this.setState({ count: 0 });
+		}
+		if (index == 555 && this.state.count == 0) {
+			this.handleClick("Description", "මට  උදෑසන ආහාර ඕනෙ");
+			this.setState({ count: this.state.count + 1 });
+		}
+		if (index == 570 && this.state.count == 1) {
+			this.handleClick("Time", "උදෑසන 8.00");
+			this.setState({ count: 0 });
+		}
+		if (index == 572) {
+			//back button
+			this.props.updateIndex(570);
+		}
+
+		if (index == 573 && this.state.count == 0) {
+			this.saveReminder();
+			this.setState({ count: this.state.count + 1 });
 			
 		}
 
 	}
 
-	handleBack(event) {
-		event.preventDefault();
-		if (event.target.name == "messageBack") {
+	handleBack(handBack) {
+		//event.preventDefault();
+		if (handBack == "messageBack") {
 			this.setState({ page: 1 });
 		}
-		if (event.target.name == "finalMessageBack") {
+		if (handBack == "finalMessageBack") {
 			this.setState({ page: 2 });
 		}
 	}
 
-	handleClick(event) {
-		event.preventDefault();
+	handleClick(handName, hanValue) {
+		//event.preventDefault();
+		console.log("handName", handName, "hanValue", hanValue);
+		this.setState({ [handName]: hanValue });
 
-		this.setState({ [event.target.name]: event.target.value });
-
-		if (event.target.name == "Title") {
+		if (handName == "Title") {
 			this.setState({ BTitle: true });
 
-			if (event.target.value == "Meals") {
+			if (hanValue == "Meals") {
 				this.setState({ email: "nipunchamodya@gmail.com" });
-			} else if (event.target.value == "Medicattion") {
+			} else if (hanValue == "Medicattion") {
 				this.setState({ email: "pokirisa@gmail.com" });
-			} else if (event.target.value == "Washroom") {
+			} else if (hanValue == "Washroom") {
 				this.setState({ email: "pokirisa@gmail.com" });
 			}
 
 			this.setState({ page: 2 });
 		}
 
-		if (event.target.name == "Description") {
+		if (handName == "Description") {
 			this.setState({ Bmessage: true });
 			this.setState({ page: 3 });
-			this.setState({ subject: event.target.value });
+			this.setState({ subject: hanValue });
 		}
 
-		if (event.target.name == "Time") {
+		if (handName == "Time") {
 			this.setState({ BTime: true });
 			this.setState({ page: 4 });
-			this.setState({ subject: event.target.value });
+			this.setState({ subject: hanValue });
 		}
 	}
 
-	saveReminder(e){
+	saveReminder(){
        
         
         // console.log('Reminder data', this.state);
@@ -109,7 +132,8 @@ class Register extends React.Component {
         const reminderss={
             Title:Title,
             Description:Description,
-            Time:Time
+            Time:Time,
+			Timestamp: mapTimeStr2Timestamp(Time)
         };
 
         console.log(reminderss);
@@ -129,11 +153,12 @@ class Register extends React.Component {
 				id: res._id,
 				title: Title,
 				description: Description,
-				time: mapTimeStr2Num(Time),
+				time: reminderss.Timestamp,
 			});
         })
         .catch(error => {
             alert (error.message);
+			console.log(reminderss.Timestamp);
         });
 
     }
@@ -149,20 +174,7 @@ class Register extends React.Component {
 		let select4 = "";
 		let select5 = "";
 
-
-		if(index == 5){
-			if(counter == 0){
-				select1 = "selected"
-			}
-			if(counter == 1){
-				select2 = "selected"
-			}
-			if(counter == 2){
-				select3 = "selected"
-			}
-		}
-
-		if(index == 150){
+		if( index == 500 || index == 550 || index == 555 || index == 560 || index == 565 || index == 570 || index == 575 || index == 580 || index == 585 || index == 587 || index == 589 || index == 591 || index == 593 || index == 595 || index == 597 || index == 599 || index == 601){
 			if(counter == 0){
 				select1 = "selected"
 			}
@@ -175,24 +187,7 @@ class Register extends React.Component {
 			if(counter == 3){
 				select4 = "selected"
 			}
-		}
-		if( index == 151 || index == 152){
-			if(counter == 0){
-				select1 = "selected"
-			}
-			if(counter == 1){
-				select2 = "selected"
-			}
-			if(counter == 2){
-				select4 = "selected"
-			}
-		}
-		
-		if( index == 153 || index == 154 || index == 155 || index == 156 || index == 157){
-			if(counter == 0){
-				select4 = "selected"
-			}
-			if(counter == 1){
+			if(counter == 4){
 				select5 = "selected"
 			}
 		
@@ -248,13 +243,13 @@ class Register extends React.Component {
 					<h1>අවශ්‍යතාවය තෝරන්න</h1>
 
 					<button
-						className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Title" value="ආහාර">
+						className= {`emergencybuttons ${select1}`} onClick={()=>props.handleClick("Title", "ආහාර")} name="Title" value="ආහාර">
 						ආහාර
 					</button>
-					<button className= {`emergencybuttons ${select2}`} onClick={props.handleClick} name="Title" value="ඖෂධ">
+					<button className= {`emergencybuttons ${select2}`} onClick={()=>props.handleClick("Title", "ඖෂධ")} name="Title" value="ඖෂධ">
 					ඖෂධ
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Title" value="සනීපාරක්ෂක කටයුතු">
+					<button className= {`emergencybuttons ${select3}`} onClick={()=>props.handleClick("Title", "සනීපාරක්ෂක කටයුතු")} name="Title" value="සනීපාරක්ෂක කටයුතු">
 					සනීපාරක්ෂක කටයුතු
 					</button>
 					</div>
@@ -273,7 +268,7 @@ class Register extends React.Component {
 						<h1 classname='h1tag'>පණිවිඩය තෝරන්න</h1>
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.handleClick("Description", "මට  උදෑසන ආහාර ඕනෙ")}
 							name="Description"
 							value="මට  උදෑසන ආහාර ඕනෙ "
 						>
@@ -281,7 +276,7 @@ class Register extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select2}`}
-							onClick={props.handleClick}
+							onClick={()=>props.handleClick("Description", "දහවල් ආහාර")}
 							name="Description"
 							value="දහවල් ආහාර"
 						>
@@ -289,14 +284,14 @@ class Register extends React.Component {
 						</button>
 						<button
 							className= {`emergencybuttons ${select3}`}
-							onClick={props.handleClick}
+							onClick={()=>props.handleClick("Description", "මට  රාත්‍රී ආහාර ඕනෙ")}
 							name="Description"
 							value="මට  රාත්‍රී ආහාර ඕනෙ"
 						>
 							මට  රාත්‍රී ආහාර ඕනෙ
 						</button>
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={()=>props.handleBack("messageBack")} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -312,7 +307,7 @@ class Register extends React.Component {
 
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.handleClick("Description", "මට උදෑසන ඖෂධ ඕනෙ")}
 							name="Description"
 							value=" මට  උදෑසන ඖෂධ ඕනෙ"
 						>
@@ -320,23 +315,23 @@ class Register extends React.Component {
 						</button>
 
 						<button
-							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							className= {`emergencybuttons ${select2}`}
+							onClick={()=>props.handleClick("Description", "මට දහවල් ඖෂධ ඕනෙ")}
 							name="Description"
 							value="  මට  දහවල් ඖෂධ ඕනෙ"
 						>
 							 මට  දහවල් ඖෂධ ඕනෙ
 						</button>
 						<button
-							className= {`emergencybuttons ${select2}`}
-							onClick={props.handleClick}
+							className= {`emergencybuttons ${select3}`}
+							onClick={()=>props.handleClick("Description", "මට රාත්‍රී ඖෂධ ඕනෙ")}
 							name="Description"
 							value=" මට රාත්‍රී ඖෂධ ඕනෙ"
 						>
 							 මට රාත්‍රී ඖෂධ ඕනෙ
 						</button>
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select4}`} onClick={()=>props.handleBack("messageBack")} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -352,7 +347,7 @@ class Register extends React.Component {
 
 						<button
 							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							onClick={()=>props.handleClick("Description", "මට මුත්‍රා කරන්න ඕනෙ")}
 							name="Description"
 							value=" මට  මුත්‍රා  කරන්න ඕනෙ"
 						>
@@ -360,16 +355,16 @@ class Register extends React.Component {
 						</button>
 
 						<button
-							className= {`emergencybuttons ${select1}`}
-							onClick={props.handleClick}
+							className= {`emergencybuttons ${select2}`}
+							onClick={()=>props.handleClick("Description", "මට මලපහ කරන්න ඕනෙ")}
 							name="Description"
-							value="  මට  මලපහ  කරන්න ඕනෙ"
+							value="මට  මලපහ  කරන්න ඕනෙ"
 						>
 							මට  මලපහ  කරන්න ඕනෙ
 						</button>
 						
 
-						<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="messageBack">
+						<button className= {`emergencybuttons ${select3}`} onClick={()=>props.handleBack("messageBack")} name="messageBack">
 						පෙර පිටුව
 						</button>
 						</div>
@@ -389,16 +384,16 @@ class Register extends React.Component {
 					<h1>කාලය තෝරන්න</h1>
 
 					<button
-					className= {`emergencybuttons ${select1}`} onClick={props.handleClick} name="Time" value=" උදෑසන 8.00 ">
+					className= {`emergencybuttons ${select1}`} onClick={()=>props.handleClick("Time", "උදෑසන 8.00")} name="Time" value=" උදෑසන 8.00 ">
 					උදෑසන 8.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" දහවල් 1.00 ">
+					<button className= {`emergencybuttons ${select2}`} onClick={()=>props.handleClick("Time", "දහවල් 1.00")} name="Time" value="දහවල් 1.00">
 					දහවල් 1.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" රාත්‍රී 8.00">
+					<button className= {`emergencybuttons ${select3}`} onClick={()=>props.handleClick("Time", "රාත්‍රී 8.00")} name="Time" value="රාත්‍රී 8.00">
 					රාත්‍රී 8.00
 					</button>
-					<button className= {`emergencybuttons ${select3}`} onClick={props.handleClick} name="Time" value=" රාත්‍රී 10.00">
+					<button className= {`emergencybuttons ${select4}`} onClick={()=>props.handleClick("Time", "රාත්‍රී 10.00")} name="Time" value="රාත්‍රී 10.00">
 					රාත්‍රී 10.00
 					</button>
 					</div>
@@ -418,10 +413,10 @@ class Register extends React.Component {
 					
 					<p>පණිවුඩය - {props.Description}</p></h2>
 
-					<button className= {`emergencybuttons ${select4}`} onClick={props.handleBack} name="finalMessageBack">
+					<button className= {`emergencybuttons ${select1}`} onClick={()=>props.handleBack("finalMessageBack")} name="finalMessageBack">
 					පෙර පිටුව
 					</button>
-					<button className= {`emergencybuttons ${select5}`} name="finalMessageSend" onClick={props.saveReminder}>
+					<button className= {`emergencybuttons ${select2}`} name="finalMessageSend" onClick={props.saveReminder}>
 					යවන්න
 					</button>
 					</div>

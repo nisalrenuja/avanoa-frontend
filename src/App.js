@@ -17,7 +17,6 @@ import { Settings } from "@mui/icons-material";
 import SettingsLayout from "./Layouts/SettingsLayout/SettingsLayout";
 import { useMediaQuery } from 'react-responsive';
 import { onDelete, setReminders } from "./reducers/reminders/reminderSlice";
-import { mapTimeStr2Num } from "./components/Reminder/utils";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -38,14 +37,12 @@ function App() {
 						id: reminder._id,
 						title: reminder.Title,
 						description: reminder.Description,
-						time: mapTimeStr2Num(reminder.Time),
+						time: reminder.Timestamp,
 					};
 					_reminders.push({..._reminder});
 				});
-				if (reminders.length !== _reminders.length) {
-					_dispatch(setReminders(_reminders));
-					setChanged(!changed);
-				}
+				_dispatch(setReminders(_reminders));
+				setChanged(!changed);
 			}
 		})
 		console.log("Hello");
@@ -60,17 +57,33 @@ function App() {
 	useEffect(() => {
 		var interval = setInterval(() => {
 			if (nextReminder && nextReminder.id !== "") {
-				console.log(nextReminder);
 				const time = nextReminder.time;
 				const now = new Date();
-				const nowTime = now.getHours();
+				const nowTime = now.getTime();
+				var x = new Date(time);
+				console.log(x.getDate() + " " + x.getMonth() + " " + x.getFullYear() + " " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds());
 				if (time <= nowTime) {
-					axios.delete(`/reminder/delete/${nextReminder.id}`).then((res) => {
-						_dispatch(onDelete(nextReminder.id));
+					alert("Reminder: " + nextReminder.description);
+					clearInterval(interval);
+					var nextTime = new Date(now);
+					nextTime.setDate(nextTime.getDate() + 1);
+					nextTime.setHours(new Date(time).getHours());
+					nextTime.setMinutes(0);
+					nextTime.setSeconds(0);
+					axios.put("/reminder/update/" + nextReminder.id, {
+						Timestamp: nextTime.getTime(),
+					}).then(res => {
+						setNextReminder({
+							id: nextReminder.id,
+							title: nextReminder.title,
+							description: nextReminder.description,
+							time: nextTime.getTime(),
+						});
 						setChanged(!changed);
-						alert("Reminder: " + nextReminder.description);
-						clearInterval(interval);
 					});
+					// axios.delete(`/reminder/delete/${nextReminder.id}`).then((res) => {
+					// 	_dispatch(onDelete(nextReminder.id));
+					// });
 				}
 			}
 		}, 1000);
@@ -78,7 +91,7 @@ function App() {
 
 	useEffect(() => {
 		if (reminders && reminders.length > 0 && reminders[0].id !== "") {
-			var nextTime = 999999999;
+			var nextTime = Number.MAX_VALUE;
 			var next = null;
 			var nextIdx = -1;
 			for (let i = 0; i < reminders.length; i++) {

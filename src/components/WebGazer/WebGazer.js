@@ -160,12 +160,12 @@ class WebGazer extends Component {
 						}
 						//console.log("looking left"+ this.state.count);
 					} else {
-						let TVal =  tree[this.props.navList.index];
+						let TVal =  this.props.navList.tree[this.props.navList.index];
 						if(typeof TVal === 'undefined'){
 							TVal = treeExc[this.props.navList.index];
 							//console.log("unde ststdgdslkg")
 						}
-						console.log("TVAL : " + TVal);
+						console.log("TVAL : " + TVal + " value" + this.props.navList.tree[this.props.navList.index]);
 						if (this.props.counter.value < TVal - 1) {
 							this.setState({ count: this.state.count + 1 });
 							this.setState({ cn: this.state.count });

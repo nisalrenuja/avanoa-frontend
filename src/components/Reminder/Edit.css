@@ -243,3 +243,14 @@ width: 100%;
 height: auto;
 
 }
+
+
+.selected {
+  color: red;
+}
+.notSelected {
+  color: white;
+}
+.selection {
+  color: green;
+}
