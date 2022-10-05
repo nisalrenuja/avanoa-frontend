@@ -2093,72 +2093,262 @@ class KeyboardLayout extends Component {
 		this.handleKbutton("ෆෞ");
 	}
 
-	//ළ section
+	//ථ section
 	if (index == 518) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළ");
+		this.handleKbutton("ථ");
 	}
 	if (index == 519) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළා");
+		this.handleKbutton("ථා");
 	}
 	if (index == 520) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළැ");
+		this.handleKbutton("ථැ");
 	}
 	if (index == 521) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළෑ");
+		this.handleKbutton("ථෑ");
 	}
 	if (index == 522) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළ්");
+		this.handleKbutton("ථ්");
 	}
 	if (index == 523) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළි");
+		this.handleKbutton("ථි");
 	}
 	if (index == 524) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළී");
+		this.handleKbutton("ථී");
 	}
 	if (index == 525) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළෙ");
+		this.handleKbutton("ථු");
 	}
 	if (index == 526) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළේ");
+		this.handleKbutton("ථූ");
 	}
 	if (index == 527) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළො");
+		this.handleKbutton("ථෙ");
 	}
 	if (index == 528) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ළෝ");
+		this.handleKbutton("ථේ");
+	}
+	if (index == 529) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථො");
+	}
+	if (index == 530) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෝ");
+	}
+	if (index == 531) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෞ");
+	}
+
+	//භ section
+	if (index == 532) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භ");
+	}
+	if (index == 533) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භා");
+	}
+	if (index == 534) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භැ");
+	}
+	if (index == 535) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෑ");
+	}
+	if (index == 536) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භ්");
+	}
+	if (index == 537) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භි");
+	}
+	if (index == 538) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භී");
+	}
+	if (index == 539) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භු");
+	}
+	if (index == 540) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භූ");
+	}
+	if (index == 541) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෙ");
+	}
+	if (index == 542) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භේ");
+	}
+	if (index == 543) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භො");
+	}
+	if (index == 544) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෝ");
+	}
+	if (index == 545) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෞ");
+	}
+
+	//භ section
+	if (index == 546) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂ");
+	}
+	if (index == 547) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂා");
+	}
+	if (index == 548) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂැ");
+	}
+	if (index == 549) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෑ");
+	}
+	if (index == 550) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂ්");
+	}
+	if (index == 551) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂි");
+	}
+	if (index == 552) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂී");
+	}
+	if (index == 553) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂු");
+	}
+	if (index == 554) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂූ");
+	}
+	if (index == 555) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෙ");
+	}
+	if (index == 556) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂේ");
+	}
+	if (index == 557) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂො");
+	}
+	if (index == 558) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෝ");
+	}
+	if (index == 559) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෞ");
 	}
 
 
@@ -4632,43 +4822,37 @@ class KeyboardLayout extends Component {
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ෂු" onClick={() => this.handleKbutton("ෂු")} >
-											{" "}
-											ෂු{" "} </button> </a>
-
-									<a href="#">
-										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ෂූ" onClick={() => this.handleKbutton("ෂූ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ෂූ" onClick={() => this.handleKbutton("ෂූ")} >
 											{" "}
 											ෂූ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ෂෙ" onClick={() => this.handleKbutton("ෂෙ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ෂෙ" onClick={() => this.handleKbutton("ෂෙ")} >
 											{" "}
 											ෂෙ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ෂේ" onClick={() => this.handleKbutton("ෂේ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ෂේ" onClick={() => this.handleKbutton("ෂේ")} >
 											{" "}
 											ෂේ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ෂො" onClick={() => this.handleKbutton("ෂො")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ෂො" onClick={() => this.handleKbutton("ෂො")} >
 											{" "}
 											ෂො{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ෂෝ" onClick={() => this.handleKbutton("ෂෝ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ෂෝ" onClick={() => this.handleKbutton("ෂෝ")} >
 											{" "}
 											ෂෝ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect15}`} value="ෂෞ" onClick={() => this.handleKbutton("ෂෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ෂෞ" onClick={() => this.handleKbutton("ෂෞ")} >
 											{" "}
 											ෂෞ{" "} </button> </a>
 
