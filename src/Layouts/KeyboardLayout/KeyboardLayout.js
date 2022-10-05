@@ -3181,6 +3181,188 @@ class KeyboardLayout extends Component {
             }
         }
 
+		//ල section
+        if (index == 223) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ව section
+        if (index == 224) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+			if (counter == 14) {
+                subSelect15 = "selected"
+            }
+        }
+
+		//ශ section
+        if (index == 225) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+        }
+
+		//ස section
+        if (index == 226) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+			if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+
 
 
 
@@ -5051,79 +5233,79 @@ class KeyboardLayout extends Component {
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆා" onClick={() => this.handleKbutton("ෆා")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ෆා" onClick={() => this.handleKbutton("ෆා")} >
 											{" "}
 											ෆා{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆැ" onClick={() => this.handleKbutton("ෆැ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ෆැ" onClick={() => this.handleKbutton("ෆැ")} >
 											{" "}
 											ෆැ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆෑ" onClick={() => this.handleKbutton("ෆෑ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ෆෑ" onClick={() => this.handleKbutton("ෆෑ")} >
 											{" "}
 											ෆෑ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆ්" onClick={() => this.handleKbutton("ෆ්")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ෆ්" onClick={() => this.handleKbutton("ෆ්")} >
 											{" "}
 											ෆ්{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆි" onClick={() => this.handleKbutton("ෆි")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ෆි" onClick={() => this.handleKbutton("ෆි")} >
 											{" "}
 											ෆි{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆී" onClick={() => this.handleKbutton("ෆී")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ෆී" onClick={() => this.handleKbutton("ෆී")} >
 											{" "}
 											ෆී{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆු" onClick={() => this.handleKbutton("ෆු")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ෆු" onClick={() => this.handleKbutton("ෆු")} >
 											{" "}
 											ෆු{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆූ" onClick={() => this.handleKbutton("ෆූ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ෆූ" onClick={() => this.handleKbutton("ෆූ")} >
 											{" "}
 											ෆූ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆෙ" onClick={() => this.handleKbutton("ෆෙ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ෆෙ" onClick={() => this.handleKbutton("ෆෙ")} >
 											{" "}
 											ෆෙ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆේ" onClick={() => this.handleKbutton("ෆේ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ෆේ" onClick={() => this.handleKbutton("ෆේ")} >
 											{" "}
 											ෆේ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆො" onClick={() => this.handleKbutton("ෆො")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ෆො" onClick={() => this.handleKbutton("ෆො")} >
 											{" "}
 											ෆො{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆෝ" onClick={() => this.handleKbutton("ෆෝ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ෆෝ" onClick={() => this.handleKbutton("ෆෝ")} >
 											{" "}
 											ෆෝ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆෞ" onClick={() => this.handleKbutton("ෆෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ෆෞ" onClick={() => this.handleKbutton("ෆෞ")} >
 											{" "}
 											ෆෞ{" "} </button> </a>
 
@@ -5220,79 +5402,79 @@ class KeyboardLayout extends Component {
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථා" onClick={() => this.handleKbutton("ථා")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ථා" onClick={() => this.handleKbutton("ථා")} >
 											{" "}
 											ථා{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථැ" onClick={() => this.handleKbutton("ථැ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ථැ" onClick={() => this.handleKbutton("ථැ")} >
 											{" "}
 											ථැ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථෑ" onClick={() => this.handleKbutton("ථෑ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ථෑ" onClick={() => this.handleKbutton("ථෑ")} >
 											{" "}
 											ථෑ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථ්" onClick={() => this.handleKbutton("ථ්")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ථ්" onClick={() => this.handleKbutton("ථ්")} >
 											{" "}
 											ථ්{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථි" onClick={() => this.handleKbutton("ථි")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ථි" onClick={() => this.handleKbutton("ථි")} >
 											{" "}
 											ථි{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථී" onClick={() => this.handleKbutton("ථී")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ථී" onClick={() => this.handleKbutton("ථී")} >
 											{" "}
 											ථී{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථු" onClick={() => this.handleKbutton("ථු")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ථු" onClick={() => this.handleKbutton("ථු")} >
 											{" "}
 											ථු{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථූ" onClick={() => this.handleKbutton("ථූ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ථූ" onClick={() => this.handleKbutton("ථූ")} >
 											{" "}
 											ථූ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථෙ" onClick={() => this.handleKbutton("ථෙ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ථෙ" onClick={() => this.handleKbutton("ථෙ")} >
 											{" "}
 											ථෙ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථේ" onClick={() => this.handleKbutton("ථේ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ථේ" onClick={() => this.handleKbutton("ථේ")} >
 											{" "}
 											ථේ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථො" onClick={() => this.handleKbutton("ථො")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ථො" onClick={() => this.handleKbutton("ථො")} >
 											{" "}
 											ථො{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථෝ" onClick={() => this.handleKbutton("ථෝ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ථෝ" onClick={() => this.handleKbutton("ථෝ")} >
 											{" "}
 											ථෝ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථෞ" onClick={() => this.handleKbutton("ථෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ථෞ" onClick={() => this.handleKbutton("ථෞ")} >
 											{" "}
 											ථෞ{" "} </button> </a>
 
