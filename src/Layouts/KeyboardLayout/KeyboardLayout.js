@@ -1752,7 +1752,7 @@ class KeyboardLayout extends Component {
 		//sub keys
 		//අ section
 
-		if (index == 203) {
+		if (index == 201) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -1805,7 +1805,6 @@ class KeyboardLayout extends Component {
 								Delete
 							</button>
 							
-						</div>
 						</div>
 						</div>
 
@@ -2342,6 +2341,9 @@ class KeyboardLayout extends Component {
 								
 								</div>
 							</div>
+	
+							c
+						</div>
 	
 						<div class="row1">
 						<div class="dropdown1">
