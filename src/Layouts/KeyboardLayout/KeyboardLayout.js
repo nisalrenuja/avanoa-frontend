@@ -2557,7 +2557,7 @@ class KeyboardLayout extends Component {
 		}
 
 		//එ section
-		if (index == 205) {
+		if (index == 206) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -2566,6 +2566,341 @@ class KeyboardLayout extends Component {
 			}
 			if (counter == 2) {
 				subSelect3 = "selected"
+			}
+		}
+
+		//ඔ section
+		if (index == 207) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+		}
+
+		//ඔ section
+		if (index == 208) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ග section
+		if (index == 209) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ච section
+		if (index == 210) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+			if (counter == 12) {
+				subSelec13 = "selected"
+			}
+			if (counter == 13) {
+				subSelect14 = "selected"
+			}
+		}
+
+		//ජ section
+		if (index == 211) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+		}
+
+		//ට section
+		if (index == 212) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ඩ section
+		if (index == 213) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ණ section
+		if (index == 214) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+		//ත section
+		if (index == 215) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelec11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
 			}
 		}
 
@@ -3144,7 +3479,7 @@ class KeyboardLayout extends Component {
 									
 								</div>
 							</div>
-							
+
 	
 						<div class="row1">
 						<div class="dropdown1">
