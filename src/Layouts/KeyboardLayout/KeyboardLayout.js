@@ -1743,16 +1743,105 @@ class KeyboardLayout extends Component {
 			if (counter == 2) {
 				select3 = "selected"
 			}
+			if (counter == 3) {
+				select4 = "selected"
+			}
+			if (counter == 4) {
+				select5 = "selected"
+			}
+			if (counter == 5) {
+				select6 = "selected"
+			}
+			if (counter == 6) {
+				select7 = "selected"
+			}
+			if (counter == 7) {
+				select8 = "selected"
+			}
+			if (counter == 8) {
+				select9 = "selected"
+			}
+			if (counter == 9) {
+				select10 = "selected"
+			}
+			if (counter == 10) {
+				select11 = "selected"
+			}
+			if (counter == 11) {
+				select12 = "selected"
+			}
+			if (counter == 12) {
+				select13 = "selected"
+			}
+			if (counter == 13) {
+				select14 = "selected"
+			}
+			if (counter == 14) {
+				select15 = "selected"
+			}
+			if (counter == 15) {
+				select16 = "selected"
+			}
+			if (counter == 16) {
+				select17 = "selected"
+			}
+			if (counter == 17) {
+				select18 = "selected"
+			}
+			if (counter == 18) {
+				select19 = "selected"
+			}
+			if (counter == 19) {
+				select20 = "selected"
+			}
+			if (counter == 20) {
+				select21 = "selected"
+			}
+			if (counter == 21) {
+				select22 = "selected"
+			}
+			if (counter == 22) {
+				select23 = "selected"
+			}
+			if (counter == 23) {
+				select24 = "selected"
+			}
+			if (counter == 24) {
+				select25 = "selected"
+			}
+			if (counter == 25) {
+				select26 = "selected"
+			}
+			if (counter == 26) {
+				select27 = "selected"
+			}
+			if (counter == 27) {
+				select28 = "selected"
+			}
+			if (counter == 28) {
+				select29 = "selected"
+			}
+			if (counter == 29) {
+				select30 = "selected"
+			}
+
 		}
 
 		if(index == 200){
 			select1 = "selection";
 		}
+		if(index == 201){
+			select2 = "selection";
+		}
+		if(index == 202){
+			select3 = "selection";
+		}
+
 
 		//sub keys
 		//අ section
 
-		if (index == 201) {
+		if (index == 203) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -1768,7 +1857,7 @@ class KeyboardLayout extends Component {
 		}
 
 		//ඉ section
-		if (index == 202) {
+		if (index == 204) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
