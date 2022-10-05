@@ -1954,7 +1954,7 @@ class KeyboardLayout extends Component {
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ශෞ" onClick={() => this.handleKbutton("ශෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ශෞ" onClick={() => this.handleKbutton("ශෞ")} >
 											{" "}
 											ශෞ{" "} </button> </a>
 
