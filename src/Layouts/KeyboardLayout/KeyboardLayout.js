@@ -3316,8 +3316,8 @@ class KeyboardLayout extends Component {
             }
         }
 
-		//ස section
-        if (index == 226) {
+		//හැ section
+        if (index == 227) {
             if (counter == 0) {
                 subSelect1 = "selected"
             }
@@ -3357,10 +3357,95 @@ class KeyboardLayout extends Component {
 			if (counter == 12) {
                 subSelect13 = "selected"
             }
-			if (counter == 13) {
+        }
+
+		//ෆ section
+        if (index == 228) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
                 subSelect14 = "selected"
             }
         }
+
+		//ළ section
+        if (index == 229) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+        }
+		
+
+
+
+
 
 
 
