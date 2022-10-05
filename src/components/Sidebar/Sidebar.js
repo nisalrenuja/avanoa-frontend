@@ -129,6 +129,7 @@ const Sidebar = () => {
 			navigate("/settings");
 		}
 	});
+
 	return (
 		<div className={`sidebar ${selS}`}>
 			<div className="sidebar_menu">
