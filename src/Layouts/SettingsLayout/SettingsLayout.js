@@ -30,18 +30,21 @@ const ProfileLayout = () => {
       >
         <Sidebar />
       </div>
+      
       {/* content */}
       <div className="profilelayout_content">
         {/* profile */}
         <div className="profilelayout_content-profile">
+        <center>
           <Link to="/profile"> My Personal Profile Settings</Link>
           <br></br>
           <Link to="/AudioSetting"> Audio</Link>
           <br></br>
           <Link to="/profile"> Sensitivity</Link>
           <br></br>
-          <Link to="/profile"> Keyboard</Link>
+          <button class id="headerbtn"> <Link to="/profile"> Keyboard</Link> </button>
           <br></br>
+          </center>
         </div>
       </div>
     </div>
