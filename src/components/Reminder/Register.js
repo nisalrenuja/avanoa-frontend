@@ -46,71 +46,80 @@ class Register extends React.Component {
 			this.setState({ count: this.state.count + 1 });
 		}
 	  
-		if (index == 550 && this.state.count == 1) {
+		if (index == 750 && this.state.count == 1) {
 			this.handleClick("Title", "ආහාර");
 			this.setState({ count: 0 });
 		}
-		if (index == 551 && this.state.count == 1) {
+		if (index == 751 && this.state.count == 1) {
 			this.handleClick("Title", "ඖෂධ");
 			this.setState({ count: 0 });
 		}
-		if (index == 552 && this.state.count == 1) {
+		if (index == 752 && this.state.count == 1) {
 			this.handleClick("Title", "සනීපාරක්ෂක කටයුතු");
 			this.setState({ count: 0 });
 		}
-		if (index == 555 && this.state.count == 0) {
+		if (index == 755 && this.state.count == 0) {
 			this.handleClick("Description", "මට  උදෑසන ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
-		}if (index == 556 && this.state.count == 0) {
+		}if (index == 756 && this.state.count == 0) {
 			this.handleClick("Description", "මට  දහවල් ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 557 && this.state.count == 0) {
+		if (index == 757 && this.state.count == 0) {
 			this.handleClick("Description", "මට  රාත්‍රී ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 558 && this.state.count == 0) {
+		if (index == 758 && this.state.count == 0) {
+			//back button
+		}
+		if (index == 760 && this.state.count == 0) {
 			this.handleClick("Description", "මට  උදෑසන ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 559 && this.state.count == 0) {
+		if (index == 761 && this.state.count == 0) {
 			this.handleClick("Description", "මට  දහවල් ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 560 && this.state.count == 0) {
+		if (index == 762 && this.state.count == 0) {
 			this.handleClick("Description", "මට රාත්‍රී ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 561 && this.state.count == 0) {
+		if (index == 763 && this.state.count == 0) {
+			//back button
+		}
+		if (index == 765 && this.state.count == 0) {
 			this.handleClick("Description", "මට  මුත්‍රා  කරන්න ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 562 && this.state.count == 0) {
+		if (index == 766 && this.state.count == 0) {
 			this.handleClick("Description", "මට  මලපහ  කරන්න ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 570 && this.state.count == 1) {
+		if (index == 767 && this.state.count == 0) {
+			//back button
+		}
+		if (index == 770 && this.state.count == 1) {
 			this.handleClick("Time", "උදෑසන 8.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 571 && this.state.count == 1) {
+		if (index == 771 && this.state.count == 1) {
 			this.handleClick("Time", "දහවල් 1.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 572 && this.state.count == 1) {
+		if (index == 772 && this.state.count == 1) {
 			this.handleClick("Time", "රාත්‍රී 8.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 573 && this.state.count == 1) {
+		if (index == 773 && this.state.count == 1) {
 			this.handleClick("Time", "රාත්‍රී 10.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 572) {
+		if (index == 830) {
 			//back button
-			this.props.updateIndex(570);
+			this.props.updateIndex(755);
 		}
 
-		if (index == 573 && this.state.count == 0) {
+		if (index == 831 && this.state.count == 0) {
 			this.saveReminder();
 			this.setState({ count: this.state.count + 1 });
 			
@@ -221,7 +230,7 @@ class Register extends React.Component {
 		let select4 = "";
 		let select5 = "";
 
-		if( index == 500 || index == 550 || index == 555 || index == 560 || index == 565 || index == 570 || index == 575 || index == 580 || index == 585 || index == 587 || index == 589 || index == 591 || index == 593 || index == 595 || index == 597 || index == 599 || index == 601){
+		if( index == 500 || index == 750 || index == 755 || index == 760 || index == 765 || index == 770 || index == 775 || index == 780 ){
 			if(counter == 0){
 				select1 = "selected"
 			}

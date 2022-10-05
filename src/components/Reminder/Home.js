@@ -147,7 +147,7 @@ function Home() {
 		select3 = "selection";
 		subSelect2 = "selected";
 	}
-	if(index == 586){
+	if(index == 587){
 		select3 = "selection";
 		subSelect2 = "selection";
 		//delete2
@@ -182,6 +182,13 @@ function Home() {
 	if(index == 509) {
 		select10 = "selection";
 		subSelect9 = "selected";
+	}
+	if(index == 601){
+		select3 = "selection";
+		subSelect2 = "selection";
+		//delete9
+		_onDelete(id9)
+		dispatch(updateIndex(6));
 	}
 
 
