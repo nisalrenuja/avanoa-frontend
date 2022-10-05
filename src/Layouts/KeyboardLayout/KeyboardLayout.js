@@ -2546,6 +2546,29 @@ class KeyboardLayout extends Component {
 			}
 		}
 
+		//උ section
+		if (index == 205) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+		}
+
+		//එ section
+		if (index == 205) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+		}
+
 
 		return (
 		
