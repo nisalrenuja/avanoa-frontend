@@ -1673,84 +1673,84 @@ class KeyboardLayout extends Component {
 		this.handleKbutton("ලෞ");
 	}
 
-	//ව section
+	//ශ section
 	if (index == 450) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ව");
+		this.handleKbutton("ශ");
 	}
 	if (index == 451) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වා");
+		this.handleKbutton("ශා");
 	}
 	if (index == 452) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වැ");
+		this.handleKbutton("ශැ");
 	}
 	if (index == 453) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෑ");
+		this.handleKbutton("ශැ");
 	}
 	if (index == 454) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ව්");
+		this.handleKbutton("ශ්");
 	}
 	if (index == 455) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වි");
+		this.handleKbutton("ශි");
 	}
 	if (index == 456) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වී");
+		this.handleKbutton("ශී");
 	}
 	if (index == 457) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වු");
+		this.handleKbutton("ශු");
 	}
 	if (index == 458) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෙ");
+		this.handleKbutton("ශූ");
 	}
 	if (index == 459) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වේ");
+		this.handleKbutton("ශෙ");
 	}
 	if (index == 460) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වො");
+		this.handleKbutton("ශේ");
 	}
 	if (index == 461) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෝ");
+		this.handleKbutton("ශො");
 	}
 	if (index == 462) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෞ");
+		this.handleKbutton("ශෞ");
 	}
 
 	//ව section
@@ -2397,7 +2397,7 @@ class KeyboardLayout extends Component {
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="චු" onClick={() => this.handleKbutton("චු")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="චු" onClick={() => this.handleKbutton("චු")} >
 											{" "}
 											චු{" "} </button> </a>
 
@@ -2409,7 +2409,7 @@ class KeyboardLayout extends Component {
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="චෙ" onClick={() => this.handleKbutton("චෙ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="චෙ" onClick={() => this.handleKbutton("චෙ")} >
 											{" "}
 											චෙ{" "} </button> </a>
 
@@ -2422,19 +2422,19 @@ class KeyboardLayout extends Component {
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="චො" onClick={() => this.handleKbutton("චො")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="චො" onClick={() => this.handleKbutton("චො")} >
 											{" "}
 											චො{" "} </button> </a>
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="චෝ" onClick={() => this.handleKbutton("චෝ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="චෝ" onClick={() => this.handleKbutton("චෝ")} >
 											{" "}
 											චෝ{" "} </button> </a>
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="චෞ" onClick={() => this.handleKbutton("චෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="චෞ" onClick={() => this.handleKbutton("චෞ")} >
 											{" "}
 											චෞ{" "} </button> </a>
 	
