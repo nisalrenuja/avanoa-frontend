@@ -41,11 +41,7 @@ const ProfileLayout = () => {
           <br></br>
           <button class id="headerbtn"><Link to="/AudioSetting"> Audio</Link></button>
           <br></br>
-<<<<<<< HEAD
-          <Link to="/SensitivitySetting"> Sensitivity</Link>
-=======
           <button class id="headerbtn"><Link to="/profile"> Sensitivity</Link></button>
->>>>>>> fdd0e6ae4b910910f6c54bbeb0e8b9e1cea2768a
           <br></br>
           <button class id="headerbtn"> <Link to="/profile"> Keyboard</Link> </button>
           <br></br>
