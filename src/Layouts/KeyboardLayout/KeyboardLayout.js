@@ -3130,6 +3130,9 @@ class KeyboardLayout extends Component {
 			if (counter == 12) {
                 subSelect13 = "selected"
             }
+			if (counter == 13) {
+                subSelect14 = "selected"
+            }
         }
 
 		//ර section
