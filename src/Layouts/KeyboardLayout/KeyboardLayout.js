@@ -4166,6 +4166,8 @@ class KeyboardLayout extends Component {
 								</div>
 							</div>
 
+							</div>
+
 	
 						<div class="row1">
 						<div class="dropdown1">
@@ -5897,7 +5899,6 @@ class KeyboardLayout extends Component {
 						
 					</div>
 				</div>
-			</div>
 			</div>
 			);
 	}
