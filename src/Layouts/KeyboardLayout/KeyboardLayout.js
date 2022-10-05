@@ -14,10 +14,10 @@ class KeyboardLayout extends Component {
 
 		this.state = {
 			name: [],
-			// texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
+			texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
 			input : "",
 			text : "",
-			texty : "helloS",
+			// texty : "helloS",
 			count : 0,
 			count2 : 0,
 			count3 : 1,
@@ -49,17 +49,17 @@ class KeyboardLayout extends Component {
 
 	handleSubmit(){
 		// console.log(input.texty);
-		console.log(this.state.texty);
+		console.log(this.state.text);
 		console.log("Button clicked");
 
 		// let sdk = require("microsoft-cognitiveservices-speech-sdk");
 
-		// let textyy = input.texty;
-		// let textyy = this.state.texty;
+		// // let textyy = input.texty;
+		// let textyyy = this.state.text;
 
-		// console.log(textyy);
+		// // console.log(this.state.texty);
 
-		// let key = "";
+		// let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
 		// let region = "eastus";
 
 		// // The Audio file name
@@ -75,10 +75,10 @@ class KeyboardLayout extends Component {
 		// // Create the speech synthesizer.
 		// let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
 
-		// if (textyy != null) {
+		// if (textyyy != null) {
 
 		// // Start the synthesizer and wait for a result.
-		// synthesizer.speakTextAsync(textyy,
+		// synthesizer.speakTextAsync(textyyy,
 		//  function (result) {
 		//  if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
 		//  console.log("synthesis finished.");
@@ -98,9 +98,9 @@ class KeyboardLayout extends Component {
 		// console.log("Audio Narrated Successfully");
 		// };
 
-		console.log("END of TTS Narration");
+		// console.log("END of TTS Narration");
 
-		this.props.updateIndex(4);
+		// this.props.updateIndex(4);
 
 	};
 
