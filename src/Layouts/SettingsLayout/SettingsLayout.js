@@ -36,11 +36,11 @@ const ProfileLayout = () => {
         {/* profile */}
         <div className="profilelayout_content-profile">
         <center>
-          <Link to="/profile"> My Personal Profile Settings</Link>
+        <button class id="headerbtn"><Link to="/profile"> My Personal Profile Settings</Link></button>
           <br></br>
-          <Link to="/AudioSetting"> Audio</Link>
+          <button class id="headerbtn"><Link to="/AudioSetting"> Audio</Link></button>
           <br></br>
-          <Link to="/profile"> Sensitivity</Link>
+          <button class id="headerbtn"><Link to="/profile"> Sensitivity</Link></button>
           <br></br>
           <button class id="headerbtn"> <Link to="/profile"> Keyboard</Link> </button>
           <br></br>
