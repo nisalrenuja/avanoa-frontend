@@ -1673,6 +1673,166 @@ class KeyboardLayout extends Component {
 		this.handleKbutton("ලෞ");
 	}
 
+	//ව section
+	if (index == 450) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව");
+	}
+	if (index == 451) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වා");
+	}
+	if (index == 452) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වැ");
+	}
+	if (index == 453) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෑ");
+	}
+	if (index == 454) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව්");
+	}
+	if (index == 455) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වි");
+	}
+	if (index == 456) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වී");
+	}
+	if (index == 457) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වු");
+	}
+	if (index == 458) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෙ");
+	}
+	if (index == 459) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වේ");
+	}
+	if (index == 460) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වො");
+	}
+	if (index == 461) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෝ");
+	}
+	if (index == 462) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෞ");
+	}
+
+	//ව section
+	if (index == 463) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව");
+	}
+	if (index == 464) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වා");
+	}
+	if (index == 465) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වැ");
+	}
+	if (index == 466) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෑ");
+	}
+	if (index == 467) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව්");
+	}
+	if (index == 468) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වි");
+	}
+	if (index == 469) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වී");
+	}
+	if (index == 470) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වු");
+	}
+	if (index == 471) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෙ");
+	}
+	if (index == 472) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වේ");
+	}
+	if (index == 473) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වො");
+	}
+	if (index == 474) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෝ");
+	}
+	if (index == 475) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෞ");
+	}
+
 
 }
 
@@ -2231,15 +2391,34 @@ class KeyboardLayout extends Component {
 
 											<a href="#">
 										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="වී" onClick={() => this.handleKbutton("වී")} >
+											{" "}
+											වී{" "} </button> </a>
+
+											<a href="#">
+										{" "}
 										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="චු" onClick={() => this.handleKbutton("චු")} >
 											{" "}
 											චු{" "} </button> </a>
 
 											<a href="#">
 										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="වූ" onClick={() => this.handleKbutton("වූ")} >
+											{" "}
+											වූ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
 										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="චෙ" onClick={() => this.handleKbutton("චෙ")} >
 											{" "}
 											චෙ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="වේ" onClick={() => this.handleKbutton("වේ")} >
+											{" "}
+											වේ{" "} </button> </a>
+
 
 											<a href="#">
 										{" "}
