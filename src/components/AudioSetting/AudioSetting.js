@@ -7,6 +7,8 @@ const AudioSetting = () => {
   const reset = () => {
     setTime(0);
   };
+
+  
   return (
     <div>
       <br></br>

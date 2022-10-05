@@ -38,7 +38,7 @@ const ProfileLayout = () => {
           <br></br>
           <Link to="/AudioSetting"> Audio</Link>
           <br></br>
-          <Link to="/profile"> Sensitivity</Link>
+          <Link to="/SensitivitySetting"> Sensitivity</Link>
           <br></br>
           <Link to="/profile"> Keyboard</Link>
           <br></br>
