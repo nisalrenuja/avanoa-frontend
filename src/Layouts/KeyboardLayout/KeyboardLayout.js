@@ -2615,7 +2615,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2655,7 +2655,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2695,7 +2695,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2741,7 +2741,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 		}
 
@@ -2778,7 +2778,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2818,7 +2818,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2858,7 +2858,7 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
@@ -2897,12 +2897,288 @@ class KeyboardLayout extends Component {
 				subSelect10 = "selected"
 			}
 			if (counter == 10) {
-				subSelec11 = "selected"
+				subSelect11 = "selected"
 			}
 			if (counter == 11) {
 				subSelect12 = "selected"
 			}
 		}
+
+		//ද section
+		if (index == 216) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//න section
+		if (index == 217) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+		}
+
+		//ප section
+		if (index == 218) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//බ section
+		if (index == 219) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+		}
+
+		//ම section
+        if (index == 220) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+        }
+
+		//ය section
+        if (index == 221) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+        }
+
+		//ර section
+        if (index == 222) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelec13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+
 
 
 		return (
@@ -4211,79 +4487,79 @@ class KeyboardLayout extends Component {
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රා" onClick={() => this.handleKbutton("රා")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="රා" onClick={() => this.handleKbutton("රා")} >
 											{" "}
 											රා{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රැ" onClick={() => this.handleKbutton("රැ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="රැ" onClick={() => this.handleKbutton("රැ")} >
 											{" "}
 											රැ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රෑ" onClick={() => this.handleKbutton("රෑ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="රෑ" onClick={() => this.handleKbutton("රෑ")} >
 											{" "}
 											රෑ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ර්" onClick={() => this.handleKbutton("ර්")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ර්" onClick={() => this.handleKbutton("ර්")} >
 											{" "}
 											ර්{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රි" onClick={() => this.handleKbutton("රි")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="රි" onClick={() => this.handleKbutton("රි")} >
 											{" "}
 											රි{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රී" onClick={() => this.handleKbutton("රී")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="රී" onClick={() => this.handleKbutton("රී")} >
 											{" "}
 											රී{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රු" onClick={() => this.handleKbutton("රු")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="රු" onClick={() => this.handleKbutton("රු")} >
 											{" "}
 											රු{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රූ" onClick={() => this.handleKbutton("රූ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="රූ" onClick={() => this.handleKbutton("රූ")} >
 											{" "}
 											රූ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රෙ" onClick={() => this.handleKbutton("රෙ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="රෙ" onClick={() => this.handleKbutton("රෙ")} >
 											{" "}
 											රෙ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රේ" onClick={() => this.handleKbutton("රේ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="රේ" onClick={() => this.handleKbutton("රේ")} >
 											{" "}
 											රේ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රො" onClick={() => this.handleKbutton("රො")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="රො" onClick={() => this.handleKbutton("රො")} >
 											{" "}
 											රො{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රෝ" onClick={() => this.handleKbutton("රෝ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="රෝ" onClick={() => this.handleKbutton("රෝ")} >
 											{" "}
 											රෝ{" "} </button> </a>
 
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="රෞ" onClick={() => this.handleKbutton("රෞ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="රෞ" onClick={() => this.handleKbutton("රෞ")} >
 											{" "}
 											රෞ{" "} </button> </a>
 
