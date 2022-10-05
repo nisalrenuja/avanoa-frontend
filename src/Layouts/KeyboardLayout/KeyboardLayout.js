@@ -1673,164 +1673,252 @@ class KeyboardLayout extends Component {
 		this.handleKbutton("ලෞ");
 	}
 
-	//ශ section
+	
+
+	//ව section
 	if (index == 450) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශ");
+		this.handleKbutton("ව");
 	}
 	if (index == 451) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශා");
+		this.handleKbutton("වා");
 	}
 	if (index == 452) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශැ");
+		this.handleKbutton("වැ");
 	}
 	if (index == 453) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශැ");
+		this.handleKbutton("වෑ");
 	}
 	if (index == 454) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශ්");
+		this.handleKbutton("ව්");
 	}
 	if (index == 455) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශි");
+		this.handleKbutton("වි");
 	}
 	if (index == 456) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශී");
+		this.handleKbutton("වී");
 	}
 	if (index == 457) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශු");
+		this.handleKbutton("වු");
 	}
 	if (index == 458) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශූ");
+		this.handleKbutton("වෙ");
 	}
 	if (index == 459) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශෙ");
+		this.handleKbutton("වේ");
 	}
 	if (index == 460) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශේ");
+		this.handleKbutton("වො");
 	}
 	if (index == 461) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ශො");
+		this.handleKbutton("වෝ");
 	}
 	if (index == 462) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෞ");
+	}
+
+	//ශ section
+	if (index == 463) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශ");
+	}
+	if (index == 464) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශා");
+	}
+	if (index == 465) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශැ");
+	}
+	if (index == 466) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශැ");
+	}
+	if (index == 467) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශ්");
+	}
+	if (index == 468) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශි");
+	}
+	if (index == 469) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශී");
+	}
+	if (index == 470) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශු");
+	}
+	if (index == 471) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශූ");
+	}
+	if (index == 472) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශෙ");
+	}
+	if (index == 473) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශේ");
+	}
+	if (index == 474) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශො");
+	}
+	if (index == 475) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශෞ");
 	}
 
-	//ව section
-	if (index == 463) {
+	//ශ section
+	if (index == 476) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ව");
+		this.handleKbutton("ස");
 	}
-	if (index == 464) {
+	if (index == 477) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වා");
+		this.handleKbutton("සා");
 	}
-	if (index == 465) {
+	if (index == 478) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වැ");
+		this.handleKbutton("සැ");
 	}
-	if (index == 466) {
+	if (index == 479) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෑ");
+		this.handleKbutton("සෑ");
 	}
-	if (index == 467) {
+	if (index == 480) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("ව්");
+		this.handleKbutton("ස්");
 	}
-	if (index == 468) {
+	if (index == 481) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වි");
+		this.handleKbutton("සි");
 	}
-	if (index == 469) {
+	if (index == 482) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වී");
+		this.handleKbutton("සී");
 	}
-	if (index == 470) {
+	if (index == 483) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වු");
+		this.handleKbutton("සු");
 	}
 	if (index == 471) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෙ");
+		this.handleKbutton("සූ");
 	}
 	if (index == 472) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වේ");
+		this.handleKbutton("සෙ");
 	}
 	if (index == 473) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වො");
+		this.handleKbutton("සේ");
 	}
 	if (index == 474) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෝ");
+		this.handleKbutton("සො");
 	}
 	if (index == 475) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
-		this.handleKbutton("වෞ");
+		this.handleKbutton("සෝ");
+	}
+	if (index == 475) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සෞ");
 	}
 
 
