@@ -31,7 +31,12 @@ const Sidebar = () => {
 	let sec4 = "def";
 	let sec5 = "def";
 
-	const [cn, setCn] = useState(0);
+	const [cn1, setCn1] = useState(0);
+	const [cn2, setCn2] = useState(0);
+	const [cn3, setCn3] = useState(0);
+	const [cn4, setCn4] = useState(0);
+	const [cn5, setCn5] = useState(0);
+
 	const [count, setCount] = useState(0);
 
 	//let cn = 0;
@@ -78,33 +83,52 @@ const Sidebar = () => {
 	}
 
 	useEffect(() => {
-		if (index == 3 && cn == 0) {
+		if (index == 3 && cn1 == 0) {
 			sec1 = "selectd";
+			setCn1(1);
+			setCn2(0);
+			setCn3(0);
+			setCn4(0);
+			setCn5(0);
 			navigate("/");
-			setCn(1);
 		}
-		if (index == 4 && cn == 0) {
+		if (index == 4 && cn2 == 0) {
 			sec2 = "selectd";
+			setCn1(0);
+			setCn2(1);
+			setCn3(0);
+			setCn4(0);
+			setCn5(0);
 			navigate("/Keyboard");
-			setCn(1);
 		}
-		if (index == 5 && cn == 0) {
+		if (index == 5 && cn3 == 0) {
 			sec3 = "selectd";
+			setCn1(0);
+			setCn2(0);
+			setCn3(1);
+			setCn4(0);
+			setCn5(0);
 			navigate("/emergency");
-			setCn(1);
 		}
-		if (index == 6 && cn == 0) {
+		if (index == 6 && cn4 == 0) {
 			sec4 = "selectd";
+			setCn1(0);
+			setCn2(0);
+			setCn3(0);
+			setCn4(1);
+			setCn5(0);
 			navigate("/reminder");
-			setCn(1);
 		}
-		if (index == 7 && cn == 0) {
+		if (index == 7 && cn5 == 0) {
 			sec5 = "selectd";
+			setCn1(0);
+			setCn2(0);
+			setCn3(0);
+			setCn4(0);
+			setCn5(1);
 			navigate("/settings");
-			setCn(1);
 		}
 	});
-
 	return (
 		<div className={`sidebar ${selS}`}>
 			<div className="sidebar_menu">
