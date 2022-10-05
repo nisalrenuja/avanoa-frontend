@@ -2408,7 +2408,7 @@ class KeyboardLayout extends Component {
 		const index = this.props.navList.index;
 		const counter = this.props.counter.value;
 
-		let select1,select2, select3, select4, select5, select6, select7, select8, select9 ,select10 ,select11 ,select12 ,select13 ,select14 ,select15 ,select16 ,select17 ,select18 ,select19 ,select20 ,select21 ,select22 ,select23 ,select24 ,select25 ,select26 ,select27 ,select28 ,select29 ,select30 ,select31 ,select32 ,select33 ,select34    = ""
+		let select1,select2, select3, select4, select5, select6, select7, select8, select9 ,select10 ,select11 ,select12 ,select13 ,select14 ,select15 ,select16 ,select17 ,select18 ,select19 ,select20 ,select21 ,select22 ,select23 ,select24 ,select25 ,select26 ,select27 ,select28 ,select29 ,select30 ,select31 ,select32 ,select33 ,select34  ,select35 ,select36 ,select37 ,select38 ,select39 ,select40    = ""
 		
 		let subSelect1, subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12, subSelect13, subSelect14, subSelect15, subSelect16, subSelect17= ""
 		
@@ -5901,6 +5901,43 @@ class KeyboardLayout extends Component {
 								</div>
 							</div>
 						</div>
+
+						<div class="row1">
+								<button id="Kbutton" class={`Kbutton ${select34}`} value="1" onClick = {() => this.handleKbutton("1")} >
+								1
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select35}`} value="2" onClick = {() => this.handleKbutton("2")} >
+								2
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select36}`} value="3" onClick = {() => this.handleKbutton("3")} >
+								3
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select37}`} value="4" onClick = {() => this.handleKbutton("4")} >
+								4
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select34}`} value="5" onClick = {() => this.handleKbutton("5")} >
+								5
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select35}`} value="6" onClick = {() => this.handleKbutton("6")} >
+								6
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select36}`} value="7" onClick = {() => this.handleKbutton("7")} >
+								7
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select37}`} value="8" onClick = {() => this.handleKbutton("8")} >
+								8
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select38}`} value="9" onClick = {() => this.handleKbutton("9")} >
+								9
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select39}`} value="0" onClick = {() => this.handleKbutton("0")} >
+								0
+								</button>
+								
+								
+								
+								
+								</div>
 	
 						
 					</div>
