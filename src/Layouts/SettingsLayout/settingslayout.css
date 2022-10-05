@@ -1,4 +1,4 @@
-#headerbtn{
+#settingsbtn{
     background-color: rgb(104, 104, 255);
     border: none;
     display: inline-block;
@@ -11,7 +11,7 @@
   }
 
 
-  .profilelayout_content{
-    padding-left: 700px;
+  #profilelayout_content{
+    padding-left: 750px;
     padding-top: 350px;
-  }
+  } 
