@@ -156,6 +156,176 @@ class KeyboardLayout extends Component {
 			this.setState({drpdownNum: 2});
 			this.setState({ count: 1 });
 		}
+		if (index == 205 && this.state.count == 0) {
+			this.handleDropdownClick("3");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 3});
+			this.setState({ count: 1 });
+		}
+		if (index == 206 && this.state.count == 0) {
+			this.handleDropdownClick("4");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 4});
+			this.setState({ count: 1 });
+		}
+		if (index == 207 && this.state.count == 0) {
+			this.handleDropdownClick("5");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 5});
+			this.setState({ count: 1 });
+		}
+		if (index == 208 && this.state.count == 0) {
+			this.handleDropdownClick("6");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 6});
+			this.setState({ count: 1 });
+		}
+		if (index == 209 && this.state.count == 0) {
+			this.handleDropdownClick("7");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 7});
+			this.setState({ count: 1 });
+		}
+		if (index == 210 && this.state.count == 0) {
+			this.handleDropdownClick("8");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 8});
+			this.setState({ count: 1 });
+		}
+		if (index == 211 && this.state.count == 0) {
+			this.handleDropdownClick("9");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 9});
+			this.setState({ count: 1 });
+		}
+		if (index == 212 && this.state.count == 0) {
+			this.handleDropdownClick("10");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 10});
+			this.setState({ count: 1 });
+		}
+		if (index == 213 && this.state.count == 0) {
+			this.handleDropdownClick("11");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 11});
+			this.setState({ count: 1 });
+		}
+		if (index == 214 && this.state.count == 0) {
+			this.handleDropdownClick("12");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 12});
+			this.setState({ count: 1 });
+		}
+		if (index == 215 && this.state.count == 0) {
+			this.handleDropdownClick("13");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 13});
+			this.setState({ count: 1 });
+		}
+		if (index == 216 && this.state.count == 0) {
+			this.handleDropdownClick("14");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 14});
+			this.setState({ count: 1 });
+		}
+		if (index == 217 && this.state.count == 0) {
+			this.handleDropdownClick("15");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 15});
+			this.setState({ count: 1 });
+		}
+		if (index == 218 && this.state.count == 0) {
+			this.handleDropdownClick("16");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 16});
+			this.setState({ count: 1 });
+		}
+		if (index == 219 && this.state.count == 0) {
+			this.handleDropdownClick("17");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 17});
+			this.setState({ count: 1 });
+		}
+		if (index == 220 && this.state.count == 0) {
+			this.handleDropdownClick("18");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 18});
+			this.setState({ count: 1 });
+		}
+		if (index == 221 && this.state.count == 0) {
+			this.handleDropdownClick("19");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 19});
+			this.setState({ count: 1 });
+		}
+		if (index == 222 && this.state.count == 0) {
+			this.handleDropdownClick("20");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 20});
+			this.setState({ count: 1 });
+		}
+		if (index == 223 && this.state.count == 0) {
+			this.handleDropdownClick("21");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 21});
+			this.setState({ count: 1 });
+		}
+		if (index == 224 && this.state.count == 0) {
+			this.handleDropdownClick("22");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 22});
+			this.setState({ count: 1 });
+		}
+		if (index == 225 && this.state.count == 0) {
+			this.handleDropdownClick("23");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 23});
+			this.setState({ count: 1 });
+		}
+		if (index == 226 && this.state.count == 0) {
+			this.handleDropdownClick("24");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 24});
+			this.setState({ count: 1 });
+		}
+		if (index == 227 && this.state.count == 0) {
+			this.handleDropdownClick("25");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 25});
+			this.setState({ count: 1 });
+		}
+		if (index == 228 && this.state.count == 0) {
+			this.handleDropdownClick("26");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 26});
+			this.setState({ count: 1 });
+		}
+		if (index == 229 && this.state.count == 0) {
+			this.handleDropdownClick("27");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 27});
+			this.setState({ count: 1 });
+		}
+		if (index == 230 && this.state.count == 0) {
+			this.handleDropdownClick("28");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 28});
+			this.setState({ count: 1 });
+		}
+		if (index == 231 && this.state.count == 0) {
+			this.handleDropdownClick("29");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 29});
+			this.setState({ count: 1 });
+		}
+		if (index == 232 && this.state.count == 0) {
+			this.handleDropdownClick("30");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 30});
+			this.setState({ count: 1 });
+		}
+
+	
 
 
 
@@ -897,10 +1067,6 @@ class KeyboardLayout extends Component {
 											{" "}
 											ඩෑ{" "} </button> </a>
 
-
-							
-									
-									
 
 									<a href="#">
 										{" "}
