@@ -3716,6 +3716,12 @@ class KeyboardLayout extends Component {
 											{" "}
 											ඵෙ{" "} </button> </a>
 
+											{/* <a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඵෙ" onClick={() => this.handleKbutton("ඒ")} >
+											{" "}
+											ඵෙ{" "} </button> </a> */}
+
 											
 										
 
