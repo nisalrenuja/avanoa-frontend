@@ -1272,7 +1272,7 @@ class phraseBubble extends Component {
 					<div>
 
 					<button className={slide1} class id="headerbutton1">
-						පොදු වාක්යය
+					පොදු වාක්‍ය
 					</button>
 					<button className={slide2} class id="headerbutton2">
 						කෑම
@@ -1281,13 +1281,13 @@ class phraseBubble extends Component {
 						සුභ පැතුම්
 					</button>
 					<button className={slide4} class id="headerbutton4">
-						සාමාන්ය අවශ්යතා
+					සාමාන්‍ය අවශ්‍යතා
 					</button>
 					</div>
 
 				<div>
 					<button className={slide5} class id="headerbutton5">
-						වෛද්ය අවශ්යතා
+					වෛද්‍ය අවශ්‍යතා
 					</button>
 					<button className={slide6} class id="headerbutton6">
 						කටයුතු
@@ -1296,7 +1296,7 @@ class phraseBubble extends Component {
 						සංවාද
 					</button>
 					<button className={slide8} class id="headerbutton8">
-						සංචාරය කිරීමට ස්ථාන
+						ස්ථාන
 					</button>
 					</div>
 
