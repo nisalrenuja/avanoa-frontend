@@ -2712,12 +2712,12 @@ class KeyboardLayout extends Component {
 											{" "}
 											ඔ{" "} </button> </a>
 
-											<div class={`dropdown-content1 ${this.state.drpdown4}`} >
 									<a href="#">
 										{" "}
 										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඕ" onClick={() => this.handleKbutton("ඕ")} >
 											{" "}
 											ඕ{" "} </button> </a>
+
 											<a href="#">
 										{" "}
 										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඖ" onClick={() => this.handleKbutton("ඕ")} >
@@ -3141,21 +3141,10 @@ class KeyboardLayout extends Component {
 											{" "}
 											ටෝ{" "} </button> </a>
 											
-	
-							
 									
-									
-									
-									
-									
-									
-									
-								
 								</div>
 							</div>
-	
-							c
-						</div>
+							
 	
 						<div class="row1">
 						<div class="dropdown1">
