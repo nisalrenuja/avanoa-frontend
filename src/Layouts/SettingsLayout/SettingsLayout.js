@@ -3,6 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import { Link } from "react-router-dom";
 import AudioSetting from "../../components/AudioSetting/AudioSetting";
+import "./settingslayout.css";
 
 import { useState } from "react";
 // import Speech from "../../components/Speech/Speech";

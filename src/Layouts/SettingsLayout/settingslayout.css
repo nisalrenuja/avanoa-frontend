@@ -5,7 +5,13 @@
     padding: .5rem 1rem;
     margin: .3rem;
     font-size: 30px;
-    width: 1000px;
-    height: 800px;
+    width: 400px;
+    height: 50px;
     border-radius: .5rem;
+  }
+
+
+  .profilelayout_content{
+    padding-left: 700px;
+    padding-top: 350px;
   }
