@@ -14,17 +14,16 @@ class KeyboardLayout extends Component {
 
 		this.state = {
 			name: [],
-			// texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
+			texty: "පෙළ සිට කථනය භාවිතා කිරීමෙන් සතුටක් ලබන්න",
 			input : "",
 			text : "",
-			texty : "helloS",
+			// texty : "helloS",
 			count : 0,
 			count2 : 0,
 			count3 : 1,
 			drpNum : 0,
 			drpdownNum: 0,
-			drpdown1 : "",
-			drpdown2 : "",
+			drpdown1 : "",drpdown2 : "",drpdown3 : "",drpdown4 : "",drpdown5 : "",drpdown6 : "",drpdown7 : "",drpdown8 : "",drpdown9 : "",drpdown10 : "",drpdown11 : "",drpdown12 : "",drpdown13 : "",drpdown14 : "",drpdown15 : "",drpdown16 : "",drpdown17 : "",drpdown18 : "",drpdown19 : "",drpdown20 : "",drpdown21 : "",drpdown22 : "",drpdown23 : "",drpdown24 : "",drpdown25 : "",drpdown26 : "",drpdown27 : "",drpdown28 : "",drpdown29 : "",drpdown30 : "",
 		}
 
 		this.handleClick = this.handleClick.bind(this);
@@ -50,17 +49,17 @@ class KeyboardLayout extends Component {
 
 	handleSubmit(){
 		// console.log(input.texty);
-		console.log(this.state.texty);
+		console.log(this.state.text);
 		console.log("Button clicked");
 
 		// let sdk = require("microsoft-cognitiveservices-speech-sdk");
 
-		// let textyy = input.texty;
-		// let textyy = this.state.texty;
+		// // let textyy = input.texty;
+		// let textyyy = this.state.text;
 
-		// console.log(textyy);
+		// // console.log(this.state.texty);
 
-		// let key = "";
+		// let key = "38c2ba5ce6784ed4a5346ff650ceb6af";
 		// let region = "eastus";
 
 		// // The Audio file name
@@ -76,10 +75,10 @@ class KeyboardLayout extends Component {
 		// // Create the speech synthesizer.
 		// let synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
 
-		// if (textyy != null) {
+		// if (textyyy != null) {
 
 		// // Start the synthesizer and wait for a result.
-		// synthesizer.speakTextAsync(textyy,
+		// synthesizer.speakTextAsync(textyyy,
 		//  function (result) {
 		//  if (result.reason === sdk.ResultReason.SynthesizingAudioCompleted) {
 		//  console.log("synthesis finished.");
@@ -99,9 +98,9 @@ class KeyboardLayout extends Component {
 		// console.log("Audio Narrated Successfully");
 		// };
 
-		console.log("END of TTS Narration");
+		// console.log("END of TTS Narration");
 
-		this.props.updateIndex(4);
+		// this.props.updateIndex(4);
 
 	};
 
@@ -156,6 +155,176 @@ class KeyboardLayout extends Component {
 			this.setState({drpdownNum: 2});
 			this.setState({ count: 1 });
 		}
+		if (index == 205 && this.state.count == 0) {
+			this.handleDropdownClick("3");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 3});
+			this.setState({ count: 1 });
+		}
+		if (index == 206 && this.state.count == 0) {
+			this.handleDropdownClick("4");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 4});
+			this.setState({ count: 1 });
+		}
+		if (index == 207 && this.state.count == 0) {
+			this.handleDropdownClick("5");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 5});
+			this.setState({ count: 1 });
+		}
+		if (index == 208 && this.state.count == 0) {
+			this.handleDropdownClick("6");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 6});
+			this.setState({ count: 1 });
+		}
+		if (index == 209 && this.state.count == 0) {
+			this.handleDropdownClick("7");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 7});
+			this.setState({ count: 1 });
+		}
+		if (index == 210 && this.state.count == 0) {
+			this.handleDropdownClick("8");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 8});
+			this.setState({ count: 1 });
+		}
+		if (index == 211 && this.state.count == 0) {
+			this.handleDropdownClick("9");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 9});
+			this.setState({ count: 1 });
+		}
+		if (index == 212 && this.state.count == 0) {
+			this.handleDropdownClick("10");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 10});
+			this.setState({ count: 1 });
+		}
+		if (index == 213 && this.state.count == 0) {
+			this.handleDropdownClick("11");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 11});
+			this.setState({ count: 1 });
+		}
+		if (index == 214 && this.state.count == 0) {
+			this.handleDropdownClick("12");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 12});
+			this.setState({ count: 1 });
+		}
+		if (index == 215 && this.state.count == 0) {
+			this.handleDropdownClick("13");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 13});
+			this.setState({ count: 1 });
+		}
+		if (index == 216 && this.state.count == 0) {
+			this.handleDropdownClick("14");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 14});
+			this.setState({ count: 1 });
+		}
+		if (index == 217 && this.state.count == 0) {
+			this.handleDropdownClick("15");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 15});
+			this.setState({ count: 1 });
+		}
+		if (index == 218 && this.state.count == 0) {
+			this.handleDropdownClick("16");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 16});
+			this.setState({ count: 1 });
+		}
+		if (index == 219 && this.state.count == 0) {
+			this.handleDropdownClick("17");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 17});
+			this.setState({ count: 1 });
+		}
+		if (index == 220 && this.state.count == 0) {
+			this.handleDropdownClick("18");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 18});
+			this.setState({ count: 1 });
+		}
+		if (index == 221 && this.state.count == 0) {
+			this.handleDropdownClick("19");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 19});
+			this.setState({ count: 1 });
+		}
+		if (index == 222 && this.state.count == 0) {
+			this.handleDropdownClick("20");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 20});
+			this.setState({ count: 1 });
+		}
+		if (index == 223 && this.state.count == 0) {
+			this.handleDropdownClick("21");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 21});
+			this.setState({ count: 1 });
+		}
+		if (index == 224 && this.state.count == 0) {
+			this.handleDropdownClick("22");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 22});
+			this.setState({ count: 1 });
+		}
+		if (index == 225 && this.state.count == 0) {
+			this.handleDropdownClick("23");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 23});
+			this.setState({ count: 1 });
+		}
+		if (index == 226 && this.state.count == 0) {
+			this.handleDropdownClick("24");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 24});
+			this.setState({ count: 1 });
+		}
+		if (index == 227 && this.state.count == 0) {
+			this.handleDropdownClick("25");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 25});
+			this.setState({ count: 1 });
+		}
+		if (index == 228 && this.state.count == 0) {
+			this.handleDropdownClick("26");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 26});
+			this.setState({ count: 1 });
+		}
+		if (index == 229 && this.state.count == 0) {
+			this.handleDropdownClick("27");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 27});
+			this.setState({ count: 1 });
+		}
+		if (index == 230 && this.state.count == 0) {
+			this.handleDropdownClick("28");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 28});
+			this.setState({ count: 1 });
+		}
+		if (index == 231 && this.state.count == 0) {
+			this.handleDropdownClick("29");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 29});
+			this.setState({ count: 1 });
+		}
+		if (index == 232 && this.state.count == 0) {
+			this.handleDropdownClick("30");
+			this.setState({ count3: 0 });
+			this.setState({drpdownNum: 30});
+			this.setState({ count: 1 });
+		}
+
+	
 
 
 
@@ -200,7 +369,1994 @@ class KeyboardLayout extends Component {
 			//this.setState({drpEn : false})
 			this.handleKbutton("ඊ");
 		}
+	
+
+	//උ section
+	if (index == 246) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("උ");
 	}
+	if (index == 247) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඌ");
+	}
+
+	//එ section
+	if (index == 248) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("එ");
+	}
+	if (index == 249) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඒ");
+	}
+	if (index == 250) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඵෙ");
+	}
+
+	//ඔ section
+	if (index == 251) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඔ");
+	}
+	if (index == 252) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඕ");
+	}
+	if (index == 253) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඖ");
+	}
+
+	//ක section
+	if (index == 254) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ක");
+	}
+	if (index == 255) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කා");
+	}
+	if (index == 256) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කැ");
+	}
+	if (index == 257) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කෑ");
+	}
+	if (index == 258) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ක්");
+	}
+	if (index == 259) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කි");
+	}
+	if (index == 260) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කු");
+	}
+	if (index == 261) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කෙ");
+	}
+	if (index == 261) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කේ");
+	}
+	if (index == 261) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කො");
+	}
+	if (index == 261) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කෝ");
+	}
+	if (index == 261) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("කෞ");
+	}
+	
+	//ග section
+	if (index == 262) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ග");
+	}
+	if (index == 263) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගා");
+	}
+	if (index == 264) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගැ");
+	}
+	if (index == 265) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගෑ");
+	}
+	if (index == 266) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ග්");
+	}
+	if (index == 267) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගි");
+	}
+	if (index == 268) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගු");
+	}
+	if (index == 269) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගෙ");
+	}
+	if (index == 270) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගේ");
+	}
+	if (index == 271) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගො");
+	}
+	if (index == 272) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගෝ");
+	}
+	if (index == 273) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ගෞ");
+	}
+
+	//ච section
+	if (index == 274) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ච");
+	}
+	if (index == 275) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චා");
+	}
+	if (index == 276) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චැ");
+	}
+	if (index == 277) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චෑ");
+	}
+	if (index == 278) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ච්");
+	}
+	if (index == 279) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චී");
+	}
+	if (index == 280) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චු");
+	}
+	if (index == 281) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චෙ");
+	}
+	if (index == 282) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චො");
+	}
+	if (index == 283) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චෝ");
+	}
+	if (index == 284) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("චෞ");
+	}
+
+
+	//ජ section
+	if (index == 285) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජ");
+	}
+	if (index == 286) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජා");
+	}
+	if (index == 287) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජැ");
+	}
+	if (index == 288) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජෑ");
+	}
+	if (index == 289) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජ්");
+	}
+	if (index == 290) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජි");
+	}
+	if (index == 291) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජු");
+	}
+	if (index == 292) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජෙ");
+	}
+	if (index == 293) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජේ");
+	}
+	if (index == 294) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජො");
+	}
+	if (index == 295) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ජෝ");
+	}
+
+	//ට section
+	if (index == 296) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ට");
+	}
+	if (index == 297) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටා");
+	}
+	if (index == 298) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටැ");
+	}
+	if (index == 299) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටෑ");
+	}
+	if (index == 300) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටි");
+	}
+	if (index == 301) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ට්");
+	}
+	if (index == 302) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටී");
+	}
+	if (index == 303) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටු");
+	}
+	if (index == 304) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටෙ");
+	}
+	if (index == 305) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටේ");
+	}
+	if (index == 306) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටෝ");
+	}
+	if (index == 307) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ටෝ");
+	}
+
+	//ඩ section
+	if (index == 308) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩ");
+	}
+	if (index == 309) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩා");
+	}
+	if (index == 310) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩැ");
+	}
+	if (index == 311) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩෑ");
+	}
+	if (index == 312) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩ්");
+	}
+	if (index == 313) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩි");
+	}
+	if (index == 314) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩු");
+	}
+	if (index == 315) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩෙ");
+	}
+	if (index == 316) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩේ");
+	}
+	if (index == 317) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩො");
+	}
+	if (index == 318) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ඩෝ");
+	}
+
+	//ණ section
+	if (index == 319) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණ");
+	}
+	if (index == 320) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණා");
+	}
+	if (index == 321) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණැ");
+	}
+	if (index == 322) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණෑ");
+	}
+	if (index == 323) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණ්");
+	}
+	if (index == 324) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණි");
+	}
+	if (index == 325) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණී");
+	}
+	if (index == 326) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණු");
+	}
+	if (index == 327) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණෙ");
+	}
+	if (index == 328) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණො");
+	}
+	if (index == 329) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ණෝ");
+	}
+
+
+	//ත section
+	if (index == 330) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ත");
+	}
+	if (index == 331) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තා");
+	}
+	if (index == 332) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තැ");
+	}
+	if (index == 333) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තෑ");
+	}
+	if (index == 334) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ත්");
+	}
+	if (index == 335) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ති");
+	}
+	if (index == 336) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තී");
+	}
+	if (index == 337) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තු");
+	}
+	if (index == 338) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තෙ");
+	}
+	if (index == 339) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තේ");
+	}
+	if (index == 340) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තො");
+	}
+	if (index == 341) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("තෝ");
+	}
+
+	//ද section
+	if (index == 342) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ද");
+	}
+	if (index == 343) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දා");
+	}
+	if (index == 344) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දැ");
+	}
+	if (index == 345) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දෑ");
+	}
+	if (index == 346) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ද්");
+	}
+	if (index == 347) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දි");
+	}
+	if (index == 348) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දී");
+	}
+	if (index == 349) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දු");
+	}
+	if (index == 350) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දෙ");
+	}
+	if (index == 351) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දේ");
+	}
+	if (index == 352) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දො");
+	}
+	if (index == 353) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("දෝ");
+	}
+
+
+	//න section
+	if (index == 354) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("න");
+	}
+	if (index == 355) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නා");
+	}
+	if (index == 356) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නෑ");
+	}
+	if (index == 357) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("න්");
+	}
+	if (index == 358) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නි");
+	}
+	if (index == 359) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නී");
+	}
+	if (index == 360) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නු");
+	}
+	if (index == 361) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නෙ");
+	}
+	if (index == 362) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නේ");
+	}
+	if (index == 363) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නො");
+	}
+	if (index == 364) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("නෝ");
+	}
+
+
+	//ප section
+	if (index == 365) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ප");
+	}
+	if (index == 366) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පා");
+	}
+	if (index == 367) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පැ");
+	}
+	if (index == 368) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පෑ");
+	}
+	if (index == 369) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ප්");
+	}
+	if (index == 370) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පි");
+	}
+	if (index == 371) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පී");
+	}
+	if (index == 372) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පු");
+	}
+	if (index == 373) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පෙ");
+	}
+	if (index == 374) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පේ");
+	}
+	if (index == 375) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පො");
+	}
+	if (index == 375) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("පෝ");
+	}
+
+	//බ section
+	if (index == 376) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බ");
+	}
+	if (index == 377) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බා");
+	}
+	if (index == 378) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බැ");
+	}
+	if (index == 379) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බෑ");
+	}
+	if (index == 380) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බ්");
+	}
+	if (index == 381) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බි");
+	}
+	if (index == 382) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බී");
+	}
+	if (index == 383) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බු");
+	}
+	if (index == 384) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බෙ");
+	}
+	if (index == 385) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("බේ");
+	}
+
+
+	//ම section
+	if (index == 386) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ම");
+	}
+	if (index == 387) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මා");
+	}
+	if (index == 388) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මැ");
+	}
+	if (index == 389) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මෑ");
+	}
+	if (index == 390) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ම්");
+	}
+	if (index == 391) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මි");
+	}
+	if (index == 392) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මී");
+	}
+	if (index == 393) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මු");
+	}
+	if (index == 394) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මෙ");
+	}
+	if (index == 395) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("මේ");
+	}
+
+
+	//ය section
+	if (index == 396) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ය");
+	}
+	if (index == 397) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යා");
+	}
+	if (index == 398) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යැ");
+	}
+	if (index == 399) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යෑ");
+	}
+	if (index == 400) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යි");
+	}
+	if (index == 401) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යී");
+	}
+	if (index == 402) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යු");
+	}
+	if (index == 403) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යූ");
+	}
+	if (index == 404) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යෙ");
+	}
+	if (index == 405) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යේ");
+	}
+	if (index == 406) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යො");
+	}
+	if (index == 407) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යෝ");
+	}
+	if (index == 408) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("යෞ");
+	}
+
+
+	//ර section
+	if (index == 409) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ර");
+	}
+	if (index == 410) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රා");
+	}
+	if (index == 411) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රැ");
+	}
+	if (index == 412) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රෑ");
+	}
+	if (index == 413) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ර්");
+	}
+	if (index == 414) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රි");
+	}
+	if (index == 415) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රු");
+	}
+	if (index == 416) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රූ");
+	}
+	if (index == 417) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රෙ");
+	}
+	if (index == 418) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රේ");
+	}
+	if (index == 419) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රො");
+	}
+	if (index == 420) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රෝ");
+	}
+	if (index == 421) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("රෞ");
+	}
+
+	//ල section
+	if (index == 422) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ල");
+	}
+	if (index == 423) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලා");
+	}
+	if (index == 424) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලැ");
+	}
+	if (index == 425) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෑ");
+	}
+	if (index == 426) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ල්");
+	}
+	if (index == 427) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලි");
+	}
+	if (index == 428) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලී");
+	}
+	if (index == 429) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලු");
+	}
+	if (index == 430) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලූ");
+	}
+	if (index == 431) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෙ");
+	}
+	if (index == 432) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලේ");
+	}
+	if (index == 433) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලො");
+	}
+	if (index == 434) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෝ");
+	}
+	if (index == 435) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෞ");
+	}
+
+
+	//ල section
+	if (index == 436) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ල");
+	}
+	if (index == 437) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලා");
+	}
+	if (index == 438) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලැ");
+	}
+	if (index == 439) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෑ");
+	}
+	if (index == 440) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ල්");
+	}
+	if (index == 441) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලි");
+	}
+	if (index == 442) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලී");
+	}
+	if (index == 443) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලු");
+	}
+	if (index == 444) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලූ");
+	}
+	if (index == 445) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෙ");
+	}
+	if (index == 446) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලේ");
+	}
+	if (index == 447) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලො");
+	}
+	if (index == 448) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෝ");
+	}
+	if (index == 449) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ලෞ");
+	}
+
+	
+
+	//ව section
+	if (index == 450) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව");
+	}
+	if (index == 451) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වා");
+	}
+	if (index == 452) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වැ");
+	}
+	if (index == 453) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෑ");
+	}
+	if (index == 454) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ව්");
+	}
+	if (index == 455) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වි");
+	}
+	if (index == 456) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වී");
+	}
+	if (index == 457) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වු");
+	}
+	if (index == 458) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෙ");
+	}
+	if (index == 459) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වේ");
+	}
+	if (index == 460) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වො");
+	}
+	if (index == 461) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෝ");
+	}
+	if (index == 462) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("වෞ");
+	}
+
+	//ශ section
+	if (index == 463) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශ");
+	}
+	if (index == 464) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශා");
+	}
+	if (index == 465) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශැ");
+	}
+	if (index == 466) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශැ");
+	}
+	if (index == 467) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශ්");
+	}
+	if (index == 468) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශි");
+	}
+	if (index == 469) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශී");
+	}
+	if (index == 470) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශු");
+	}
+	if (index == 471) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශූ");
+	}
+	if (index == 472) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශෙ");
+	}
+	if (index == 473) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශේ");
+	}
+	if (index == 474) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශො");
+	}
+	if (index == 475) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ශෞ");
+	}
+
+	//ස section
+	if (index == 476) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ස");
+	}
+	if (index == 477) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සා");
+	}
+	if (index == 478) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සැ");
+	}
+	if (index == 479) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සෑ");
+	}
+	if (index == 480) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ස්");
+	}
+	if (index == 481) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සි");
+	}
+	if (index == 482) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සී");
+	}
+	if (index == 483) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සු");
+	}
+	if (index == 484) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සූ");
+	}
+	if (index == 485) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සෙ");
+	}
+	if (index == 486) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සේ");
+	}
+	if (index == 487) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සො");
+	}
+	if (index == 488) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සෝ");
+	}
+	if (index == 489) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("සෞ");
+	}
+
+	//හ section
+	if (index == 490) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හ");
+	}
+	if (index == 491) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හා");
+	}
+	if (index == 492) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හැ");
+	}
+	if (index == 493) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හෑ");
+	}
+	if (index == 494) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හ්");
+	}
+	if (index == 495) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හි");
+	}
+	if (index == 496) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හී");
+	}
+	if (index == 497) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හු");
+	}
+	if (index == 498) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හූ");
+	}
+	if (index == 499) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හෙ");
+	}
+	if (index == 500) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හේ");
+	}
+	if (index == 501) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හො");
+	}
+	if (index == 502) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හෝ");
+	}
+	if (index == 503) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("හෞ");
+	}
+
+	//ෆ section
+	if (index == 504) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆ");
+	}
+	if (index == 505) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆා");
+	}
+	if (index == 506) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆැ");
+	}
+	if (index == 507) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆෑ");
+	}
+	if (index == 508) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆ්");
+	}
+	if (index == 509) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆි");
+	}
+	if (index == 510) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆී");
+	}
+	if (index == 511) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆු");
+	}
+	if (index == 512) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆූ");
+	}
+	if (index == 513) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆෙ");
+	}
+	if (index == 514) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆේ");
+	}
+	if (index == 515) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆො");
+	}
+	if (index == 516) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆෝ");
+	}
+	if (index == 517) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෆෞ");
+	}
+
+	//ථ section
+	if (index == 518) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථ");
+	}
+	if (index == 519) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථා");
+	}
+	if (index == 520) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථැ");
+	}
+	if (index == 521) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෑ");
+	}
+	if (index == 522) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථ්");
+	}
+	if (index == 523) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථි");
+	}
+	if (index == 524) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථී");
+	}
+	if (index == 525) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථු");
+	}
+	if (index == 526) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථූ");
+	}
+	if (index == 527) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෙ");
+	}
+	if (index == 528) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථේ");
+	}
+	if (index == 529) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථො");
+	}
+	if (index == 530) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෝ");
+	}
+	if (index == 531) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ථෞ");
+	}
+
+	//භ section
+	if (index == 532) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භ");
+	}
+	if (index == 533) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භා");
+	}
+	if (index == 534) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භැ");
+	}
+	if (index == 535) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෑ");
+	}
+	if (index == 536) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භ්");
+	}
+	if (index == 537) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භි");
+	}
+	if (index == 538) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භී");
+	}
+	if (index == 539) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භු");
+	}
+	if (index == 540) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භූ");
+	}
+	if (index == 541) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෙ");
+	}
+	if (index == 542) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භේ");
+	}
+	if (index == 543) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භො");
+	}
+	if (index == 544) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෝ");
+	}
+	if (index == 545) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("භෞ");
+	}
+
+	//භ section
+	if (index == 546) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂ");
+	}
+	if (index == 547) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂා");
+	}
+	if (index == 548) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂැ");
+	}
+	if (index == 549) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෑ");
+	}
+	if (index == 550) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂ්");
+	}
+	if (index == 551) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂි");
+	}
+	if (index == 552) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂී");
+	}
+	if (index == 553) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂු");
+	}
+	if (index == 554) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂූ");
+	}
+	if (index == 555) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෙ");
+	}
+	if (index == 556) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂේ");
+	}
+	if (index == 557) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂො");
+	}
+	if (index == 558) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෝ");
+	}
+	if (index == 559) {
+		this.setState({ count:  0 });
+		this.setState({ count3: 1 });
+		//this.setState({drpEn : false})
+		this.handleKbutton("ෂෞ");
+	}
+
+
+
+
+}
+
+
 
 	handleKbutton(val) {
 		let chars = [];
@@ -222,6 +2378,7 @@ class KeyboardLayout extends Component {
 	handleDelete() {
 		let str = this.state.text;
 		this.setState({text : str.slice(0, -1)});
+		this.props.updateIndex(4);
 	}
 
 	handleSpace() {
@@ -230,6 +2387,7 @@ class KeyboardLayout extends Component {
 		//console.log(chars)
 
 		//setText(chars.join(' '))
+		this.props.updateIndex(4);
 	}
 
 	handleDropdownClick(val){
@@ -250,9 +2408,9 @@ class KeyboardLayout extends Component {
 		const index = this.props.navList.index;
 		const counter = this.props.counter.value;
 
-		let select1,select2, select3, select4, select5, select6, select7, select8, select9 = ""
+		let select1,select2, select3, select4, select5, select6, select7, select8, select9 ,select10 ,select11 ,select12 ,select13 ,select14 ,select15 ,select16 ,select17 ,select18 ,select19 ,select20 ,select21 ,select22 ,select23 ,select24 ,select25 ,select26 ,select27 ,select28 ,select29 ,select30 ,select31 ,select32 ,select33 ,select34  ,select35 ,select36 ,select37 ,select38 ,select39 ,select40    = ""
 		
-		let subSelect1, subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12 = ""
+		let subSelect1, subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12, subSelect13, subSelect14, subSelect15, subSelect16, subSelect17= ""
 		
 		//main keys
 		if (index == 4) {
@@ -265,16 +2423,105 @@ class KeyboardLayout extends Component {
 			if (counter == 2) {
 				select3 = "selected"
 			}
+			if (counter == 3) {
+				select4 = "selected"
+			}
+			if (counter == 4) {
+				select5 = "selected"
+			}
+			if (counter == 5) {
+				select6 = "selected"
+			}
+			if (counter == 6) {
+				select7 = "selected"
+			}
+			if (counter == 7) {
+				select8 = "selected"
+			}
+			if (counter == 8) {
+				select9 = "selected"
+			}
+			if (counter == 9) {
+				select10 = "selected"
+			}
+			if (counter == 10) {
+				select11 = "selected"
+			}
+			if (counter == 11) {
+				select12 = "selected"
+			}
+			if (counter == 12) {
+				select13 = "selected"
+			}
+			if (counter == 13) {
+				select14 = "selected"
+			}
+			if (counter == 14) {
+				select15 = "selected"
+			}
+			if (counter == 15) {
+				select16 = "selected"
+			}
+			if (counter == 16) {
+				select17 = "selected"
+			}
+			if (counter == 17) {
+				select18 = "selected"
+			}
+			if (counter == 18) {
+				select19 = "selected"
+			}
+			if (counter == 19) {
+				select20 = "selected"
+			}
+			if (counter == 20) {
+				select21 = "selected"
+			}
+			if (counter == 21) {
+				select22 = "selected"
+			}
+			if (counter == 22) {
+				select23 = "selected"
+			}
+			if (counter == 23) {
+				select24 = "selected"
+			}
+			if (counter == 24) {
+				select25 = "selected"
+			}
+			if (counter == 25) {
+				select26 = "selected"
+			}
+			if (counter == 26) {
+				select27 = "selected"
+			}
+			if (counter == 27) {
+				select28 = "selected"
+			}
+			if (counter == 28) {
+				select29 = "selected"
+			}
+			if (counter == 29) {
+				select30 = "selected"
+			}
+
 		}
 
 		if(index == 200){
 			select1 = "selection";
 		}
+		if(index == 201){
+			select2 = "selection";
+		}
+		if(index == 202){
+			select3 = "selection";
+		}
+
 
 		//sub keys
 		//අ section
 
-		if (index == 201) {
+		if (index == 203) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -290,7 +2537,7 @@ class KeyboardLayout extends Component {
 		}
 
 		//ඉ section
-		if (index == 202) {
+		if (index == 204) {
 			if (counter == 0) {
 				subSelect1 = "selected"
 			}
@@ -298,6 +2545,1050 @@ class KeyboardLayout extends Component {
 				subSelect2 = "selected"
 			}
 		}
+
+		//උ section
+		if (index == 205) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+		}
+
+		//එ section
+		if (index == 206) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+		}
+
+		//ඔ section
+		if (index == 207) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+		}
+
+		//ඔ section
+		if (index == 208) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ග section
+		if (index == 209) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ච section
+		if (index == 210) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+			if (counter == 12) {
+				subSelect13 = "selected"
+			}
+			if (counter == 13) {
+				subSelect14 = "selected"
+			}
+		}
+
+		//ජ section
+		if (index == 211) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+		}
+
+		//ට section
+		if (index == 212) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ඩ section
+		if (index == 213) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ණ section
+		if (index == 214) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+		//ත section
+		if (index == 215) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//ද section
+		if (index == 216) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//න section
+		if (index == 217) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+		}
+
+		//ප section
+		if (index == 218) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+			if (counter == 10) {
+				subSelect11 = "selected"
+			}
+			if (counter == 11) {
+				subSelect12 = "selected"
+			}
+		}
+
+		//බ section
+		if (index == 219) {
+			if (counter == 0) {
+				subSelect1 = "selected"
+			}
+			if (counter == 1) {
+				subSelect2 = "selected"
+			}
+			if (counter == 2) {
+				subSelect3 = "selected"
+			}
+			if (counter == 3) {
+				subSelect4 = "selected"
+			}
+			if (counter == 4) {
+				subSelect5 = "selected"
+			}
+			if (counter == 5) {
+				subSelect6 = "selected"
+			}
+			if (counter == 6) {
+				subSelect7 = "selected"
+			}
+			if (counter == 7) {
+				subSelect8 = "selected"
+			}
+			if (counter == 8) {
+				subSelect9 = "selected"
+			}
+			if (counter == 9) {
+				subSelect10 = "selected"
+			}
+		}
+
+		//ම section
+        if (index == 220) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+        }
+
+		//ය section
+        if (index == 221) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+			if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ර section
+        if (index == 222) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ල section
+        if (index == 223) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ව section
+        if (index == 224) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+			if (counter == 14) {
+                subSelect15 = "selected"
+            }
+        }
+
+		//ශ section
+        if (index == 225) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+        }
+
+		//හැ section
+        if (index == 227) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+			if (counter == 12) {
+                subSelect13 = "selected"
+            }
+        }
+
+		//ෆ section
+        if (index == 228) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ළ section
+        if (index == 229) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+        }
+
+		//ථ section
+        if (index == 230) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//භ section
+        if (index == 231) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+		//ෂ section
+        if (index == 232) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 		return (
@@ -421,9 +3712,17 @@ class KeyboardLayout extends Component {
 											
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඵෙ" onClick={() => this.handleKbutton("ඒ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඵෙ" onClick={() => this.handleKbutton("ඒ")} >
 											{" "}
 											ඵෙ{" "} </button> </a>
+
+											{/* <a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඵෙ" onClick={() => this.handleKbutton("ඒ")} >
+											{" "}
+											ඵෙ{" "} </button> </a> */}
+
+											
 										
 
 								</div>
@@ -440,12 +3739,12 @@ class KeyboardLayout extends Component {
 											{" "}
 											ඔ{" "} </button> </a>
 
-											<div class={`dropdown-content1 ${this.state.drpdown4}`} >
 									<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඕ" onClick={() => this.handleKbutton("ඕ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඕ" onClick={() => this.handleKbutton("ඕ")} >
 											{" "}
 											ඕ{" "} </button> </a>
+
 											<a href="#">
 										{" "}
 										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඖ" onClick={() => this.handleKbutton("ඕ")} >
@@ -458,7 +3757,7 @@ class KeyboardLayout extends Component {
 							</div>
 
 							<div class="dropdown1">
-								<button id="Kbutton" class={`Kbutton ${select9}`} value="ක" onClick = {() => this.handleDropdownClick("5")} >
+								<button id="Kbutton" class={`Kbutton ${select9}`} value="ක" onClick = {() => this.handleDropdownClick("6")} >
 								ක
 								</button>
 								<div class={`dropdown-content1 ${this.state.drpdown6}`} >
@@ -538,4026 +3837,2111 @@ class KeyboardLayout extends Component {
 									
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ග"
-									onClick={this.handleKbutton}
-								>
-									ග
+								<button id="Kbutton" class={`Kbutton ${select10}`} value="ග" onClick = {() => this.handleDropdownClick("7")} >
+								ග
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown7}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ග"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ග" onClick={() => this.handleKbutton("ග")} >
 											{" "}
-											ග{" "}
-										</button>
-									</a>
+											ග{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ගා" onClick={() => this.handleKbutton("ගා")} >
+											{" "}
+											ගා{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ගැ" onClick={() => this.handleKbutton("ගැ")} >
+											{" "}
+											ගැ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ගෑ" onClick={() => this.handleKbutton("ගෑ")} >
+											{" "}
+											ගෑ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ග්" onClick={() => this.handleKbutton("ග්")} >
+											{" "}
+											ග්{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ගි" onClick={() => this.handleKbutton("ගි")} >
+											{" "}
+											ගි{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ගු" onClick={() => this.handleKbutton("ගු")} >
+											{" "}
+											ගු{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ගෙ" onClick={() => this.handleKbutton("ගෙ")} >
+											{" "}
+											ගෙ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ගේ" onClick={() => this.handleKbutton("ගේ")} >
+											{" "}
+											ගේ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ගො" onClick={() => this.handleKbutton("ගො")} >
+											{" "}
+											ගො{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ගෝ" onClick={() => this.handleKbutton("ගෝ")} >
+											{" "}
+											ගෝ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ගෞ" onClick={() => this.handleKbutton("ගෞ")} >
+											{" "}
+											ගෞ{" "} </button> </a>
+
+									
+								</div>
+							</div>
+
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select11}`} value="ච" onClick = {() => this.handleDropdownClick("8")} >
+								ච
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown8}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ච" onClick={() => this.handleKbutton("ච")} >
 											{" "}
-											ගැ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ච{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="චා" onClick={() => this.handleKbutton("චා")} >
 											{" "}
-											ගා{" "}
-										</button>
-									</a>
-									<a href="#">
+											චා{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="චැ" onClick={() => this.handleKbutton("චැ")} >
 											{" "}
-											ගැ{" "}
-										</button>
-									</a>
-									<a href="#">
+											චැ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="චෑ" onClick={() => this.handleKbutton("චෑ")} >
 											{" "}
-											ගෑ{" "}
-										</button>
-									</a>
-									<a href="#">
+											චෑ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ග්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ච්" onClick={() => this.handleKbutton("ච්")} >
 											{" "}
-											ග්{" "}
-										</button>
-									</a>
-									<a href="#">
+											ච්{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="චී" onClick={() => this.handleKbutton("චී")} >
 											{" "}
-											ගි{" "}
-										</button>
-									</a>
-									<a href="#">
+											චී{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="වී" onClick={() => this.handleKbutton("වී")} >
 											{" "}
-											ගු{" "}
-										</button>
-									</a>
-									<a href="#">
+											වී{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="චු" onClick={() => this.handleKbutton("චු")} >
 											{" "}
-											ගෙ{" "}
-										</button>
-									</a>
-									<a href="#">
+											චු{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="වූ" onClick={() => this.handleKbutton("වූ")} >
 											{" "}
-											ගේ{" "}
-										</button>
-									</a>
-									<a href="#">
+											වූ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="චෙ" onClick={() => this.handleKbutton("චෙ")} >
 											{" "}
-											ගො{" "}
-										</button>
-									</a>
-									<a href="#">
+											චෙ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="වේ" onClick={() => this.handleKbutton("වේ")} >
 											{" "}
-											ගෝ{" "}
-										</button>
-									</a>
-									<a href="#">
+											වේ{" "} </button> </a>
+
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ගෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="චො" onClick={() => this.handleKbutton("චො")} >
 											{" "}
-											ගෞ{" "}
-										</button>
-									</a>
+											චො{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="චෝ" onClick={() => this.handleKbutton("චෝ")} >
+											{" "}
+											චෝ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="චෞ" onClick={() => this.handleKbutton("චෞ")} >
+											{" "}
+											චෞ{" "} </button> </a>
+	
+							
+									
 								</div>
 							</div>
 	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ච"
-									onClick={this.handleKbutton}
-								>
-									ච
+								<button id="Kbutton" class={`Kbutton ${select12}`} value="ජ" onClick = {() => this.handleDropdownClick("9")} >
+								ජ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown9}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ච"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ජ" onClick={() => this.handleKbutton("ජ")} >
 											{" "}
-											ච{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ජා" onClick={() => this.handleKbutton("ජා")} >
 											{" "}
-											චා{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජා{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ජැ" onClick={() => this.handleKbutton("ජැ")} >
 											{" "}
-											චැ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජැ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ජෑ" onClick={() => this.handleKbutton("ජෑ")} >
 											{" "}
-											චෑ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජෑ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ච්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ජ්" onClick={() => this.handleKbutton("ජ්")} >
 											{" "}
-											ච්{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජ්{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ජි" onClick={() => this.handleKbutton("ජි")} >
 											{" "}
-											චි{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජි{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ජු" onClick={() => this.handleKbutton("ජු")} >
 											{" "}
-											චී{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජු{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ජෙ" onClick={() => this.handleKbutton("ජෙ")} >
 											{" "}
-											චු{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජෙ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ජේ" onClick={() => this.handleKbutton("ජේ")} >
 											{" "}
-											චෙ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජේ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ජො" onClick={() => this.handleKbutton("ජො")} >
 											{" "}
-											චො{" "}
-										</button>
-									</a>
-									<a href="#">
+											ජො{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ජෝ" onClick={() => this.handleKbutton("ජෝ")} >
 											{" "}
-											චෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											චෞ{" "}
-										</button>
-									</a>
+											ජෝ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ජ"
-									onClick={this.handleKbutton}
-								>
-									ජ
+								<button id="Kbutton" class={`Kbutton ${select13}`} value="ට" onClick = {() => this.handleDropdownClick("10")} >
+								ට
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown10}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ට" onClick={() => this.handleKbutton("ට")} >
 											{" "}
-											ජ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ට{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ටා" onClick={() => this.handleKbutton("ටා")} >
 											{" "}
-											ජා{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටා{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ටැ" onClick={() => this.handleKbutton("ටැ")} >
 											{" "}
-											ජැ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටැ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ටෑ" onClick={() => this.handleKbutton("ටෑ")} >
 											{" "}
-											ජෑ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටෑ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ටි" onClick={() => this.handleKbutton("ටි")} >
 											{" "}
-											ජ්{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටි{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ට්" onClick={() => this.handleKbutton("ට්")} >
 											{" "}
-											ජි{" "}
-										</button>
-									</a>
-									<a href="#">
+											ට්{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ටී" onClick={() => this.handleKbutton("ටී")} >
 											{" "}
-											ජු{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටී{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ටු" onClick={() => this.handleKbutton("ටු")} >
 											{" "}
-											ජෙ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටු{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ටෙ" onClick={() => this.handleKbutton("ටෙ")} >
 											{" "}
-											ජේ{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටෙ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ටේ" onClick={() => this.handleKbutton("ටේ")} >
 											{" "}
-											ජො{" "}
-										</button>
-									</a>
-									<a href="#">
+											ටේ{" "} </button> </a>
+
+											<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ජෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ටෝ" onClick={() => this.handleKbutton("ටෝ")} >
 											{" "}
-											ජෝ{" "}
-										</button>
-									</a>
+											ටෝ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ටෝ" onClick={() => this.handleKbutton("ටෝ")} >
+											{" "}
+											ටෝ{" "} </button> </a>
+											
+									
 								</div>
 							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ට"
-									onClick={this.handleKbutton}
-								>
-									ට
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ට"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ට{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ට්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ට්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ටෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ටෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="චෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											චෝ{" "}
-										</button>
-									</a>
-								</div>
+
 							</div>
-	
-							c
-						</div>
+
 	
 						<div class="row1">
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ඩ"
-									onClick={this.handleKbutton}
-								>
-									ඩ
+						<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select14}`} value="ඩ" onClick = {() => this.handleDropdownClick("11")} >
+								ඩ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown11}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඩ" onClick={() => this.handleKbutton("ඩ")} >
 											{" "}
-											ඩ{" "}
-										</button>
-									</a>
+											ඩ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ඩා" onClick={() => this.handleKbutton("ඩා")} >
+											{" "}
+											ඩා{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඩැ" onClick={() => this.handleKbutton("ඩැ")} >
+											{" "}
+											ඩැ{" "} </button> </a>
+
+											<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ඩෑ" onClick={() => this.handleKbutton("ඩෑ")} >
+											{" "}
+											ඩෑ{" "} </button> </a>
+
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ඩ්" onClick={() => this.handleKbutton("ඩ්")} >
 											{" "}
-											ඩා{" "}
-										</button>
-									</a>
+											ඩ්{" "} </button> </a>
+
+
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ඩි" onClick={() => this.handleKbutton("ඩි")} >
 											{" "}
-											ඩැ{" "}
-										</button>
-									</a>
+											ඩි{" "} </button> </a>
+
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ඩි" onClick={() => this.handleKbutton("ඩි")} >
 											{" "}
-											ඩෑ{" "}
-										</button>
-									</a>
+											ඩි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ඩු" onClick={() => this.handleKbutton("ඩු")} >
 											{" "}
-											ඩ්{" "}
-										</button>
-									</a>
+											ඩු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ඩෙ" onClick={() => this.handleKbutton("ඩෙ")} >
 											{" "}
-											ඩි{" "}
-										</button>
-									</a>
+											ඩෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ඩේ" onClick={() => this.handleKbutton("ඩේ")} >
 											{" "}
-											ඩී{" "}
-										</button>
-									</a>
+											ඩේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ඩො" onClick={() => this.handleKbutton("ඩො")} >
 											{" "}
-											ඩු{" "}
-										</button>
-									</a>
+											ඩො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ඩෝ" onClick={() => this.handleKbutton("ඩෝ")} >
 											{" "}
-											ඩෙ{" "}
-										</button>
-									</a>
+											ඩෝ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select15}`} value="ණ" onClick = {() => this.handleDropdownClick("12")} >
+								ණ
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown12}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ණ" onClick={() => this.handleKbutton("ණ")} >
 											{" "}
-											ඩේ{" "}
-										</button>
-									</a>
+											ණ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ණා" onClick={() => this.handleKbutton("ණා")} >
 											{" "}
-											ඩො{" "}
-										</button>
-									</a>
+											ණා{" "} </button> </a>
+
+
+									
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ඩෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ණැ" onClick={() => this.handleKbutton("ණැ")} >
 											{" "}
-											ඩෝ{" "}
-										</button>
-									</a>
+											ණැ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ණෑ" onClick={() => this.handleKbutton("ණෑ")} >
+											{" "}
+											ණෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ණ්" onClick={() => this.handleKbutton("ණ්")} >
+											{" "}
+											ණ්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ණි" onClick={() => this.handleKbutton("ණි")} >
+											{" "}
+											ණි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ණී" onClick={() => this.handleKbutton("ණී")} >
+											{" "}
+											ණී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ණු" onClick={() => this.handleKbutton("ණු")} >
+											{" "}
+											ණු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ණෙ" onClick={() => this.handleKbutton("ණෙ")} >
+											{" "}
+											ණෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ණෙ" onClick={() => this.handleKbutton("ණෙ")} >
+											{" "}
+											ණෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ණො" onClick={() => this.handleKbutton("ණො")} >
+											{" "}
+											ණො{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ණෝ" onClick={() => this.handleKbutton("ණෝ")} >
+											{" "}
+											ණෝ{" "} </button> </a>
+
+
 								</div>
 							</div>
 	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ණ"
-									onClick={this.handleKbutton}
-								>
-									ණ
+	
+							
+
+									<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select16}`} value="ත" onClick = {() => this.handleDropdownClick("13")} >
+								ත
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown13}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ත" onClick={() => this.handleKbutton("ත")} >
 											{" "}
-											ණ{" "}
-										</button>
-									</a>
+											ත{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="තා" onClick={() => this.handleKbutton("තා")} >
 											{" "}
-											ණා{" "}
-										</button>
-									</a>
+											තා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="තැ" onClick={() => this.handleKbutton("තැ")} >
 											{" "}
-											ණැ{" "}
-										</button>
-									</a>
+											තැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="තෑ" onClick={() => this.handleKbutton("තෑ")} >
 											{" "}
-											ණෑ{" "}
-										</button>
-									</a>
+											තෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ත්" onClick={() => this.handleKbutton("ත්")} >
 											{" "}
-											ණ්{" "}
-										</button>
-									</a>
+											ත්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ති" onClick={() => this.handleKbutton("ති")} >
 											{" "}
-											ණි{" "}
-										</button>
-									</a>
+											ති{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="තී" onClick={() => this.handleKbutton("තී")} >
 											{" "}
-											ණී{" "}
-										</button>
-									</a>
+											තී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="තු" onClick={() => this.handleKbutton("තු")} >
 											{" "}
-											ණු{" "}
-										</button>
-									</a>
+											තු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="තෙ" onClick={() => this.handleKbutton("තෙ")} >
 											{" "}
-											ණෙ{" "}
-										</button>
-									</a>
+											තෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="තේ" onClick={() => this.handleKbutton("තේ")} >
 											{" "}
-											ණේ{" "}
-										</button>
-									</a>
+											තේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="තො" onClick={() => this.handleKbutton("තො")} >
 											{" "}
-											ණො{" "}
-										</button>
-									</a>
+											තො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ණෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="තෝ" onClick={() => this.handleKbutton("තෝ")} >
 											{" "}
-											ණෝ{" "}
-										</button>
-									</a>
+											තෝ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select17}`} value="ද" onClick = {() => this.handleDropdownClick("14")} >
+								ද
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown14}`} >
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ද" onClick={() => this.handleKbutton("ද")} >
+											{" "}
+											ද{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="දා" onClick={() => this.handleKbutton("දා")} >
+											{" "}
+											දා{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="දැ" onClick={() => this.handleKbutton("දැ")} >
+											{" "}
+											දැ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="දෑ" onClick={() => this.handleKbutton("දෑ")} >
+											{" "}
+											දෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ද්" onClick={() => this.handleKbutton("ද්")} >
+											{" "}
+											ද්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="දි" onClick={() => this.handleKbutton("දි")} >
+											{" "}
+											දි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="දී" onClick={() => this.handleKbutton("දී")} >
+											{" "}
+											දී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="දු" onClick={() => this.handleKbutton("දු")} >
+											{" "}
+											දු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="දෙ" onClick={() => this.handleKbutton("දෙ")} >
+											{" "}
+											දෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="දේ" onClick={() => this.handleKbutton("දේ")} >
+											{" "}
+											දේ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="දො" onClick={() => this.handleKbutton("දො")} >
+											{" "}
+											දො{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="දෝ" onClick={() => this.handleKbutton("දෝ")} >
+											{" "}
+											දෝ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select18}`} value="න" onClick = {() => this.handleDropdownClick("15")} >
+								න
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown15}`} >
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="න" onClick={() => this.handleKbutton("න")} >
+											{" "}
+											න{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="නා" onClick={() => this.handleKbutton("නා")} >
+											{" "}
+											නා{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="නෑ" onClick={() => this.handleKbutton("නෑ")} >
+											{" "}
+											නෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="න්" onClick={() => this.handleKbutton("න්")} >
+											{" "}
+											න්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="නි" onClick={() => this.handleKbutton("නි")} >
+											{" "}
+											නි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="නී" onClick={() => this.handleKbutton("නී")} >
+											{" "}
+											නී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="නු" onClick={() => this.handleKbutton("නු")} >
+											{" "}
+											නු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="නෙ" onClick={() => this.handleKbutton("නෙ")} >
+											{" "}
+											නෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="නේ" onClick={() => this.handleKbutton("නේ")} >
+											{" "}
+											නේ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="නො" onClick={() => this.handleKbutton("නො")} >
+											{" "}
+											නො{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="නෝ" onClick={() => this.handleKbutton("නෝ")} >
+											{" "}
+											නෝ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select19}`} value="ප" onClick = {() => this.handleDropdownClick("16")} >
+								ප
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown16}`} >
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ප" onClick={() => this.handleKbutton("ප")} >
+											{" "}
+											ප{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="පා" onClick={() => this.handleKbutton("පා")} >
+											{" "}
+											පා{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="පැ" onClick={() => this.handleKbutton("පැ")} >
+											{" "}
+											පැ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="පෑ" onClick={() => this.handleKbutton("පෑ")} >
+											{" "}
+											පෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ප්" onClick={() => this.handleKbutton("ප්")} >
+											{" "}
+											ප්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="පි" onClick={() => this.handleKbutton("පි")} >
+											{" "}
+											පි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="පී" onClick={() => this.handleKbutton("පී")} >
+											{" "}
+											පී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="පු" onClick={() => this.handleKbutton("පු")} >
+											{" "}
+											පු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="පෙ" onClick={() => this.handleKbutton("පෙ")} >
+											{" "}
+											පෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="පේ" onClick={() => this.handleKbutton("පේ")} >
+											{" "}
+											පේ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="පො" onClick={() => this.handleKbutton("පො")} >
+											{" "}
+											පො{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="පෝ" onClick={() => this.handleKbutton("පෝ")} >
+											{" "}
+											පෝ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select20}`} value="බ" onClick = {() => this.handleDropdownClick("17")} >
+								බ
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown17}`} >
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="බ" onClick={() => this.handleKbutton("බ")} >
+											{" "}
+											බ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="බා" onClick={() => this.handleKbutton("බා")} >
+											{" "}
+											බා{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="බැ" onClick={() => this.handleKbutton("බැබා")} >
+											{" "}
+											බැ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="බෑ" onClick={() => this.handleKbutton("බෑ")} >
+											{" "}
+											බෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="බ්" onClick={() => this.handleKbutton("බ්")} >
+											{" "}
+											බ්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="බි" onClick={() => this.handleKbutton("බි")} >
+											{" "}
+											බි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="බී" onClick={() => this.handleKbutton("බී")} >
+											{" "}
+											බී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="බු" onClick={() => this.handleKbutton("බු")} >
+											{" "}
+											බු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="බෙ" onClick={() => this.handleKbutton("බෙ")} >
+											{" "}
+											බෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="බේ" onClick={() => this.handleKbutton("බේ")} >
+											{" "}
+											බේ{" "} </button> </a>
+
+
+								</div>
+							</div>
+
+							<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select21}`} value="ම" onClick = {() => this.handleDropdownClick("18")} >
+								ම
+								</button>
+								<div class={`dropdown-content1 ${this.state.drpdown18}`} >
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ම" onClick={() => this.handleKbutton("ම")} >
+											{" "}
+											ම{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="මා" onClick={() => this.handleKbutton("මා")} >
+											{" "}
+											මා{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="මැ" onClick={() => this.handleKbutton("මැ")} >
+											{" "}
+											මැ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="මෑ" onClick={() => this.handleKbutton("මෑ")} >
+											{" "}
+											මෑ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ම්" onClick={() => this.handleKbutton("ම්")} >
+											{" "}
+											ම්{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="මි" onClick={() => this.handleKbutton("මි")} >
+											{" "}
+											මි{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="මී" onClick={() => this.handleKbutton("මී")} >
+											{" "}
+											මී{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="මු" onClick={() => this.handleKbutton("මු")} >
+											{" "}
+											මු{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="මෙ" onClick={() => this.handleKbutton("මෙ")} >
+											{" "}
+											මෙ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="මේ" onClick={() => this.handleKbutton("මේ")} >
+											{" "}
+											මේ{" "} </button> </a>
+
+
 								</div>
 							</div>
 	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ත"
-									onClick={this.handleKbutton}
-								>
-									ත
+								<button id="Kbutton" class={`Kbutton ${select22}`} value="ය" onClick = {() => this.handleDropdownClick("19")} >
+								ය
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown19}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ත"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ය" onClick={() => this.handleKbutton("ය")} >
 											{" "}
-											ත{" "}
-										</button>
-									</a>
+											ය{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="යා" onClick={() => this.handleKbutton("යා")} >
 											{" "}
-											තා{" "}
-										</button>
-									</a>
+											යා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="යැ" onClick={() => this.handleKbutton("යැ")} >
 											{" "}
-											තැ{" "}
-										</button>
-									</a>
+											යැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="යෑ" onClick={() => this.handleKbutton("යෑ")} >
 											{" "}
-											තෑ{" "}
-										</button>
-									</a>
+											යෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ත්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="යි" onClick={() => this.handleKbutton("යි")} >
 											{" "}
-											ත්{" "}
-										</button>
-									</a>
+											යි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ති"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="යී" onClick={() => this.handleKbutton("යී")} >
 											{" "}
-											ති{" "}
-										</button>
-									</a>
+											යී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="යු" onClick={() => this.handleKbutton("යු")} >
 											{" "}
-											තී{" "}
-										</button>
-									</a>
+											යු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="යූ" onClick={() => this.handleKbutton("යූ")} >
 											{" "}
-											තු{" "}
-										</button>
-									</a>
+											යූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="යෙ" onClick={() => this.handleKbutton("යෙ")} >
 											{" "}
-											තෙ{" "}
-										</button>
-									</a>
+											යෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="යේ" onClick={() => this.handleKbutton("යේ")} >
 											{" "}
-											තේ{" "}
-										</button>
-									</a>
+											යේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="යො" onClick={() => this.handleKbutton("යො")} >
 											{" "}
-											තො{" "}
-										</button>
-									</a>
+											යො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="තෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="යෝ" onClick={() => this.handleKbutton("යෝ")} >
 											{" "}
-											තෝ{" "}
-										</button>
-									</a>
+											යෝ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="යෞ" onClick={() => this.handleKbutton("යෞ")} >
+											{" "}
+											යෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ද"
-									onClick={this.handleKbutton}
-								>
-									ද
+								<button id="Kbutton" class={`Kbutton ${select23}`} value="ර" onClick = {() => this.handleDropdownClick("20")} >
+								ර
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown20}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ද"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ර" onClick={() => this.handleKbutton("ර")} >
 											{" "}
-											ද{" "}
-										</button>
-									</a>
+											ර{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="රා" onClick={() => this.handleKbutton("රා")} >
 											{" "}
-											දා{" "}
-										</button>
-									</a>
+											රා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="රැ" onClick={() => this.handleKbutton("රැ")} >
 											{" "}
-											දැ{" "}
-										</button>
-									</a>
+											රැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="රෑ" onClick={() => this.handleKbutton("රෑ")} >
 											{" "}
-											දෑ{" "}
-										</button>
-									</a>
+											රෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ද්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ර්" onClick={() => this.handleKbutton("ර්")} >
 											{" "}
-											ද්{" "}
-										</button>
-									</a>
+											ර්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="රි" onClick={() => this.handleKbutton("රි")} >
 											{" "}
-											දි{" "}
-										</button>
-									</a>
+											රි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="රී" onClick={() => this.handleKbutton("රී")} >
 											{" "}
-											දී{" "}
-										</button>
-									</a>
+											රී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="රු" onClick={() => this.handleKbutton("රු")} >
 											{" "}
-											දු{" "}
-										</button>
-									</a>
+											රු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="රූ" onClick={() => this.handleKbutton("රූ")} >
 											{" "}
-											දෙ{" "}
-										</button>
-									</a>
+											රූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="රෙ" onClick={() => this.handleKbutton("රෙ")} >
 											{" "}
-											දේ{" "}
-										</button>
-									</a>
+											රෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="රේ" onClick={() => this.handleKbutton("රේ")} >
 											{" "}
-											දො{" "}
-										</button>
-									</a>
+											රේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="දෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="රො" onClick={() => this.handleKbutton("රො")} >
 											{" "}
-											දෝ{" "}
-										</button>
-									</a>
+											රො{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="රෝ" onClick={() => this.handleKbutton("රෝ")} >
+											{" "}
+											රෝ{" "} </button> </a>
+
+									<a href="#">
+										{" "}
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="රෞ" onClick={() => this.handleKbutton("රෞ")} >
+											{" "}
+											රෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="න"
-									onClick={this.handleKbutton}
-								>
-									න
+								<button id="Kbutton" class={`Kbutton ${select24}`} value="ල" onClick = {() => this.handleDropdownClick("21")} >
+								ල
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown21}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="න"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ල" onClick={() => this.handleKbutton("ල")} >
 											{" "}
-											න{" "}
-										</button>
-									</a>
+											ල{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ලා" onClick={() => this.handleKbutton("ලා")} >
 											{" "}
-											නා{" "}
-										</button>
-									</a>
+											ලා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ලැ" onClick={() => this.handleKbutton("ලැ")} >
 											{" "}
-											පැ{" "}
-										</button>
-									</a>
+											ලැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ලෑ" onClick={() => this.handleKbutton("ලෑ")} >
 											{" "}
-											නෑ{" "}
-										</button>
-									</a>
+											ලෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="න්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ල්" onClick={() => this.handleKbutton("ල්")} >
 											{" "}
-											න්{" "}
-										</button>
-									</a>
+											ල්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ලි" onClick={() => this.handleKbutton("ලි")} >
 											{" "}
-											නි{" "}
-										</button>
-									</a>
+											ලි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ලී" onClick={() => this.handleKbutton("ලී")} >
 											{" "}
-											නී{" "}
-										</button>
-									</a>
+											ලී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ලු" onClick={() => this.handleKbutton("ලු")} >
 											{" "}
-											නු{" "}
-										</button>
-									</a>
+											ලු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ලූ" onClick={() => this.handleKbutton("ලූ")} >
 											{" "}
-											නෙ{" "}
-										</button>
-									</a>
+											ලූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ලෙ" onClick={() => this.handleKbutton("ලෙ")} >
 											{" "}
-											නේ{" "}
-										</button>
-									</a>
+											ලෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ලේ" onClick={() => this.handleKbutton("ලේ")} >
 											{" "}
-											නො{" "}
-										</button>
-									</a>
+											ලේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="නෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ලො" onClick={() => this.handleKbutton("ලො")} >
 											{" "}
-											නෝ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ප"
-									onClick={this.handleKbutton}
-								>
-									ප
-								</button>
-								<div class="dropdown-content1">
+											ලො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ප"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ලෝ" onClick={() => this.handleKbutton("ලෝ")} >
 											{" "}
-											ප{" "}
-										</button>
-									</a>
+											ලෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ලෞ" onClick={() => this.handleKbutton("ලෞ")} >
 											{" "}
-											පා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ප්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ප්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පො"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පො{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="පෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											පෝ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="බ"
-									onClick={this.handleKbutton}
-								>
-									බ
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බ්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බ්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="බේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											බේ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ම"
-									onClick={this.handleKbutton}
-								>
-									ම
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ම"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ම{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ම්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ම්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="මේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											මේ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ය"
-									onClick={this.handleKbutton}
-								>
-									ය
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ය"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ය{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යූ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යූ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යො"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යො{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="යෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											යෞ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ර"
-									onClick={this.handleKbutton}
-								>
-									ර
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ර"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ර{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ර්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ර්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රූ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රූ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රො"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රො{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="රෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											රෞ{" "}
-										</button>
-									</a>
-								</div>
-							</div>
-	
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ල"
-									onClick={this.handleKbutton}
-								>
-									ල
-								</button>
-								<div class="dropdown-content1">
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ල"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ල{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලා"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලා{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලැ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලැ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලෑ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලෑ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ල්"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ල්{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලි"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලි{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලී"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලී{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලු"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලු{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලූ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලූ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලෙ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලෙ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලේ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලො"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලො{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ලෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ලෞ{" "}
-										</button>
-									</a>
+											ලෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
 						</div>
 	
 						<div class="row1">
-							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ව"
-									onClick={this.handleKbutton}
-								>
-									ව
+
+						<div class="dropdown1">
+								<button id="Kbutton" class={`Kbutton ${select25}`} value="ව" onClick = {() => this.handleDropdownClick("22")} >
+								ව
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown22}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ව"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ව" onClick={() => this.handleKbutton("ව")} >
 											{" "}
-											ව{" "}
-										</button>
-									</a>
+											ව{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="වා" onClick={() => this.handleKbutton("වා")} >
 											{" "}
-											වා{" "}
-										</button>
-									</a>
+											වා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="වැ" onClick={() => this.handleKbutton("වැ")} >
 											{" "}
-											වැ{" "}
-										</button>
-									</a>
+											වැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="වෑ" onClick={() => this.handleKbutton("වෑ")} >
 											{" "}
-											වෑ{" "}
-										</button>
-									</a>
+											වෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ව්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ව්" onClick={() => this.handleKbutton("ව්")} >
 											{" "}
-											ව්{" "}
-										</button>
-									</a>
+											ව්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="වි" onClick={() => this.handleKbutton("වි")} >
 											{" "}
-											වි{" "}
-										</button>
-									</a>
+											වි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="වී" onClick={() => this.handleKbutton("වී")} >
 											{" "}
-											වී{" "}
-										</button>
-									</a>
+											වී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="වු" onClick={() => this.handleKbutton("වු")} >
 											{" "}
-											වු{" "}
-										</button>
-									</a>
+											වු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="වූ" onClick={() => this.handleKbutton("වූ")} >
 											{" "}
-											වූ{" "}
-										</button>
-									</a>
+											වූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="වෙ" onClick={() => this.handleKbutton("වෙ")} >
 											{" "}
-											වෙ{" "}
-										</button>
-									</a>
+											වෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="වේ" onClick={() => this.handleKbutton("වේ")} >
 											{" "}
-											වේ{" "}
-										</button>
-									</a>
+											වේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="වේ" onClick={() => this.handleKbutton("වේ")} >
 											{" "}
-											වේ{" "}
-										</button>
-									</a>
+											වේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="වො" onClick={() => this.handleKbutton("වො")} >
 											{" "}
-											වො{" "}
-										</button>
-									</a>
+											වො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="වෝ" onClick={() => this.handleKbutton("වෝ")} >
 											{" "}
-											වෝ{" "}
-										</button>
-									</a>
+											වෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="වෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect15}`} value="වෞ" onClick={() => this.handleKbutton("වෞ")} >
 											{" "}
-											වෞ{" "}
-										</button>
-									</a>
+											වෞ{" "} </button> </a>
+
 								</div>
 							</div>
 	
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ශ"
-									onClick={this.handleKbutton}
-								>
-									ශ
+								<button id="Kbutton" class={`Kbutton ${select26}`} value="ශ" onClick = {() => this.handleDropdownClick("23")} >
+								ශ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown23}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ශ" onClick={() => this.handleKbutton("ශ")} >
 											{" "}
-											ශ{" "}
-										</button>
-									</a>
+											ශ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ශා" onClick={() => this.handleKbutton("ශා")} >
 											{" "}
-											ශා{" "}
-										</button>
-									</a>
+											ශා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ශැ" onClick={() => this.handleKbutton("ශැ")} >
 											{" "}
-											ශැ{" "}
-										</button>
-									</a>
+											ශැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ශෑ" onClick={() => this.handleKbutton("ශෑ")} >
 											{" "}
-											ශෑ{" "}
-										</button>
-									</a>
+											ශෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ශ්" onClick={() => this.handleKbutton("ශ්")} >
 											{" "}
-											ශ්{" "}
-										</button>
-									</a>
+											ශ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ශි" onClick={() => this.handleKbutton("ශි")} >
 											{" "}
-											ශි{" "}
-										</button>
-									</a>
+											ශි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ශී" onClick={() => this.handleKbutton("ශී")} >
 											{" "}
-											ශී{" "}
-										</button>
-									</a>
+											ශී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ශු" onClick={() => this.handleKbutton("ශු")} >
 											{" "}
-											ශු{" "}
-										</button>
-									</a>
+											ශු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ශූ" onClick={() => this.handleKbutton("ශූ")} >
 											{" "}
-											ශූ{" "}
-										</button>
-									</a>
+											ශූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ශෙ" onClick={() => this.handleKbutton("ශෙ")} >
 											{" "}
-											ශෙ{" "}
-										</button>
-									</a>
+											ශෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ශේ" onClick={() => this.handleKbutton("ශේ")} >
 											{" "}
-											ශේ{" "}
-										</button>
-									</a>
+											ශේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ශො" onClick={() => this.handleKbutton("ශො")} >
 											{" "}
-											ශො{" "}
-										</button>
-									</a>
+											ශො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ශෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ශෞ" onClick={() => this.handleKbutton("ශෞ")} >
 											{" "}
-											ශෞ{" "}
-										</button>
-									</a>
+											ශෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ස"
-									onClick={this.handleKbutton}
-								>
-									ස
+								<button id="Kbutton" class={`Kbutton ${select27}`} value="ස" onClick = {() => this.handleDropdownClick("24")} >
+								ස
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown24}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ස"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ස" onClick={() => this.handleKbutton("ස")} >
 											{" "}
-											ස{" "}
-										</button>
-									</a>
+											ස{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="සා" onClick={() => this.handleKbutton("සා")} >
 											{" "}
-											සා{" "}
-										</button>
-									</a>
+											සා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="සැ" onClick={() => this.handleKbutton("සැ")} >
 											{" "}
-											සැ{" "}
-										</button>
-									</a>
+											සැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="සෑ" onClick={() => this.handleKbutton("සෑ")} >
 											{" "}
-											සෑ{" "}
-										</button>
-									</a>
+											සෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ස්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ස්" onClick={() => this.handleKbutton("ස්")} >
 											{" "}
-											ස්{" "}
-										</button>
-									</a>
+											ස්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="සි" onClick={() => this.handleKbutton("සි")} >
 											{" "}
-											සි{" "}
-										</button>
-									</a>
+											සි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="සී" onClick={() => this.handleKbutton("සී")} >
 											{" "}
-											සී{" "}
-										</button>
-									</a>
+											සී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="සු" onClick={() => this.handleKbutton("සු")} >
 											{" "}
-											සු{" "}
-										</button>
-									</a>
+											සු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="සූ" onClick={() => this.handleKbutton("සූ")} >
 											{" "}
-											සූ{" "}
-										</button>
-									</a>
+											සූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="සෙ" onClick={() => this.handleKbutton("සෙ")} >
 											{" "}
-											සෙ{" "}
-										</button>
-									</a>
+											සෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="සේ" onClick={() => this.handleKbutton("සේ")} >
 											{" "}
-											සේ{" "}
-										</button>
-									</a>
+											සේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="සො" onClick={() => this.handleKbutton("සො")} >
 											{" "}
-											සො{" "}
-										</button>
-									</a>
+											සො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="සෝ" onClick={() => this.handleKbutton("සෝ")} >
 											{" "}
-											සෝ{" "}
-										</button>
-									</a>
+											සෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="සෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="සෞ" onClick={() => this.handleKbutton("සෞ")} >
 											{" "}
-											සෞ{" "}
-										</button>
-									</a>
+											සෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="හ"
-									onClick={this.handleKbutton}
-								>
-									හ
+								<button id="Kbutton" class={`Kbutton ${select28}`} value="හ" onClick = {() => this.handleDropdownClick("25")} >
+								හ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown25}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="හ" onClick={() => this.handleKbutton("හ")} >
 											{" "}
-											හ{" "}
-										</button>
-									</a>
+											හ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="හා" onClick={() => this.handleKbutton("හා")} >
 											{" "}
-											හා{" "}
-										</button>
-									</a>
+											හා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="හැ" onClick={() => this.handleKbutton("හැ")} >
 											{" "}
-											හැ{" "}
-										</button>
-									</a>
+											හැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="හෑ" onClick={() => this.handleKbutton("හෑ")} >
 											{" "}
-											හෑ{" "}
-										</button>
-									</a>
+											හෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="හ්" onClick={() => this.handleKbutton("හ්")} >
 											{" "}
-											හ්{" "}
-										</button>
-									</a>
+											හ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="හි" onClick={() => this.handleKbutton("හි")} >
 											{" "}
-											හි{" "}
-										</button>
-									</a>
+											හි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="හී" onClick={() => this.handleKbutton("හී")} >
 											{" "}
-											හී{" "}
-										</button>
-									</a>
+											හී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="හු" onClick={() => this.handleKbutton("හු")} >
 											{" "}
-											හු{" "}
-										</button>
-									</a>
+											හු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="හූ" onClick={() => this.handleKbutton("හූ")} >
 											{" "}
-											හූ{" "}
-										</button>
-									</a>
+											හූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="හෙ" onClick={() => this.handleKbutton("හෙ")} >
 											{" "}
-											හෙ{" "}
-										</button>
-									</a>
+											හෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="හේ" onClick={() => this.handleKbutton("හේ")} >
 											{" "}
-											හේ{" "}
-										</button>
-									</a>
+											හේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="හො" onClick={() => this.handleKbutton("හො")} >
 											{" "}
-											හො{" "}
-										</button>
-									</a>
+											හො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="හෝ" onClick={() => this.handleKbutton("හෝ")} >
 											{" "}
-											හෝ{" "}
-										</button>
-									</a>
+											හෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="හෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="හෞ" onClick={() => this.handleKbutton("හෞ")} >
 											{" "}
-											හෞ{" "}
-										</button>
-									</a>
+											හෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ෆ"
-									onClick={this.handleKbutton}
-								>
-									ෆ
+								<button id="Kbutton" class={`Kbutton ${select29}`} value="ෆ" onClick = {() => this.handleDropdownClick("26")} >
+								ෆ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown26}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෆ" onClick={() => this.handleKbutton("ෆ")} >
 											{" "}
-											ෆ{" "}
-										</button>
-									</a>
+											ෆ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ෆා" onClick={() => this.handleKbutton("ෆා")} >
 											{" "}
-											ෆා{" "}
-										</button>
-									</a>
+											ෆා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ෆැ" onClick={() => this.handleKbutton("ෆැ")} >
 											{" "}
-											ෆැ{" "}
-										</button>
-									</a>
+											ෆැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ෆෑ" onClick={() => this.handleKbutton("ෆෑ")} >
 											{" "}
-											ෆෑ{" "}
-										</button>
-									</a>
+											ෆෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ෆ්" onClick={() => this.handleKbutton("ෆ්")} >
 											{" "}
-											ෆ්{" "}
-										</button>
-									</a>
+											ෆ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ෆි" onClick={() => this.handleKbutton("ෆි")} >
 											{" "}
-											ෆි{" "}
-										</button>
-									</a>
+											ෆි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ෆී" onClick={() => this.handleKbutton("ෆී")} >
 											{" "}
-											ෆී{" "}
-										</button>
-									</a>
+											ෆී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ෆු" onClick={() => this.handleKbutton("ෆු")} >
 											{" "}
-											ෆු{" "}
-										</button>
-									</a>
+											ෆු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ෆූ" onClick={() => this.handleKbutton("ෆූ")} >
 											{" "}
-											ෆූ{" "}
-										</button>
-									</a>
+											ෆූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ෆෙ" onClick={() => this.handleKbutton("ෆෙ")} >
 											{" "}
-											ෆෙ{" "}
-										</button>
-									</a>
+											ෆෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ෆේ" onClick={() => this.handleKbutton("ෆේ")} >
 											{" "}
-											ෆේ{" "}
-										</button>
-									</a>
+											ෆේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ෆො" onClick={() => this.handleKbutton("ෆො")} >
 											{" "}
-											ෆො{" "}
-										</button>
-									</a>
+											ෆො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ෆෝ" onClick={() => this.handleKbutton("ෆෝ")} >
 											{" "}
-											ෆෝ{" "}
-										</button>
-									</a>
+											ෆෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ෆෞ" onClick={() => this.handleKbutton("ෆෞ")} >
 											{" "}
-											ෆෞ{" "}
-										</button>
-									</a>
+											ෆෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ළ"
-									onClick={this.handleKbutton}
-								>
-									ළ
+								<button id="Kbutton" class={`Kbutton ${select30}`} value="ළ" onClick = {() => this.handleDropdownClick("27")} >
+								ළ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown27}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ළ" onClick={() => this.handleKbutton("ළ")} >
 											{" "}
-											ළ{" "}
-										</button>
-									</a>
+											ළ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ළා" onClick={() => this.handleKbutton("ළා")} >
 											{" "}
-											ළා{" "}
-										</button>
-									</a>
+											ළා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ළැ" onClick={() => this.handleKbutton("ළැ")} >
 											{" "}
-											ළැ{" "}
-										</button>
-									</a>
+											ළැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ළෑ" onClick={() => this.handleKbutton("ළෑ")} >
 											{" "}
-											ළෑ{" "}
-										</button>
-									</a>
+											ළෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ළ්" onClick={() => this.handleKbutton("ළ්")} >
 											{" "}
-											ළ්{" "}
-										</button>
-									</a>
+											ළ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ළි" onClick={() => this.handleKbutton("ළි")} >
 											{" "}
-											ළි{" "}
-										</button>
-									</a>
+											ළි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ළී" onClick={() => this.handleKbutton("ළී")} >
 											{" "}
-											ළී{" "}
-										</button>
-									</a>
+											ළී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ළෙ" onClick={() => this.handleKbutton("ළෙ")} >
 											{" "}
-											ළු{" "}
-										</button>
-									</a>
+											ළෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ළේ" onClick={() => this.handleKbutton("ළේ")} >
 											{" "}
-											ළූ{" "}
-										</button>
-									</a>
+											ළේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ළො" onClick={() => this.handleKbutton("ළො")} >
 											{" "}
-											ළෙ{" "}
-										</button>
-									</a>
+											ළො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ළෝ" onClick={() => this.handleKbutton("ළෝ")} >
 											{" "}
-											ළේ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළො"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ළො{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ළෝ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ළෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෆෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ෆෞ{" "}
-										</button>
-									</a>
+											ළෝ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ථ"
-									onClick={this.handleKbutton}
-								>
-									ථ
+								<button id="Kbutton" class={`Kbutton ${select31}`} value="ථ" onClick = {() => this.handleDropdownClick("28")} >
+								ථ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown28}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ථ" onClick={() => this.handleKbutton("ථ")} >
 											{" "}
-											ථ{" "}
-										</button>
-									</a>
+											ථ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ථා" onClick={() => this.handleKbutton("ථා")} >
 											{" "}
-											ථා{" "}
-										</button>
-									</a>
+											ථා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ථැ" onClick={() => this.handleKbutton("ථැ")} >
 											{" "}
-											ථැ{" "}
-										</button>
-									</a>
+											ථැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ථෑ" onClick={() => this.handleKbutton("ථෑ")} >
 											{" "}
-											ථෑ{" "}
-										</button>
-									</a>
+											ථෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ථ්" onClick={() => this.handleKbutton("ථ්")} >
 											{" "}
-											ථ්{" "}
-										</button>
-									</a>
+											ථ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ථි" onClick={() => this.handleKbutton("ථි")} >
 											{" "}
-											ථි{" "}
-										</button>
-									</a>
+											ථි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ථී" onClick={() => this.handleKbutton("ථී")} >
 											{" "}
-											ථී{" "}
-										</button>
-									</a>
+											ථී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ථු" onClick={() => this.handleKbutton("ථු")} >
 											{" "}
-											ථු{" "}
-										</button>
-									</a>
+											ථු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ථූ" onClick={() => this.handleKbutton("ථූ")} >
 											{" "}
-											ථූ{" "}
-										</button>
-									</a>
+											ථූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ථෙ" onClick={() => this.handleKbutton("ථෙ")} >
 											{" "}
-											ථෙ{" "}
-										</button>
-									</a>
+											ථෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ථේ" onClick={() => this.handleKbutton("ථේ")} >
 											{" "}
-											ථේ{" "}
-										</button>
-									</a>
+											ථේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ථො" onClick={() => this.handleKbutton("ථො")} >
 											{" "}
-											ථො{" "}
-										</button>
-									</a>
+											ථො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ථෝ" onClick={() => this.handleKbutton("ථෝ")} >
 											{" "}
-											ථෝ{" "}
-										</button>
-									</a>
+											ථෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ථෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ථෞ" onClick={() => this.handleKbutton("ථෞ")} >
 											{" "}
-											ථෞ{" "}
-										</button>
-									</a>
+											ථෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="භ"
-									onClick={this.handleKbutton}
-								>
-									භ
+								<button id="Kbutton" class={`Kbutton ${select32}`} value="භ" onClick = {() => this.handleDropdownClick("29")} >
+								භ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown29}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="භ" onClick={() => this.handleKbutton("භ")} >
 											{" "}
-											භ{" "}
-										</button>
-									</a>
+											භ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="භා" onClick={() => this.handleKbutton("භා")} >
 											{" "}
-											භා{" "}
-										</button>
-									</a>
+											භා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="භැ" onClick={() => this.handleKbutton("භැ")} >
 											{" "}
-											භැ{" "}
-										</button>
-									</a>
+											භැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="භෑ" onClick={() => this.handleKbutton("භෑ")} >
 											{" "}
-											භෑ{" "}
-										</button>
-									</a>
+											භෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="භ්" onClick={() => this.handleKbutton("භ්")} >
 											{" "}
-											භ්{" "}
-										</button>
-									</a>
+											භ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="භි" onClick={() => this.handleKbutton("භි")} >
 											{" "}
-											භි{" "}
-										</button>
-									</a>
+											භි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="භී" onClick={() => this.handleKbutton("භී")} >
 											{" "}
-											භී{" "}
-										</button>
-									</a>
+											භී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="භු" onClick={() => this.handleKbutton("භු")} >
 											{" "}
-											භු{" "}
-										</button>
-									</a>
+											භු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="භූ" onClick={() => this.handleKbutton("භූ")} >
 											{" "}
-											භූ{" "}
-										</button>
-									</a>
+											භූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="භෙ" onClick={() => this.handleKbutton("භෙ")} >
 											{" "}
-											භෙ{" "}
-										</button>
-									</a>
+											භෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="භේ" onClick={() => this.handleKbutton("භේ")} >
 											{" "}
-											භේ{" "}
-										</button>
-									</a>
+											භේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="භො" onClick={() => this.handleKbutton("භො")} >
 											{" "}
-											භො{" "}
-										</button>
-									</a>
+											භො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="භෝ" onClick={() => this.handleKbutton("භෝ")} >
 											{" "}
-											භෝ{" "}
-										</button>
-									</a>
+											භෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="භෞ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="භෞ" onClick={() => this.handleKbutton("භෞ")} >
 											{" "}
-											භෞ{" "}
-										</button>
-									</a>
+											භෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
-	
+
 							<div class="dropdown1">
-								<button
-									id="Kbutton"
-									class="Kbutton"
-									value="ෂ"
-									onClick={this.handleKbutton}
-								>
-									ෂ
+								<button id="Kbutton" class={`Kbutton ${select33}`} value="ෂ" onClick = {() => this.handleDropdownClick("30")} >
+								ෂ
 								</button>
-								<div class="dropdown-content1">
+								<div class={`dropdown-content1 ${this.state.drpdown30}`} >
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ෂ" onClick={() => this.handleKbutton("ෂ")} >
 											{" "}
-											ෂ{" "}
-										</button>
-									</a>
+											ෂ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂා"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect2}`} value="ෂා" onClick={() => this.handleKbutton("ෂා")} >
 											{" "}
-											ෂා{" "}
-										</button>
-									</a>
+											ෂා{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂැ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ෂැ" onClick={() => this.handleKbutton("ෂැ")} >
 											{" "}
-											ෂැ{" "}
-										</button>
-									</a>
+											ෂැ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂෑ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect4}`} value="ෂෑ" onClick={() => this.handleKbutton("ෂෑ")} >
 											{" "}
-											ෂෑ{" "}
-										</button>
-									</a>
+											ෂෑ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂ්"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect5}`} value="ෂ්" onClick={() => this.handleKbutton("ෂ්")} >
 											{" "}
-											ෂ්{" "}
-										</button>
-									</a>
+											ෂ්{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂි"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect6}`} value="ෂි" onClick={() => this.handleKbutton("ෂි")} >
 											{" "}
-											ෂි{" "}
-										</button>
-									</a>
+											ෂි{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂී"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect7}`} value="ෂී" onClick={() => this.handleKbutton("ෂී")} >
 											{" "}
-											ෂී{" "}
-										</button>
-									</a>
+											ෂී{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect8}`} value="ෂු" onClick={() => this.handleKbutton("ෂු")} >
 											{" "}
-											ෂු{" "}
-										</button>
-									</a>
+											ෂු{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂු"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect9}`} value="ෂූ" onClick={() => this.handleKbutton("ෂූ")} >
 											{" "}
-											ෂු{" "}
-										</button>
-									</a>
+											ෂූ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂූ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect10}`} value="ෂෙ" onClick={() => this.handleKbutton("ෂෙ")} >
 											{" "}
-											ෂූ{" "}
-										</button>
-									</a>
+											ෂෙ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂෙ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect11}`} value="ෂේ" onClick={() => this.handleKbutton("ෂේ")} >
 											{" "}
-											ෂෙ{" "}
-										</button>
-									</a>
+											ෂේ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂේ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect12}`} value="ෂො" onClick={() => this.handleKbutton("ෂො")} >
 											{" "}
-											ෂේ{" "}
-										</button>
-									</a>
+											ෂො{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂො"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect13}`} value="ෂෝ" onClick={() => this.handleKbutton("ෂෝ")} >
 											{" "}
-											ෂො{" "}
-										</button>
-									</a>
+											ෂෝ{" "} </button> </a>
+
 									<a href="#">
 										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂෝ"
-											onClick={this.handleKbutton}
-										>
+										<button id="Kbutton" class={`Kbutton ${subSelect14}`} value="ෂෞ" onClick={() => this.handleKbutton("ෂෞ")} >
 											{" "}
-											ෂෝ{" "}
-										</button>
-									</a>
-									<a href="#">
-										{" "}
-										<button
-											id="Kbutton"
-											class="Kbutton"
-											value="ෂෞ"
-											onClick={this.handleKbutton}
-										>
-											{" "}
-											ෂෞ{" "}
-										</button>
-									</a>
+											ෂෞ{" "} </button> </a>
+
+
 								</div>
 							</div>
 						</div>
+
+						<div class="row1">
+								<button id="Kbutton" class={`Kbutton ${select34}`} value="1" onClick = {() => this.handleKbutton("1")} >
+								1
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select35}`} value="2" onClick = {() => this.handleKbutton("2")} >
+								2
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select36}`} value="3" onClick = {() => this.handleKbutton("3")} >
+								3
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select37}`} value="4" onClick = {() => this.handleKbutton("4")} >
+								4
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select34}`} value="5" onClick = {() => this.handleKbutton("5")} >
+								5
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select35}`} value="6" onClick = {() => this.handleKbutton("6")} >
+								6
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select36}`} value="7" onClick = {() => this.handleKbutton("7")} >
+								7
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select37}`} value="8" onClick = {() => this.handleKbutton("8")} >
+								8
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select38}`} value="9" onClick = {() => this.handleKbutton("9")} >
+								9
+								</button>
+								<button id="Kbutton" class={`Kbutton ${select39}`} value="0" onClick = {() => this.handleKbutton("0")} >
+								0
+								</button>
+								
+								
+								
+								
+								</div>
 	
 						
 					</div>
 				</div>
-			</div>
 			</div>
 			);
 	}

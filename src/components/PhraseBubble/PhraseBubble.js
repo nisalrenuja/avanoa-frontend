@@ -60,51 +60,52 @@ const audioClips = [
 		label: "නියමයි/ කැමතියි",
 	},
 
-	// Slide 2 Audio
+	// Slide 2 Audio ----------------------check recordings
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
+		label: "බත්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "පාන්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "රොටී",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "එලවලු",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "පලතුරු",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: " නිදිමතයි",
+		label: "තේ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "බිස්කට්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "සුප්",
 	},
+	/////////////extra????????????
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: " ඔයාට කොහොමද?",
+		label: " ඔයාට කොහොමද ?",
 	},
 
 	// Slide 3 Audio
@@ -116,277 +117,277 @@ const audioClips = [
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "සුභ උදෑසනක්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "ඔබට ස්තුතියි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "ඔබව පිළිගන්නවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "මට සමාවන්න",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "මම සමුගන්නවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "මට සමාවෙන්න",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "ඔබට සුබපැතුම්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "ඔයාට කොහොමද?",
+		label: "ඉක්මනට සනිප වෙන්න",
 	},
 
 	// Slide 4 Audio
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
+		label: "මට බඩගිනියි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "මට පිපාසය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "මට මහන්සියි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "මට වැසිකිළියට යන්න ඕනෙ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "මට නානවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "මට නිදිමතයි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "මම අඳිනවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "නැරඹීම / සවන් දීම",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "මට උදව්වක් ඕන",
 	},
 
 	// Slide 5 Audio
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
+		label: "මට සනීප නෑ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "බෙහෙත් ඉවරයි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "මට බෙහෙත් ඕනේ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "කෝ මගේ රිපෝට්ස්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "මට කලන්තේ වගේ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "මට රිදෙනවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "මට දැන් සනීපයි",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "බෙහෙත් ගන්න යමු",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "මට කණ්නාඩිය / hearing aid එක දෙන්න",
 	},
 
 	// Slide 6 Audio
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
+		label: "මම පුවත්පත් කියවනවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "මම රුපවාහිනිය නරබමින්",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "මම සංගීතයට සවන් දීම",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "මම නානවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "මම නිදාගන්නවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "මම ව්‍යායාම කරනවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "මම සමාජ මාධ්‍ය භාවිතා කරනවා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "මම ඇවිදින්න යන්න",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "මට කෙනෙකුට කතා කරන්න ඕනෙ",
 	},
 
 	// Slide 7 Audio
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
-	},
-	{
-		sound:
-			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
 		label: "ඔව්",
 	},
 	{
 		sound:
+			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
+		label: "නෑ",
+	},
+	{
+		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "ඔයාට කොහොමද ?",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "ඔයා කවුද ?",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "මොකක්ද ?",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "ඔයා කොහෙද ?",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "මට බැහැ",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "කීයටද ?",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "මට පුළුවන්",
 	},
 
 	// Slide 8 Audio
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ආයුබෝවන්",
+		label: "වැසිකිළිය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-		label: "ඔව්",
+		label: "විසිත්ත කාමරය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-		label: "නැහැ",
+		label: "කුස්සිය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482089/2022-05-02_14-30-09_y5ilia.mp3",
-		label: "සුබ උදෑසනක්",
+		label: "වත්ත",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482230/2022-05-02_14-32-00_zdbvbg.mp3",
-		label: "සුබ රාත්‍රියක්",
+		label: "නිදන කාමරය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482322/2022-05-02_14-34-35_q2x4aw.mp3",
-		label: "නිදිමතයි",
+		label: "ආගමික ස්ථානය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482461/2022-05-02_14-36-44_r5dtsf.mp3",
-		label: "තිබහයි",
+		label: "උද්යානය",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-		label: "බඩිගිනි",
+		label: "අසල්වැසියා",
 	},
 	{
 		sound:
 			"https://res.cloudinary.com/avanoa/video/upload/v1651482600/2022-05-02_14-39-21_vxrmj1.mp3",
-		label: "කොහොමද?",
+		label: "සබඳතා",
 	},
 ];
 
@@ -425,6 +426,7 @@ class phraseBubble extends Component {
 		slide1: "notSelected",
 		slide2: "notSelected",
 		slide3: "notSelected",
+		//////DOnt we need phrases?
 		phrases: [
 			"ආයුබෝවන්",
 			"ඔව්",
@@ -444,7 +446,7 @@ class phraseBubble extends Component {
 		ph6: "මට එපා",
 		ph7: "මට ඕනෙ",
 		ph8: "මට අද මහන්සියි",
-		ph9: "නියමයි/කැමතියි",
+		ph9: "නියමයි/ කැමතියි",
 	};
 
 	selectBubble(selNum) {
@@ -744,7 +746,7 @@ class phraseBubble extends Component {
 		let select8 = "";
 		let select9 = "";
 
-		let ph1 = "ඔයාට කොහොමද? ";
+		let ph1 = "ඔයාට කොහොමද ? ";
 		let ph2 = "මට උදවු කරනවද ?";
 		let ph3 = "ආයෙත් කියන්න";
 		let ph4 = "මට තේරුනේ නෑ";
@@ -800,9 +802,9 @@ class phraseBubble extends Component {
 			ph1 = "මට බඩගිනියි";
 			ph2 = "මට පිපාසය";
 			ph3 = "මට මහන්සියි";
-			ph4 = "මට වැසිකිළියට යනවා";
-			ph5 = "මට නානවා";
-			ph6 = "මට නිදිමත";
+			ph4 = "මට වැසිකිළියට යන්න ඕනෙ";
+			ph5 = "මම නානවා";
+			ph6 = "මට නිදිමතයි";
 			ph7 = "මම අඳිනවා ";
 			ph8 = "නැරඹීම / සවන් දීම ";
 			ph9 = "මට උදව්වක් ඕන";
@@ -836,8 +838,8 @@ class phraseBubble extends Component {
 			ph5 = "මම නිදාගන්නවා";
 			ph6 = "මම ව්‍යායාම කරනවා";
 			ph7 = "මම සමාජ මාධ්‍ය භාවිතා කරනවා";
-			ph8 = "මම ඇවිදින්න යන්න ";
-			ph9 = "මම කෙනෙකුට කතා කරන්න";
+			ph8 = "මට ඇවිදින්න යන්න ඕනෙ";
+			ph9 = "මට කෙනෙකුට කතා කරන්න ඕනෙ";
 		} else if (index == 3 && counter == 6) {
 			//setSel("selectionBoarder");
 			// this.setState({ slide3 : "selected"});
@@ -847,12 +849,12 @@ class phraseBubble extends Component {
 
 			ph1 = "ඔව් ";
 			ph2 = "නෑ ";
-			ph3 = "ඔයාට කොහොමද ";
-			ph4 = "ඔයා කවුද ";
-			ph5 = "මොකක්ද ";
-			ph6 = "ඔයා කොහෙද ";
-			ph7 = "මට බැහැ ";
-			ph8 = "කීයටද ";
+			ph3 = "ඔයාට කොහොමද ?";
+			ph4 = "ඔයා කවුද ?";
+			ph5 = "මොකක්ද ?";
+			ph6 = "ඔයා කොහෙද ?";
+			ph7 = "මට බැහැ";
+			ph8 = "කීයටද ?";
 			ph9 = "මට පුළුවන්";
 		} else if (index == 3 && counter == 7) {
 			//setSel("selectionBoarder");
@@ -868,7 +870,7 @@ class phraseBubble extends Component {
 			ph5 = "නිදන කාමරය ";
 			ph6 = "ආගමික ස්ථානය";
 			ph7 = "උද්යානය";
-			ph8 = "අසල්වැසි";
+			ph8 = "අසල්වැසියා";
 			ph9 = "සබඳතා";
 		}
 
@@ -1017,11 +1019,11 @@ class phraseBubble extends Component {
 			ph1 = "මට බඩගිනියි";
 			ph2 = "මට පිපාසයයි";
 			ph3 = "මට මහන්සියි";
-			ph4 = "වැසිකිළියට යනවා";
+			ph4 = "මට වැසිකිළි යන්න ඕනෙ";
 			ph5 = "මම නානවා";
-			ph6 = "මම නිදිමතයි";
+			ph6 = "මට නිදිමතයි";
 			ph7 = "මම අඳිනවා  ";
-			ph8 = "නැරඹීම / සවන් දීම ";
+			ph8 = "නැරඹීම / සවන් දීම";
 			ph9 = "මට උදව්වක් ඕන";
 
 			if (counter == 0) {
@@ -1270,7 +1272,7 @@ class phraseBubble extends Component {
 					<div>
 
 					<button className={slide1} class id="headerbutton1">
-						පොදු වාක්යය
+					පොදු වාක්‍ය
 					</button>
 					<button className={slide2} class id="headerbutton2">
 						කෑම
@@ -1279,13 +1281,13 @@ class phraseBubble extends Component {
 						සුභ පැතුම්
 					</button>
 					<button className={slide4} class id="headerbutton4">
-						සාමාන්ය අවශ්යතා
+					සාමාන්‍ය අවශ්‍යතා
 					</button>
 					</div>
 
 				<div>
 					<button className={slide5} class id="headerbutton5">
-						වෛද්ය අවශ්යතා
+					වෛද්‍ය අවශ්‍යතා
 					</button>
 					<button className={slide6} class id="headerbutton6">
 						කටයුතු
@@ -1294,7 +1296,7 @@ class phraseBubble extends Component {
 						සංවාද
 					</button>
 					<button className={slide8} class id="headerbutton8">
-						සංචාරය කිරීමට ස්ථාන
+						ස්ථාන
 					</button>
 					</div>
 

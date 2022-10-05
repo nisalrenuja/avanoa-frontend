@@ -14,6 +14,7 @@ const AudioSetting = () => {
       <br></br>
       <h1 style={{ color: "white" }}>Audio Settings</h1>
       <h2 style={{ color: "white" }}>Gender Select</h2>
+      
       <div style={{ color: "white" }}>
         <input
           type="radio"

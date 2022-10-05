@@ -46,74 +46,120 @@ class Register extends React.Component {
 			this.setState({ count: this.state.count + 1 });
 		}
 	  
-		if (index == 550 && this.state.count == 1) {
+		if (index == 750 && this.state.count == 1) {
 			this.handleClick("Title", "ආහාර");
 			this.setState({ count: 0 });
 		}
-		if (index == 551 && this.state.count == 1) {
+		if (index == 751 && this.state.count == 1) {
 			this.handleClick("Title", "ඖෂධ");
 			this.setState({ count: 0 });
 		}
-		if (index == 552 && this.state.count == 1) {
+		if (index == 752 && this.state.count == 1) {
 			this.handleClick("Title", "සනීපාරක්ෂක කටයුතු");
 			this.setState({ count: 0 });
 		}
-		if (index == 555 && this.state.count == 0) {
+		if (index == 755 && this.state.count == 0) {
 			this.handleClick("Description", "මට  උදෑසන ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
-		}if (index == 556 && this.state.count == 0) {
+		}if (index == 756 && this.state.count == 0) {
 			this.handleClick("Description", "මට  දහවල් ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 557 && this.state.count == 0) {
+		if (index == 757 && this.state.count == 0) {
 			this.handleClick("Description", "මට  රාත්‍රී ආහාර ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 558 && this.state.count == 0) {
+		if (index == 758 && this.state.count == 0) {
+			//back button
+			this.props.updateIndex(500);
+		}
+		if (index == 760 && this.state.count == 0) {
 			this.handleClick("Description", "මට  උදෑසන ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 559 && this.state.count == 0) {
+		if (index == 761 && this.state.count == 0) {
 			this.handleClick("Description", "මට  දහවල් ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 560 && this.state.count == 0) {
+		if (index == 762 && this.state.count == 0) {
 			this.handleClick("Description", "මට රාත්‍රී ඖෂධ ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 561 && this.state.count == 0) {
+		if (index == 763 && this.state.count == 0) {
+			//back button
+			this.props.updateIndex(500);
+		}
+		if (index == 765 && this.state.count == 0) {
 			this.handleClick("Description", "මට  මුත්‍රා  කරන්න ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 562 && this.state.count == 0) {
+		if (index == 766 && this.state.count == 0) {
 			this.handleClick("Description", "මට  මලපහ  කරන්න ඕනෙ");
 			this.setState({ count: this.state.count + 1 });
 		}
-		if (index == 570 && this.state.count == 1) {
+		if (index == 767 && this.state.count == 0) {
+			//back button
+			this.props.updateIndex(500);
+		}
+		if ((index == 770 && this.state.count == 1) || (index == 775 && this.state.count == 1) || (index == 780 && this.state.count == 1) || (index == 785 && this.state.count == 1) || (index == 790 && this.state.count == 1) || (index == 795 && this.state.count == 1) || (index == 800 && this.state.count == 1) || (index == 805 && this.state.count == 1) || (index == 810 && this.state.count == 1) || (index == 815 && this.state.count == 1)) {
 			this.handleClick("Time", "උදෑසන 8.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 571 && this.state.count == 1) {
+		if ((index == 771 && this.state.count == 1) || (index == 776 && this.state.count == 1) || (index == 781 && this.state.count == 1) || (index == 786 && this.state.count == 1) || (index == 791 && this.state.count == 1) || (index == 796 && this.state.count == 1) || (index == 801 && this.state.count == 1) || (index == 806 && this.state.count == 1) || (index == 811 && this.state.count == 1) || (index == 816 && this.state.count == 1)) {
 			this.handleClick("Time", "දහවල් 1.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 572 && this.state.count == 1) {
+		if ((index == 772 && this.state.count == 1) || (index == 777 && this.state.count == 1) || (index == 782 && this.state.count == 1) || (index == 787 && this.state.count == 1) || (index == 792 && this.state.count == 1) || (index == 797 && this.state.count == 1) || (index == 802 && this.state.count == 1) || (index == 807 && this.state.count == 1) || (index == 812 && this.state.count == 1) || (index == 817 && this.state.count == 1)) {
 			this.handleClick("Time", "රාත්‍රී 8.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 573 && this.state.count == 1) {
+		if ((index == 773 && this.state.count == 1) || (index == 778 && this.state.count == 1) || (index == 783 && this.state.count == 1) || (index == 788 && this.state.count == 1) || (index == 793 && this.state.count == 1) || (index == 798 && this.state.count == 1) || (index == 803 && this.state.count == 1) || (index == 808 && this.state.count == 1) || (index == 813 && this.state.count == 1) || (index == 818 && this.state.count == 1)) {
 			this.handleClick("Time", "රාත්‍රී 10.00");
 			this.setState({ count: 0 });
 		}
-		if (index == 572) {
+		
+		if (index == 830 || index == 832 || index == 834 || index == 836 ) {
 			//back button
-			this.props.updateIndex(570);
+			this.props.updateIndex(755);
+		}
+		if (index == 838 || index == 840 || index == 842 || index == 844 ) {
+			//back button
+			this.props.updateIndex(756);
+		}
+		if (index == 846 || index == 848 || index == 850 || index == 852 ) {
+			//back button
+			this.props.updateIndex(757);
 		}
 
-		if (index == 573 && this.state.count == 0) {
+		
+		if (index == 862 || index == 864 || index == 866 || index == 868 ) {
+			//back button
+			this.props.updateIndex(760);
+		}
+		if (index == 870 || index == 872 || index == 874 || index == 876 ) {
+			//back button
+			this.props.updateIndex(761);
+		}
+
+		if (index == 878 || index == 880 || index == 882 || index == 884 ) {
+			//back button
+			this.props.updateIndex(762);
+		}
+		
+
+		if (index == 894 || index == 896 || index == 898 || index == 900 ) {
+			//back button
+			this.props.updateIndex(765);
+		}
+		if (index == 902 || index == 904 || index == 906 || index == 908 ) {
+			//back button
+			this.props.updateIndex(766);
+		}
+
+
+		if (index == 831 || index == 833 || index == 835 || index == 837 || index == 839 || index == 841 || index == 843 || index == 845 || index == 847 || index == 849 || index == 851 || index == 853 || index == 855 || index == 857 || index == 859 || index == 861 || index == 863 || index == 865 || index == 867 || index == 869 || index == 871 || index == 873 || index == 875 || index == 877 || index == 879 || index == 881 || index == 883 || index == 885 || index == 887 || index == 889 || index == 891 || index == 893 || index == 895 || index == 897 || index == 899 || index == 901 || index == 903 || index == 905 || index == 907 || index == 909) {
 			this.saveReminder();
-			this.setState({ count: this.state.count + 1 });
-			
+			this.props.updateIndex(6);
 		}
 
 	}
@@ -221,7 +267,7 @@ class Register extends React.Component {
 		let select4 = "";
 		let select5 = "";
 
-		if( index == 500 || index == 550 || index == 555 || index == 560 || index == 565 || index == 570 || index == 575 || index == 580 || index == 585 || index == 587 || index == 589 || index == 591 || index == 593 || index == 595 || index == 597 || index == 599 || index == 601){
+		if( index == 500 || index == 750 || index == 751 || index == 752 || index == 755 || index == 756 || index == 757 || index == 758 || index == 760 || index == 761 || index == 762 || index == 763 || index == 765 || index == 766 || index == 770 || index == 771 || index == 772 || index == 773){
 			if(counter == 0){
 				select1 = "selected"
 			}

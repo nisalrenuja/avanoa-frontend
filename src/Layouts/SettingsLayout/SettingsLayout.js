@@ -3,6 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import { Link } from "react-router-dom";
 import AudioSetting from "../../components/AudioSetting/AudioSetting";
+import "./settingslayout.css";
 
 import { useState } from "react";
 // import Speech from "../../components/Speech/Speech";
@@ -30,18 +31,25 @@ const ProfileLayout = () => {
       >
         <Sidebar />
       </div>
+      
       {/* content */}
       <div className="profilelayout_content">
         {/* profile */}
         <div className="profilelayout_content-profile">
-          <Link to="/profile"> My Personal Profile Settings</Link>
+        <center>
+        <button class id="headerbtn"><Link to="/profile"> My Personal Profile Settings</Link></button>
           <br></br>
-          <Link to="/AudioSetting"> Audio</Link>
+          <button class id="headerbtn"><Link to="/AudioSetting"> Audio</Link></button>
           <br></br>
+<<<<<<< HEAD
           <Link to="/SensitivitySetting"> Sensitivity</Link>
+=======
+          <button class id="headerbtn"><Link to="/profile"> Sensitivity</Link></button>
+>>>>>>> fdd0e6ae4b910910f6c54bbeb0e8b9e1cea2768a
           <br></br>
-          <Link to="/profile"> Keyboard</Link>
+          <button class id="headerbtn"> <Link to="/profile"> Keyboard</Link> </button>
           <br></br>
+          </center>
         </div>
       </div>
     </div>

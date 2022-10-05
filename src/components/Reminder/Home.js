@@ -135,26 +135,11 @@ function Home() {
 		select2 = "selection";
 		subSelect1 = "selected";
 	}
-	if(index == 585){
-		select2 = "selection";
-		subSelect1 = "selection";
-		//delete1
-		_onDelete(id1)
-		dispatch(updateIndex(6));
-		console.log("inside 585" +id2);
-	}
+	
 	if (index == 502) {
 		select3 = "selection";
 		subSelect2 = "selected";
 	}
-	if(index == 586){
-		select3 = "selection";
-		subSelect2 = "selection";
-		//delete2
-		_onDelete(id2)
-		dispatch(updateIndex(6));
-	}
-
 	if(index == 503) {
 		select4 = "selection";
 		subSelect3 = "selected";
@@ -182,6 +167,71 @@ function Home() {
 	if(index == 509) {
 		select10 = "selection";
 		subSelect9 = "selected";
+	}
+
+	if(index == 585){
+		select2 = "selection";
+		subSelect1 = "selection";
+		//delete1
+		_onDelete(id1)
+		dispatch(updateIndex(6));
+		console.log("inside 585" +id2);
+	}
+	if(index == 587){
+		select3 = "selection";
+		subSelect2 = "selection";
+		//delete2
+		_onDelete(id2)
+		dispatch(updateIndex(6));
+	}
+	if(index == 589){
+		select4 = "selection";
+		subSelect3 = "selection";
+		//delete3
+		_onDelete(id3)
+		dispatch(updateIndex(6));
+	}
+	if(index == 591){
+		select5 = "selection";
+		subSelect4 = "selection";
+		//delete4
+		_onDelete(id4)
+		dispatch(updateIndex(6));
+	}
+	if(index == 593){
+		select6 = "selection";
+		subSelect5 = "selection";
+		//delete5
+		_onDelete(id5)
+		dispatch(updateIndex(6));
+	}
+	if(index == 595){
+		select7 = "selection";
+		subSelect6 = "selection";
+		//delete6
+		_onDelete(id6)
+		dispatch(updateIndex(6));
+	}
+	if(index == 597){
+		select8 = "selection";
+		subSelect7 = "selection";
+		//delete7
+		_onDelete(id7)
+		dispatch(updateIndex(6));
+	}
+	if(index == 599){
+		select9 = "selection";
+		subSelect8 = "selection";
+		//delete8
+		_onDelete(id8)
+		dispatch(updateIndex(6));
+	}
+	if(index == 601){
+		select3 = "selection";
+		subSelect2 = "selection";
+		//delete9
+		_onDelete(id9)
+		dispatch(updateIndex(6));
 	}
 
 
