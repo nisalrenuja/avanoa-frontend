@@ -2701,7 +2701,7 @@ class KeyboardLayout extends Component {
 				subSelect12 = "selected"
 			}
 			if (counter == 12) {
-				subSelec13 = "selected"
+				subSelect13 = "selected"
 			}
 			if (counter == 13) {
 				subSelect14 = "selected"
@@ -3174,7 +3174,7 @@ class KeyboardLayout extends Component {
                 subSelect12 = "selected"
             }
 			if (counter == 12) {
-                subSelec13 = "selected"
+                subSelect13 = "selected"
             }
             if (counter == 13) {
                 subSelect14 = "selected"
