@@ -37,13 +37,13 @@ const ProfileLayout = () => {
         {/* profile */}
         <div className="profilelayout_content-profile">
         <center>
-        <button class id="settingsbtn"><Link to="/profile"> My Personal Profile Settings</Link></button>
+        <button class id="settingsbtn"><Link to="/profile" > My Personal Profile Settings</Link></button>
           <br></br>
-          <button class id="settingsbtn"><Link to="/AudioSetting"> Audio</Link></button>
+          <button class id="settingsbtn"><Link to="/AudioSetting" > Audio</Link></button>
           <br></br>
-          <button class id="settingsbtn"><Link to="/profile"> Sensitivity</Link></button>
+          <button class id="settingsbtn"><Link to="/profile" > Sensitivity</Link></button>
           <br></br>
-          <button class id="settingsbtn"> <Link to="/profile"> Keyboard</Link> </button>
+          <button class id="settingsbtn"> <Link to="/profile" > Keyboard</Link> </button>
           <br></br>
           </center>
         </div>

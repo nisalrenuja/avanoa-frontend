@@ -1270,7 +1270,7 @@ class phraseBubble extends Component {
           {/* {this.RenderButtonSound()} */}
 
           <div>
-            <button className={slide1} class id="headerbutton1">
+            <button className={slide1} class id="headerbutton1" >
               පොදු වාක්‍ය
             </button>
             <button className={slide2} class id="headerbutton2">
