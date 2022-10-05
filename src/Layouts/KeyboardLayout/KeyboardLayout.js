@@ -23,8 +23,7 @@ class KeyboardLayout extends Component {
 			count3 : 1,
 			drpNum : 0,
 			drpdownNum: 0,
-			drpdown1 : "",
-			drpdown2 : "",
+			drpdown1 : "",drpdown2 : "",drpdown3 : "",drpdown4 : "",drpdown5 : "",drpdown6 : "",drpdown7 : "",drpdown8 : "",drpdown9 : "",drpdown10 : "",drpdown11 : "",drpdown12 : "",drpdown13 : "",drpdown14 : "",drpdown15 : "",drpdown16 : "",drpdown17 : "",drpdown18 : "",drpdown19 : "",drpdown20 : "",drpdown21 : "",drpdown22 : "",drpdown23 : "",drpdown24 : "",drpdown25 : "",drpdown26 : "",drpdown27 : "",drpdown28 : "",drpdown29 : "",drpdown30 : "",
 		}
 
 		this.handleClick = this.handleClick.bind(this);
@@ -1699,6 +1698,7 @@ class KeyboardLayout extends Component {
 	handleDelete() {
 		let str = this.state.text;
 		this.setState({text : str.slice(0, -1)});
+		this.props.updateIndex(4);
 	}
 
 	handleSpace() {
@@ -1707,6 +1707,7 @@ class KeyboardLayout extends Component {
 		//console.log(chars)
 
 		//setText(chars.join(' '))
+		this.props.updateIndex(4);
 	}
 
 	handleDropdownClick(val){
