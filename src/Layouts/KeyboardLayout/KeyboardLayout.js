@@ -3441,7 +3441,53 @@ class KeyboardLayout extends Component {
                 subSelect11 = "selected"
             }
         }
-		
+
+		//ථ section
+        if (index == 230) {
+            if (counter == 0) {
+                subSelect1 = "selected"
+            }
+            if (counter == 1) {
+                subSelect2 = "selected"
+            }
+            if (counter == 2) {
+                subSelect3 = "selected"
+            }
+            if (counter == 3) {
+                subSelect4 = "selected"
+            }
+            if (counter == 4) {
+                subSelect5 = "selected"
+            }
+            if (counter == 5) {
+                subSelect6 = "selected"
+            }
+            if (counter == 6) {
+                subSelect7 = "selected"
+            }
+            if (counter == 7) {
+                subSelect8 = "selected"
+            }
+            if (counter == 8) {
+                subSelect9 = "selected"
+            }
+            if (counter == 9) {
+                subSelect10 = "selected"
+            }
+            if (counter == 10) {
+                subSelect11 = "selected"
+            }
+            if (counter == 11) {
+                subSelect12 = "selected"
+            }
+            if (counter == 12) {
+                subSelect13 = "selected"
+            }
+            if (counter == 13) {
+                subSelect14 = "selected"
+            }
+        }
+
 
 
 
