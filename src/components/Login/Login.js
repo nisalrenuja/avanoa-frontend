@@ -97,7 +97,7 @@ const Login = () => {
         />
         <div className="login_btn">
           <button type="submit">login</button>
-          {/* <GoogleLogin
+          <GoogleLogin
             clientId={process.env.REACT_APP_G_CLIENT_ID}
             render={(renderProps) => (
               <button
@@ -111,7 +111,7 @@ const Login = () => {
             cookiePolicy={"single_host_origin"}
             onSuccess={googleSuccess}
             onFailure={googleError}
-          /> */}
+          />
         </div>
       </form>
     </>
