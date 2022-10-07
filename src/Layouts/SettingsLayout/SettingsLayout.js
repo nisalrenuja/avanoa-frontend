@@ -33,17 +33,17 @@ const ProfileLayout = () => {
       </div>
       
       {/* content */}
-      <div className="profilelayout_content">
+      <div class id="profilelayout_content">
         {/* profile */}
         <div className="profilelayout_content-profile">
         <center>
-        <button class id="headerbtn"><Link to="/profile"> My Personal Profile Settings</Link></button>
+        <button class id="settingsbtn"><Link to="/profile" > My Personal Profile Settings</Link></button>
           <br></br>
-          <button class id="headerbtn"><Link to="/AudioSetting"> Audio</Link></button>
+          <button class id="settingsbtn"><Link to="/AudioSetting" > Audio</Link></button>
           <br></br>
-          <button class id="headerbtn"><Link to="/profile"> Sensitivity</Link></button>
+          <button class id="settingsbtn"><Link to="/profile" > Sensitivity</Link></button>
           <br></br>
-          <button class id="headerbtn"> <Link to="/profile"> Keyboard</Link> </button>
+          <button class id="settingsbtn"> <Link to="/profile" > Keyboard</Link> </button>
           <br></br>
           </center>
         </div>

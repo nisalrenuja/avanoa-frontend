@@ -127,7 +127,6 @@ class KeyboardLayout extends Component {
 		if(index == 200 && this.state.count == 0){
 			this.handleSubmit();
 			//this.setState({ count:  1 });
-			
 		}
 		if(index == 201 && this.state.count == 0){
 			this.handleSpace();
@@ -323,33 +322,78 @@ class KeyboardLayout extends Component {
 			this.setState({drpdownNum: 30});
 			this.setState({ count: 1 });
 		}
-
-	
-
-
-
+		if (index == 233 && this.state.count == 0) {
+			this.handleKbutton("1");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 234 && this.state.count == 0) {
+			this.handleKbutton("2");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 235 && this.state.count == 0) {
+			this.handleKbutton("3");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 236 && this.state.count == 0) {
+			this.handleKbutton("4");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 237 && this.state.count == 0) {
+			this.handleKbutton("5");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 238 && this.state.count == 0) {
+			this.handleKbutton("6");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 239 && this.state.count == 0) {
+			this.handleKbutton("7");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 240 && this.state.count == 0) {
+			this.handleKbutton("8");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 241 && this.state.count == 0) {
+			this.handleKbutton("9");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
+		if (index == 242 && this.state.count == 0) {
+			this.handleKbutton("0");
+			this.setState({ count3: 0 });
+			this.setState({ count: 1 });
+		}
 		//sub keys
 
 		//අ section
-		if (index == 240) {
+		if (index == 245) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
 			this.handleKbutton("අ");
 		}
-		if (index == 241) {
+		if (index == 246) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
 			this.handleKbutton("ආ");
 		}
-		if (index == 242) {
+		if (index == 247) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
 			this.handleKbutton("ඇ");
 		}
-		if (index == 243) {
+		if (index == 248) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
@@ -357,13 +401,13 @@ class KeyboardLayout extends Component {
 		}
 
 		//ඉ section
-		if (index == 244) {
+		if (index == 250) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
 			this.handleKbutton("ඉ");
 		}
-		if (index == 245) {
+		if (index == 251) {
 			this.setState({ count:  0 });
 			this.setState({ count3: 1 });
 			//this.setState({drpEn : false})
@@ -372,13 +416,13 @@ class KeyboardLayout extends Component {
 	
 
 	//උ section
-	if (index == 246) {
+	if (index == 255) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("උ");
 	}
-	if (index == 247) {
+	if (index == 256) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -386,19 +430,19 @@ class KeyboardLayout extends Component {
 	}
 
 	//එ section
-	if (index == 248) {
+	if (index == 260) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("එ");
 	}
-	if (index == 249) {
+	if (index == 261) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඒ");
 	}
-	if (index == 250) {
+	if (index == 262) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -406,19 +450,19 @@ class KeyboardLayout extends Component {
 	}
 
 	//ඔ section
-	if (index == 251) {
+	if (index == 265) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඔ");
 	}
-	if (index == 252) {
+	if (index == 267) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඕ");
 	}
-	if (index == 253) {
+	if (index == 268) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -426,73 +470,73 @@ class KeyboardLayout extends Component {
 	}
 
 	//ක section
-	if (index == 254) {
+	if (index == 270) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ක");
 	}
-	if (index == 255) {
+	if (index == 271) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කා");
 	}
-	if (index == 256) {
+	if (index == 272) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කැ");
 	}
-	if (index == 257) {
+	if (index == 273) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කෑ");
 	}
-	if (index == 258) {
+	if (index == 274) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ක්");
 	}
-	if (index == 259) {
+	if (index == 275) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කි");
 	}
-	if (index == 260) {
+	if (index == 276) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කු");
 	}
-	if (index == 261) {
+	if (index == 278) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කෙ");
 	}
-	if (index == 261) {
+	if (index == 279) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කේ");
 	}
-	if (index == 261) {
+	if (index == 280) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කො");
 	}
-	if (index == 261) {
+	if (index == 281) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("කෝ");
 	}
-	if (index == 261) {
+	if (index == 282) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -500,73 +544,73 @@ class KeyboardLayout extends Component {
 	}
 	
 	//ග section
-	if (index == 262) {
+	if (index == 285) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ග");
 	}
-	if (index == 263) {
+	if (index == 286) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගා");
 	}
-	if (index == 264) {
+	if (index == 287) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගැ");
 	}
-	if (index == 265) {
+	if (index == 288) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගෑ");
 	}
-	if (index == 266) {
+	if (index == 289) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ග්");
 	}
-	if (index == 267) {
+	if (index == 290) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගි");
 	}
-	if (index == 268) {
+	if (index == 291) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගු");
 	}
-	if (index == 269) {
+	if (index == 292) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගෙ");
 	}
-	if (index == 270) {
+	if (index == 293) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගේ");
 	}
-	if (index == 271) {
+	if (index == 294) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගො");
 	}
-	if (index == 272) {
+	if (index == 295) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ගෝ");
 	}
-	if (index == 273) {
+	if (index == 296) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -574,67 +618,67 @@ class KeyboardLayout extends Component {
 	}
 
 	//ච section
-	if (index == 274) {
+	if (index == 300) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ච");
 	}
-	if (index == 275) {
+	if (index == 301) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චා");
 	}
-	if (index == 276) {
+	if (index == 302) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චැ");
 	}
-	if (index == 277) {
+	if (index == 303) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චෑ");
 	}
-	if (index == 278) {
+	if (index == 304) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ච්");
 	}
-	if (index == 279) {
+	if (index == 305) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චී");
 	}
-	if (index == 280) {
+	if (index == 306) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චු");
 	}
-	if (index == 281) {
+	if (index == 307) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චෙ");
 	}
-	if (index == 282) {
+	if (index == 308) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චො");
 	}
-	if (index == 283) {
+	if (index == 309) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("චෝ");
 	}
-	if (index == 284) {
+	if (index == 310) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -643,67 +687,67 @@ class KeyboardLayout extends Component {
 
 
 	//ජ section
-	if (index == 285) {
+	if (index == 315) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජ");
 	}
-	if (index == 286) {
+	if (index == 316) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජා");
 	}
-	if (index == 287) {
+	if (index == 317) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජැ");
 	}
-	if (index == 288) {
+	if (index == 318) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජෑ");
 	}
-	if (index == 289) {
+	if (index == 319) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජ්");
 	}
-	if (index == 290) {
+	if (index == 320) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජි");
 	}
-	if (index == 291) {
+	if (index == 321) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජු");
 	}
-	if (index == 292) {
+	if (index == 322) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජෙ");
 	}
-	if (index == 293) {
+	if (index == 323) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජේ");
 	}
-	if (index == 294) {
+	if (index == 324) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ජො");
 	}
-	if (index == 295) {
+	if (index == 325) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -711,73 +755,73 @@ class KeyboardLayout extends Component {
 	}
 
 	//ට section
-	if (index == 296) {
+	if (index == 330) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ට");
 	}
-	if (index == 297) {
+	if (index == 331) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටා");
 	}
-	if (index == 298) {
+	if (index == 332) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටැ");
 	}
-	if (index == 299) {
+	if (index == 333) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටෑ");
 	}
-	if (index == 300) {
+	if (index == 334) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටි");
 	}
-	if (index == 301) {
+	if (index == 335) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ට්");
 	}
-	if (index == 302) {
+	if (index == 336) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටී");
 	}
-	if (index == 303) {
+	if (index == 337) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටු");
 	}
-	if (index == 304) {
+	if (index == 338) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටෙ");
 	}
-	if (index == 305) {
+	if (index == 339) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටේ");
 	}
-	if (index == 306) {
+	if (index == 340) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ටෝ");
 	}
-	if (index == 307) {
+	if (index == 341) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -785,67 +829,67 @@ class KeyboardLayout extends Component {
 	}
 
 	//ඩ section
-	if (index == 308) {
+	if (index == 345) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩ");
 	}
-	if (index == 309) {
+	if (index == 346) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩා");
 	}
-	if (index == 310) {
+	if (index == 347) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩැ");
 	}
-	if (index == 311) {
+	if (index == 348) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩෑ");
 	}
-	if (index == 312) {
+	if (index == 349) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩ්");
 	}
-	if (index == 313) {
+	if (index == 350) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩි");
 	}
-	if (index == 314) {
+	if (index == 351) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩු");
 	}
-	if (index == 315) {
+	if (index == 352) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩෙ");
 	}
-	if (index == 316) {
+	if (index == 353) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩේ");
 	}
-	if (index == 317) {
+	if (index == 354) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ඩො");
 	}
-	if (index == 318) {
+	if (index == 355) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -853,67 +897,67 @@ class KeyboardLayout extends Component {
 	}
 
 	//ණ section
-	if (index == 319) {
+	if (index == 360) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණ");
 	}
-	if (index == 320) {
+	if (index == 361) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණා");
 	}
-	if (index == 321) {
+	if (index == 362) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණැ");
 	}
-	if (index == 322) {
+	if (index == 363) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණෑ");
 	}
-	if (index == 323) {
+	if (index == 364) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණ්");
 	}
-	if (index == 324) {
+	if (index == 365) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණි");
 	}
-	if (index == 325) {
+	if (index == 366) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණී");
 	}
-	if (index == 326) {
+	if (index == 367) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණු");
 	}
-	if (index == 327) {
+	if (index == 368) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණෙ");
 	}
-	if (index == 328) {
+	if (index == 369) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ණො");
 	}
-	if (index == 329) {
+	if (index == 370) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -922,73 +966,73 @@ class KeyboardLayout extends Component {
 
 
 	//ත section
-	if (index == 330) {
+	if (index == 375) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ත");
 	}
-	if (index == 331) {
+	if (index == 376) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තා");
 	}
-	if (index == 332) {
+	if (index == 377) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තැ");
 	}
-	if (index == 333) {
+	if (index == 378) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තෑ");
 	}
-	if (index == 334) {
+	if (index == 379) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ත්");
 	}
-	if (index == 335) {
+	if (index == 380) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ති");
 	}
-	if (index == 336) {
+	if (index == 381) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තී");
 	}
-	if (index == 337) {
+	if (index == 382) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තු");
 	}
-	if (index == 338) {
+	if (index == 383) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තෙ");
 	}
-	if (index == 339) {
+	if (index == 384) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තේ");
 	}
-	if (index == 340) {
+	if (index == 385) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("තො");
 	}
-	if (index == 341) {
+	if (index == 386) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -996,73 +1040,73 @@ class KeyboardLayout extends Component {
 	}
 
 	//ද section
-	if (index == 342) {
+	if (index == 390) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ද");
 	}
-	if (index == 343) {
+	if (index == 391) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දා");
 	}
-	if (index == 344) {
+	if (index == 392) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දැ");
 	}
-	if (index == 345) {
+	if (index == 393) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දෑ");
 	}
-	if (index == 346) {
+	if (index == 394) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ද්");
 	}
-	if (index == 347) {
+	if (index == 395) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දි");
 	}
-	if (index == 348) {
+	if (index == 396) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දී");
 	}
-	if (index == 349) {
+	if (index == 397) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දු");
 	}
-	if (index == 350) {
+	if (index == 398) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දෙ");
 	}
-	if (index == 351) {
+	if (index == 399) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දේ");
 	}
-	if (index == 352) {
+	if (index == 400) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("දො");
 	}
-	if (index == 353) {
+	if (index == 401) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1071,67 +1115,67 @@ class KeyboardLayout extends Component {
 
 
 	//න section
-	if (index == 354) {
+	if (index == 405) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("න");
 	}
-	if (index == 355) {
+	if (index == 406) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නා");
 	}
-	if (index == 356) {
+	if (index == 407) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නෑ");
 	}
-	if (index == 357) {
+	if (index == 408) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("න්");
 	}
-	if (index == 358) {
+	if (index == 409) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නි");
 	}
-	if (index == 359) {
+	if (index == 410) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නී");
 	}
-	if (index == 360) {
+	if (index == 411) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නු");
 	}
-	if (index == 361) {
+	if (index == 412) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නෙ");
 	}
-	if (index == 362) {
+	if (index == 413) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නේ");
 	}
-	if (index == 363) {
+	if (index == 414) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("නො");
 	}
-	if (index == 364) {
+	if (index == 415) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1140,73 +1184,73 @@ class KeyboardLayout extends Component {
 
 
 	//ප section
-	if (index == 365) {
+	if (index == 420) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ප");
 	}
-	if (index == 366) {
+	if (index == 421) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පා");
 	}
-	if (index == 367) {
+	if (index == 422) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පැ");
 	}
-	if (index == 368) {
+	if (index == 423) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පෑ");
 	}
-	if (index == 369) {
+	if (index == 424) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ප්");
 	}
-	if (index == 370) {
+	if (index == 425) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පි");
 	}
-	if (index == 371) {
+	if (index == 426) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පී");
 	}
-	if (index == 372) {
+	if (index == 427) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පු");
 	}
-	if (index == 373) {
+	if (index == 428) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පෙ");
 	}
-	if (index == 374) {
+	if (index == 429) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පේ");
 	}
-	if (index == 375) {
+	if (index == 430) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("පො");
 	}
-	if (index == 375) {
+	if (index == 431) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1214,61 +1258,61 @@ class KeyboardLayout extends Component {
 	}
 
 	//බ section
-	if (index == 376) {
+	if (index == 435) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බ");
 	}
-	if (index == 377) {
+	if (index == 436) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බා");
 	}
-	if (index == 378) {
+	if (index == 437) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බැ");
 	}
-	if (index == 379) {
+	if (index == 438) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බෑ");
 	}
-	if (index == 380) {
+	if (index == 439) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බ්");
 	}
-	if (index == 381) {
+	if (index == 440) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බි");
 	}
-	if (index == 382) {
+	if (index == 441) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බී");
 	}
-	if (index == 383) {
+	if (index == 442) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බු");
 	}
-	if (index == 384) {
+	if (index == 443) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("බෙ");
 	}
-	if (index == 385) {
+	if (index == 444) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1277,61 +1321,61 @@ class KeyboardLayout extends Component {
 
 
 	//ම section
-	if (index == 386) {
+	if (index == 450) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ම");
 	}
-	if (index == 387) {
+	if (index == 451) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මා");
 	}
-	if (index == 388) {
+	if (index == 452) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මැ");
 	}
-	if (index == 389) {
+	if (index == 453) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මෑ");
 	}
-	if (index == 390) {
+	if (index == 454) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ම්");
 	}
-	if (index == 391) {
+	if (index == 455) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මි");
 	}
-	if (index == 392) {
+	if (index == 456) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මී");
 	}
-	if (index == 393) {
+	if (index == 457) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මු");
 	}
-	if (index == 394) {
+	if (index == 458) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("මෙ");
 	}
-	if (index == 395) {
+	if (index == 459) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1340,79 +1384,79 @@ class KeyboardLayout extends Component {
 
 
 	//ය section
-	if (index == 396) {
+	if (index == 465) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ය");
 	}
-	if (index == 397) {
+	if (index == 466) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යා");
 	}
-	if (index == 398) {
+	if (index == 467) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යැ");
 	}
-	if (index == 399) {
+	if (index == 468) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යෑ");
 	}
-	if (index == 400) {
+	if (index == 469) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යි");
 	}
-	if (index == 401) {
+	if (index == 470) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යී");
 	}
-	if (index == 402) {
+	if (index == 471) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යු");
 	}
-	if (index == 403) {
+	if (index == 472) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යූ");
 	}
-	if (index == 404) {
+	if (index == 473) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යෙ");
 	}
-	if (index == 405) {
+	if (index == 474) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යේ");
 	}
-	if (index == 406) {
+	if (index == 475) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යො");
 	}
-	if (index == 407) {
+	if (index == 476) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("යෝ");
 	}
-	if (index == 408) {
+	if (index == 478) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1421,79 +1465,79 @@ class KeyboardLayout extends Component {
 
 
 	//ර section
-	if (index == 409) {
+	if (index == 480) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ර");
 	}
-	if (index == 410) {
+	if (index == 481) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රා");
 	}
-	if (index == 411) {
+	if (index == 482) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රැ");
 	}
-	if (index == 412) {
+	if (index == 483) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රෑ");
 	}
-	if (index == 413) {
+	if (index == 484) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ර්");
 	}
-	if (index == 414) {
+	if (index == 485) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රි");
 	}
-	if (index == 415) {
+	if (index == 486) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රු");
 	}
-	if (index == 416) {
+	if (index == 487) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රූ");
 	}
-	if (index == 417) {
+	if (index == 488) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රෙ");
 	}
-	if (index == 418) {
+	if (index == 489) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රේ");
 	}
-	if (index == 419) {
+	if (index == 490) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රො");
 	}
-	if (index == 420) {
+	if (index == 491) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("රෝ");
 	}
-	if (index == 421) {
+	if (index == 492) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1501,85 +1545,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//ල section
-	if (index == 422) {
+	if (index == 1495) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ල");
 	}
-	if (index == 423) {
+	if (index == 1496) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලා");
 	}
-	if (index == 424) {
+	if (index == 1497) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලැ");
 	}
-	if (index == 425) {
+	if (index == 1498) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෑ");
 	}
-	if (index == 426) {
+	if (index == 1499) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ල්");
 	}
-	if (index == 427) {
+	if (index == 1500) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලි");
 	}
-	if (index == 428) {
+	if (index == 1501) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලී");
 	}
-	if (index == 429) {
+	if (index == 1502) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලු");
 	}
-	if (index == 430) {
+	if (index == 1503) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලූ");
 	}
-	if (index == 431) {
+	if (index == 1504) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෙ");
 	}
-	if (index == 432) {
+	if (index == 1505) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලේ");
 	}
-	if (index == 433) {
+	if (index == 1506) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලො");
 	}
-	if (index == 434) {
+	if (index == 1507) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෝ");
 	}
-	if (index == 435) {
+	if (index == 1508) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1588,85 +1632,85 @@ class KeyboardLayout extends Component {
 
 
 	//ල section
-	if (index == 436) {
+	if (index == 1510) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ල");
 	}
-	if (index == 437) {
+	if (index == 1511) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලා");
 	}
-	if (index == 438) {
+	if (index == 1512) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලැ");
 	}
-	if (index == 439) {
+	if (index == 1513) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෑ");
 	}
-	if (index == 440) {
+	if (index == 1514) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ල්");
 	}
-	if (index == 441) {
+	if (index == 1515) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලි");
 	}
-	if (index == 442) {
+	if (index == 1516) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලී");
 	}
-	if (index == 443) {
+	if (index == 1517) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලු");
 	}
-	if (index == 444) {
+	if (index == 1518) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලූ");
 	}
-	if (index == 445) {
+	if (index == 1519) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෙ");
 	}
-	if (index == 446) {
+	if (index == 1520) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලේ");
 	}
-	if (index == 447) {
+	if (index == 1521) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලො");
 	}
-	if (index == 448) {
+	if (index == 1522) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ලෝ");
 	}
-	if (index == 449) {
+	if (index == 1523) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1676,79 +1720,79 @@ class KeyboardLayout extends Component {
 	
 
 	//ව section
-	if (index == 450) {
+	if (index == 1525) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ව");
 	}
-	if (index == 451) {
+	if (index == 1526) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වා");
 	}
-	if (index == 452) {
+	if (index == 1527) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වැ");
 	}
-	if (index == 453) {
+	if (index == 1528) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වෑ");
 	}
-	if (index == 454) {
+	if (index == 1529) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ව්");
 	}
-	if (index == 455) {
+	if (index == 1530) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වි");
 	}
-	if (index == 456) {
+	if (index == 1531) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වී");
 	}
-	if (index == 457) {
+	if (index == 1532) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වු");
 	}
-	if (index == 458) {
+	if (index == 1533) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වෙ");
 	}
-	if (index == 459) {
+	if (index == 1534) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වේ");
 	}
-	if (index == 460) {
+	if (index == 1535) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වො");
 	}
-	if (index == 461) {
+	if (index == 1536) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("වෝ");
 	}
-	if (index == 462) {
+	if (index == 1537) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1756,79 +1800,79 @@ class KeyboardLayout extends Component {
 	}
 
 	//ශ section
-	if (index == 463) {
+	if (index == 1540) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශ");
 	}
-	if (index == 464) {
+	if (index == 1541) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශා");
 	}
-	if (index == 465) {
+	if (index == 1542) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශැ");
 	}
-	if (index == 466) {
+	if (index == 1543) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශැ");
 	}
-	if (index == 467) {
+	if (index == 1544) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශ්");
 	}
-	if (index == 468) {
+	if (index == 1545) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශි");
 	}
-	if (index == 469) {
+	if (index == 1546) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශී");
 	}
-	if (index == 470) {
+	if (index == 1547) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශු");
 	}
-	if (index == 471) {
+	if (index == 1548) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශූ");
 	}
-	if (index == 472) {
+	if (index == 1549) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශෙ");
 	}
-	if (index == 473) {
+	if (index == 1550) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශේ");
 	}
-	if (index == 474) {
+	if (index == 1551) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ශො");
 	}
-	if (index == 475) {
+	if (index == 1552) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1836,85 +1880,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//ස section
-	if (index == 476) {
+	if (index == 1555) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ස");
 	}
-	if (index == 477) {
+	if (index == 1556) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සා");
 	}
-	if (index == 478) {
+	if (index == 1557) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සැ");
 	}
-	if (index == 479) {
+	if (index == 1558) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සෑ");
 	}
-	if (index == 480) {
+	if (index == 1559) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ස්");
 	}
-	if (index == 481) {
+	if (index == 1560) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සි");
 	}
-	if (index == 482) {
+	if (index == 1561) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සී");
 	}
-	if (index == 483) {
+	if (index == 1562) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සු");
 	}
-	if (index == 484) {
+	if (index == 1563) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සූ");
 	}
-	if (index == 485) {
+	if (index == 1564) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සෙ");
 	}
-	if (index == 486) {
+	if (index == 1565) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සේ");
 	}
-	if (index == 487) {
+	if (index == 1566) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සො");
 	}
-	if (index == 488) {
+	if (index == 1567) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("සෝ");
 	}
-	if (index == 489) {
+	if (index == 1568) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -1922,85 +1966,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//හ section
-	if (index == 490) {
+	if (index == 1570) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හ");
 	}
-	if (index == 491) {
+	if (index == 1571) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හා");
 	}
-	if (index == 492) {
+	if (index == 1572) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හැ");
 	}
-	if (index == 493) {
+	if (index == 1573) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හෑ");
 	}
-	if (index == 494) {
+	if (index == 1574) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හ්");
 	}
-	if (index == 495) {
+	if (index == 1575) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හි");
 	}
-	if (index == 496) {
+	if (index == 1576) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හී");
 	}
-	if (index == 497) {
+	if (index == 1577) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හු");
 	}
-	if (index == 498) {
+	if (index == 1578) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හූ");
 	}
-	if (index == 499) {
+	if (index == 1579) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හෙ");
 	}
-	if (index == 500) {
+	if (index == 1580) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හේ");
 	}
-	if (index == 501) {
+	if (index == 1581) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හො");
 	}
-	if (index == 502) {
+	if (index == 1582) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("හෝ");
 	}
-	if (index == 503) {
+	if (index == 1583) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -2008,85 +2052,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//ෆ section
-	if (index == 504) {
+	if (index == 1585) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆ");
 	}
-	if (index == 505) {
+	if (index == 1586) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆා");
 	}
-	if (index == 506) {
+	if (index == 1587) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆැ");
 	}
-	if (index == 507) {
+	if (index == 1588) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆෑ");
 	}
-	if (index == 508) {
+	if (index == 1589) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆ්");
 	}
-	if (index == 509) {
+	if (index == 1590) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆි");
 	}
-	if (index == 510) {
+	if (index == 1591) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆී");
 	}
-	if (index == 511) {
+	if (index == 1592) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆු");
 	}
-	if (index == 512) {
+	if (index == 1593) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆූ");
 	}
-	if (index == 513) {
+	if (index == 1594) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆෙ");
 	}
-	if (index == 514) {
+	if (index == 1595) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆේ");
 	}
-	if (index == 515) {
+	if (index == 1596) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆො");
 	}
-	if (index == 516) {
+	if (index == 1597) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෆෝ");
 	}
-	if (index == 517) {
+	if (index == 1598) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -2094,85 +2138,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//ථ section
-	if (index == 518) {
+	if (index == 1600) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථ");
 	}
-	if (index == 519) {
+	if (index == 1601) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථා");
 	}
-	if (index == 520) {
+	if (index == 1602) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථැ");
 	}
-	if (index == 521) {
+	if (index == 1603) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථෑ");
 	}
-	if (index == 522) {
+	if (index == 1604) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථ්");
 	}
-	if (index == 523) {
+	if (index == 1605) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථි");
 	}
-	if (index == 524) {
+	if (index == 1606) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථී");
 	}
-	if (index == 525) {
+	if (index == 1607) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථු");
 	}
-	if (index == 526) {
+	if (index == 1608) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථූ");
 	}
-	if (index == 527) {
+	if (index == 1609) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථෙ");
 	}
-	if (index == 528) {
+	if (index == 1610) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථේ");
 	}
-	if (index == 529) {
+	if (index == 1611) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථො");
 	}
-	if (index == 530) {
+	if (index == 1612) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ථෝ");
 	}
-	if (index == 531) {
+	if (index == 1613) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -2180,85 +2224,85 @@ class KeyboardLayout extends Component {
 	}
 
 	//භ section
-	if (index == 532) {
+	if (index == 1615) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භ");
 	}
-	if (index == 533) {
+	if (index == 1616) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භා");
 	}
-	if (index == 534) {
+	if (index == 1617) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භැ");
 	}
-	if (index == 535) {
+	if (index == 1618) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භෑ");
 	}
-	if (index == 536) {
+	if (index == 1619) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භ්");
 	}
-	if (index == 537) {
+	if (index == 1620) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භි");
 	}
-	if (index == 538) {
+	if (index == 1621) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භී");
 	}
-	if (index == 539) {
+	if (index == 1622) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භු");
 	}
-	if (index == 540) {
+	if (index == 1623) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භූ");
 	}
-	if (index == 541) {
+	if (index == 1624) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භෙ");
 	}
-	if (index == 542) {
+	if (index == 1625) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භේ");
 	}
-	if (index == 543) {
+	if (index == 1626) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භො");
 	}
-	if (index == 544) {
+	if (index == 1627) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("භෝ");
 	}
-	if (index == 545) {
+	if (index == 1628) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
@@ -2266,94 +2310,90 @@ class KeyboardLayout extends Component {
 	}
 
 	//භ section
-	if (index == 546) {
+	if (index == 1630) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂ");
 	}
-	if (index == 547) {
+	if (index == 1631) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂා");
 	}
-	if (index == 548) {
+	if (index == 1632) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂැ");
 	}
-	if (index == 549) {
+	if (index == 1633) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂෑ");
 	}
-	if (index == 550) {
+	if (index == 1634) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂ්");
 	}
-	if (index == 551) {
+	if (index == 1635) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂි");
 	}
-	if (index == 552) {
+	if (index == 1636) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂී");
 	}
-	if (index == 553) {
+	if (index == 1637) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂු");
 	}
-	if (index == 554) {
+	if (index == 1638) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂූ");
 	}
-	if (index == 555) {
+	if (index == 1639) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂෙ");
 	}
-	if (index == 556) {
+	if (index == 1640) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂේ");
 	}
-	if (index == 557) {
+	if (index == 1641) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂො");
 	}
-	if (index == 558) {
+	if (index == 1642) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂෝ");
 	}
-	if (index == 559) {
+	if (index == 1643) {
 		this.setState({ count:  0 });
 		this.setState({ count3: 1 });
 		//this.setState({drpEn : false})
 		this.handleKbutton("ෂෞ");
 	}
-
-
-
-
 }
 
 
@@ -2404,11 +2444,11 @@ class KeyboardLayout extends Component {
 	}
 
 	render(){
-
+		
 		const index = this.props.navList.index;
 		const counter = this.props.counter.value;
 
-		let select1,select2, select3, select4, select5, select6, select7, select8, select9 ,select10 ,select11 ,select12 ,select13 ,select14 ,select15 ,select16 ,select17 ,select18 ,select19 ,select20 ,select21 ,select22 ,select23 ,select24 ,select25 ,select26 ,select27 ,select28 ,select29 ,select30 ,select31 ,select32 ,select33 ,select34  ,select35 ,select36 ,select37 ,select38 ,select39 ,select40    = ""
+		let select1,select2, select3, select4, select5, select6, select7, select8, select9 ,select10 ,select11 ,select12 ,select13 ,select14 ,select15 ,select16 ,select17 ,select18 ,select19 ,select20 ,select21 ,select22 ,select23 ,select24 ,select25 ,select26 ,select27 ,select28 ,select29 ,select30 ,select31 ,select32 ,select33 ,select34  ,select35 ,select36 ,select37 ,select38 ,select39 ,select40, select41, select42, select43 = ""
 		
 		let subSelect1, subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12, subSelect13, subSelect14, subSelect15, subSelect16, subSelect17= ""
 		
@@ -2504,6 +2544,47 @@ class KeyboardLayout extends Component {
 			if (counter == 29) {
 				select30 = "selected"
 			}
+			if (counter == 30) {
+				select31 = "selected"
+			}
+			if (counter == 31) {
+				select32 = "selected"
+			}
+			if (counter == 32) {
+				select33 = "selected"
+			}
+			if (counter == 33) {
+				select34 = "selected"
+			}
+			if (counter == 34) {
+				select35 = "selected"
+			}
+			if (counter == 35) {
+				select36 = "selected"
+			}
+			if (counter == 36) {
+				select37 = "selected"
+			}
+			if (counter == 37) {
+				select38 = "selected"
+			}
+			if (counter == 38) {
+				select39 = "selected"
+			}
+			if (counter == 39) {
+				select40 = "selected"
+			}
+			if (counter == 40) {
+				select41 = "selected"
+			}
+			if (counter == 41){
+				select42 = "selected"
+			}
+			if (counter == 42) {
+				select43 = "selected"
+			}
+			
+
 
 		}
 
@@ -3747,7 +3828,7 @@ class KeyboardLayout extends Component {
 
 											<a href="#">
 										{" "}
-										<button id="Kbutton" class={`Kbutton ${subSelect1}`} value="ඖ" onClick={() => this.handleKbutton("ඕ")} >
+										<button id="Kbutton" class={`Kbutton ${subSelect3}`} value="ඖ" onClick={() => this.handleKbutton("ඕ")} >
 											{" "}
 											ඖ{" "} </button> </a>		
 	
@@ -5915,22 +5996,22 @@ class KeyboardLayout extends Component {
 								<button id="Kbutton" class={`Kbutton ${select37}`} value="4" onClick = {() => this.handleKbutton("4")} >
 								4
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select34}`} value="5" onClick = {() => this.handleKbutton("5")} >
+								<button id="Kbutton" class={`Kbutton ${select38}`} value="5" onClick = {() => this.handleKbutton("5")} >
 								5
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select35}`} value="6" onClick = {() => this.handleKbutton("6")} >
+								<button id="Kbutton" class={`Kbutton ${select39}`} value="6" onClick = {() => this.handleKbutton("6")} >
 								6
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select36}`} value="7" onClick = {() => this.handleKbutton("7")} >
+								<button id="Kbutton" class={`Kbutton ${select40}`} value="7" onClick = {() => this.handleKbutton("7")} >
 								7
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select37}`} value="8" onClick = {() => this.handleKbutton("8")} >
+								<button id="Kbutton" class={`Kbutton ${select41}`} value="8" onClick = {() => this.handleKbutton("8")} >
 								8
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select38}`} value="9" onClick = {() => this.handleKbutton("9")} >
+								<button id="Kbutton" class={`Kbutton ${select42}`} value="9" onClick = {() => this.handleKbutton("9")} >
 								9
 								</button>
-								<button id="Kbutton" class={`Kbutton ${select39}`} value="0" onClick = {() => this.handleKbutton("0")} >
+								<button id="Kbutton" class={`Kbutton ${select43}`} value="0" onClick = {() => this.handleKbutton("0")} >
 								0
 								</button>
 								
