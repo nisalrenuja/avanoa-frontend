@@ -70,8 +70,12 @@ const ReminderLayout = () => {
 						{...input}
 						value={values[input.name]}
 						onChange={onChange}
+
+						
 					/>
 				))}
+				 
+				 <button onClick={updateuser} class="btnbtn-primary">Title</button>
 				<subbutton>Submit</subbutton>
 			</form>
 		</div>

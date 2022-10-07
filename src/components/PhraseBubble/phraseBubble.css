@@ -6,12 +6,12 @@
   }
   
   .flex-container > div {
-    background-color: rgb(179, 179, 253);
+    background-color: rgb(255, 255, 255);
     width: 300px;
     margin: 10px;
     text-align: center;
     line-height: 200px;
-    font-size: 30px;
+    font-size: 80px;
     border-radius: 30px;
     padding-left: auto;
   }
@@ -31,11 +31,11 @@
       display: inline-block;
       padding: .5rem 1rem;
       margin: .3rem;
-      font-size: 10px;
-      color: #fff;
-      width: 100px;
-      height: 40px;
+      font-size: 30px;
+      width: 300px;
+      height: 60px;
       border-radius: .5rem;
+      color: white;
 
   }
   #headerbutton2{
@@ -44,12 +44,12 @@
     display: inline-block;
     padding: .5rem 1rem;
     margin: .3rem;
-    font-size: 10px;
-    color: #fff;
-    width: 50px;
-    height: 40px;
+    font-size: 30px;
+    width: 300px;
+    height: 60px;
     border-radius: .5rem;
     text-align: center;
+    color: white;
 }
 #headerbutton3{
   background-color: rgb(104, 104, 255);
@@ -57,11 +57,11 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 80px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  color: white;
 }
 #headerbutton4{
   background-color: rgb(104, 104, 255);
@@ -69,11 +69,11 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 110px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  color: white;
 }
 #headerbutton5{
   background-color: rgb(104, 104, 255);
@@ -81,11 +81,11 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 110px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  color: white;
 }
 #headerbutton6{
   background-color: rgb(104, 104, 255);
@@ -93,11 +93,11 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 70px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  color: white;
 }
 #headerbutton7{
   background-color: rgb(104, 104, 255);
@@ -105,11 +105,12 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 60px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  
+  color: white;
 }
 
 #headerbutton8{
@@ -118,9 +119,10 @@
   display: inline-block;
   padding: .5rem 1rem;
   margin: .3rem;
-  font-size: 10px;
-  color: #fff;
-  width: 120px;
-  height: 40px;
+  font-size: 30px;
+  width: 300px;
+  height: 60px;
   border-radius: .5rem;
+  color: white;
 }
+

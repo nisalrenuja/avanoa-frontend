@@ -15,6 +15,9 @@ const Appbar = () => {
 
   let navigate = useNavigate();
 
+	const [cn1, setCn1] = useState(0);
+  const [cn2, setCn2] = useState(0);
+
   const { dispatch } = useContext(AuthContext);
 
   const handleClick = async (e) => {
@@ -89,15 +92,19 @@ const Appbar = () => {
   }
 
   useEffect(() => {
-    if (index == 11) {
+    if (index == 11 && cn1 == 0) {
       sec4 = "selectd";
       navigate("/profile");
+      setCn1(1);
+      setCn2(0);
     }
-    if (index == 10) {
+    if (index == 10 && cn2 == 0) {
       sec3 = "selectd";
       playAudio();
       //updateIndex(2)
       //setCount(2)
+      setCn1(0);
+      setCn2(1);
     }
   });
 

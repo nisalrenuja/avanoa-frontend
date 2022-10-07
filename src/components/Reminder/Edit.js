@@ -1,173 +1,151 @@
-import React, { useContext, useEffect, useState } from "react";
-import { NavLink, useParams, useNavigate } from "react-router-dom";
-import { updatedata } from "./context/ContextProvider";
+import React, { useContext, useEffect, useState } from 'react'
+
 import "./Edit.css";
-import Appbar from "../Appbar/Appbar";
-import Sidebar from "../Sidebar/Sidebar";
+import axios from "../../libs/axios";
 
-const Edit = () => {
-  // const [getuserdata, setUserdata] = useState([]);
-  // console.log(getuserdata);
+class Edit extends React.Component {
+    constructor(props) {
+        super(props);
 
-  const { updata, setUPdata } = useContext(updatedata);
 
-  const navigate = useNavigate();
+        this.state = {
+            Title: "",
+            Description: "",
+            Time: "",         
+        }
 
-  const [inpval, setINP] = useState({
-    title: "",
-    description: "",
-    age: "",
-    date: "",
-    time: "",
-  });
-
-  const setdata = (e) => {
-    console.log(e.target.value);
-    const { name, value } = e.target;
-    setINP((preval) => {
-      return {
-        ...preval,
-        [name]: value,
-      };
-    });
-  };
-
-  const { id } = useParams("");
-  console.log(id);
-
-  const getdata = async () => {
-    const res = await fetch(
-      `https://crudappreactjs.herokuapp.com/getuser/${id}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
-
-    const data = await res.json();
-    console.log(data);
-
-    if (res.status === 422 || !data) {
-      console.log("error ");
-    } else {
-      setINP(data);
-      console.log("get data");
     }
-  };
+    handleInputChange = (e) =>{
+        const {name,value} =e.target;
 
-  useEffect(() => {
-    getdata();
-  }, []);
-
-  const updateuser = async (e) => {
-    e.preventDefault();
-
-    const { name, email, work, add, mobile, desc, age } = inpval;
-
-    const res2 = await fetch(
-      `https://crudappreactjs.herokuapp.com/updateuser/${id}`,
-      {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          work,
-          add,
-          mobile,
-          desc,
-          age,
-        }),
-      }
-    );
-
-    const data2 = await res2.json();
-    console.log(data2);
-
-    if (res2.status === 422 || !data2) {
-      alert("fill the data");
-    } else {
-      navigate("/Reminder");
-      setUPdata(data2);
+        this.setState({
+            ...this.state,
+            [name]:value
+        })
     }
-  };
 
-  return (
-    <div>
-      <Appbar />
-      <Sidebar />
+    onsubmit =(e)=>{
+        const id = this.props.match.params.id;
+        e.preventDefault();
+        const{
+            Title,
+            Description,
+            Time
+        } = this.state;
 
-      <div className="container">
-        <h2>Edit</h2>
+        const reminderss={
+            Title:Title,
+            Description:Description,
+            Time:Time
+        };
+        console.log("reminderss");
+        console.log(reminderss);
 
-        <NavLink to="/">home2</NavLink>
-        <form className="mt-4">
-          <div className="row">
-            <div class="mb-3col-lg-6col-md-6col-12">
-              <label for="exampleInputEmail1" class="form-label">
-                Title{" "}
-              </label>
-              <input
-                type="text"
-                value={inpval.title}
-                onChange={setdata}
-                name="title"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3col-lg-12col-md-12col-12">
-              <label for="exampleInputPassword1" class="form-label">
-                Description
-              </label>
-              <input
-                type="text"
-                value={inpval.description}
-                onChange={setdata}
-                name="description"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3col-lg-6col-md-6col-12">
-              <label for="exampleInputPassword1" class="form-label">
-                Date
-              </label>
-              <input
-                type="Date"
-                value={inpval.date}
-                onChange={setdata}
-                name="date"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3col-lg-6col-md-6col-12">
-              <label for="exampleInputPassword1" class="form-label">
-                Time
-              </label>
-              <input
-                type="Time"
-                value={inpval.time}
-                onChange={setdata}
-                name="time"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
+        axios.put(`/reminder/update/${id}`,reminderss).then((res)=>{
+            if(res.reminderss.success){
+                    alert("Reminder updated successfully")
+                this.setState(
+                {
+                    Title:Title,
+            Description:Description,
+            Time:Time
 
-            <button type="submit" onClick={updateuser} class="btnbtn-primary">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+                });
+            }
+        });
+    }
+    
+    componentDidMount(){
+        console.log("hellowwwwww");
+        // const id = this.props.match.params.id;
+        
 
-export default Edit;
+        // axios.get(`/reminder/${id}`).then((res)=>{
+        //     console.log("hellow");
+        //     console.log(res.data.reminder);     
+        // if(res.data.success){
+        //     console.log("helloww");
+        //         console.log(res.data);
+        //         this.setState({
+        //             Title:res.reminderss.Title,
+        //             Description:res.reminderss.Description,
+        //             Time:res.reminderss.Time
+
+
+        //         });
+
+        //         // console.log(this.state.booking);
+        //     }
+           
+        // });
+     
+                
+    }
+
+    render() {
+        return (
+            <div className="col-md-8 mt-4 mx-auto" id="edit-booking-body">
+
+            <h1 id="edit-header">   Edit Reminder Details  </h1>
+            <br/>
+                   <br/>
+                <div className="edit-form">
+                   <form className="needs-validation" noValidate>
+                   <div className="form-group" style={{marginBottom:'15px'}}>
+                       <label for="Title" style={{marginBottom:'5px'}} id="label-form">Title</label>
+                       <input type="text" 
+                       className="form-control" 
+                        name="CustomerEmail" 
+                     placeholder="Enter your Title " 
+                     defaultValue={this.state.Title}
+                    onChange={this.handleInputChange} />
+                   </div>
+
+                   <br/>
+                   <div className="form-group">
+                   <label for="cName" style={{marginBottom:'5px'}} id="label-form">Description</label>
+                       <input type="text" 
+                       className="form-control" 
+                       id="Description" name="Description" 
+                       placeholder="Enter your Description" 
+                       defaultValue= {this.state.Description}  
+                       onChange={this.handleInputChange}/>
+                       
+                   </div>
+                   <br/>
+                   <div className="form-group">
+                   <label for="Time" style={{marginBottom:'5px'}} id="label-form">Time</label>
+                       <input type="time" 
+                       className="form-control" 
+                       id="Time"name="Time" 
+                       placeholder="Enter your Time"
+                       defaultValue={this.state.Time}  
+                       onChange={this.handleInputChange} />
+                       
+                   </div>
+                   <br/>
+                   
+                   <button className="btn btn-success" type="submit" style={{marginBottom:'15px'}} onClick={this.onsubmit}>
+                       <i className="far fa-check-square"></i>
+                       &nbsp; Update Reminder
+                   </button> <br/>
+                   <button className ="btn btn-success"><a href="/TourGuideDashboard" style={{textDecoration:'none' ,color:'white' }}> Dashboard </a></button>
+                  
+                   </form>
+                   </div>
+                   <br/>
+                   &nbsp;
+                
+                  
+                    
+                                                
+
+
+
+           </div>
+           
+        )
+    }
+}
+
+export default Edit

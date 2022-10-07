@@ -6,7 +6,8 @@ import { connect } from "react-redux";
 import { updateIndex } from "../../reducers/navList/navListSlice";
 import { setCount } from "../../reducers/counter/counterSlice";
 import Appbar from "../../components/Appbar/Appbar";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 class EmergencyLayout extends React.Component {
   constructor(props) {
     super(props);
@@ -47,15 +48,64 @@ class EmergencyLayout extends React.Component {
       this.RhandleClick("රැකවරණ භාරකරු");
       this.setState({ count: 0 });
     }
+    if (index == 151 && this.state.count == 1) {
+      this.RhandleClick("භාරකරු");
+      this.setState({ count: 0 });
+    }
+    if (index == 152 && this.state.count == 1) {
+      this.RhandleClick("ඩොක්ටර්");
+      this.setState({ count: 0 });
+    }
+
     if (index == 153 && this.state.count == 0) {
       this.MhandleClick("මට බෙහෙත් අවශ්‍යයි");
       this.setState({ count: this.state.count + 1 });
     }
-    if (index == 163) {
-      //back button
-      this.props.updateIndex(150);
+    if (index == 154 && this.state.count == 0) {
+      this.MhandleClick("මට කන්න ඕන");
+      this.setState({ count: this.state.count + 1 });
     }
-    if (index == 164 && this.state.count == 1) {
+    if (index == 155 && this.state.count == 0) {
+      this.MhandleClick("මට තිබහයි");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 156) {
+      //back button
+      this.props.updateIndex(5);
+    }
+
+    if (index == 157 && this.state.count == 0) {
+      this.MhandleClick("මට ඔයාව හමුවෙන්න අවශ්යයි");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 158 && this.state.count == 0) {
+      this.MhandleClick("රැකවරණ නිලධාරියා මෙහි නොමැත");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 159) {
+      //back button
+      this.props.updateIndex(5);
+    }
+    if (index == 160 && this.state.count == 0) {
+      this.MhandleClick("මට සනීප නෑ");
+      this.setState({ count: this.state.count + 1 });
+    }
+    if (index == 161 && this.state.count == 0) {
+      this.MhandleClick("මගේ පත්වීම ළඟයි");
+      this.setState({ count: this.state.count + 1 });
+    }    
+
+    if (index == 162) {
+      //back button
+      this.props.updateIndex(5);
+    }
+
+    if (index == 163 || index == 165 || index == 167 || index == 169 || index == 171 || index == 173 || index == 175) {
+      //back button
+      this.setState({ count: 0 });
+      this.props.updateIndex(5);
+    }
+    if ((index == 164 && this.state.count == 1) || (index == 166 && this.state.count == 1) || (index == 168 && this.state.count == 1) || (index == 170 && this.state.count == 1) || (index == 172 && this.state.count == 1) || (index == 174 && this.state.count == 1) || (index == 176 && this.state.count == 1)) {
       this.sendEmail();
       this.setState({ count: 0 });
       this.props.updateIndex(5);
@@ -91,7 +141,7 @@ class EmergencyLayout extends React.Component {
       if (event.target.value == "Care Taker") {
         this.setState({ email: "nipunchamodya@gmail.com" });
       } else if (event.target.value == "Gurdian") {
-        this.setState({ email: "pokirisa@gmail.com" });
+        this.setState({ email: "nrenuja@gmail.com" });
       } else if (event.target.value == "Doctor") {
         this.setState({ email: "pokirisa@gmail.com" });
       }
@@ -121,7 +171,7 @@ class EmergencyLayout extends React.Component {
     if (Tvar == "රැකවරණ භාරකරු") {
       this.setState({ email: "nipunchamodya@gmail.com" });
     } else if (Tvar == "භාරකරු") {
-      this.setState({ email: "pokirisa@gmail.com" });
+      this.setState({ email: "nrenuja@gmail.com" });
     } else if (Tvar == "රැකවරණ භාරකරු") {
       this.setState({ email: "pokirisa@gmail.com" });
     }
@@ -151,9 +201,17 @@ class EmergencyLayout extends React.Component {
       .then(
         (result) => {
           console.log(result.text);
+          return toast("Email Sent Successfully 🤗", {
+            className: "toast-success",
+            bodyClassName: "toast-success",
+          });
         },
         (error) => {
           console.log(error.text);
+          return toast("Please check network connectivity", {
+            className: "toast-success",
+            bodyClassName: "toast-success",
+          });
         }
       );
   };
@@ -168,19 +226,7 @@ class EmergencyLayout extends React.Component {
     let select4 = "";
     let select5 = "";
 
-    if (index == 5) {
-      if (counter == 0) {
-        select1 = "selected";
-      }
-      if (counter == 1) {
-        select2 = "selected";
-      }
-      if (counter == 2) {
-        select3 = "selected";
-      }
-    }
-
-    if (index == 150) {
+    if ((index == 5) || (index == 150) || (index == 151) || (index == 152) || (index == 153) || (index == 154) || (index == 155) || (index == 156) || (index == 157) || (index == 158) || (index == 159) || (index == 160) || (index == 161) || (index == 162)) {
       if (counter == 0) {
         select1 = "selected";
       }
@@ -194,32 +240,8 @@ class EmergencyLayout extends React.Component {
         select4 = "selected";
       }
     }
-    if (index == 151 || index == 152) {
-      if (counter == 0) {
-        select1 = "selected";
-      }
-      if (counter == 1) {
-        select2 = "selected";
-      }
-      if (counter == 2) {
-        select4 = "selected";
-      }
-    }
 
-    if (
-      index == 153 ||
-      index == 154 ||
-      index == 155 ||
-      index == 156 ||
-      index == 157
-    ) {
-      if (counter == 0) {
-        select4 = "selected";
-      }
-      if (counter == 1) {
-        select5 = "selected";
-      }
-    }
+  
 
     let comp;
 
@@ -251,6 +273,7 @@ class EmergencyLayout extends React.Component {
     function Recepient(props) {
       return (
         <div>
+          <ToastContainer />
           <div className="app">
             <div className="box">
               <h1 classname="h1tag">පණිවිඩය තෝරන්න</h1>
@@ -273,7 +296,7 @@ class EmergencyLayout extends React.Component {
               </button>
               <button
                 className={`emergencybuttons ${select3}`}
-                onClick={() => props.RhandleClick("රැකවරණ භාරකරු")}
+                onClick={() => props.RhandleClick("ඩොක්ටර්")}
                 name="recepient"
                 value="ඩොක්ටර්"
               >
@@ -356,7 +379,7 @@ class EmergencyLayout extends React.Component {
                 </button>
 
                 <button
-                  className={`emergencybuttons ${select4}`}
+                  className={`emergencybuttons ${select3}`}
                   onClick={props.MhandleBack}
                   name="messageBack"
                 >
@@ -366,7 +389,7 @@ class EmergencyLayout extends React.Component {
             </div>
           </div>
         );
-      } else if (props.recepient == "Doctor") {
+      } else if (props.recepient == "ඩොක්ටර්") {
         return (
           <div>
             <div className="app">
@@ -391,7 +414,7 @@ class EmergencyLayout extends React.Component {
                 </button>
 
                 <button
-                  className={`emergencybuttons ${select4}`}
+                  className={`emergencybuttons ${select3}`}
                   onClick={props.MhandleBack}
                   name="messageBack"
                 >
@@ -419,14 +442,14 @@ class EmergencyLayout extends React.Component {
               </h2>
 
               <button
-                className={`emergencybuttons ${select4}`}
+                className={`emergencybuttons ${select1}`}
                 onClick={props.FhandleBack}
                 name="finalMessageBack"
               >
                 පෙර පිටුව
               </button>
               <button
-                className={`emergencybuttons ${select5}`}
+                className={`emergencybuttons ${select2}`}
                 name="finalMessageSend"
                 onClick={props.sendEmail}
               >
