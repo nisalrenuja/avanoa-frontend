@@ -38,10 +38,10 @@ function Home() {
 	let select7 = "notSelected";
 	let select8 = "notSelected";
 	let select9 = "notSelected";
-	let select10 = "notSelected";
-	let subSelect1,subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9 = "notSelected";
+	let select10, select11, select12, select13, select14, select15, select16, select17, select18, select19, select20 = "notSelected";
+	let subSelect1,subSelect2, subSelect3, subSelect4, subSelect5, subSelect6, subSelect7, subSelect8, subSelect9, subSelect10, subSelect11, subSelect12, subSelect13, subSelect14, subSelect15, subSelect16, subSelect17,subSelect18, subSelect19, subSelect20 = "notSelected";
 
-	let id1, id2, id3, id4, id5, id6, id7, id8, id9, id10 = 0;
+	let id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20 = 0;
 	useEffect(() => {
 		retrieveReminders();
 		setInterval(() => {
