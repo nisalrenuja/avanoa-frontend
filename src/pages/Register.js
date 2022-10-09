@@ -13,7 +13,7 @@ function App() {
     event.preventDefault();
 
     const response = await fetch(
-      "https://avanoa--backend.herokuapp.com/api/register",
+      "https://cute-tan-stingray-cuff.cyclic.app/api/register",
       {
         method: "POST",
         headers: {
