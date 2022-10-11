@@ -18,6 +18,18 @@
     align-content: center;
     margin-left: 500px;
   }
+
+  .box1 {
+    background-color:rgb(104, 104, 255);
+    padding-left: 700px;
+    padding: 0px 60px;
+    border-radius: 10px;
+    height: 420px;
+    align-content: center;
+    width: 400px;
+    margin-left: 800px;
+    margin-top:250px;
+  }
   
   .slider:hover {
     opacity: 1;
@@ -37,4 +49,20 @@
     height: 25px;
     background: #04AA6D;
     cursor: pointer;
+  }
+
+  .plus{
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  width: 300px;
+  height: 80px;
+  border-radius: 0.5rem;
+  }
+  
+  .h1tag {
+    color: rgb(0, 0, 0);
   }
