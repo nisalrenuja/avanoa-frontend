@@ -74,12 +74,12 @@ const audioClips = [
   {
     sound:
       "https://res.cloudinary.com/avanoa/video/upload/v1651481915/2022-05-02_14-27-37_bugyqg.mp3",
-    label: "රොටී",
+    label: "රොටි",
   },
   {
     sound:
       "https://res.cloudinary.com/avanoa/video/upload/v1664985809/elawalu_mzfant.3gp",
-    label: "එලවලු",
+    label: "එළවළු",
   },
   {
     sound:
@@ -258,7 +258,7 @@ const audioClips = [
   {
     sound:
       "https://res.cloudinary.com/avanoa/video/upload/v1651477331/2022-05-02_13-11-14_wqvdvs.mp3",
-    label: "මම රුපවාහිනිය නරබමින්",
+    label: "මම රූපවාහිනිය නරඹමින්",
   },
   {
     sound:
@@ -288,7 +288,7 @@ const audioClips = [
   {
     sound:
       "https://res.cloudinary.com/avanoa/video/upload/v1651482528/2022-05-02_14-38-12_o4oslm.mp3",
-    label: "මම ඇවිදින්න යන්න",
+    label: "මම ඇවිදින්න යනවා",
   },
   {
     sound:
@@ -769,9 +769,9 @@ class phraseBubble extends Component {
 
       ph1 = "බත්";
       ph2 = "පාන් ";
-      ph3 = "රොටී";
+      ph3 = "රොටි";
       ph4 = "ආප්ප";
-      ph5 = "එලවලු";
+      ph5 = "එළවළු";
       ph6 = "පලතුරු";
       ph7 = "තේ";
       ph8 = "බිස්කට්";
@@ -832,7 +832,7 @@ class phraseBubble extends Component {
       slide5 = "notSelected";
 
       ph1 = "මම පුවත්පත් කියවනවා";
-      ph2 = "මම රුපවාහිනිය නරබමින් ";
+      ph2 = "මම රූපවාහිනිය නරඹමින්";
       ph3 = "මම සංගීතයට සවන් දීම";
       ph4 = "මම නානවා";
       ph5 = "මම නිදාගන්නවා";
@@ -918,9 +918,9 @@ class phraseBubble extends Component {
       slide2 = "selection";
       ph1 = "බත්";
       ph2 = "පාන් ";
-      ph3 = "රොටී";
+      ph3 = "රොටි";
       ph4 = "ආප්ප";
-      ph5 = "එලවලු";
+      ph5 = "එළවළු";
       ph6 = "පලතුරු";
       ph7 = "තේ";
       ph8 = "බිස්කට්";
@@ -1117,13 +1117,13 @@ class phraseBubble extends Component {
       slide6 = "selection";
 
       ph1 = "මම පුවත්පත් කියවනවා";
-      ph2 = "මම රුපවාහිනිය නරබමින් ";
+      ph2 = "මම රූපවාහිනිය නරඹමින්";
       ph3 = "මම සංගීතයට සවන් දීම";
       ph4 = "මම නානවා";
       ph5 = "මම නිදාගන්නවා";
       ph6 = "මම ව්‍යායාම කරනවා";
       ph7 = "මම සමාජ මාධ්‍ය භාවිතා කරනවා";
-      ph8 = "මම ඇවිදින්න යන්න ";
+      ph8 = "මම ඇවිදින්න යනවා";
       ph9 = "මම කෙනෙකුට කතා කරන්න";
 
       if (counter == 0) {
