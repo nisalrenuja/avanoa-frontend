@@ -1,9 +1,13 @@
 import React from 'react'
 
-const emailSetting = () => {
+const EmailSetting = () => {
   return (
-    <div>emailSetting</div>
+    <div>
+      <h1>Email Settings</h1>
+      <h1>Enter User Email</h1>
+      <input type="text" placeholder="Enter Email"></input>
+    </div>
   )
 }
 
-export default emailSetting
+export default EmailSetting
