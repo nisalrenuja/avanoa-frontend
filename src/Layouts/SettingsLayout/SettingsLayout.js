@@ -45,6 +45,8 @@ const ProfileLayout = () => {
           <br></br>
           <button class id="settingsbtn"> <Link to="/profile" > Keyboard</Link> </button>
           <br></br>
+          <button class id="settingsbtn"> <Link to="/emailSetting" > Email</Link> </button>
+          <br></br>
           </center>
         </div>
       </div>
