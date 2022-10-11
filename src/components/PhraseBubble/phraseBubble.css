@@ -35,7 +35,6 @@
       width: 300px;
       height: 60px;
       border-radius: .5rem;
-      color: white;
 
   }
   #headerbutton2{
@@ -49,7 +48,6 @@
     height: 60px;
     border-radius: .5rem;
     text-align: center;
-    color: white;
 }
 #headerbutton3{
   background-color: rgb(104, 104, 255);
@@ -61,7 +59,6 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  color: white;
 }
 #headerbutton4{
   background-color: rgb(104, 104, 255);
@@ -73,7 +70,6 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  color: white;
 }
 #headerbutton5{
   background-color: rgb(104, 104, 255);
@@ -85,7 +81,6 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  color: white;
 }
 #headerbutton6{
   background-color: rgb(104, 104, 255);
@@ -97,7 +92,6 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  color: white;
 }
 #headerbutton7{
   background-color: rgb(104, 104, 255);
@@ -109,8 +103,6 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  
-  color: white;
 }
 
 #headerbutton8{
@@ -123,6 +115,5 @@
   width: 300px;
   height: 60px;
   border-radius: .5rem;
-  color: white;
 }
 
