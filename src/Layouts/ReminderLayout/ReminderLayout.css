@@ -16,7 +16,7 @@ body {
 
 .title {
     height: 200px;
-    background-color: rgb(55, 102, 255);
+    background-color: rgb(104, 104, 255);
     color: #fff;
     padding: 0 20px;
     border-bottom-left-radius: 20px;
@@ -33,7 +33,7 @@ body {
     position: relative;
     top: 70px;
     left: 400px;
-    color:rgb(55, 102, 255);
+    color:rgb(104, 104, 255);
     background-color: #fff;
     font-size: 20pt;
     border: none;
@@ -73,7 +73,7 @@ body {
 
 .btn-check {
     color: #fff;
-    background-color: rgb(55, 102, 255);
+    background-color: rgb(104, 104, 255);
     border: none;
     width: 70px;
     height: 35px;
