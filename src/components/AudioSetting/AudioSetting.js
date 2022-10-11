@@ -1,6 +1,8 @@
 import React from "react";
 import "./AudioSetting.css";
 import { useState } from "react";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Appbar from "../../components/Appbar/Appbar";
 
 const AudioSetting = () => {
   const [time, setTime] = useState(0);
@@ -21,22 +23,35 @@ const AudioSetting = () => {
       console.log(localStorage.getItem("vgender"));
     }
 
+    
+
 
   }
 
   
+
+  
   return (
-    <div>
+    <div classname ="profilelayout">
+{/* 
+<Appbar/>
+
+        <Sidebar />
+         */}
+     
+
+
       <br></br>
-      <h1 style={{ color: "white" }}>Audio Settings</h1>
-      <h2 style={{ color: "white" }}>Gender Select</h2>
+      <div classname="body">
+      <h1 style={{ color: "black" }}>Audio Settings</h1>
+      <h2 style={{ color: "black" }}>Gender Select</h2>
       
-      <div style={{ color: "white" }} onChange={handleChange}>
+      <div style={{ color: "black" }} onChange={handleChange}>
         <input
           type="radio"
           value="Male"
           name="gender"
-          style={{ color: "white" }}
+          style={{ color: "black" }}
           checked="checked"
         />{" "}
         Male<br></br>
@@ -44,14 +59,14 @@ const AudioSetting = () => {
           type="radio"
           value="Female"
           name="gender"
-          style={{ color: "white" }}
+          style={{ color: "black" }}
         />{" "}
         Female<br></br>
       </div>
       <br></br>
       <br></br>
-      <h2 style={{ color: "white" }}>Azure Volume</h2>
-      <div className="count" style={{ color: "white" }}>
+      <h2 style={{ color: "black" }}>Azure Volume</h2>
+      <div className="count" style={{ color: "black" }}>
         {time}
       </div>
       <button
@@ -71,10 +86,11 @@ const AudioSetting = () => {
       </button>
       <br></br>
       <br></br>
-      <h2 style={{ color: "white" }}>Reset</h2>
+      <h2 style={{ color: "black" }}>Reset</h2>
       <div className="buttons">
         <button onClick={reset}>Reset </button>
       </div>
+    </div>
     </div>
   );
 };
