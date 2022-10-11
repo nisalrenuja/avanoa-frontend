@@ -8,6 +8,22 @@ const AudioSetting = () => {
     setTime(0);
   };
 
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    if (e.target.value === "Male") {
+      localStorage.setItem("vgender", "Male");
+      console.log(localStorage.getItem("vgender"));
+    } else if (e.target.value === "Female") {
+      localStorage.setItem("gender", "Female");
+      console.log(localStorage.getItem("vgender"));
+    }else{
+      console.log("Not Defined");
+      console.log(localStorage.getItem("vgender"));
+    }
+
+
+  }
+
   
   return (
     <div>
@@ -15,7 +31,7 @@ const AudioSetting = () => {
       <h1 style={{ color: "white" }}>Audio Settings</h1>
       <h2 style={{ color: "white" }}>Gender Select</h2>
       
-      <div style={{ color: "white" }}>
+      <div style={{ color: "white" }} onChange={handleChange}>
         <input
           type="radio"
           value="Male"
