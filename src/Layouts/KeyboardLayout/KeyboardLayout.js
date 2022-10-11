@@ -53,7 +53,7 @@ class KeyboardLayout extends Component {
 		console.log("Button clicked");
 
 		//Azure Voice Gender
-		let vgender = localStorage.getItem('vgender');
+		let vgender = localStorage.getItem("vgender");
 		// if (vgender == Male){
 		// 	speechConfig.speechSynthesisVoiceName = "si-LK-SameeraNeural";
 		// }
@@ -3697,7 +3697,7 @@ class KeyboardLayout extends Component {
 			<Appbar />
 				
 				<button class={`azure ${select1}`} onClick={this.handleSubmit}>
-					Get directly from Azure
+					Speak
 				</button>
 				<div class="container1">
 					<div id="textarea1" class="textarea1">
