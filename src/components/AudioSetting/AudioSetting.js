@@ -33,7 +33,7 @@ const AudioSetting = () => {
         
 
       <br></br>
-      <div classname="box1">
+      <div classname="box2">
         <h1 style={{ color: "white" }}>Audio Settings</h1>
         <h2 style={{ color: "white" }}>Gender Select</h2>
         <div style={{ color: "white" }} onChange={handleChange}>
