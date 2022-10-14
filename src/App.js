@@ -20,6 +20,7 @@ import { onDelete, setReminders } from "./reducers/reminders/reminderSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AudioSetting from "./components/AudioSetting/AudioSetting";
+// import EmailSetting from "./components/emailSetting/EmailSetting";
 
 function App() {
   const _dispatch = useDispatch();
@@ -193,6 +194,7 @@ function App() {
         <Route path="/Reminder/edit/:id" element={<Edit />} />
         <Route path="/Reminder/view/:id" element={<Details />} />
         <Route path="/AudioSetting" element={<AudioSetting />} />
+        {/* <Route path="/emailSetting" element={<EmailSetting />} /> */}
       </Routes>
     </BrowserRouter>
   );

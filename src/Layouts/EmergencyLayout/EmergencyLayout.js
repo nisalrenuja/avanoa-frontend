@@ -93,19 +93,35 @@ class EmergencyLayout extends React.Component {
     if (index == 161 && this.state.count == 0) {
       this.MhandleClick("මගේ පත්වීම ළඟයි");
       this.setState({ count: this.state.count + 1 });
-    }    
+    }
 
     if (index == 162) {
       //back button
       this.props.updateIndex(5);
     }
 
-    if (index == 163 || index == 165 || index == 167 || index == 169 || index == 171 || index == 173 || index == 175) {
+    if (
+      index == 163 ||
+      index == 165 ||
+      index == 167 ||
+      index == 169 ||
+      index == 171 ||
+      index == 173 ||
+      index == 175
+    ) {
       //back button
       this.setState({ count: 0 });
       this.props.updateIndex(5);
     }
-    if ((index == 164 && this.state.count == 1) || (index == 166 && this.state.count == 1) || (index == 168 && this.state.count == 1) || (index == 170 && this.state.count == 1) || (index == 172 && this.state.count == 1) || (index == 174 && this.state.count == 1) || (index == 176 && this.state.count == 1)) {
+    if (
+      (index == 164 && this.state.count == 1) ||
+      (index == 166 && this.state.count == 1) ||
+      (index == 168 && this.state.count == 1) ||
+      (index == 170 && this.state.count == 1) ||
+      (index == 172 && this.state.count == 1) ||
+      (index == 174 && this.state.count == 1) ||
+      (index == 176 && this.state.count == 1)
+    ) {
       this.sendEmail();
       this.setState({ count: 0 });
       this.props.updateIndex(5);
@@ -226,7 +242,22 @@ class EmergencyLayout extends React.Component {
     let select4 = "";
     let select5 = "";
 
-    if ((index == 5) || (index == 150) || (index == 151) || (index == 152) || (index == 153) || (index == 154) || (index == 155) || (index == 156) || (index == 157) || (index == 158) || (index == 159) || (index == 160) || (index == 161) || (index == 162)) {
+    if (
+      index == 5 ||
+      index == 150 ||
+      index == 151 ||
+      index == 152 ||
+      index == 153 ||
+      index == 154 ||
+      index == 155 ||
+      index == 156 ||
+      index == 157 ||
+      index == 158 ||
+      index == 159 ||
+      index == 160 ||
+      index == 161 ||
+      index == 162
+    ) {
       if (counter == 0) {
         select1 = "selected";
       }
@@ -240,8 +271,6 @@ class EmergencyLayout extends React.Component {
         select4 = "selected";
       }
     }
-
-  
 
     let comp;
 

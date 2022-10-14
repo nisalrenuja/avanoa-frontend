@@ -52,6 +52,15 @@ class KeyboardLayout extends Component {
 		console.log(this.state.text);
 		console.log("Button clicked");
 
+		//Azure Voice Gender
+		let vgender = localStorage.getItem("vgender");
+		// if (vgender == Male){
+		// 	speechConfig.speechSynthesisVoiceName = "si-LK-SameeraNeural";
+		// }
+		// if (vgender == Female){
+		// 	speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
+		// }
+
 		// let sdk = require("microsoft-cognitiveservices-speech-sdk");
 
 		// // let textyy = input.texty;
@@ -70,6 +79,14 @@ class KeyboardLayout extends Component {
 		// const audioConfig = sdk.AudioConfig.fromDefaultSpeakerOutput();
 
 		// // The language of the voice that speaks.
+
+		// // if (vgender == Male){
+		// // 	speechConfig.speechSynthesisVoiceName = "si-LK-SameeraNeural";
+		// // }
+		// // if (vgender == Female){
+		// // 	speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
+		// // }
+
 		// speechConfig.speechSynthesisVoiceName = "si-LK-ThiliniNeural";
 
 		// // Create the speech synthesizer.
@@ -3680,7 +3697,7 @@ class KeyboardLayout extends Component {
 			<Appbar />
 				
 				<button class={`azure ${select1}`} onClick={this.handleSubmit}>
-					Get directly from Azure
+					Speak
 				</button>
 				<div class="container1">
 					<div id="textarea1" class="textarea1">

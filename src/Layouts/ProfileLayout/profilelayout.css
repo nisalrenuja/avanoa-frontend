@@ -8,6 +8,7 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	overflow: hidden;
+	align-content: center;
 }
 
 .profilelayout_sidebar {
@@ -34,10 +35,12 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	padding-top: calc(4% + 75px);
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 900px;
 	padding-bottom: 5em;
 	margin: 0;
+
+
+
 }
 
 .profilelayout_content-feed {
