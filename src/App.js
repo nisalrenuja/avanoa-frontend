@@ -20,7 +20,7 @@ import { onDelete, setReminders } from "./reducers/reminders/reminderSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AudioSetting from "./components/AudioSetting/AudioSetting";
-import EmailSetting from "./components/emailSetting/EmailSetting";
+import EmailSetting from "./components/EmailSetting/EmailSetting";
 
 function App() {
   const _dispatch = useDispatch();
