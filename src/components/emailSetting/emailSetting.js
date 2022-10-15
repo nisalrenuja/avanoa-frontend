@@ -1,8 +1,9 @@
-import React from 'react'
-import { useState } from "react";
+import React from "react";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Appbar from "../../components/Appbar/Appbar";
+import "./emailSetting.css";
 
 const EmailSetting = () => {
-
   const handleChange = (e) => {
     console.log(e.target.value);
     if (e.target.value === "Male") {
@@ -18,12 +19,21 @@ const EmailSetting = () => {
   };
   return (
     <div>
-      <h1>Email Settings</h1>
-      <h1>Enter User Email</h1>
-      <input type="text" placeholder="Enter Email" onChange={handleChange}></input>
-      <button onChange={handleChange}>Submit</button>
-    </div>
-  )
-}
+      <div classname="profilelayout">
+        <Appbar />
 
-export default EmailSetting
+        <Sidebar />
+        <h1>Email Settings</h1>
+        <h1>Enter User Email</h1>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          onChange={handleChange}
+        ></input>
+        <button onChange={handleChange}>Submit</button>
+      </div>
+    </div>
+  );
+};
+
+export default EmailSetting;
