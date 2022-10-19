@@ -194,7 +194,7 @@ function App() {
         <Route path="/Reminder/edit/:id" element={<Edit />} />
         <Route path="/Reminder/view/:id" element={<Details />} />
         <Route path="/AudioSetting" element={<AudioSetting />} />
-        <Route path="/EmailSetting" element={<EmailSetting />} /> 
+        <Route path="/emailSetting" element={<EmailSetting />} /> 
       </Routes>
     </BrowserRouter>
   );
