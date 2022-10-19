@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Appbar from "../../components/Appbar/Appbar";
+import Sidebar from "../Sidebar/Sidebar";
+import Appbar from "../Appbar/Appbar";
 import "./emailSetting.css";
 
 const EmailSetting = () => {
