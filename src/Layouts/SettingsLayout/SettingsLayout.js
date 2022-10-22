@@ -47,6 +47,11 @@ const ProfileLayout = () => {
             </button>
             <br></br>
             <button class id="settingsbtn">
+              {" "}
+              <Link to="/EmailSetting"> Emergency Email Settings</Link>{" "}
+            </button>
+            <br></br>
+            <button class id="settingsbtn">
               <Link to="/profile"> Sensitivity</Link>
             </button>
             <br></br>
@@ -54,11 +59,7 @@ const ProfileLayout = () => {
               {" "}
               <Link to="/profile"> Keyboard</Link>{" "}
             </button>
-            <br></br>
-            <button class id="settingsbtn">
-              {" "}
-              <Link to="/EmailSetting"> Email</Link>{" "}
-            </button>
+
             <br></br>
           </center>
         </div>

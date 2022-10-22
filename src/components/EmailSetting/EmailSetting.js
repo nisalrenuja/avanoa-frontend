@@ -23,14 +23,16 @@ const EmailSetting = () => {
         <Appbar />
 
         <Sidebar />
-        <h1>Email Settings</h1>
-        <h1>Enter User Email</h1>
-        <input
-          type="text"
-          placeholder="Enter Email"
-          onChange={handleChange}
-        ></input>
-        <button onChange={handleChange}>Submit</button>
+        <div className="box2">
+          <h1>Email Settings</h1>
+          <h1>Enter User Email</h1>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            onChange={handleChange}
+          ></input>
+          <button onChange={handleChange}>Submit</button>
+        </div>
       </div>
     </div>
   );
