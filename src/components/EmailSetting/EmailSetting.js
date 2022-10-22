@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Appbar from "../Appbar/Appbar";
 import "./emailSetting.css";
+import Input from "../Input/Input";
 
 const EmailSetting = () => {
   const handleChange = (e) => {
@@ -19,19 +20,44 @@ const EmailSetting = () => {
   };
   return (
     <div>
-      <div classname="profilelayout">
-        <Appbar />
-
-        <Sidebar />
-        <div className="box2">
-          <h1>Email Settings</h1>
-          <h1>Enter User Email</h1>
-          <input
-            type="text"
-            placeholder="Enter Email"
-            onChange={handleChange}
-          ></input>
-          <button onChange={handleChange}>Submit</button>
+      <Appbar />
+      <Sidebar />
+      <div className="box2">
+        <h1>Email Settings</h1>
+        <br></br>
+        <h1>Update Email Addresses</h1>
+        <br></br>
+        
+        <form className="profile_input">
+          <div className="profile_input-form">
+          <p>රැකවරණ භාරකරු</p>
+            <Input
+              type="text"
+              text="Email"
+              // defaultValue={user.name}
+              name="name"
+              handleChange={handleChange}
+            />
+            <p>භාරකරු</p>
+            <Input
+              type="text"
+              text="Email"
+              // defaultValue={user.name}
+              name="name"
+              handleChange={handleChange}
+            />
+            <p>ඩොක්ටර්</p>
+            <Input
+              type="text"
+              text="Email"
+              // defaultValue={user.name}
+              name="name"
+              handleChange={handleChange}
+            />
+          </div>
+        </form>
+        <div className="login_btn">
+          <button type="submit">update</button>
         </div>
       </div>
     </div>
