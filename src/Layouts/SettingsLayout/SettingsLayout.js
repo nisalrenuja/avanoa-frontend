@@ -3,6 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Appbar from "../../components/Appbar/Appbar";
 import { Link } from "react-router-dom";
 import AudioSetting from "../../components/AudioSetting/AudioSetting";
+import EmailSetting from "../../components/EmailSetting/EmailSetting";
 import "./settingslayout.css";
 
 import { useState } from "react";
@@ -31,22 +32,35 @@ const ProfileLayout = () => {
       >
         <Sidebar />
       </div>
-      
+
       {/* content */}
       <div class id="profilelayout_content">
         {/* profile */}
         <div className="profilelayout_content-profile">
-        <center>
-        <button class id="settingsbtn"><Link to="/profile" > My Personal Profile Settings</Link></button>
-          <br></br>
-          <button class id="settingsbtn"><Link to="/AudioSetting" > Audio</Link></button>
-          <br></br>
-          <button class id="settingsbtn"><Link to="/profile" > Sensitivity</Link></button>
-          <br></br>
-          <button class id="settingsbtn"> <Link to="/profile" > Keyboard</Link> </button>
-          <br></br>
-          <button class id="settingsbtn"> <Link to="/emailSetting" > Email</Link> </button>
-          <br></br>
+          <center>
+            <button class id="settingsbtn">
+              <Link to="/profile"> My Personal Profile Settings</Link>
+            </button>
+            <br></br>
+            <button class id="settingsbtn">
+              <Link to="/AudioSetting"> Audio</Link>
+            </button>
+            <br></br>
+            <button class id="settingsbtn">
+              {" "}
+              <Link to="/EmailSetting"> Emergency Email Settings</Link>{" "}
+            </button>
+            <br></br>
+            <button class id="settingsbtn">
+              <Link to="/profile"> Sensitivity</Link>
+            </button>
+            <br></br>
+            <button class id="settingsbtn">
+              {" "}
+              <Link to="/profile"> Keyboard</Link>{" "}
+            </button>
+
+            <br></br>
           </center>
         </div>
       </div>
